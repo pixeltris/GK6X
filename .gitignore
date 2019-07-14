@@ -3,6 +3,14 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+#GK6X
+/Build/UserData/*
+/Build/*.exe
+/Build/*.pdb
+/Build/*.dll
+/Build/*.xml
+/Build/KbLog.txt
+
 # User-specific files
 *.rsuser
 *.suo
