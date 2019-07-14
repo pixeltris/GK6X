@@ -1,0 +1,11 @@
+{
+  "FuncTable":[{
+	  "id": 10,
+	  "name": "不支持的设备",
+	  "lang": "menu_not_support",
+	  "icon": "el-icon-warning",
+	  "component": "/NotSupport",
+	  "visible": true,
+	  "disable": false
+	}]
+}

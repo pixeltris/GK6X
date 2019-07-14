@@ -1,0 +1,23 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [{
+			"GUID": "C31BE9AC-D417-4572-B242-C3D592E02CE3",
+			"Name": "上下灯位全亮"
+		}, {
+			"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+			"Name": "RGB渐变"
+		}, {
+			"GUID": "65F5A876-E4E1-4bd5-9543-781AC3DAC791",
+			"Name": "66纯绿ESC变化"
+		}, {
+			"GUID": "2B229551-3D2C-4cae-AF77-5AFF1CE21CEB",
+			"Name": "灯效 64"
+		}, {
+			"GUID": "8201889D-2AE8-4bc0-BE08-899557795A45",
+			"Name": "66上红常亮下绿色呼吸"
+		}
+	]
+}

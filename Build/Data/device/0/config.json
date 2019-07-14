@@ -1,0 +1,11 @@
+{
+  "FuncTable":[{
+	  "id": 10,
+	  "name": "未检测到设备",
+	  "lang": "menu_no_device",
+	  "icon": "el-icon-question",
+	  "component": "/NoDevice",
+	  "visible": true,
+	  "disable": false
+	}]
+}

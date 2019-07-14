@@ -1,0 +1,22 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [{
+			"GUID": "6920D09F-C280-4e97-8734-0054FAD4D770",
+			"Name": "红光呼吸"
+		}, {
+			"GUID": "CB7DBFD0-2463-4aa7-AAEF-0512BFC1F6A2",
+			"Name": "蓝光呼吸"
+		}, {
+			"GUID": "26C232E5-B89B-4b17-BF1D-75DC61351A93",
+			"Name": "全亮绿光"
+		}, {
+			"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+			"Name": "RGB渐变"
+		}, {
+			"GUID": "908AA962-B0C8-4517-8E61-1E4C106CC4BA",
+			"Name": "星光闪耀"
+		}]
+}

@@ -1,0 +1,35 @@
+﻿[Base,Layer1,Layer2,Layer3,FnLayer1,FnLayer2,FnLayer3]
+Pause:Delete
+
+[Base,Layer3,FnLayer3]
+RAlt:Layer3Button
+
+[FnLayer1]
+B:Macro(MyMacro)
+
+[Macro(MyMacro,0,RepeatXTimes)]
+Press:A+B+C
+
+#[NoLighting]
+#[Lighting(Light1,Layer1,Base)]
+#[Lighting(Light2,Layer1,Base)]
+#[Lighting(Light3,Base)]
+#[Lighting(Light4,Base)]
+#[Lighting(Light5,Base)]
+#[Lighting(Light6,Base)]
+#[Lighting(Light7,Base)]
+
+#[Lighting(Windmill,Base)]
+#[Lighting(Gradual brighten,Base)]
+#[Lighting(Flame,Base)]
+#[Lighting(7 colors gradual change,Base)]
+[Lighting(Windmill,Base)]
+[Lighting(Blue light respiration,Base)]
+[Lighting(Green light respiration,Base)]
+[Lighting(Red light respiration,Base)]
+[Lighting(White light respiration,Base)]
+
+#[Macro(MyMacro:1000:RepeatXTimes:2:true)]
+#Press:A+B+C
+#Press:D+E+F
+#Press:H+I+K

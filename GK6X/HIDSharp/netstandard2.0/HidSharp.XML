@@ -1,0 +1,1207 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HidSharp</name>
+    </assembly>
+    <members>
+        <member name="M:HidSharp.Device.Open">
+            <summary>
+            Makes a connection to the device, or throws an exception if the connection cannot be made.
+            </summary>
+            <returns>The stream to use to communicate with the device.</returns>
+        </member>
+        <member name="M:HidSharp.Device.TryOpen(HidSharp.DeviceStream@)">
+            <summary>
+            Tries to make a connection to the device.
+            </summary>
+            <param name="stream">The stream to use to communicate with the device.</param>
+            <returns><c>true</c> if the connection was successful.</returns>
+        </member>
+        <member name="M:HidSharp.Device.GetFileSystemName">
+            <summary>
+            Returns the file system path of the device.
+            This can be used to check permissions on Linux hidraw, for instance.
+            </summary>
+            <returns>The file system path.</returns>
+        </member>
+        <member name="M:HidSharp.Device.GetFriendlyName">
+            <summary>
+            Returns a name appropriate for display.
+            </summary>
+            <returns>The friendly name.</returns>
+        </member>
+        <member name="M:HidSharp.Device.HasImplementationDetail(System.Guid)">
+            <summary>
+            Checks if a particular implementation detail, such as the use of the Linux hidraw API, applies to this device.
+            See <see cref="T:HidSharp.ImplementationDetail"/> for a list of possible details.
+            </summary>
+            <param name="detail">The detail to check.</param>
+            <returns><c>true</c> if the implementation detail applies.</returns>
+        </member>
+        <member name="P:HidSharp.Device.DevicePath">
+            <summary>
+            The operating system's name for the device.
+            
+            If you have multiple devices with the same Vendor ID, Product ID, Serial Number, etc.,
+            this may be useful for differentiating them.
+            </summary>
+        </member>
+        <member name="M:HidSharp.DeviceException.CreateIOException(HidSharp.Device,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.IO.IOException"/> class, and associates a <see cref="T:HidSharp.Device"/> with it.
+            </summary>
+            <param name="device">The device that caused the exception.</param>
+            <param name="message">A description of the error.</param>
+            <returns>The new <see cref="T:System.IO.IOException"/>.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceException.CreateIOException(HidSharp.Device,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.IO.IOException"/> class, and associates a <see cref="T:HidSharp.Device"/> with it.
+            </summary>
+            <param name="device">The device that caused the exception.</param>
+            <param name="message">A description of the error.</param>
+            <param name="hresult">An integer identifying the error that has occurred.</param>
+            <returns>The new <see cref="T:System.IO.IOException"/>.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceException.CreateUnauthorizedAccessException(HidSharp.Device,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.UnauthorizedAccessException"/> class, and associates a <see cref="T:HidSharp.Device"/> with it.
+            </summary>
+            <param name="device">The device that caused the exception.</param>
+            <param name="message">A description of the error.</param>
+            <returns>The new <see cref="T:System.UnauthorizedAccessException"/>.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceException.GetDevice(System.Exception)">
+            <summary>
+            Gets the <see cref="T:HidSharp.Device"/> associated with the exception, if any.
+            </summary>
+            <param name="exception">The exception to get the associated <see cref="T:HidSharp.Device"/> for.</param>
+            <returns>The associated <see cref="T:HidSharp.Device"/>, or null if none is associated with it.</returns>
+        </member>
+        <member name="T:HidSharp.DeviceList">
+            <summary>
+            Provides a list of all available devices.
+            </summary>
+        </member>
+        <member name="E:HidSharp.DeviceList.DeviceListChanged">
+            <exclude />
+        </member>
+        <member name="E:HidSharp.DeviceList.Changed">
+            <summary>
+            Occurs when a device is connected or disconnected.
+            </summary>
+        </member>
+        <member name="M:HidSharp.DeviceList.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HidSharp.DeviceList"/> class.
+            </summary>
+        </member>
+        <member name="M:HidSharp.DeviceList.GetBleDevices">
+            <summary>
+            Gets a list of all connected BLE devices.
+            </summary>
+            <returns>The device list.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceList.GetHidDevices">
+            <summary>
+            Gets a list of all connected HID devices.
+            </summary>
+            <returns>The device list.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceList.GetHidDevices(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+            <summary>
+            Gets a list of connected HID devices, filtered by some criteria.
+            </summary>
+            <param name="vendorID">The vendor ID, or null to not filter by vendor ID.</param>
+            <param name="productID">The product ID, or null to not filter by product ID.</param>
+            <param name="releaseNumberBcd">The device release number in binary-coded decimal, or null to not filter by device release number.</param>
+            <param name="serialNumber">The serial number, or null to not filter by serial number.</param>
+            <returns>The filtered device list.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceList.GetSerialDevices">
+            <summary>
+            Gets a list of all connected serial devices.
+            </summary>
+            <returns>The device list.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceList.GetAllDevices">
+            <summary>
+            Gets a list of all connected HID, BLE, and serial devices.
+            </summary>
+            <returns>The device list.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceList.GetAllDevices(HidSharp.DeviceFilter)">
+            <summary>
+            Gets a list of connected devices, filtered by some criteria.
+            </summary>
+            <param name="filter">The filter criteria.</param>
+            <returns>The filtered device list.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceList.GetHidDeviceOrNull(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+            <summary>
+            Gets the first connected HID device that matches specified criteria.
+            </summary>
+            <param name="vendorID">The vendor ID, or null to not filter by vendor ID.</param>
+            <param name="productID">The product ID, or null to not filter by product ID.</param>
+            <param name="releaseNumberBcd">The device release number in binary-coded decimal, or null to not filter by device release number.</param>
+            <param name="serialNumber">The serial number, or null to not filter by serial number.</param>
+            <returns>The device, or null if none was found.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceList.GetSerialDeviceOrNull(System.String)">
+            <summary>
+            Gets the connected serial device with the specific device path or filesystem name.
+            </summary>
+            <param name="portName">The device path or filesystem name.</param>
+            <returns>The device, or null if none was found.</returns>
+        </member>
+        <member name="M:HidSharp.DeviceList.RaiseChanged">
+            <summary>
+            Raises the <see cref="E:HidSharp.DeviceList.Changed"/> event.
+            </summary>
+        </member>
+        <member name="P:HidSharp.DeviceList.AreDriversBeingInstalled">
+            <summary>
+            <c>true</c> if drivers are presently being installed.
+            </summary>
+        </member>
+        <member name="P:HidSharp.DeviceList.Local">
+            <summary>
+            The list of devices on this computer.
+            </summary>
+        </member>
+        <member name="E:HidSharp.DeviceStream.Closed">
+            <summary>
+            Occurs when the stream is closed.
+            </summary>
+        </member>
+        <member name="E:HidSharp.DeviceStream.InterruptRequested">
+            <summary>
+            Occurs when <see cref="P:HidSharp.OpenOption.Interruptible"/> is <c>true</c> and another process or thread with higher priority
+            would like to open the stream.
+            </summary>
+        </member>
+        <member name="M:HidSharp.DeviceStream.#ctor(HidSharp.Device)">
+            <exclude/>
+        </member>
+        <member name="M:HidSharp.DeviceStream.Dispose(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.DeviceStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.DeviceStream.EndRead(System.IAsyncResult)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.DeviceStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.DeviceStream.EndWrite(System.IAsyncResult)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.DeviceStream.Seek(System.Int64,System.IO.SeekOrigin)">
+            <exclude />
+        </member>
+        <member name="M:HidSharp.DeviceStream.SetLength(System.Int64)">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.DeviceStream.CanRead">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.DeviceStream.CanSeek">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.DeviceStream.CanWrite">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.DeviceStream.CanTimeout">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.DeviceStream.Device">
+            <summary>
+            Gets the <see cref="P:HidSharp.DeviceStream.Device"/> associated with this stream.
+            </summary>
+        </member>
+        <member name="P:HidSharp.DeviceStream.Length">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.DeviceStream.Position">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.DeviceStream.ReadTimeout">
+            <summary>
+            The maximum amount of time, in milliseconds, to wait for the device to send some data.
+            
+            The default is 3000 milliseconds.
+            To disable the timeout, set this to <see cref="F:System.Threading.Timeout.Infinite"/>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.DeviceStream.WriteTimeout">
+            <summary>
+            The maximum amount of time, in milliseconds, to wait for the device to receive the data.
+            
+            The default is 3000 milliseconds.
+            To disable the timeout, set this to <see cref="F:System.Threading.Timeout.Infinite"/>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.DeviceStream.Tag">
+            <summary>
+            An object storing user-defined data about the stream.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Experimental.BleDevice">
+            <summary>
+            Represents a Bluetooth Low Energy device.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Experimental.BleDevice.Open">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.Experimental.BleDevice.Open(HidSharp.OpenConfiguration)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.Experimental.BleStream.#ctor(HidSharp.Experimental.BleDevice,HidSharp.Experimental.BleService)">
+            <exclude/>
+        </member>
+        <member name="P:HidSharp.Experimental.BleStream.Device">
+            <summary>
+            Gets the <see cref="T:HidSharp.Experimental.BleDevice"/> associated with this stream.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Experimental.BleStream.Service">
+            <summary>
+            Gets the <see cref="T:HidSharp.Experimental.BleService"/> associated with this stream.
+            </summary>
+        </member>
+        <member name="M:HidSharp.FilteredDeviceList.GetAllDevices">
+            <inheritdoc/>
+        </member>
+        <member name="P:HidSharp.FilteredDeviceList.AreDriversBeingInstalled">
+            <inheritdoc/>
+        </member>
+        <member name="T:HidSharp.HidDevice">
+            <summary>
+            Represents a USB HID class device.
+            </summary>
+        </member>
+        <member name="M:HidSharp.HidDevice.Open">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.HidDevice.Open(HidSharp.OpenConfiguration)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetFriendlyName">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetManufacturer">
+            <summary>
+            Returns the manufacturer name.
+            </summary>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetProductName">
+            <summary>
+            Returns the product name.
+            </summary>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetSerialNumber">
+            <summary>
+            Returns the device serial number.
+            </summary>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetMaxInputReportLength">
+            <summary>
+            Returns the maximum input report length, including the Report ID byte.
+            If the device does not use Report IDs, the first byte will always be 0.
+            </summary>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetMaxOutputReportLength">
+            <summary>
+            Returns the maximum output report length, including the Report ID byte.
+            If the device does not use Report IDs, use 0 for the first byte.
+            </summary>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetMaxFeatureReportLength">
+            <summary>
+            Returns the maximum feature report length, including the Report ID byte.
+            If the device does not use Report IDs, use 0 for the first byte.
+            </summary>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetReportDescriptor">
+            <summary>
+            Retrieves and parses the report descriptor of the USB device.
+            </summary>
+            <returns>The parsed report descriptor.</returns>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetRawReportDescriptor">
+            <summary>
+            Returns the raw report descriptor of the USB device.
+            </summary>
+            <returns>The raw report descriptor.</returns>
+        </member>
+        <member name="M:HidSharp.HidDevice.GetSerialPorts">
+            <summary>
+            Returns the serial ports of the composite USB device.
+            Currently this is only supported on Windows.
+            </summary>
+            <returns>Serial ports of the USB device.</returns>
+        </member>
+        <member name="M:HidSharp.HidDevice.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.HidDevice.TryOpen(HidSharp.HidStream@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.HidDevice.TryOpen(HidSharp.OpenConfiguration,HidSharp.HidStream@)">
+            <inheritdoc/>
+        </member>
+        <member name="P:HidSharp.HidDevice.ProductID">
+            <summary>
+            The USB product ID. These are listed at: http://usb-ids.gowdy.us
+            </summary>
+        </member>
+        <member name="P:HidSharp.HidDevice.ReleaseNumber">
+            <summary>
+            The device release number.
+            </summary>
+        </member>
+        <member name="P:HidSharp.HidDevice.ReleaseNumberBcd">
+            <summary>
+            The device release number, in binary-coded decimal.
+            </summary>
+        </member>
+        <member name="P:HidSharp.HidDevice.ProductVersion">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.HidDevice.VendorID">
+            <summary>
+            The USB vendor ID. These are listed at: http://usb-ids.gowdy.us
+            </summary>
+        </member>
+        <member name="P:HidSharp.HidDevice.Manufacturer">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.HidDevice.ProductName">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.HidDevice.SerialNumber">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.HidDevice.MaxInputReportLength">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.HidDevice.MaxOutputReportLength">
+            <exclude />
+        </member>
+        <member name="P:HidSharp.HidDevice.MaxFeatureReportLength">
+            <exclude />
+        </member>
+        <member name="T:HidSharp.HidDeviceLoader">
+            <exclude />
+        </member>
+        <member name="M:HidSharp.HidDeviceLoader.#ctor">
+            <exclude />
+        </member>
+        <member name="M:HidSharp.HidDeviceLoader.GetDevicesVB">
+            <exclude />
+        </member>
+        <member name="M:HidSharp.HidDeviceLoader.GetDevices">
+            <exclude />
+        </member>
+        <member name="M:HidSharp.HidDeviceLoader.GetDevices(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+            <exclude />
+        </member>
+        <member name="M:HidSharp.HidDeviceLoader.GetDeviceOrDefault(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+            <exclude />
+        </member>
+        <member name="T:HidSharp.HidStream">
+            <summary>
+            Communicates with a USB HID class device.
+            </summary>
+        </member>
+        <member name="M:HidSharp.HidStream.#ctor(HidSharp.HidDevice)">
+            <exclude/>
+        </member>
+        <member name="M:HidSharp.HidStream.Flush">
+            <exclude />
+        </member>
+        <member name="M:HidSharp.HidStream.GetFeature(System.Byte[])">
+            <summary>
+            Sends a Get Feature setup request.
+            </summary>
+            <param name="buffer">The buffer to fill. Place the Report ID in the first byte.</param>
+        </member>
+        <member name="M:HidSharp.HidStream.GetFeature(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Sends a Get Feature setup request.
+            </summary>
+            <param name="buffer">The buffer to fill. Place the Report ID in the byte at index <paramref name="offset"/>.</param>
+            <param name="offset">The index in the buffer to begin filling with data.</param>
+            <param name="count">The number of bytes in the feature request.</param>
+        </member>
+        <member name="M:HidSharp.HidStream.Read">
+            <summary>
+            Reads HID Input Reports.
+            </summary>
+            <returns>The data read.</returns>
+        </member>
+        <member name="M:HidSharp.HidStream.Read(System.Byte[])">
+            <summary>
+            Reads HID Input Reports.
+            </summary>
+            <param name="buffer">The buffer to place the reports into.</param>
+            <returns>The number of bytes read.</returns>
+        </member>
+        <member name="M:HidSharp.HidStream.SetFeature(System.Byte[])">
+            <summary>
+            Sends a Set Feature setup request.
+            </summary>
+            <param name="buffer">The buffer of data to send. Place the Report ID in the first byte.</param>
+        </member>
+        <member name="M:HidSharp.HidStream.SetFeature(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Sends a Set Feature setup request.
+            </summary>
+            <param name="buffer">The buffer of data to send. Place the Report ID in the byte at index <paramref name="offset"/>.</param>
+            <param name="offset">The index in the buffer to start the write from.</param>
+            <param name="count">The number of bytes in the feature request.</param>
+        </member>
+        <member name="M:HidSharp.HidStream.Write(System.Byte[])">
+            <summary>
+            Writes an HID Output Report to the device.
+            </summary>
+            <param name="buffer">The buffer containing the report. Place the Report ID in the first byte.</param>
+        </member>
+        <member name="P:HidSharp.HidStream.Device">
+            <summary>
+            Gets the <see cref="T:HidSharp.HidDevice"/> associated with this stream.
+            </summary>
+        </member>
+        <member name="T:HidSharp.ImplementationDetail">
+            <summary>
+            Specifies the <see cref="T:HidSharp.Device"/>'s low-level implementation.
+            </summary>
+        </member>
+        <member name="P:HidSharp.ImplementationDetail.Windows">
+            <summary>
+            The device is running on Windows.
+            </summary>
+        </member>
+        <member name="P:HidSharp.ImplementationDetail.MacOS">
+            <summary>
+            The device is running on a Mac.
+            </summary>
+        </member>
+        <member name="P:HidSharp.ImplementationDetail.Linux">
+            <summary>
+            The device is running on Linux.
+            </summary>
+        </member>
+        <member name="P:HidSharp.ImplementationDetail.BleDevice">
+            <summary>
+            The device is a Bluetooth Low Energy device.
+            </summary>
+        </member>
+        <member name="P:HidSharp.ImplementationDetail.HidDevice">
+            <summary>
+            The device is a HID device.
+            </summary>
+        </member>
+        <member name="P:HidSharp.ImplementationDetail.SerialDevice">
+            <summary>
+            The device is a serial device.
+            </summary>
+        </member>
+        <member name="P:HidSharp.ImplementationDetail.HidrawApi">
+            <summary>
+            The device is implemented using the Linux hidraw API.
+            </summary>
+        </member>
+        <member name="T:HidSharp.OpenConfiguration">
+            <summary>
+            Describes all options for opening a device stream.
+            </summary>
+        </member>
+        <member name="M:HidSharp.OpenConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HidSharp.OpenConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="M:HidSharp.OpenConfiguration.GetOption(HidSharp.OpenOption)">
+            <summary>
+            Gets the current value of an option.
+            </summary>
+            <param name="option">The option.</param>
+            <returns>The option's value.</returns>
+        </member>
+        <member name="M:HidSharp.OpenConfiguration.GetOptionsList">
+            <summary>
+            Gets a list of all currently set options.
+            </summary>
+            <returns>The options list.</returns>
+        </member>
+        <member name="M:HidSharp.OpenConfiguration.IsOptionSet(HidSharp.OpenOption)">
+            <summary>
+            Checks if an option has been set.
+            </summary>
+            <param name="option">The option.</param>
+            <returns><c>true</c> if the option has been set.</returns>
+        </member>
+        <member name="M:HidSharp.OpenConfiguration.SetOption(HidSharp.OpenOption,System.Object)">
+            <summary>
+            Sets the current value of an option.
+            </summary>
+            <param name="option">The option.</param>
+            <param name="value">The value to set it to.</param>
+        </member>
+        <member name="T:HidSharp.OpenOption">
+            <summary>
+            Options for opening a device stream.
+            </summary>
+        </member>
+        <member name="P:HidSharp.OpenOption.Exclusive">
+            <summary>
+            Use HIDSharp's exclusivity layer.
+            This allows one process using HIDSharp to lock other processes out of using a HID device.
+            Processes may request interruption, allowing interprocess cooperation.
+            (For example, a data logging application can make itself interruptible and allow another process to use the HID device temporarily.)
+            
+            Defaults to <c>false</c>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.OpenOption.Interruptible">
+            <summary>
+            Allow other processes to send interruption requests.
+            If another other process with higher priority attempts to open the HID device this process is using,
+            this process will receive an <see cref="E:HidSharp.DeviceStream.InterruptRequested"/> event on an arbitrary thread.
+            
+            <see cref="P:HidSharp.OpenOption.Exclusive"/> must be <c>true</c> for this to work.
+            Defaults to <c>false</c>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.OpenOption.Priority">
+            <summary>
+            The priority of the process. This is used for interruption requests.
+            <see cref="P:HidSharp.OpenOption.Exclusive"/> must be <c>true</c> for this to work.
+            Defaults to <see cref="F:HidSharp.OpenPriority.Normal"/>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.OpenOption.TimeoutIfInterruptible">
+            <summary>
+            The amount of time to wait for an interruptible process to give up the HID device before failing to open the stream.
+            Defaults to 3000 milliseconds.
+            </summary>
+        </member>
+        <member name="P:HidSharp.OpenOption.TimeoutIfTransient">
+            <summary>
+            The amount of time to wait for a transient process to give up the HID device before failing to open the stream.
+            Defaults to 30000 milliseconds.
+            </summary>
+        </member>
+        <member name="P:HidSharp.OpenOption.Transient">
+            <summary>
+            If a HID device is opened by another process transiently, HIDSharp will wait some time for the process to give up the HID device before failing to open the stream.
+            
+            <see cref="P:HidSharp.OpenOption.Exclusive"/> must be <c>true</c> for this to work.
+            Defaults to <c>false</c>.
+            </summary>
+        </member>
+        <member name="T:HidSharp.OpenPriority">
+            <summary>
+            The priority at which to open a device stream.
+            </summary>
+        </member>
+        <member name="F:HidSharp.OpenPriority.Idle">
+            <summary>
+            The lowest priority.
+            </summary>
+        </member>
+        <member name="F:HidSharp.OpenPriority.VeryLow">
+            <summary>
+            Very low priority.
+            </summary>
+        </member>
+        <member name="F:HidSharp.OpenPriority.Low">
+            <summary>
+            Low priority.
+            </summary>
+        </member>
+        <member name="F:HidSharp.OpenPriority.Normal">
+            <summary>
+            The default priority.
+            </summary>
+        </member>
+        <member name="F:HidSharp.OpenPriority.High">
+            <summary>
+            High priority.
+            </summary>
+        </member>
+        <member name="F:HidSharp.OpenPriority.VeryHigh">
+            <summary>
+            The highest priority.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.DataItemFlags.None">
+            <summary>
+            No flags are set.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.DataItemFlags.Constant">
+            <summary>
+            Constant values cannot be changed.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.DataItemFlags.Variable">
+            <summary>
+            Each variable field corresponds to a particular value.
+            The alternative is an array, where each field specifies an index.
+            For example, with eight buttons, a variable field would have eight bits.
+            An array would have an index of which button is pressed.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.DataItemFlags.Relative">
+            <summary>
+            Mouse motion is in relative coordinates.
+            Most sensors -- joysticks, accelerometers, etc. -- output absolute coordinates.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.DataItemFlags.Wrap">
+            <summary>
+            The value wraps around in a continuous manner.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.DeviceItem.CreateDeviceItemInputParser">
+            <summary>
+            Creates a <see cref="T:HidSharp.Reports.Input.DeviceItemInputParser"/> appropriate for parsing reports for this device item.
+            </summary>
+            <returns>The new <see cref="T:HidSharp.Reports.Input.DeviceItemInputParser"/>.</returns>
+            <remarks>
+            Pair this with a <see cref="T:HidSharp.Reports.Input.HidDeviceInputReceiver"/> for the <see cref="T:HidSharp.Reports.ReportDescriptor"/>.
+            </remarks>
+        </member>
+        <member name="T:HidSharp.Reports.Encodings.ItemType">
+            <summary>
+            Describes the manner in which an item affects the descriptor.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Encodings.ItemType.Main">
+            <summary>
+            Main items determine the report being described.
+            For example, a main item switches between Input and Output reports.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Encodings.ItemType.Global">
+            <summary>
+            Global items affect all reports later in the descriptor.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Encodings.ItemType.Local">
+            <summary>
+            Local items only affect the current report.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Encodings.ItemType.Reserved">
+            <summary>
+            Long items use this type.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.ExpectedUsageType.PushButton">
+            <summary>
+            Level-triggered. A momentary button. 0 indicates not pressed, 1 indicates pressed.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.ExpectedUsageType.ToggleButton">
+            <summary>
+            Level-triggered. Toggle buttons maintain their state. 0 indicates not pressed, 1 indicates pressed.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.ExpectedUsageType.OneShot">
+            <summary>
+            Edge-triggered. A 0-to-1 transition should activate the one-shot function.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.ExpectedUsageType.UpDown">
+            <summary>
+            Edge-triggered. Each report of -1 goes down. Each report of 1 goes up.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.Input.DeviceItemInputParser.TryParseReport(System.Byte[],System.Int32,HidSharp.Reports.Report)">
+            <summary>
+            Parses a received report.
+            </summary>
+            <param name="buffer">The buffer to read the report from.</param>
+            <param name="offset">The offset to begin reading the report at.</param>
+            <param name="report"><see cref="T:HidSharp.Reports.Report"/> the buffer conforms to.</param>
+            <returns><c>true</c> if the report is for this <see cref="P:HidSharp.Reports.Input.DeviceItemInputParser.DeviceItem"/>.</returns>
+        </member>
+        <member name="P:HidSharp.Reports.Input.DeviceItemInputParser.ValueCount">
+            <summary>
+            The number of unique values in the <see cref="T:HidSharp.Reports.DeviceItem"/>.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.Input.HidDeviceInputReceiver.Start(HidSharp.HidStream)">
+            <summary>
+            Starts the receiver. It will continue until the stream is closed or the device is disconnected.
+            Be sure to call <see cref="M:HidSharp.Reports.Input.HidDeviceInputReceiver.TryRead(System.Byte[],System.Int32,HidSharp.Reports.Report@)"/> to read HID reports as they come in.
+            </summary>
+            <param name="stream">The stream to receive on.</param>
+        </member>
+        <member name="M:HidSharp.Reports.Input.HidDeviceInputReceiver.TryRead(System.Byte[],System.Int32,HidSharp.Reports.Report@)">
+            <summary>
+            Checks for pending HID reports.
+            </summary>
+            <param name="buffer">The buffer to write the report to.</param>
+            <param name="offset">The offset to begin writing the report at.</param>
+            <param name="report">The <see cref="T:HidSharp.Reports.Report"/> the buffer conforms to.</param>
+            <returns><c>true</c> if there was a pending report.</returns>
+        </member>
+        <member name="P:HidSharp.Reports.Input.HidDeviceInputReceiver.IsRunning">
+            <summary>
+            <c>true</c> if the receiver is running.
+            <c>false</c> if the receiver has stopped, or has not yet been started.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:HidSharp.Reports.Input.HidDeviceInputReceiver.ReportDescriptor" -->
+        <member name="P:HidSharp.Reports.Input.HidDeviceInputReceiver.Stream">
+            <summary>
+            The stream associated with this receiver.
+            
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Input.HidDeviceInputReceiver.WaitHandle">
+            <summary>
+            This will be signaled any time there is data, or when the receiver has stopped due to stream closure or device disconnect.
+            To clear the signal, call <see cref="M:HidSharp.Reports.Input.HidDeviceInputReceiver.TryRead(System.Byte[],System.Int32,HidSharp.Reports.Report@)"/> until there is no more data.
+            If the receiver has stopped, the signal cannot be cleared.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Report">
+            <summary>
+            Reads and writes HID reports.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.Report.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HidSharp.Reports.Report"/> class.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.Report.Read(System.Byte[],System.Int32,HidSharp.Reports.ReportScanCallback)">
+            <summary>
+            Reads a HID report, calling back a provided function for each data item.
+            </summary>
+            <param name="buffer">The buffer containing the report.</param>
+            <param name="offset">The offset to begin reading the report at.</param>
+            <param name="callback">
+                This callback will be called for each data item.
+                Use this to read every value you need.
+            </param>
+        </member>
+        <member name="M:HidSharp.Reports.Report.Write(HidSharp.Reports.ReportScanCallback)">
+            <summary>
+            Writes a HID report, calling back a provided function for each data item.
+            </summary>
+            <param name="callback">
+                This callback will be called for each report data item.
+                Write to each data item to write a complete HID report.
+            </param>
+        </member>
+        <member name="P:HidSharp.Reports.Report.Length">
+            <summary>
+            The length of this particular report.
+            The Report ID is included in this length.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Report.ReportID">
+            <summary>
+            The Report ID.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.ReportDescriptor">
+            <summary>
+            Parses HID report descriptors.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.ReportDescriptor.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HidSharp.Reports.ReportDescriptor"/> class.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.ReportDescriptor.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:HidSharp.Reports.ReportDescriptor"/> class, and parses a raw HID report descriptor.
+            </summary>
+            <param name="buffer">The buffer containing the report descriptor.</param>
+        </member>
+        <member name="M:HidSharp.Reports.ReportDescriptor.CreateHidDeviceInputReceiver">
+            <summary>
+            Creates an <see cref="T:HidSharp.Reports.Input.HidDeviceInputReceiver"/> appropriate
+            for receiving reports from this device.
+            </summary>
+            <returns>The new <see cref="T:HidSharp.Reports.Input.HidDeviceInputReceiver"/>.</returns>
+            <remarks>
+            Pair this with a <see cref="T:HidSharp.Reports.Input.DeviceItemInputParser"/> for your chosen <see cref="T:HidSharp.Reports.DeviceItem"/>.
+            </remarks>
+        </member>
+        <member name="M:HidSharp.Reports.ReportDescriptor.StartParsing">
+            <summary>
+            Resets the parser to its initial state.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.ReportDescriptor.FinishParsing">
+            <summary>
+            Updates derived data.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.ReportDescriptor.ParseRawReportDescriptor(System.Byte[])">
+            <summary>
+            Parses a raw HID report descriptor.
+            </summary>
+            <param name="buffer">The buffer containing the report descriptor.</param>
+        </member>
+        <member name="M:HidSharp.Reports.ReportDescriptor.ParseEncodedItems(System.Collections.Generic.IEnumerable{HidSharp.Reports.Encodings.EncodedItem})">
+            <summary>
+            Parses all of the <see cref="T:HidSharp.Reports.Encodings.EncodedItem"/> elements in a report descriptor.
+            </summary>
+            <param name="items">The items to parse.</param>
+        </member>
+        <member name="M:HidSharp.Reports.ReportDescriptor.ParseEncodedItem(HidSharp.Reports.Encodings.EncodedItem)">
+            <summary>
+            Parses a single <see cref="T:HidSharp.Reports.Encodings.EncodedItem"/>.
+            Call this repeatedly for every item to completely decode a report descriptor.
+            </summary>
+            <param name="item">The item to parse.</param>
+        </member>
+        <member name="P:HidSharp.Reports.ReportDescriptor.MaxInputReportLength">
+            <summary>
+            The maximum input report length.
+            The Report ID is included in this length.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.ReportDescriptor.MaxOutputReportLength">
+            <summary>
+            The maximum output report length.
+            The Report ID is included in this length.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.ReportDescriptor.MaxFeatureReportLength">
+            <summary>
+            The maximum feature report length.
+            The Report ID is included in this length.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.ReportDescriptor.ReportsUseID">
+            <summary>
+            True if the device sends Report IDs.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.ReportDescriptor.DeviceItems">
+            <summary>
+            Each physical HID device exposes a number of collections corresponding to logical devices.
+            For a simple joystick, gamepad, etc. there will typically be one <see cref="T:HidSharp.Reports.DeviceItem"/>. Dual gamepad adapters will have two.
+            Keyboards often have one for their keys and at least one for their volume and media controls.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Units.CurrentUnit">
+            <summary>
+            Defines the possible units of current.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.CurrentUnit.None">
+            <summary>
+            The unit system has no unit of current.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.CurrentUnit.Ampere">
+            <summary>
+            The unit of current is the Ampere.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Units.LengthUnit">
+            <summary>
+            Defines the possible units of length.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.LengthUnit.None">
+            <summary>
+            The unit system has no unit of length.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.LengthUnit.Centimeter">
+            <summary>
+            The unit of length is the centimeter (occurs in the SI Linear unit system).
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.LengthUnit.Radians">
+            <summary>
+            The unit of length is the radian (occurs in the SI Rotation unit system).
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.LengthUnit.Inch">
+            <summary>
+            The unit of length is the inch (occurs in the English Linear unit system).
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.LengthUnit.Degrees">
+            <summary>
+            The unit of length is the degree (occurs in the English Rotation unit system).
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Units.LuminousIntensityUnit">
+            <summary>
+            Defines the possible units of luminous intensity.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.LuminousIntensityUnit.None">
+            <summary>
+            The unit system has no unit of luminous intensity.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.LuminousIntensityUnit.Candela">
+            <summary>
+            The unit of luminous intensity is the candela.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Units.MassUnit">
+            <summary>
+            Defines the possible units of mass.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.MassUnit.None">
+            <summary>
+            The unit system has no unit of mass.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.MassUnit.Gram">
+            <summary>
+            The unit of mass is the gram (occurs in the SI Linear and Rotation unit systems).
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.MassUnit.Slug">
+            <summary>
+            The unit of mass is the slug (occurs in the English Linear and Rotation unit systems).
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Units.TemperatureUnit">
+            <summary>
+            Defines the possible units of temperature.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.TemperatureUnit.None">
+            <summary>
+            The unit system has no unit of temperature.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.TemperatureUnit.Kelvin">
+            <summary>
+            The unit of temperature is Kelvin (occurs in SI Linear and Rotation unit systems).
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.TemperatureUnit.Fahrenheit">
+            <summary>
+            The unit of temperature is Fahrenheit (occurs in English Linear and Rotation unit systems).
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Units.TimeUnit">
+            <summary>
+            Defines the possible units of time.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.TimeUnit.None">
+            <summary>
+            The unit system has no unit of time.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.TimeUnit.Seconds">
+            <summary>
+            The unit of time is seconds.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Units.Unit">
+            <summary>
+            Describes the units of a report value.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Reports.Units.Unit.#ctor(System.UInt32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HidSharp.Reports.Units.Unit"/> class.
+            </summary>
+            <param name="rawValue">The raw HID value describing the units.</param>
+        </member>
+        <member name="M:HidSharp.Reports.Units.Unit.DecodeExponent(System.UInt32)">
+            <summary>
+            Decodes an encoded HID unit exponent.
+            </summary>
+            <param name="value">The encoded exponent.</param>
+            <returns>The exponent.</returns>
+        </member>
+        <member name="M:HidSharp.Reports.Units.Unit.EncodeExponent(System.Int32)">
+            <summary>
+            Encodes an exponent in HID unit form.
+            </summary>
+            <param name="value">The exponent.</param>
+            <returns>The encoded exponent.</returns>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.System">
+            <summary>
+            Gets or sets the unit system.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.LengthExponent">
+            <summary>
+            Gets or sets the exponent of the report value's units of length.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.LengthUnit">
+            <summary>
+            Gets the units of length corresponding to <see cref="P:HidSharp.Reports.Units.Unit.System"/>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.MassExponent">
+            <summary>
+            Gets or sets the exponent of the report value's units of mass.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.MassUnit">
+            <summary>
+            Gets the units of mass corresponding to <see cref="P:HidSharp.Reports.Units.Unit.System"/>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.TimeExponent">
+            <summary>
+            Gets or sets the exponent of the report value's units of time.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.TimeUnit">
+            <summary>
+            Gets the units of time corresponding to <see cref="P:HidSharp.Reports.Units.Unit.System"/>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.TemperatureExponent">
+            <summary>
+            Gets or sets the exponent of the report value's units of temperature.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.TemperatureUnit">
+            <summary>
+            Gets the units of temperature corresponding to <see cref="P:HidSharp.Reports.Units.Unit.System"/>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.CurrentExponent">
+            <summary>
+            Gets or sets the exponent of the report value's units of current.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.CurrentUnit">
+            <summary>
+            Gets the units of current corresponding to <see cref="P:HidSharp.Reports.Units.Unit.System"/>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.LuminousIntensityExponent">
+            <summary>
+            Gets or sets the exponent of the report value's units of luminous intensity.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.LuminousIntensityUnit">
+            <summary>
+            Gets the units of luminous intensity corresponding to <see cref="P:HidSharp.Reports.Units.Unit.System"/>.
+            </summary>
+        </member>
+        <member name="P:HidSharp.Reports.Units.Unit.RawValue">
+            <summary>
+            Gets or sets the raw HID value describing the units.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Units.UnitSystem">
+            <summary>
+            Defines the possible unit systems.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.UnitSystem.None">
+            <summary>
+            No units are used.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.UnitSystem.SILinear">
+            <summary>
+            The SI Linear unit system uses centimeters for length, grams for mass, seconds for time,
+            Kelvin for temperature, Amperes for current, and candelas for luminous intensity.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.UnitSystem.SIRotation">
+            <summary>
+            The SI Rotation unit system uses radians for length, grams for mass, seconds for time,
+            Kelvin for temperature, Amperes for current, and candelas for luminous intensity.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.UnitSystem.EnglishLinear">
+            <summary>
+            The English Linear unit system uses inches for length, slugs for mass, seconds for time,
+            Fahrenheit for temperature, Amperes for current, and candelas for luminous intensity.
+            </summary>
+        </member>
+        <member name="F:HidSharp.Reports.Units.UnitSystem.EnglishRotation">
+            <summary>
+            The English Rotation unit system uses degrees for length, slugs for mass, seconds for time,
+            Fahrenheit for temperature, Amperes for current, and candelas for luminous intensity.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Reports.Usage">
+            <summary>
+            See http://www.usb.org/developers/hidpage for additional HID Usage Tables.
+            </summary>
+        </member>
+        <member name="T:HidSharp.SerialDevice">
+            <summary>
+            Represents a serial device.
+            </summary>
+        </member>
+        <member name="M:HidSharp.SerialDevice.Open">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.SerialDevice.Open(HidSharp.OpenConfiguration)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.SerialDevice.TryOpen(HidSharp.SerialStream@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.SerialDevice.TryOpen(HidSharp.OpenConfiguration,HidSharp.SerialStream@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.SerialDevice.GetFriendlyName">
+            <inheritdoc/>
+        </member>
+        <member name="M:HidSharp.SerialDevice.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:HidSharp.SerialStream">
+            <summary>
+            Communicates with a serial device.
+            </summary>
+        </member>
+        <member name="M:HidSharp.SerialStream.#ctor(HidSharp.SerialDevice)">
+            <exclude/>
+        </member>
+        <member name="P:HidSharp.SerialStream.Device">
+            <summary>
+            Gets the <see cref="T:HidSharp.SerialDevice"/> associated with this stream.
+            </summary>
+        </member>
+        <member name="T:HidSharp.Utility.BcdHelper">
+            <summary>
+            Converts USB device release numbers to and from binary-coded decimal.
+            </summary>
+        </member>
+        <member name="M:HidSharp.Utility.BcdHelper.FromVersion(System.Version)">
+            <summary>
+            Converts a USB device release number to binary-coded decimal.
+            </summary>
+            <param name="version">The device release number.</param>
+            <returns>The device release number, in binary-coded decimal.</returns>
+        </member>
+        <member name="M:HidSharp.Utility.BcdHelper.ToVersion(System.Int32)">
+            <summary>
+            Converts a USB device release number from binary-coded decimal.
+            </summary>
+            <param name="bcd">The device release number, in binary-coded decimal.</param>
+            <returns>The device release number.</returns>
+        </member>
+    </members>
+</doc>

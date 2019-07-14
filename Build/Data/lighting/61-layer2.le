@@ -1,0 +1,32 @@
+{
+    "GUID": "BDD42643-67BC-4a7b-9019-E2824F718442",
+    "Name": "61-layer2",
+    "LeCate": 610,
+    "Frames": [{
+        "Count": 1,
+        "Name": "frame0",
+        "Data": {
+            "23": "#ffffff",
+            "24": "#ffffff",
+            "25": "#ffffff",
+            "26": "#ffffff",
+            "27": "#ffffff",
+            "28": "#ffffff",
+            "29": "#ffffff",
+            "30": "#ffffff",
+            "31": "#ffffff",
+            "32": "#ffffff",
+            "33": "#ffffff",
+            "34": "#ffffff",
+            "99": "0xffffff",
+            "120": "0xffffff",
+            "121": "0xffffff"
+        }
+    }],
+    "LEConfigs": [{
+        "Keys": [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 121, 120, 99],
+        "Color": "0x0000ff",
+        "Type": 0,
+        "Count": 1
+    }]
+}
