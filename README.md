@@ -1,6 +1,6 @@
 # GK6X
 
-This project allows you to set keys, macros, and lighting for GK6X keyboards (GK64, GK84, GK61, etc). This can be used as an alternative to the official software http://www.jikedingzhi.com/downloadlist?driverID=41latest
+This tool allows you to set keys, macros, and lighting for GK6X keyboards (GK64, GK84, GK61, etc). This can be used as an alternative to the official software http://www.jikedingzhi.com/downloadlist?driverID=41latest
 
 It should work on Windows, Mac, and Linux (though only Windows has been tested so far).
 
