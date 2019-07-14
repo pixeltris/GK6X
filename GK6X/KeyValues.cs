@@ -364,7 +364,7 @@ namespace GK6X
         Comma = 0x02003600,
         Period = 0x02003700,
         /// <summary>
-        /// /?
+        /// '/' and '?'
         /// </summary>
         Slash = 0x02003800,
         RShift = 0x02000020,
@@ -493,8 +493,10 @@ namespace GK6X
         Lang4 = 0x02009300,// keycode 255 (w3:"Lang4")
         //F24 = 0x02009400,// keycode 135 (w3:"F24") (duplicate)
 
+        //0x0A020001 - ?
         ToggleLockWindowsKey = 0x0A020002,// Toggles a lock on the windows key
         ToggleBluetooth = 0x0A020007,
+        //0x0A020006 - ?
         ToggleBluetoothNoLED = 0x0A020008,// Toggles bluetooth (and disables the bluetooth LED until manually toggled)
 
         // These are the same as pressing the layer buttons (pressing the button whilst it's active takes you to the base layer)
@@ -507,11 +509,26 @@ namespace GK6X
         // 0x0A0700XX seem to do weird things with the lighting (resetting current lighting effect, disabling lighting for
         // as long as you hold down a key) - but these also seem to soft lock the keyboard shortly after, until you replug it
 
+        NextLightingEffect = 0x09010010,// NOTE: Only works on base layer
+        NextReactiveLightingEffect = 0x09010011,// NOTE: Only works on base layer
+        BrightnessUp = 0x09020001,
+        BrightnessDown = 0x09020002,
+        LightingSpeedDecrease = 0x09030002,
+        LightingSpeedIncrease = 0x09030001,
+        LightingPauseResume = 0x09060001,
+        ToggleLighting = 0x09060002,
+        // These values were found in the GK64 firmware, but don't seem to do anything?
+        //0x09010002 - ?
+        //0x09011307 - ?
+        //0x09010006 - ?
+        //0x09010008 - ?
+        //0x09010009 - ?
+        //0x09010004 - ?
+        //0x09010003 - ?
+        //0x09010005 - ?
+        //0x0901000A - ?
+
         // TODO: Find Bluetooth buttons 1-3
-        // TODO: Find keyboard LED brightness +/-
-        // TODO: Find keyboard LED effect speed +/-
-        // TODO: Find value for switching lighting effect modes (1-5)
-        // TODO: Find value for switching reactive lighting effect modes (1-5)
         // TODO: Find Fn value (if it even exists)
         // TODO: Find flash memory value (if it even exists)
     }

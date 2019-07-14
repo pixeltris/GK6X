@@ -672,7 +672,11 @@ namespace GK6X
                                     if (groups.Contains(GroupType.Lighting) && !string.IsNullOrEmpty(innerName))
                                     {
                                         currentGroup = GroupType.Lighting;
-                                        LightingEffect lightingEffect = new LightingEffect(innerName);
+                                        LightingEffect lightingEffect = null;
+                                        if (!LightingEffects.TryGetValue(innerName, out lightingEffect))
+                                        {
+                                            lightingEffect = new LightingEffect(innerName);
+                                        }
                                         if (lightingEffect.Load(keyboard))
                                         {
                                             LightingEffects[innerName] = lightingEffect;
