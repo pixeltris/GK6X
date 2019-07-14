@@ -5,6 +5,7 @@
 
 #GK6X
 /Build/UserData/*
+!/Build/UserData/Sample.txt
 /Build/*.exe
 /Build/*.pdb
 /Build/*.dll

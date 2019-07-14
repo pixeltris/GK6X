@@ -1,0 +1,39 @@
+# To see a list of the available keys see https://github.com/pixeltris/GK6X/blob/81761765f020962ed04ad68f8f0837facda7a1fa/GK6X/KeyValues.cs#L269
+
+# On GK84 boards the top right key is 'pause'. This sets all layers (and Fn) to change this to 'delete'.
+[Base,Layer1,Layer2,Layer3,FnLayer1,FnLayer2,FnLayer3]
+Pause:Delete
+
+# This is an example of a macro which types 'abcabc' and is bound to the Fn+B of layer1
+# The macro name is "MyMacro" which is defined below.
+[FnLayer1]
+B:Macro(MyMacro)
+
+# MyMacro = the name of the macro
+# 0 = milliseconds between each key action
+# RepeatXTimes = repeat the macro 'X' number of times (ReleaseKeyToStop / PressKeyAgainToStop are other options which can be used here - see https://github.com/pixeltris/GK6X/blob/81761765f020962ed04ad68f8f0837facda7a1fa/GK6X/Enums.cs#L41)
+# 2 = Number of times to repeat the macro (only used with RepeatXTimes)
+# - "Press" is a single action, any delay betwen the keys will occur after action has completed. The "Press"
+#   action presses the key down, then releases without any delay. The delay only occurs at the end of the action.
+# - "Down" / "Up" should be used if you want more control over the delays. Here are some example:
+#   Down:A:1000 <--- this holds down the A key for 1 second
+#   Up:A:1000 <--- this releases the A key and then waits 1 second
+#   Press:B:500 <--- this presses the B key (down/up) and then waits half a second
+#   Press:A+B+C:100 <--- this presses A+B+C then waits 100 milliseconds
+#   Press:A+B+C <--- this presses A+B+C then waits the duration defined in the macro header (in this case 0)
+[Macro(MyMacro,0,RepeatXTimes,2)]
+Press:A+B+C
+
+# You can use up to 32 lighting effects / static lighting on the base layer.
+# Other layers are limited to one lighting effect only (unless someone knows how to change the active lighting effect on other layers).
+# The following example sets the "Windmill", "Red light respiration", and "Starlish" lighting effects on the base layer.
+# The lighting effects can be found under /Data/lighting/*.le
+[Lighting(Windmill,Base)]
+[Lighting(Red light respiration,Base)]
+[Lighting(Starlish,Base)]
+
+# This uses static lighting to set the 'ASD' keys to red and 'W' to green. See the "WASD static.le" file to see how this works.
+[Lighting(WASD static,Layer1)]
+
+# If you're confused about the codes/numbers in the lighting effect files, use the command "dumpkeys null ex" to see the codes for your keyboard keys.
+# When creating your own lighting effects you can use the names of the keys as seen in the link at the top of this file.
