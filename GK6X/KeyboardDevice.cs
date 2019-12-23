@@ -1,4 +1,4 @@
-﻿using HidSharp;
+using HidSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -292,6 +292,9 @@ namespace GK6X
                     Buffer.BlockCopy(buffer, crcDataStartIndex, bytesToCrc, 0, bytesToCrc.Length);
                     ushort crc = Crc16.GetCrc(bytesToCrc);
 
+                    // Always 0?
+                    packet.WriteByte(0);
+
                     int tempIndex = packet.Index;
                     packet.Index = crcIndex;
                     packet.WriteUInt16(crc);
@@ -351,6 +354,7 @@ namespace GK6X
                     case OpCodes.LayerSetKeyPressLightingEffect:
                     case OpCodes.LayerSetKeyValues:
                     case OpCodes.LayerFnSetKeyValues:
+                    case OpCodes.LayerSetMacros:
                         offsetOffset = 2;
                         lengthOffset = 4;
                         break;
