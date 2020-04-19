@@ -105,4 +105,89 @@
 	"FWID": "0x90206412",
 	"Name": "GK64S RGB经典款",
 	"LEType": "0"
+},
+{
+	"ModelID": 656801832,
+	"FWID": "0x90217710",
+	"Name": "RANGER 89KB 插拔轴",
+	"LEType": "0"
+},
+{
+	"ModelID": 656801831,
+	"FWID": "0x90217710",
+	"Name": "RANGER 87KB 插拔轴",
+	"LEType": "0"
+},{
+	"ModelID": 656801829,
+	"FWID": "0x94217710",
+	"Name": "RANGER 89KB 插拔轴",
+	"LEType": "0"
+},{
+	"ModelID": 656801828,
+	"FWID": "0x94217710",
+	"Name": "RANGER 87KB 插拔轴",
+	"LEType": "0"
+},{
+	"ModelID": 655491180,
+	"FWID": "0x02106101",
+	"Name": "XK-86 RGB-US",
+	"LEType": "0"
+},{
+	"ModelID": 655491190,
+	"FWID": "0x02106102",
+	"Name": "XK-22 RGB",
+	"LEType": "0"
+},{
+	"ModelID": 655491229,
+	"FWID": "0x90210020",
+	"Name": "XK-86 RGBS",
+	"LEType": "0"
+},{
+	"ModelID": 655491231,
+	"FWID": "0x02106101",
+	"Name": "XK-86 RGB-MAC",
+	"LEType": "0"
+},{
+	"ModelID": 655491232,
+	"FWID": "0x02106101",
+	"Name": "XK-86 RGB-NE",
+	"LEType": "0"
+},{
+	"ModelID": 655491233,
+	"FWID": "0x02106101",
+	"Name": "XK-86 RGB-DE",
+	"LEType": "0"
+},{
+	"ModelID": 655491237,
+	"FWID": "0x02106101",
+	"Name": "XK-86 RGB-EN",
+	"LEType": "0"
+},{
+	"ModelID": 655491244,
+	"FWID": "0x02106103",
+	"Name": "XK-86 NOLED-US",
+	"LEType": "0"
+},{
+	"ModelID": 656801808,
+	"FWID": "0x90216820",
+	"Name": "XK-86 RGB 光轴",
+	"LEType": "0"
+},
+{
+	"ModelID": 656801807,
+	"FWID": "0x90216720",
+	"Name": "OK-167 RGBS",
+	"LEType": "0"
+},
+{
+	"ModelID": 656801809,
+	"FWID": "0x90217010",
+	"Name": "OK-170-67K 光轴",
+	"LEType": "0"
+},
+{
+	"ModelID": 656801827,
+	"FWID": "0x90216820",
+	"Name": "XK-86 RGB 光轴",
+	"LEType": "0"
 }]
