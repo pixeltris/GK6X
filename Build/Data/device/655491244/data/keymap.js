@@ -636,8 +636,8 @@
 	}
 },
 {
-	"KeyName": "Delete",
-	"Show": "Del",
+	"KeyName": "Mid Backspace",
+	"Show": "←",
 	"LogicCode": 112,
 	"LocationCode": 73,
 	"Position": {
@@ -826,7 +826,7 @@
 	}
 },
 {
-	"KeyName": "Return",
+	"KeyName": "Mid Enter",
 	"Show": "Enter",
 	"LogicCode": 113,
 	"LocationCode": 95,
@@ -965,7 +965,7 @@
 	}
 },
 {
-	"KeyName": "Space",
+	"KeyName": "Left Space",
 	"Show": "Space",
 	"LogicCode": 50,
 	"LocationCode": 115,
@@ -991,7 +991,7 @@
 	}
 },
 {
-	"KeyName": "Left Shift",
+	"KeyName": "Mid Shift",
 	"Show": "Shift",
 	"LogicCode": 115,
 	"LocationCode": 118,
@@ -1004,7 +1004,7 @@
 	}
 },
 {
-	"KeyName": "Right Backspace",
+	"KeyName": "Right Space",
 	"Show": "Space",
 	"LogicCode": 116,
 	"LocationCode": 119,
