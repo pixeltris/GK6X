@@ -531,6 +531,18 @@ namespace GK6X
         // TODO: Find Bluetooth buttons 1-3
         // TODO: Find Fn value (if it even exists)
         // TODO: Find flash memory value (if it even exists)
+
+        ///////////////////////////
+        // The following values are fake and not used by the firmware.
+        // These are used internally to represent non-standard keys
+        // that have the same label as a standard key.
+        ///////////////////////////
+
+        MBackspace = 0xFF002A00,
+        MEnter = 0xFF002800,
+        MCtrl = 0xFF000001,
+        MShift = 0xFF000020,
+        RSpace = 0xFF002C00,
     }
 
     public enum DriverValueType : ushort

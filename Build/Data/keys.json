@@ -1113,4 +1113,30 @@
             "Class": "l225"
         }]
     }]
+}, {
+    "_comment": "Fake mappings for non-standard keys that don't have a unique DriverValue",
+    "keytype": "_virtual",
+    "keys": [{
+        "linekeys": [{
+            "Name": "Middle Backspace",
+            "LogicCode": 112,
+            "DriverValue": "0xFF002A00"
+        }, {
+            "Name": "Middle Enter",
+            "LogicCode": 113,
+            "DriverValue": "0xFF002800"
+        }, {
+            "Name": "Middle (Left) Control",
+            "LogicCode": 114,
+            "DriverValue": "0xFF000001"
+        }, {
+            "Name": "Middle (Right) Shift",
+            "LogicCode": 115,
+            "DriverValue": "0xFF000020"
+        }, {
+            "Name": "Right Space",
+            "LogicCode": 116,
+            "DriverValue": "0xFF002C00"
+        }]
+    }]
 }]
