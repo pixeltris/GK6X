@@ -27,17 +27,12 @@ namespace GK6X
 
         public class Layer
         {
-            public Dictionary<uint, uint> Keys = new Dictionary<uint, uint>();
-            public Dictionary<string, uint> NamedKeys = new Dictionary<string, uint>();
+            public Dictionary<string, uint> Keys = new Dictionary<string, uint>();
 
             public uint GetKey(KeyboardState.Key key)
             {
                 uint result;
-                if (NamedKeys.TryGetValue(key.DriverValueName, out result))
-                {
-                    return result;
-                }
-                if (Keys.TryGetValue(key.DriverValue, out result))
+                if (Keys.TryGetValue(key.DriverValueName.ToLower(), out result))
                 {
                     return result;
                 }
@@ -449,19 +444,20 @@ namespace GK6X
 
         private bool TryParseDriverValue(string str, out DriverValue result)
         {
-            bool isNamedKey;
-            return TryParseDriverValue(str, out result, out isNamedKey);
+            string name;
+            return TryParseDriverValue(str, out result, out name);
         }
 
-        private bool TryParseDriverValue(string str, out DriverValue result, out bool isNamedKey)
+        private bool TryParseDriverValue(string str, out DriverValue result, out string name)
         {
-            isNamedKey = false;
             const bool ignoreCase = true;
 
+            name = str;
             string realKeyName;
             if (KeyAliases.TryGetValue(str, out realKeyName))
             {
                 str = realKeyName;
+                name = str;
             }
 
             if (Enum.TryParse(str, ignoreCase, out result))
@@ -477,7 +473,6 @@ namespace GK6X
                 if (!string.IsNullOrEmpty(endStr) && int.TryParse(endStr, out duplicateKeyId) && duplicateKeyId > 1 &&
                     Enum.TryParse(startStr, ignoreCase, out result))
                 {
-                    isNamedKey = true;
                     return true;
                 }
             }
@@ -842,7 +837,6 @@ namespace GK6X
                                     string srcKey = splitted[0].Trim();
                                     string[] keysSplittedDst = splitted[1].Split(new char[] { '+' }, StringSplitOptions.RemoveEmptyEntries);
 
-                                    bool isNamedKey = false;
                                     string srcName = null;
                                     uint srcValue = 0;
                                     uint dstValue = 0;
@@ -854,7 +848,7 @@ namespace GK6X
                                     else
                                     {
                                         DriverValue value;
-                                        if (TryParseDriverValue(srcKey, out value, out isNamedKey))
+                                        if (TryParseDriverValue(srcKey, out value, out srcName))
                                         {
                                             srcValue = (uint)value;
                                         }
@@ -907,14 +901,7 @@ namespace GK6X
                                         }
                                         foreach (Layer currentLayer in currentLayers)
                                         {
-                                            if (isNamedKey)
-                                            {
-                                                currentLayer.NamedKeys[srcName] = dstValue;
-                                            }
-                                            else
-                                            {
-                                                currentLayer.Keys[srcValue] = dstValue;
-                                            }
+                                            currentLayer.Keys[srcName.ToLower()] = dstValue;
                                         }
                                     }
                                 }
