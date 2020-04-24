@@ -15,6 +15,7 @@ namespace GK6X
         public Dictionary<KeyboardLayer, Layer> Layers = new Dictionary<KeyboardLayer, Layer>();
         public Dictionary<string, Macro> Macros = new Dictionary<string, Macro>();
         public Dictionary<string, LightingEffect> LightingEffects = new Dictionary<string, LightingEffect>();
+        public Dictionary<string, string> KeyAliases = new Dictionary<string, string>();
         /// <summary>
         /// If true all lighting data on the keyboard will be cleared (this is different to not providing any
         /// lighting which will just skip sending lighting data)
@@ -27,15 +28,20 @@ namespace GK6X
         public class Layer
         {
             public Dictionary<uint, uint> Keys = new Dictionary<uint, uint>();
+            public Dictionary<string, uint> NamedKeys = new Dictionary<string, uint>();
 
-            public uint GetKey(uint key)
+            public uint GetKey(KeyboardState.Key key)
             {
                 uint result;
-                if (!Keys.TryGetValue(key, out result))
+                if (NamedKeys.TryGetValue(key.DriverValueName, out result))
                 {
-                    return KeyValues.UnusedKeyValue;
+                    return result;
                 }
-                return result;
+                if (Keys.TryGetValue(key.DriverValue, out result))
+                {
+                    return result;
+                }
+                return KeyValues.UnusedKeyValue;
             }
         }
 
@@ -47,6 +53,7 @@ namespace GK6X
             public byte RepeatCount;
             public ushort DefaultDelay;
             /// <summary>
+            /// 
             /// If true a delay will be used on the last action. This can be useful where
             /// the macro is to be repeated multiple times and a constant delay is desired.
             /// </summary>
@@ -73,6 +80,8 @@ namespace GK6X
 
         public class LightingEffect
         {
+            private UserDataFile owner;
+
             public int Id;
             public string Name;
             public LightingEffectType Type;
@@ -119,8 +128,9 @@ namespace GK6X
                 public HashSet<int> KeyCodes = new HashSet<int>();
             }
 
-            public LightingEffect(string name)
+            public LightingEffect(UserDataFile owner, string name)
             {
+                this.owner = owner;
                 Id = -1;
                 Name = name;
             }
@@ -234,9 +244,10 @@ namespace GK6X
                 }
             }
 
-            private bool TryGetKeyLocationCode(KeyboardState keyboard, object keyObj, out int key)
+            private bool TryGetKeyLocationCode(KeyboardState keyboard, object keyObj, out int locationCode)
             {
-                key = -1;
+                locationCode = -1;
+                KeyboardState.Key key;
                 if (keyObj is string)
                 {
                     string keyStr = keyObj as string;
@@ -245,24 +256,26 @@ namespace GK6X
                     {
                         uint driverValueUInt;
                         if (uint.TryParse(keyStr.Substring(2), NumberStyles.HexNumber, null, out driverValueUInt) &&
-                            keyboard.DriverValueToLocationCode.TryGetValue(driverValueUInt, out key))
+                            keyboard.KeysByDriverValue.TryGetValue(driverValueUInt, out key))
                         {
+                            locationCode = key.LocationCode;
                             return true;
                         }
                     }
-                    else if (int.TryParse(keyStr, out key))
+                    else if (int.TryParse(keyStr, out locationCode))
                     {
                         return true;
                     }
-                    else if (Enum.TryParse(keyStr, true, out driverValue) &&
-                        keyboard.DriverValueToLocationCode.TryGetValue((uint)driverValue, out key))
+                    else if (owner.TryParseDriverValue(keyStr, out driverValue) &&
+                        keyboard.KeysByDriverValue.TryGetValue((uint)driverValue, out key))
                     {
+                        locationCode = key.LocationCode;
                         return true;
                     }
                 }
                 else if (keyObj is long)
                 {
-                    key = (int)((long)keyObj);
+                    locationCode = (int)((long)keyObj);
                     return true;
                 }
                 return false;
@@ -430,7 +443,45 @@ namespace GK6X
             None,
             Layer,
             Macro,
-            Lighting
+            Lighting,
+            KeyAlias
+        }
+
+        private bool TryParseDriverValue(string str, out DriverValue result)
+        {
+            bool isNamedKey;
+            return TryParseDriverValue(str, out result, out isNamedKey);
+        }
+
+        private bool TryParseDriverValue(string str, out DriverValue result, out bool isNamedKey)
+        {
+            isNamedKey = false;
+            const bool ignoreCase = true;
+
+            string realKeyName;
+            if (KeyAliases.TryGetValue(str, out realKeyName))
+            {
+                str = realKeyName;
+            }
+
+            if (Enum.TryParse(str, ignoreCase, out result))
+            {
+                return true;
+            }
+            int underscoreIndex = str.IndexOf('_');
+            if (underscoreIndex > 0)
+            {
+                int duplicateKeyId;
+                string startStr = str.Substring(0, underscoreIndex);
+                string endStr = str.Substring(underscoreIndex + 1).Trim();
+                if (!string.IsNullOrEmpty(endStr) && int.TryParse(endStr, out duplicateKeyId) && duplicateKeyId > 1 &&
+                    Enum.TryParse(startStr, ignoreCase, out result))
+                {
+                    isNamedKey = true;
+                    return true;
+                }
+            }
+            return false;
         }
 
         private Layer FindOrAddLayer(KeyboardLayer layer, bool fn)
@@ -518,6 +569,7 @@ namespace GK6X
                 return null;
             }
             UserDataFile result = new UserDataFile();
+            result.Load(keyboard, file, GroupType.KeyAlias);
             result.Load(keyboard, file, GroupType.Lighting, GroupType.Macro);
             result.Load(keyboard, file, GroupType.Layer);
             return result;
@@ -580,11 +632,25 @@ namespace GK6X
                         {
                             switch (groupName.ToLower())
                             {
+                                case "keyalias":
+                                    if (groups.Contains(GroupType.KeyAlias))
+                                    {
+                                        currentGroup = GroupType.KeyAlias;
+                                    }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
+                                    }
+                                    break;
                                 case "base":
                                     if (groups.Contains(GroupType.Layer))
                                     {
                                         currentGroup = GroupType.Layer;
                                         currentLayers.Add(FindOrAddLayer(KeyboardLayer.Base, false));
+                                    }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
                                     }
                                     break;
                                 case "layer1":
@@ -593,12 +659,20 @@ namespace GK6X
                                         currentGroup = GroupType.Layer;
                                         currentLayers.Add(FindOrAddLayer(KeyboardLayer.Layer1, false));
                                     }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
+                                    }
                                     break;
                                 case "layer2":
                                     if (groups.Contains(GroupType.Layer))
                                     {
                                         currentGroup = GroupType.Layer;
                                         currentLayers.Add(FindOrAddLayer(KeyboardLayer.Layer2, false));
+                                    }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
                                     }
                                     break;
                                 case "layer3":
@@ -607,12 +681,20 @@ namespace GK6X
                                         currentGroup = GroupType.Layer;
                                         currentLayers.Add(FindOrAddLayer(KeyboardLayer.Layer3, false));
                                     }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
+                                    }
                                     break;
                                 case "fnbase":
                                     if (groups.Contains(GroupType.Layer))
                                     {
                                         currentGroup = GroupType.Layer;
                                         currentLayers.Add(FindOrAddLayer(KeyboardLayer.Base, true));
+                                    }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
                                     }
                                     break;
                                 case "fnlayer1":
@@ -621,6 +703,10 @@ namespace GK6X
                                         currentGroup = GroupType.Layer;
                                         currentLayers.Add(FindOrAddLayer(KeyboardLayer.Layer1, true));
                                     }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
+                                    }
                                     break;
                                 case "fnlayer2":
                                     if (groups.Contains(GroupType.Layer))
@@ -628,12 +714,20 @@ namespace GK6X
                                         currentGroup = GroupType.Layer;
                                         currentLayers.Add(FindOrAddLayer(KeyboardLayer.Layer2, true));
                                     }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
+                                    }
                                     break;
                                 case "fnlayer3":
                                     if (groups.Contains(GroupType.Layer))
                                     {
                                         currentGroup = GroupType.Layer;
                                         currentLayers.Add(FindOrAddLayer(KeyboardLayer.Layer3, true));
+                                    }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
                                     }
                                     break;
                                 case "macro":
@@ -667,6 +761,10 @@ namespace GK6X
                                             currentMacro.RepeatCount = 1;
                                         }
                                     }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
+                                    }
                                     break;
                                 case "lighting":
                                     if (groups.Contains(GroupType.Lighting) && !string.IsNullOrEmpty(innerName))
@@ -675,7 +773,7 @@ namespace GK6X
                                         LightingEffect lightingEffect = null;
                                         if (!LightingEffects.TryGetValue(innerName, out lightingEffect))
                                         {
-                                            lightingEffect = new LightingEffect(innerName);
+                                            lightingEffect = new LightingEffect(this, innerName);
                                         }
                                         if (lightingEffect.Load(keyboard))
                                         {
@@ -694,6 +792,10 @@ namespace GK6X
                                         {
                                             Program.Log("Failed to load lighting effect '" + innerName + "'");
                                         }
+                                    }
+                                    else
+                                    {
+                                        currentGroup = GroupType.None;
                                     }
                                     break;
                                 case "nolighting":
@@ -721,30 +823,40 @@ namespace GK6X
                 {
                     switch (currentGroup)
                     {
+                        case GroupType.KeyAlias:
+                            {
+                                string[] splitted = line.Split(new char[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
+                                if (splitted.Length > 1)
+                                {
+                                    string aliasKeyName = splitted[0].Trim();
+                                    string realKeyName = splitted[1].Trim();
+                                    KeyAliases[aliasKeyName] = realKeyName;
+                                }
+                            }
+                            break;
                         case GroupType.Layer:
                             {
                                 string[] splitted = line.Split(new char[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
                                 if (splitted.Length > 1)
                                 {
-                                    string[] keysSplittedSrc = splitted[0].Split(new char[] { '+' }, StringSplitOptions.RemoveEmptyEntries);
+                                    string srcKey = splitted[0].Trim();
                                     string[] keysSplittedDst = splitted[1].Split(new char[] { '+' }, StringSplitOptions.RemoveEmptyEntries);
 
+                                    bool isNamedKey = false;
+                                    string srcName = null;
                                     uint srcValue = 0;
                                     uint dstValue = 0;
 
-                                    foreach (string str in keysSplittedSrc)
+                                    if (srcKey.StartsWith("0x"))
                                     {
-                                        if (str.StartsWith("0x"))
+                                        uint.TryParse(srcKey, NumberStyles.HexNumber, null, out srcValue);
+                                    }
+                                    else
+                                    {
+                                        DriverValue value;
+                                        if (TryParseDriverValue(srcKey, out value, out isNamedKey))
                                         {
-                                            uint.TryParse(str, NumberStyles.HexNumber, null, out srcValue);
-                                        }
-                                        else
-                                        {
-                                            DriverValue value;
-                                            if (Enum.TryParse(str, out value))
-                                            {
-                                                srcValue = (uint)value;
-                                            }
+                                            srcValue = (uint)value;
                                         }
                                     }
 
@@ -778,7 +890,7 @@ namespace GK6X
                                             else
                                             {
                                                 DriverValue value;
-                                                if (Enum.TryParse(str, out value))
+                                                if (TryParseDriverValue(str, out value))
                                                 {
                                                     switch (KeyValues.GetKeyType((uint)value))
                                                     {
@@ -795,7 +907,14 @@ namespace GK6X
                                         }
                                         foreach (Layer currentLayer in currentLayers)
                                         {
-                                            currentLayer.Keys[srcValue] = dstValue;
+                                            if (isNamedKey)
+                                            {
+                                                currentLayer.NamedKeys[srcName] = dstValue;
+                                            }
+                                            else
+                                            {
+                                                currentLayer.Keys[srcValue] = dstValue;
+                                            }
                                         }
                                     }
                                 }
@@ -849,7 +968,7 @@ namespace GK6X
                                             }
 
                                             DriverValue value;
-                                            if (Enum.TryParse(str, out value))
+                                            if (TryParseDriverValue(str, out value))
                                             {
                                                 switch (value)
                                                 {

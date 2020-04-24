@@ -47,7 +47,11 @@ namespace GK6X
 
         public Dictionary<int, Key> KeysByLocationCode = new Dictionary<int, Key>();
         public Dictionary<int, Key> KeysByLogicCode = new Dictionary<int, Key>();
-        public Dictionary<uint, int> DriverValueToLocationCode = new Dictionary<uint, int>();
+        public Dictionary<uint, Key> KeysByDriverValue = new Dictionary<uint, Key>();
+        /// <summary>
+        /// A unique name for every key. Keys with duplicate DriverValue entries will be given seperate names here.
+        /// </summary>
+        public Dictionary<string, Key> KeysByDriverValueName = new Dictionary<string, Key>();
 
         public static bool Load()
         {
@@ -214,7 +218,8 @@ namespace GK6X
         {
             KeysByLocationCode.Clear();
             KeysByLogicCode.Clear();
-            DriverValueToLocationCode.Clear();
+            KeysByDriverValue.Clear();
+            KeysByDriverValueName.Clear();
 
             string keysPath = Path.Combine(Program.DataBasePath, "device", ModelId.ToString(), "data", "keymap.js");
             if (File.Exists(keysPath))
@@ -274,7 +279,18 @@ namespace GK6X
                         }
                         KeysByLocationCode[key.LocationCode] = key;
                         KeysByLogicCode[key.LogicCode] = key;
-                        DriverValueToLocationCode[key.DriverValue] = key.LocationCode;
+                        KeysByDriverValue[key.DriverValue] = key;
+                        for (int i = 1; i < int.MaxValue; i++)
+                        {
+                            string driverValueName = ((DriverValue)key.DriverValue).ToString() + (i > 1 ? "_" + i : string.Empty);
+                            if (!KeysByDriverValueName.ContainsKey(driverValueName))
+                            {
+                                key.DriverValueName = driverValueName;
+                                KeysByDriverValueName.Add(driverValueName, key);
+                                break;
+                            }
+                        }
+
                     }
                 }
             }
@@ -309,6 +325,10 @@ namespace GK6X
             public int LocationCode;
             public KeyRect Position;
             public uint DriverValue;
+            /// <summary>
+            /// Unique for a given key, even if there are keys with duplicate driver values
+            /// </summary>
+            public string DriverValueName;
         }
     }
 

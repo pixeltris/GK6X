@@ -152,7 +152,7 @@ namespace GK6X
                                                         KeyboardState.Key key = device.State.GetKeyByLogicCode(j);
                                                         if (key != null)
                                                         {
-                                                            driverValues[j] = userDataLayer.GetKey(key.DriverValue);
+                                                            driverValues[j] = userDataLayer.GetKey(key);
                                                         }
                                                     }
                                                 }
@@ -221,7 +221,7 @@ namespace GK6X
                                         {
                                             if (targetRow == -1 || row == targetRow)
                                             {
-                                                Log(key.KeyName + " = " + (DriverValue)key.DriverValue +
+                                                Log(key.KeyName + " = " + key.DriverValueName +
                                                     (showLocationCodeInfo ? " (" + key.LocationCode + ")" : string.Empty));
                                             }
                                             foundKey = true;
