@@ -1,0 +1,23 @@
+{
+    "GUID": "",
+    "ModeIndex": 1,
+    "Name": "标准配置",
+    "Active": 0,
+    "DriverLE": [{
+            "GUID": "D6F9B55C-8B54-485d-8C16-EDCD691D74AE",
+            "Name": "SK87S-上下灯全亮"
+        }, {
+            "GUID": "CEDAA65F-E9AB-4ced-BE76-974E4F56DE4B",
+            "Name": "SK87S-RGB渐变"
+        }, {
+            "GUID": "E38935F8-621F-4af9-989F-73F29FE93675",
+            "Name": "SK87S-纯绿"
+        }, {
+            "GUID": "0795CBB3-C232-4914-9424-E614E4C9F688",
+            "Name": "SK87S-上下灯RGB变换"
+        }, {
+            "GUID": "51F4BB4C-82D4-442f-913C-715EFF89853C",
+            "Name": "SK87S-彩虹"
+        }
+    ]
+}

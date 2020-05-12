@@ -214,12 +214,30 @@ namespace GK6X
             }
         }
 
+        /// <summary>
+        /// Returns a DriverValue where each index specifies the LogicCode
+        /// </summary>
+        private uint[] GetDefaultProfileDriverValues()
+        {
+            string profilePath = Path.Combine(Program.DataBasePath, "device", ModelId.ToString(), "data", "profile.json");
+            if (File.Exists(profilePath))
+            {
+                Dictionary<string, object> modelData = Json.Deserialize(File.ReadAllText(profilePath)) as Dictionary<string, object>;
+                uint[] result = Enumerable.Repeat(KeyValues.UnusedKeyValue, short.MaxValue).ToArray();// Buffer size is unknown at this point
+                SetupDriverKeySetBuffer(modelData, "KeySet", result);
+                return result;
+            }
+            return null;
+        }
+
         private void LoadKeys()
         {
             KeysByLocationCode.Clear();
             KeysByLogicCode.Clear();
             KeysByDriverValue.Clear();
             KeysByDriverValueName.Clear();
+
+            uint[] driverValues = GetDefaultProfileDriverValues();
 
             string keysPath = Path.Combine(Program.DataBasePath, "device", ModelId.ToString(), "data", "keymap.js");
             if (File.Exists(keysPath))
@@ -264,16 +282,25 @@ namespace GK6X
                                 key.Position.Height = (int)val;
                             }
                         }
-                        KeyValues.Key allKeysKey;
-                        if (KeyValues.KeysByLogicCode.TryGetValue(key.LogicCode, out allKeysKey))
+                        if (key.LogicCode >= 0 && driverValues[key.LogicCode] != KeyValues.UnusedKeyValue)
                         {
-                            key.DriverValue = allKeysKey.DriverValue;
+                            key.DriverValue = driverValues[key.LogicCode];
                         }
                         else
                         {
-                            if (key.KeyName != "Fn" && key.KeyName != "Fnx")
+                            // LogicCode of -1 is assumed to be the Fn key
+                            if (key.LogicCode > 0)
                             {
-                                Debug.WriteLine("Couldn't find DriverValue for key '" + key.KeyName + "'");
+                                KeyValues.Key allKeysKey;
+                                if (KeyValues.KeysByLogicCode.TryGetValue(key.LogicCode, out allKeysKey))
+                                {
+                                    key.DriverValue = allKeysKey.DriverValue;
+                                }
+                                else
+                                {
+                                    Debug.WriteLine("Couldn't find DriverValue for key '" + key.KeyName + "' logicCode: " + key.LogicCode +
+                                        " locationCode: " + key.LocationCode + " modelId: " + ModelId + " modelName: " + ModelName);
+                                }
                             }
                             key.DriverValue = KeyValues.UnusedKeyValue;
                         }

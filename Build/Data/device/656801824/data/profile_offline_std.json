@@ -1,0 +1,28 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [
+		{
+			"GUID": "D0E0FEC0-BFDE-48fb-B26E-6A8AFD391B9A",
+			"Name": "SK84S-PTIR-A"
+		},
+		{
+			"GUID": "F6743740-C759-4843-82BA-91584E9ACD90",
+			"Name": "SK84S-PTIR-B"
+		},
+		{
+			"GUID": "D1EE3B44-1F93-46cf-87E6-7D7AC132FD2E",
+			"Name": "SK84S-PTIR-C"
+		},
+		{
+			"GUID": "7AF6BF8E-3D55-46a6-B53D-25F280022967",
+			"Name": "SK84S-PTIR-D"
+		},
+		{
+			"GUID": "1EC1A2B9-A5A8-4c62-9268-B9498E7EF3C7",
+			"Name": "SK84S-PTIR-E"
+		}
+	]
+}

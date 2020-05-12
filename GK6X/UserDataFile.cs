@@ -243,6 +243,7 @@ namespace GK6X
             {
                 locationCode = -1;
                 KeyboardState.Key key;
+                string name;
                 if (keyObj is string)
                 {
                     string keyStr = keyObj as string;
@@ -261,8 +262,8 @@ namespace GK6X
                     {
                         return true;
                     }
-                    else if (owner.TryParseDriverValue(keyStr, out driverValue) &&
-                        keyboard.KeysByDriverValue.TryGetValue((uint)driverValue, out key))
+                    else if (owner.TryParseDriverValue(keyStr, out driverValue, out name) &&
+                        keyboard.KeysByDriverValueName.TryGetValue(name, out key))
                     {
                         locationCode = key.LocationCode;
                         return true;

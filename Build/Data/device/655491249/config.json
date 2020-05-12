@@ -83,19 +83,19 @@
 	},{
 		"title_lang": "le_oper",
 		"items":[{
-		  "key": "Fn+]/|",
+		  "key": "Fn+]/[",
 		  "desc_lang": "change_std_le"
 		},{
-		  "key": "Fn+[",
+		  "key": "Fn+↑",
 		  "desc_lang": "change_le_brightness_inc"
 		},{
-		  "key": "Fn+]",
+		  "key": "Fn+↓",
 		  "desc_lang": "change_le_brightness_dec"
 		},{
-		  "key": "Fn+↑",
+		  "key": "Fn+→",
 		  "desc_lang": "change_le_speed_inc"
 		},{
-		  "key": "Fn+↓",
+		  "key": "Fn+←",
 		  "desc_lang": "change_le_speed_dec"
 		}]
 	},{

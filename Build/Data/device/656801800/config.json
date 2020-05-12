@@ -9,7 +9,7 @@
   "IsFnx": false,
   "FuncTable":[{
 	  "id": 0,
-	  "name": "ÉèÖÃ",
+	  "name": "è®¾ç½®",
 	  "lang": "menu_config_kb",
 	  "icon": "el-icon-kb-keyboard",
 	  "component": "/ConfigKB",
@@ -17,7 +17,7 @@
 	  "disable": false
 	},{
 	  "id": 1,
-	  "name": "µÆĞ§¿â",
+	  "name": "ç¯æ•ˆåº“",
 	  "lang": "menu_le_lib",
 	  "icon": "el-icon-kb-light",
 	  "component": "/Le",
@@ -25,7 +25,7 @@
 	  "disable": false
 	},{
 	  "id": 2,
-	  "name": "ºê¹ÜÀí",
+	  "name": "å®ç®¡ç†",
 	  "icon": "el-icon-document",
 	  "lang": "menu_macro_lib",
 	  "component": "/Macro",
@@ -33,27 +33,27 @@
 	  "disable": false
 	}],
 	"QuickSelect":[{
-	  "title": "µÚÒ»ĞĞ",
+	  "title": "ç¬¬ä¸€è¡Œ",
 	  "lang": "line_first",
 	  "lcodes": [2,3,4,5,6,7,8,9,10,11,0,14,12,13]
 	},{
-	  "title": "µÚ¶şĞĞ",
+	  "title": "ç¬¬äºŒè¡Œ",
 	  "lang": "line_second",
 	  "lcodes": [26,31,32,33,24,27,28,30,25,29,22,34,35,36]
 	},{
-	  "title": "µÚÈıĞĞ",
+	  "title": "ç¬¬ä¸‰è¡Œ",
 	  "lang": "line_third",
 	  "lcodes": [46,48,49,50,51,52,53,54,47,58,55,56,44]
 	},{
-	  "title": "µÚËÄĞĞ",
+	  "title": "ç¬¬å››è¡Œ",
 	  "lang": "line_fourth",
 	  "lcodes": [66,80,72,70,74,73,71,69,68,75,76,77]
 	},{
-	  "title": "µÚÎåĞĞ",
+	  "title": "ç¬¬äº”è¡Œ",
 	  "lang": "line_fifth",
 	  "lcodes": [102,99,88,90,89,100,98,94]
 	},{
-	  "title": "µ×µÆ",
+	  "title": "åº•ç¯",
 	  "lang": "line_bottom",
 	  "lcodes": [17,39,61,18,40,62]
 	}],
@@ -84,10 +84,10 @@
 		  "key": "Fn+]",
 		  "desc_lang": "change_le_brightness_dec"
 		},{
-		  "key": "Fn+¡ü",
+		  "key": "Fn+â†‘",
 		  "desc_lang": "change_le_speed_inc"
 		},{
-		  "key": "Fn+¡ı",
+		  "key": "Fn+â†“",
 		  "desc_lang": "change_le_speed_dec"
 		}]
 	},{

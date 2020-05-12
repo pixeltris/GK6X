@@ -71,6 +71,10 @@
 	},{
 	  "title": "LOGO",
 	  "lang": "line_logo",
+	  "lcodes": [60,126]
+	},{
+	  "title": "底灯",
+	  "lang": "line_bottom",
 	  "lcodes": [132,133,134,135,136,137]
 	}],
     "UserManual":[{
@@ -91,19 +95,19 @@
 	},{
 		"title_lang": "le_oper",
 		"items":[{
-		  "key": "Fn+]/|",
+		  "key": "Fn+]/[",
 		  "desc_lang": "change_std_le"
 		},{
-		  "key": "Fn+[",
+		  "key": "Fn+↑",
 		  "desc_lang": "change_le_brightness_inc"
 		},{
-		  "key": "Fn+]",
+		  "key": "Fn+↓",
 		  "desc_lang": "change_le_brightness_dec"
 		},{
-		  "key": "Fn+↑",
+		  "key": "Fn+→",
 		  "desc_lang": "change_le_speed_inc"
 		},{
-		  "key": "Fn+↓",
+		  "key": "Fn+←",
 		  "desc_lang": "change_le_speed_dec"
 		}]
 	},{

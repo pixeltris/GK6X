@@ -59,9 +59,9 @@
 	}
 },
 {
-	"KeyName": "Right Control",
-	"Show": "Ctrl",
-	"LogicCode": 6,
+	"KeyName": "Right Alt",
+	"Show": "Alt",
+	"LogicCode": 8,
 	"LocationCode": 99,
 	"Position": {
 		"Left": 794,

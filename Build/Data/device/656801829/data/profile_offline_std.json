@@ -1,0 +1,26 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [{
+		"GUID": "26C232E5-B89B-4b17-BF1D-75DC61351A93",
+		"Name": "全亮绿光"
+	},
+	{
+		"GUID": "C90481D7-B35E-4a4a-83CA-B65798964DDB",
+		"Name": "渐变"
+	},
+	{
+		"GUID":"161051F5-6014-454e-9A4F-7A3B67BA905B",
+		"Name":"KB-6-1"
+	},
+	{
+		"GUID":"48195C54-9E36-4066-A266-85E20527EF83",
+		"Name":"KB-6-C"
+	},
+	{
+		"GUID":"6256FDA1-D694-48b3-B441-0BE885AA88A1",
+		"Name":"KB-6-B"
+	}]
+}

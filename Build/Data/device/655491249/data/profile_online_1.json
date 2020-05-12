@@ -13,8 +13,8 @@
 		"Name": "Idle"
 	},
 	"ModeLE": {
-		"GUID": "CA48BB92-593B-4891-A52F-41E8FB04BF8B",
-		"Name": "同步RGB渐变",
+		"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+		"Name": "RGB渐变",
 		"LESet": {
 			"LEModel": 241,
 			"LESubModel": 1,
@@ -141,11 +141,11 @@
 				"Name": ""
 			}
 		}, {
-			"Index": 6,
+			"Index": 8,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02000010",
+			"DriverValue": "0x02000040",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

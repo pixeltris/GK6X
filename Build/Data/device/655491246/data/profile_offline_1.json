@@ -90,10 +90,10 @@
 			}
 		}, {
 			"Index": 7,
-			"MenuPID": 7,
-			"MenuID": 3,
-			"MenuName": "Layer2",
-			"DriverValue": "0x0a070003",
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "板载3层",
+			"DriverValue": "0x0a070004",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -652,7 +652,7 @@
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02000001"
-		}, {
+		},{
 			"Index": 3,
 			"MenuPID": "",
 			"MenuID": "",
@@ -686,8 +686,8 @@
 			"Index": 10,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000400"
+			"MenuName": "播放/暂停",
+			"DriverValue": "0x030000CD"
 		}, {
 			"Index": 11,
 			"MenuPID": "",
@@ -704,26 +704,26 @@
 			"Index": 13,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000700"
+			"MenuName": "下一曲",
+			"DriverValue": "0x030000B5"
 		}, {
 			"Index": 15,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000900"
+			"MenuName": "静音",
+			"DriverValue": "0x030000E2"
 		}, {
 			"Index": 16,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000A00"
+			"MenuName": "音量-",
+			"DriverValue": "0x030000EA"
 		}, {
 			"Index": 17,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000B00"
+			"MenuName": "音量+",
+			"DriverValue": "0x030000E9"
 		}, {
 			"Index": 18,
 			"MenuPID": "",
@@ -770,8 +770,8 @@
 			"Index": 28,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02001600"
+			"MenuName": "上一曲",
+			"DriverValue": "0x030000B6"
 		}, {
 			"Index": 29,
 			"MenuPID": "",

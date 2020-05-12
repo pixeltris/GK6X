@@ -74,16 +74,6 @@
 				"Name": ""
 			}
 		}, {
-			"Index": 6,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000010",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
 			"Index": 7,
 			"MenuPID": "",
 			"MenuID": "",
@@ -93,7 +83,17 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},{
+			"Index": 8,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02000040",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		},{
 			"Index": 10,
 			"MenuPID": "",
 			"MenuID": "",

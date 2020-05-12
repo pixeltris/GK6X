@@ -71,7 +71,7 @@
 	},{
 		"title_lang": "le_oper",
 		"items":[{
-		  "key": "Fn+]/|",
+		  "key": "Fn+]/\\",
 		  "desc_lang": "change_std_le"
 		},{
 		  "key": "Fn+[",

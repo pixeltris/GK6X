@@ -136,11 +136,11 @@
 				"Name": ""
 			}
 		}, {
-			"Index": 6,
+			"Index": 8,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02000010",
+			"DriverValue": "0x02000040",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

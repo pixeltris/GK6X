@@ -978,6 +978,80 @@
             "LangTitle": "key_screenshot",
             "Class": "l225"
         }]
+    }, {
+        "linekeys": [{
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F13",
+            "LangTitle": "key_f13",
+            "DriverValue": "0x02006800"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F14",
+            "LangTitle": "key_f14",
+            "DriverValue": "0x02006900"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F15",
+            "LangTitle": "key_f15",
+            "DriverValue": "0x02006A00"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F16",
+            "LangTitle": "key_f16",
+            "DriverValue": "0x02006B00"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F17",
+            "LangTitle": "key_f17",
+            "DriverValue": "0x02006C00"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F18",
+            "LangTitle": "key_f18",
+            "DriverValue": "0x02006D00"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F19",
+            "LangTitle": "key_f19",
+            "DriverValue": "0x02006E00"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F20",
+            "LangTitle": "key_f20",
+            "DriverValue": "0x02006F00"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F21",
+            "LangTitle": "key_f21",
+            "DriverValue": "0x02007000"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F22",
+            "LangTitle": "key_f22",
+            "DriverValue": "0x02007100"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F23",
+            "LangTitle": "key_f23",
+            "DriverValue": "0x02007200"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "F24",
+            "LangTitle": "key_f24",
+            "DriverValue": "0x02007300"
+        }]
     }]
 }, {
     "title": "鼠标",

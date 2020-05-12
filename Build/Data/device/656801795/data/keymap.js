@@ -54,9 +54,9 @@
 			"Height": 34
 		}
 	}, {
-		"KeyName": "Right Control",
-		"Show": "Ctrl",
-		"LogicCode": 6,
+		"KeyName": "Right Alt",
+		"Show": "Alt",
+		"LogicCode": 8,
 		"LocationCode": 62,
 		"Position": {
 			"Left": 848,
