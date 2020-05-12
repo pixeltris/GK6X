@@ -8,7 +8,7 @@ It runs on Windows, Mac, and Linux.
 
 _Note: This is a CLI program (no GUI). It's advisable to use the official software if you're on Windows._
 
-_Note: On linux you will need to run with sudo [(issue with hidraw?)](https://github.com/pixeltris/GK6X/issues/3)._
+_Note: On linux you will need to run with sudo [(issue with hidraw?)](https://github.com/pixeltris/GK6X/issues/3). It can be compiled / ran with mono on Linux / Mac. On Windows you compile it with Visual Studio._
 
 When you open the program it will connect to your keyboard (there's no console output until it finds something to connect to).
 
