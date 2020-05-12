@@ -300,9 +300,13 @@ namespace GK6X
                                 {
                                     Debug.WriteLine("Couldn't find DriverValue for key '" + key.KeyName + "' logicCode: " + key.LogicCode +
                                         " locationCode: " + key.LocationCode + " modelId: " + ModelId + " modelName: " + ModelName);
+                                    key.DriverValue = KeyValues.UnusedKeyValue;
                                 }
                             }
-                            key.DriverValue = KeyValues.UnusedKeyValue;
+                            else
+                            {
+                                key.DriverValue = KeyValues.UnusedKeyValue;
+                            }
                         }
                         KeysByLocationCode[key.LocationCode] = key;
                         KeysByLogicCode[key.LogicCode] = key;
