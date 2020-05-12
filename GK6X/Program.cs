@@ -8,11 +8,16 @@ namespace GK6X
 {
     class Program
     {
-        public static readonly string DataBasePath = "Data";
-        public static readonly string UserDataPath = "UserData";
+        public static string BasePath;
+        public static string DataBasePath = "Data";
+        public static string UserDataPath = "UserData";
         
         static void Main(string[] args)
         {
+            BasePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            DataBasePath = Path.Combine(BasePath, DataBasePath);
+            UserDataPath = Path.Combine(BasePath, UserDataPath);
+
             if (!Localization.Load())
             {
                 LogFatalError("Failed to load localization data");
@@ -68,9 +73,22 @@ namespace GK6X
             KeyboardDeviceManager.StartListener();
 
             bool running = true;
+            bool hasNullInput = false;
             while (running)
             {
                 string line = Console.ReadLine();
+                if (line == null)
+                {
+                    // Handler for potential issue where ReadLine() returns null - see https://github.com/pixeltris/GK6X/issues/8
+                    if (hasNullInput)
+                    {
+                        Console.WriteLine("Cannot read from command line. Exiting.");
+                        break;
+                    }
+                    hasNullInput = true;
+                    continue;
+                }
+                hasNullInput = false;
                 string[] splitted = line.Split();
                 switch (splitted[0].ToLower())
                 {
@@ -297,7 +315,7 @@ namespace GK6X
         {
             lock (logLocker)
             {
-                File.AppendAllText("KbLog.txt", "[" + DateTime.Now.TimeOfDay + "] " + str + Environment.NewLine);
+                File.AppendAllText(Path.Combine(BasePath, "KbLog.txt"), "[" + DateTime.Now.TimeOfDay + "] " + str + Environment.NewLine);
                 Console.WriteLine(str);
             }
         }
