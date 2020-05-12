@@ -1,32 +1,52 @@
 {
-    "GUID": "081497C1-F999-4c76-A622-B08CD827A58A",
-    "Name": "84计算器",
-    "LeCate": 840,
-    "Frames": [{
-        "Count": 1,
-        "Name": "frame0",
-        "Data": {
-            "30": "0xffffff",
-            "31": "0xffffff",
-            "32": "0xffffff",
-            "33": "0xffffff",
-            "52": "0xffffff",
-            "53": "0xffffff",
-            "54": "0xffffff",
-            "55": "0xffffff",
-            "74": "0xffffff",
-            "75": "0xffffff",
-            "76": "0xffffff",
-            "77": "0xffffff",
-            "96": "0xffffff",
-            "98": "0xffffff",
-            "99": "0xffffff"
+    "GUID":"081497C1-F999-4c76-A622-B08CD827A58A",
+    "Name":"84计算器",
+    "LeCate":840,
+    "Frames":[
+        {
+            "Count":1,
+            "Name":"frame0",
+            "Data":{
+                "30":"0xffffff",
+                "31":"0xffffff",
+                "32":"0xffffff",
+                "33":"0xffffff",
+                "52":"0xffffff",
+                "53":"0xffffff",
+                "54":"0xffffff",
+                "55":"0xffffff",
+                "74":"0xffffff",
+                "75":"0xffffff",
+                "76":"0xffffff",
+                "77":"0xffffff",
+                "96":"0xffffff",
+                "98":"0xffffff",
+                "99":"0xffffff"
+            }
         }
-    }],
-    "LEConfigs": [{
-        "Keys": [53, 54, 55, 52, 30, 31, 32, 33, 74, 75, 76, 77, 96, 98, 99],
-        "Color": "0x00ff11",
-        "Type": 0,
-        "Count": 1
-    }]
+    ],
+    "LEConfigs":[
+        {
+            "Keys":[
+                53,
+                54,
+                55,
+                52,
+                30,
+                31,
+                32,
+                33,
+                74,
+                75,
+                76,
+                77,
+                96,
+                98,
+                99
+            ],
+            "Color":"0x00ff11",
+            "Type":0,
+            "Count":1
+        }
+    ]
 }

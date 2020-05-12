@@ -7,6 +7,35 @@ using System.Text;
 
 namespace GK6X
 {
+    // These values need to be correct as they form part of the crc calculation
+    public enum CMFileType
+    {
+        /// <summary>
+        /// 0=??? some chinese characters? (CE DE D0 A7 00)
+        /// </summary>
+        Unknown = 0,
+        /// <summary>
+        /// PROFILE
+        /// </summary>
+        Profile = 1,
+        /// <summary>
+        /// LIGHT
+        /// </summary>
+        Light = 2,
+        /// <summary>
+        /// STATASTIC
+        /// </summary>
+        Statastic = 3,
+        /// <summary>
+        /// APPCONF
+        /// </summary>
+        Appconf = 4,
+        /// <summary>
+        /// MACRO
+        /// </summary>
+        Macro = 5
+    }
+
     static class CMFile
     {
         static Dictionary<CMFileType, byte[]> fileTypes = new Dictionary<CMFileType, byte[]>()
@@ -194,34 +223,72 @@ namespace GK6X
         {
             Debug.WriteLine("[CMFile-ERROR] " + str + " (file: " + file + ")");
         }
-    }
 
-    // These values need to be correct as they form part of the crc calculation
-    public enum CMFileType
-    {
-        /// <summary>
-        /// 0=??? some chinese characters? (CE DE D0 A7 00)
-        /// </summary>
-        Unknown = 0,
-        /// <summary>
-        /// PROFILE
-        /// </summary>
-        Profile = 1,
-        /// <summary>
-        /// LIGHT
-        /// </summary>
-        Light = 2,
-        /// <summary>
-        /// STATASTIC
-        /// </summary>
-        Statastic = 3,
-        /// <summary>
-        /// APPCONF
-        /// </summary>
-        Appconf = 4,
-        /// <summary>
-        /// MACRO
-        /// </summary>
-        Macro = 5
+        public static void DumpLighting(string path)
+        {
+            if (Directory.Exists(path))
+            {
+                Dictionary<string, string> namesByGuid = new Dictionary<string, string>();
+                // Manually add untranslated effect names
+                namesByGuid["28E53269-73CC-48c0-B437-C74837B8CD0E"] = "Music volume light effect 2";
+                namesByGuid["B3370967-FE81-4733-A54C-1FF3D955E942"] = "fn1 lower lamp position change cherry 1";
+                namesByGuid["B70DC715-98F5-40f1-A3A3-86A7E6C95984"] = "Full bright yellow light";
+                namesByGuid["CA48BB92-593B-4891-A52F-41E8FB04BF8B"] = "Synchronous RGB gradient";
+                namesByGuid["DA3AF708-4B88-4ae8-B92E-DD1221A563CF"] = "Music volume lighting effect";
+                namesByGuid["E25817F8-DFF9-4cc5-A393-DC0EF3D4E646"] = "CSGO game lighting effects";
+
+                string dumpPath = Path.Combine(path, "dump");
+                Directory.CreateDirectory(dumpPath);
+
+                string leListFile = File.ReadAllText(Path.Combine(path, "lelist_en.json"));
+                List<object> leList = MiniJSON.Json.Deserialize(leListFile) as List<object>;
+                foreach (object item in leList)
+                {
+                    Dictionary<string, object> guidName = item as Dictionary<string, object>;
+                    namesByGuid[guidName["GUID"].ToString()] = guidName["Name"].ToString();
+                }
+
+                foreach (string file in Directory.GetFiles(path, "*.le"))
+                {
+                    string str = Encoding.UTF8.GetString(Load(file));
+
+                    string leName;
+                    string guid = Path.GetFileNameWithoutExtension(file).Substring(0, 36);
+                    namesByGuid.TryGetValue(guid, out leName);
+
+                    if (!string.IsNullOrEmpty(leName))
+                    {
+                        foreach (char c in System.IO.Path.GetInvalidFileNameChars())
+                        {
+                            leName = leName.Replace(c, '_');
+                        }
+
+                        string formattedJson = FormatJson(str);
+                        File.WriteAllText(Path.Combine(dumpPath, leName + ".le"), formattedJson);
+                    }
+                    else
+                    {
+                        Dictionary<string, object> json = MiniJSON.Json.Deserialize(str) as Dictionary<string, object>;
+                        Debug.WriteLine("Failed to get name for " + file + " GUID: " + guid + " zh: " + json["Name"].ToString());
+                    }
+                }
+            }
+        }
+
+        private static string FormatJson(string json)
+        {
+            // https://stackoverflow.com/questions/4580397/json-formatter-in-c/24782322#24782322
+            const string INDENT_STRING = "    ";
+            int indentation = 0;
+            int quoteCount = 0;
+            var result =
+                from ch in json
+                let quotes = ch == '"' ? quoteCount++ : quoteCount
+                let lineBreak = ch == ',' && quotes % 2 == 0 ? ch + Environment.NewLine + String.Concat(Enumerable.Repeat(INDENT_STRING, indentation)) : null
+                let openChar = ch == '{' || ch == '[' ? ch + Environment.NewLine + String.Concat(Enumerable.Repeat(INDENT_STRING, ++indentation)) : ch.ToString()
+                let closeChar = ch == '}' || ch == ']' ? Environment.NewLine + String.Concat(Enumerable.Repeat(INDENT_STRING, --indentation)) + ch : ch.ToString()
+                select lineBreak == null ? openChar.Length > 1 ? openChar : closeChar : lineBreak;
+            return String.Concat(result);
+        }
     }
 }

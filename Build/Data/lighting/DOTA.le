@@ -1,31 +1,50 @@
 {
-    "GUID": "31EFF8B5-3363-4905-924A-B4FC9D31D084",
-    "Name": "DOTA",
-    "LeType": "simple",
-    "Frames": [{
-        "Count": 1,
-        "Name": "frame0",
-        "Data": {
-            "2": "0xffffff",
-            "3": "0xffffff",
-            "45": "0xffffff",
-            "46": "0xffffff",
-            "47": "0xffffff",
-            "48": "0xffffff",
-            "53": "0xffffff",
-            "67": "0xffffff",
-            "68": "0xffffff",
-            "70": "0xffffff",
-            "72": "0xffffff",
-            "79": "0xffffff",
-            "88": "0xffffff",
-            "96": "0xffffff"
+    "GUID":"31EFF8B5-3363-4905-924A-B4FC9D31D084",
+    "Name":"DOTA",
+    "LeType":"simple",
+    "Frames":[
+        {
+            "Count":1,
+            "Name":"frame0",
+            "Data":{
+                "2":"0xffffff",
+                "3":"0xffffff",
+                "45":"0xffffff",
+                "46":"0xffffff",
+                "47":"0xffffff",
+                "48":"0xffffff",
+                "53":"0xffffff",
+                "67":"0xffffff",
+                "68":"0xffffff",
+                "70":"0xffffff",
+                "72":"0xffffff",
+                "79":"0xffffff",
+                "88":"0xffffff",
+                "96":"0xffffff"
+            }
         }
-    }],
-    "LEConfigs": [{
-        "Keys": [2, 3, 45, 46, 47, 48, 67, 68, 70, 72, 53, 88, 96, 79],
-        "Color": "0x0000ff",
-        "Type": 0,
-        "Count": 1
-    }]
+    ],
+    "LEConfigs":[
+        {
+            "Keys":[
+                2,
+                3,
+                45,
+                46,
+                47,
+                48,
+                67,
+                68,
+                70,
+                72,
+                53,
+                88,
+                96,
+                79
+            ],
+            "Color":"0x0000ff",
+            "Type":0,
+            "Count":1
+        }
+    ]
 }
