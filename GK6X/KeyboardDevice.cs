@@ -272,9 +272,9 @@ namespace GK6X
 
                             if (i < macro.Actions.Count - 1 || (macro.UseTrailingDelay && i == macro.Actions.Count - 1))
                             {
-                                packet.WriteUInt16(action.Delay);
+                                packet.WriteUInt16(action.Delay);//TODO: Investigate! (ushort)(action.Delay == 0 ? 0 : action.Delay / 2));// Delay seems to be doubled?
                                 packet.WriteByte(0);// Always 0?
-                                packet.WriteByte(3);// Always 3?
+                                packet.WriteByte(3);// Always 3? (1/2 use no delay, 0/4 (and maybe others) seem to never stop pressing the key)
                             }
                             else
                             {

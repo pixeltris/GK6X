@@ -1,13 +1,24 @@
 # To see a list of the available keys see https://github.com/pixeltris/GK6X/blob/81761765f020962ed04ad68f8f0837facda7a1fa/GK6X/KeyValues.cs#L269
 
+##################################################################
+# Mapping keys
+##################################################################
+
 # On GK84 boards the top right key is 'pause'. This sets all layers (and Fn) to change this to 'delete'.
 [Base,Layer1,Layer2,Layer3,FnLayer1,FnLayer2,FnLayer3]
 Pause:Delete
 
-# This is an example of a macro which types 'abcabc' and is bound to the Fn+B of layer1
-# The macro name is "MyMacro" which is defined below.
-[FnLayer1]
-B:Macro(MyMacro)
+# This will map Fn+W to LCtrl+LAlt+Delete on layer3
+[FnLayer3]
+W:LCtrl+LAlt+Delete
+
+# This will map Backspace to LAlt+Tab on layer1 and layer2
+[Layer1,Layer2]
+Backslash:LAlt+Tab
+
+##################################################################
+# Creating / mapping macros
+##################################################################
 
 # MyMacro = the name of the macro
 # 0 = milliseconds between each key action
@@ -24,6 +35,24 @@ B:Macro(MyMacro)
 [Macro(MyMacro,0,RepeatXTimes,2)]
 Press:A+B+C
 
+# This is an example of a macro which types 'abcabc' and is bound to the Fn+B of layer1
+# The macro name is "MyMacro" which is defined below.
+[FnLayer1]
+B:Macro(MyMacro)
+
+# This macro will do a cut/paste
+[Macro(QuickCutSave)]
+Press:LCtrl+X
+Press:LCtrl+S
+
+# Assign the macro to Fn+Q on layer3
+[Layer3]
+Q:Macro(QuickCutSave)
+
+##################################################################
+# Lighting
+##################################################################
+
 # You can use up to 32 lighting effects / static lighting on the base layer.
 # Other layers are limited to one lighting effect only (unless someone knows how to change the active lighting effect on other layers).
 # The following example sets the "Windmill", "Red light respiration", and "Starlish" lighting effects on the base layer.
@@ -37,3 +66,16 @@ Press:A+B+C
 
 # If you're confused about the codes/numbers in the lighting effect files, use the command "dumpkeys null ex" to see the codes for your keyboard keys.
 # When creating your own lighting effects you can use the names of the keys as seen in the link at the top of this file.
+
+##################################################################
+# Alternative key names for duplicate keys
+##################################################################
+
+# Some keyboard have duplicate keys (multiple Space keys, multiple Backspace keys, etc). This causes issues with
+# mapping keys by name. You need to use the "dumpkeys" command to see the unique name for those duplicate keys.
+# Duplicate keys will be given a name such as "Space_2". You can create alternative names for such keys to clarify
+# which key is which.
+#
+# The following creates a key alias (alternative name) for "Space_2" called "RightSpace", allowing you to use "RightSpace" in mappings
+[KeyAlias]
+RightSpace:Space_2

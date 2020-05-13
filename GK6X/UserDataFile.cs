@@ -937,6 +937,11 @@ namespace GK6X
                                             states = new MacroKeyState[] { MacroKeyState.Up };
                                             break;
                                     }
+                                    if (states == null)
+                                    {
+                                        Program.Log("Badly formatted macro " + (currentMacro == null ? "(null)" : currentMacro.Name) + " line(" + i + "): '" + line + "'");
+                                        break;
+                                    }
                                     for (int j = 0; j < states.Length; j++)
                                     {
                                         MacroKeyState state = states[j];
