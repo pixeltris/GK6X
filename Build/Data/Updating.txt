@@ -6,11 +6,6 @@ index.js <---- contains lang data ("macro_cate_already_exist")
 manifest.js
 vendor.js
 
-- Download the official software
-- Format the above files (0.json / index.js) and use them to update the following:
-
-- Find string such as "macro_cate_already_exist" and update /Build/Data/i18n/langs/zh.jon/en.json
-- Update keys.json by searching for "mode-layer-temp-switch"
-- Copy all files from /driver/device/ to /Build/Data/device/ (rename the chinese named folder)
-- In Program.cs call CMFile.DumpLighting() with "/driver/res/data/le/" as the path. Copy the dumped files from the created "dump" folder.
-- Use https://jsonformatter.curiousconcept.com/ where applicable to fix up quotation marks on files (lang, keys.json is a manual fix)
+- Navigate to "C:\Program Files (x86)\GK6XPlus Driver\CMSEngine\driver\" and create a copy of 0.js / index.js renamed to 0.formatted.js / index.formatted.js
+- Format both files using https://beautifier.io/
+- Use the command "update_data C:\Program Files (x86)\GK6XPlus Driver"

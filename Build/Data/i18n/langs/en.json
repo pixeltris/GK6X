@@ -139,7 +139,8 @@
         "le_aready_exist_confirm_overwrite": "The LE file already exists, whether to overwrite it or not?",
         "le_import_success": "Import success!",
         "le_import_cancelled": "Import cancelled!",
-        "le_export_success": "Successful Export of LE File！"
+        "le_export_success": "Successful Export of LE File！",
+        "le_create_success": "Successful Create LE File!"
     },
     "macro": {
         "macro_mgr": "Macro Manage",

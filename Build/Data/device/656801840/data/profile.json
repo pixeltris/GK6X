@@ -575,17 +575,9 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
-			"Index": 54,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003000",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
+		},
+		{
+		
 			"Index": 55,
 			"MenuPID": "",
 			"MenuID": "",
@@ -605,27 +597,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
-			"Index": 57,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003400",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 58,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003500",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
+		},
+		{
 			"Index": 59,
 			"MenuPID": "",
 			"MenuID": "",
@@ -645,17 +618,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
-			"Index": 61,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003800",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
+		},
+		{
 			"Index": 62,
 			"MenuPID": "",
 			"MenuID": "",
@@ -665,117 +629,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		},  {
-			"Index": 63,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f1",
-			"DriverValue": "0x02003A00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 64,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f2",
-			"DriverValue": "0x02003B00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 65,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f3",
-			"DriverValue": "0x02003C00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 66,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f4",
-			"DriverValue": "0x02003D00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 67,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f5",
-			"DriverValue": "0x02003E00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 68,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f6",
-			"DriverValue": "0x02003F00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 69,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f7",
-			"DriverValue": "0x02004000",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 70,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f8",
-			"DriverValue": "0x02004100",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 71,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f9",
-			"DriverValue": "0x02004200",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 72,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "f10",
-			"DriverValue": "0x02004300",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		},{
-			"Index": 81,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004C00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
+		},
+		{
 			"Index": 84,
 			"MenuPID": "",
 			"MenuID": "",
@@ -821,43 +676,19 @@
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005300"
-		},{
-			"Index": 89,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "/",
-			"DriverValue": "0x02005400"
-		}, {
-			"Index": 90,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "*",
-			"DriverValue": "0x02005500"
 		}, 
 		{
 			"Index": 91,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "NUM -",
-			"DriverValue": "0x02005400"
+			"MenuName": "",
+			"DriverValue": "0x02005600"
 		}, {
 			"Index": 92,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "+",
-			"DriverValue": "0x02005500"
-		}, {
-			"Index": 51,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "-",
-			"DriverValue": "0x02002D00"
-		}, {
-			"Index": 52,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "=",
-			"DriverValue": "0x02002E00"
+			"MenuName": "",
+			"DriverValue": "0x02005700"
 		}, { 
 			"Index": 94,
 			"MenuPID": "",
@@ -930,18 +761,7 @@
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02002C00"
-		}, {
-			"Index": 110,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00"
-		}, {
-			"Index": 111,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00"
+	
 		}
 	]
 }

@@ -139,7 +139,8 @@
         "le_aready_exist_confirm_overwrite": "已存在该灯效文件, 是否覆盖?",
         "le_import_success": "导入成功!",
         "le_import_cancelled": "取消导入!",
-        "le_export_success": "导出灯效文件成功！!"
+        "le_export_success": "导出灯效文件成功!",
+        "le_create_success": "创建灯效文件成功!"
     },
     "macro": {
         "macro_mgr": "宏管理",

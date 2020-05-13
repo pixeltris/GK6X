@@ -1,49 +1,300 @@
 [{
-        "KeyName": "App",
-        "Show": "App",
-        "LogicCode": 1,
-        "LocationCode": 98,
+        "KeyName": "Escape",
+        "Show": "Esc",
+        "LogicCode": 47,
+        "LocationCode": 0,
         "Position": {
-            "Left": 715,
-            "Top": 394,
+            "Left": 147,
+            "Top": 167,
             "Width": 55,
             "Height": 55
         }
     },
     {
-        "KeyName": "Left Control",
-        "Show": "Ctrl",
-        "LogicCode": 2,
-        "LocationCode": 88,
+        "KeyName": "1",
+        "Show": "1",
+        "LogicCode": 36,
+        "LocationCode": 2,
+        "Position": {
+            "Left": 205,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "2",
+        "Show": "2",
+        "LogicCode": 37,
+        "LocationCode": 3,
+        "Position": {
+            "Left": 262,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "3",
+        "Show": "3",
+        "LogicCode": 38,
+        "LocationCode": 4,
+        "Position": {
+            "Left": 319,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "4",
+        "Show": "4",
+        "LogicCode": 39,
+        "LocationCode": 5,
+        "Position": {
+            "Left": 375,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "5",
+        "Show": "5",
+        "LogicCode": 40,
+        "LocationCode": 6,
+        "Position": {
+            "Left": 432,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "6",
+        "Show": "6",
+        "LogicCode": 41,
+        "LocationCode": 7,
+        "Position": {
+            "Left": 489,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "7",
+        "Show": "7",
+        "LogicCode": 42,
+        "LocationCode": 8,
+        "Position": {
+            "Left": 545,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "8",
+        "Show": "8",
+        "LogicCode": 43,
+        "LocationCode": 9,
+        "Position": {
+            "Left": 601,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "9",
+        "Show": "9",
+        "LogicCode": 44,
+        "LocationCode": 10,
+        "Position": {
+            "Left": 658,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "0",
+        "Show": "0",
+        "LogicCode": 45,
+        "LocationCode": 11,
+        "Position": {
+            "Left": 715,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "Backspace",
+        "Show": "←",
+        "LogicCode": 48,
+        "LocationCode": 12,
+        "Position": {
+            "Left": 772,
+            "Top": 167,
+            "Width": 110,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "Num Lock",
+        "Show": "NumL",
+        "LogicCode": 88,
+        "LocationCode": 14,
+        "Position": {
+            "Left": 885,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "Num -",
+        "Show": "Num -",
+        "LogicCode": 91,
+        "LocationCode": 15,
+        "Position": {
+            "Left": 942,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "Num +",
+        "Show": "Num +",
+        "LogicCode": 92,
+        "LocationCode": 16,
+        "Position": {
+            "Left": 999,
+            "Top": 167,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "Tab",
+        "Show": "Tab",
+        "LogicCode": 49,
+        "LocationCode": 22,
         "Position": {
             "Left": 147,
-            "Top": 394,
-            "Width": 70,
-            "Height": 55
-        }
-    },
-
-    {
-        "KeyName": "Left Alt",
-        "Show": "Alt",
-        "LogicCode": 4,
-        "LocationCode": 91,
-        "Position": {
-            "Left": 290,
-            "Top": 394,
-            "Width": 70,
+            "Top": 223,
+            "Width": 55,
             "Height": 55
         }
     },
     {
-        "KeyName": "Left GUI",
-        "Show": "Win",
-        "LogicCode": 5,
-        "LocationCode": 89,
+        "KeyName": "Q",
+        "Show": "Q",
+        "LogicCode": 26,
+        "LocationCode": 24,
         "Position": {
-            "Left": 219,
-            "Top": 394,
-            "Width": 70,
+            "Left": 205,
+            "Top": 223,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "W",
+        "Show": "W",
+        "LogicCode": 32,
+        "LocationCode": 25,
+        "Position": {
+            "Left": 261,
+            "Top": 223,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "E",
+        "Show": "E",
+        "LogicCode": 14,
+        "LocationCode": 26,
+        "Position": {
+            "Left": 318,
+            "Top": 223,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "R",
+        "Show": "R",
+        "LogicCode": 27,
+        "LocationCode": 27,
+        "Position": {
+            "Left": 375,
+            "Top": 223,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "T",
+        "Show": "T",
+        "LogicCode": 29,
+        "LocationCode": 28,
+        "Position": {
+            "Left": 431,
+            "Top": 223,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "Y",
+        "Show": "Y",
+        "LogicCode": 34,
+        "LocationCode": 29,
+        "Position": {
+            "Left": 488,
+            "Top": 223,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "U",
+        "Show": "U",
+        "LogicCode": 30,
+        "LocationCode": 30,
+        "Position": {
+            "Left": 545,
+            "Top": 223,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "I",
+        "Show": "I",
+        "LogicCode": 18,
+        "LocationCode": 31,
+        "Position": {
+            "Left": 601,
+            "Top": 223,
+            "Width": 55,
+            "Height": 55
+        }
+    },
+    {
+        "KeyName": "O",
+        "Show": "O",
+        "LogicCode": 24,
+        "LocationCode": 32,
+        "Position": {
+            "Left": 658,
+            "Top": 223,
+            "Width": 55,
             "Height": 55
         }
     },
@@ -405,9 +656,9 @@
             "Height": 55
         }
     }, {
-        "KeyName": "/",
-        "Show": "/",
-        "LogicCode": 61,
+        "KeyName": ".",
+        "Show": ".",
+        "LogicCode": 60,
         "LocationCode": 76,
         "Position": {
             "Left": 701,
@@ -476,326 +727,87 @@
             "Height": 55
         }
     },
+
     {
-        "KeyName": "F1",
-        "Show": "F1",
-        "LogicCode": 63,
-        "LocationCode": 2,
+        "KeyName": "Left Control",
+        "Show": "Ctrl",
+        "LogicCode": 2,
+        "LocationCode": 88,
         "Position": {
-            "Left": 205,
-            "Top": 167,
-            "Width": 55,
+            "Left": 147,
+            "Top": 394,
+            "Width": 70,
             "Height": 55
         }
     },
     {
-        "KeyName": "F2",
-        "Show": "F2",
-        "LogicCode": 64,
-        "LocationCode": 3,
+        "KeyName": "Left GUI",
+        "Show": "Win",
+        "LogicCode": 5,
+        "LocationCode": 89,
         "Position": {
-            "Left": 262,
-            "Top": 167,
-            "Width": 55,
+            "Left": 219,
+            "Top": 394,
+            "Width": 70,
             "Height": 55
         }
     },
     {
-        "KeyName": "F3",
-        "Show": "F3",
-        "LogicCode": 65,
-        "LocationCode": 4,
+        "KeyName": "Left Alt",
+        "Show": "Alt",
+        "LogicCode": 4,
+        "LocationCode": 91,
         "Position": {
-            "Left": 319,
-            "Top": 167,
-            "Width": 55,
+            "Left": 290,
+            "Top": 394,
+            "Width": 70,
             "Height": 55
         }
     },
     {
-        "KeyName": "F4",
-        "Show": "F4",
-        "LogicCode": 66,
-        "LocationCode": 5,
+        "KeyName": "Left Space",
+        "Show": "Left Space",
+        "LogicCode": 50,
+        "LocationCode": 93,
         "Position": {
-            "Left": 375,
-            "Top": 167,
-            "Width": 55,
+            "Left": 362,
+            "Top": 394,
+            "Width": 153,
             "Height": 55
         }
     },
     {
-        "KeyName": "F5",
-        "Show": "F5",
-        "LogicCode": 67,
-        "LocationCode": 6,
+        "KeyName": "Middle Space",
+        "Show": "Middle Space",
+        "LogicCode": 109,
+        "LocationCode": 95,
         "Position": {
-            "Left": 432,
-            "Top": 167,
-            "Width": 55,
+            "Left": 518,
+            "Top": 394,
+            "Width": 123,
             "Height": 55
         }
     },
     {
-        "KeyName": "F6",
-        "Show": "F6",
-        "LogicCode": 68,
-        "LocationCode": 7,
+        "KeyName": "Right FN",
+        "Show": "Right FNSpace",
+        "LogicCode": 0,
+        "LocationCode": 97,
         "Position": {
-            "Left": 489,
-            "Top": 167,
-            "Width": 55,
+            "Left": 644,
+            "Top": 394,
+            "Width": 69,
             "Height": 55
         }
     },
     {
-        "KeyName": "F7",
-        "Show": "F7",
-        "LogicCode": 69,
-        "LocationCode": 8,
-        "Position": {
-            "Left": 545,
-            "Top": 167,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "F8",
-        "Show": "F8",
-        "LogicCode": 70,
-        "LocationCode": 9,
-        "Position": {
-            "Left": 601,
-            "Top": 167,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "F9",
-        "Show": "F9",
-        "LogicCode": 71,
-        "LocationCode": 10,
-        "Position": {
-            "Left": 658,
-            "Top": 167,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "F10",
-        "Show": "F10",
-        "LogicCode": 72,
-        "LocationCode": 11,
+        "KeyName": "App",
+        "Show": "App",
+        "LogicCode": 1,
+        "LocationCode": 98,
         "Position": {
             "Left": 715,
-            "Top": 167,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "F11",
-        "Show": "0",
-        "LogicCode": 10,
-        "LocationCode": 10,
-        "Position": {
-            "Left": 942,
-            "Top": 419,
-            "Width": 55,
-            "Height": 25
-        }
-    },
-    {
-        "KeyName": "F12",
-        "Show": ".",
-        "LogicCode": 11,
-        "LocationCode": 11,
-        "Position": {
-            "Left": 999,
-            "Top": 419,
-            "Width": 55,
-            "Height": 25
-        }
-    },
-    {
-        "KeyName": "Escape",
-        "Show": "Esc",
-        "LogicCode": 47,
-        "LocationCode": 0,
-        "Position": {
-            "Left": 147,
-            "Top": 167,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "Backspace",
-        "Show": "←",
-        "LogicCode": 48,
-        "LocationCode": 12,
-        "Position": {
-            "Left": 772,
-            "Top": 167,
-            "Width": 110,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "Num Lock",
-        "Show": "NumL",
-        "LogicCode": 88,
-        "LocationCode": 14,
-        "Position": {
-            "Left": 885,
-            "Top": 167,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "Num -",
-        "Show": "Num -",
-        "LogicCode": 91,
-        "LocationCode": 15,
-        "Position": {
-            "Left": 942,
-            "Top": 167,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "Num +",
-        "Show": "Num +",
-        "LogicCode": 92,
-        "LocationCode": 16,
-        "Position": {
-            "Left": 999,
-            "Top": 167,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "Tab",
-        "Show": "Tab",
-        "LogicCode": 49,
-        "LocationCode": 22,
-        "Position": {
-            "Left": 147,
-            "Top": 223,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "Q",
-        "Show": "Q",
-        "LogicCode": 26,
-        "LocationCode": 24,
-        "Position": {
-            "Left": 205,
-            "Top": 223,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "W",
-        "Show": "W",
-        "LogicCode": 32,
-        "LocationCode": 25,
-        "Position": {
-            "Left": 261,
-            "Top": 223,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "E",
-        "Show": "E",
-        "LogicCode": 14,
-        "LocationCode": 26,
-        "Position": {
-            "Left": 318,
-            "Top": 223,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "R",
-        "Show": "R",
-        "LogicCode": 27,
-        "LocationCode": 27,
-        "Position": {
-            "Left": 375,
-            "Top": 223,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "T",
-        "Show": "T",
-        "LogicCode": 29,
-        "LocationCode": 28,
-        "Position": {
-            "Left": 431,
-            "Top": 223,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "Y",
-        "Show": "Y",
-        "LogicCode": 34,
-        "LocationCode": 29,
-        "Position": {
-            "Left": 488,
-            "Top": 223,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "U",
-        "Show": "U",
-        "LogicCode": 30,
-        "LocationCode": 30,
-        "Position": {
-            "Left": 545,
-            "Top": 223,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "I",
-        "Show": "I",
-        "LogicCode": 18,
-        "LocationCode": 31,
-        "Position": {
-            "Left": 601,
-            "Top": 223,
-            "Width": 55,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "O",
-        "Show": "O",
-        "LogicCode": 24,
-        "LocationCode": 32,
-        "Position": {
-            "Left": 658,
-            "Top": 223,
+            "Top": 394,
             "Width": 55,
             "Height": 55
         }
@@ -861,53 +873,6 @@
         }
     },
     {
-        "KeyName": "fn1",
-        "Show": "fnx1",
-        "LogicCode": 50,
-        "LocationCode": 93,
-        "Position": {
-            "Left": 362,
-            "Top": 394,
-            "Width": 153,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "Space",
-        "Show": "Space",
-        "LogicCode": 110,
-        "LocationCode": 92,
-        "Position": {
-            "Left": 0,
-            "Top": 0,
-            "Width": 0,
-            "Height": 0
-        }
-    },
-    {
-        "KeyName": "fn2",
-        "Show": "fnx2",
-        "LogicCode": 109,
-        "LocationCode": 95,
-        "Position": {
-            "Left": 518,
-            "Top": 394,
-            "Width": 123,
-            "Height": 55
-        }
-    },
-    {
-        "KeyName": "FN",
-        "Show": "FN",
-        "LogicCode": 0,
-        "LocationCode": 97,
-        "Position": {
-            "Left": 644,
-            "Top": 394,
-            "Width": 69,
-            "Height": 55
-        }
-    }, {
         "KeyName": "LED-LEFT-1",
         "Show": "",
         "LogicCode": -1,
@@ -1071,102 +1036,6 @@
             "Top": 96,
             "Width": 20,
             "Height": 20
-        }
-    },
-    {
-        "KeyName": "LED-BOTTOM-1",
-        "Show": "",
-        "LogicCode": -1,
-        "LocationCode": 118,
-        "Position": {
-            "Left": 202,
-            "Top": 470,
-            "Width": 0,
-            "Height": 0
-        }
-    },
-    {
-        "KeyName": "LED-BOTTOM-2",
-        "Show": "",
-        "LogicCode": -1,
-        "LocationCode": 119,
-        "Position": {
-            "Left": 312,
-            "Top": 470,
-            "Width": 0,
-            "Height": 0
-        }
-    },
-    {
-        "KeyName": "LED-BOTTOM-3",
-        "Show": "",
-        "LogicCode": -1,
-        "LocationCode": 120,
-        "Position": {
-            "Left": 422,
-            "Top": 470,
-            "Width": 0,
-            "Height": 0
-        }
-    },
-    {
-        "KeyName": "LED-BOTTOM-4",
-        "Show": "",
-        "LogicCode": -1,
-        "LocationCode": 121,
-        "Position": {
-            "Left": 522,
-            "Top": 470,
-            "Width": 0,
-            "Height": 0
-        }
-    },
-    {
-        "KeyName": "LED-BOTTOM-5",
-        "Show": "",
-        "LogicCode": -1,
-        "LocationCode": 122,
-        "Position": {
-            "Left": 632,
-            "Top": 470,
-            "Width": 0,
-            "Height": 0
-        }
-    },
-    {
-        "KeyName": "LED-BOTTOM-6",
-        "Show": "",
-        "LogicCode": -1,
-        "LocationCode": 123,
-        "Position": {
-            "Left": 742,
-            "Top": 470,
-            "Width": 0,
-            "Height": 0
-        }
-    },
-    {
-        "KeyName": "LED-BOTTOM-7",
-        "Show": "",
-        "LogicCode": -1,
-        "LocationCode": 124,
-        "Position": {
-            "Left": 852,
-            "Top": 470,
-            "Width": 0,
-            "Height": 0
-        }
-    },
-    {
-        "KeyName": "LED-BOTTOM-8",
-        "Show": "",
-        "LogicCode": -1,
-        "LocationCode": 125,
-        "Position": {
-            "Left": 952,
-            "Top": 470,
-            "Width": 0,
-            "Height": 0
         }
     }
 ]

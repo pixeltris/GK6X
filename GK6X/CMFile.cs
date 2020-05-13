@@ -224,7 +224,7 @@ namespace GK6X
             Debug.WriteLine("[CMFile-ERROR] " + str + " (file: " + file + ")");
         }
 
-        public static void DumpLighting(string path)
+        public static void DumpLighting(string path, string dumpPath)
         {
             if (Directory.Exists(path))
             {
@@ -237,7 +237,10 @@ namespace GK6X
                 namesByGuid["DA3AF708-4B88-4ae8-B92E-DD1221A563CF"] = "Music volume lighting effect";
                 namesByGuid["E25817F8-DFF9-4cc5-A393-DC0EF3D4E646"] = "CSGO game lighting effects";
 
-                string dumpPath = Path.Combine(path, "dump");
+                if (string.IsNullOrEmpty(dumpPath))
+                {
+                    dumpPath = Path.Combine(path, "dump");
+                }
                 Directory.CreateDirectory(dumpPath);
 
                 string leListFile = File.ReadAllText(Path.Combine(path, "lelist_en.json"));

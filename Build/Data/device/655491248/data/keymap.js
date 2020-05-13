@@ -611,18 +611,6 @@
         }
     },
     {
-        "KeyName": "]",
-        "Show": "]",
-        "LogicCode": 54,
-        "LocationCode": 57,
-        "Position": {
-            "Left": 767,
-            "Top": 246,
-            "Width": 54,
-            "Height": 54
-        }
-    },
-    {
         "KeyName": "|",
         "Show": "|",
         "LogicCode": 55,
@@ -654,18 +642,6 @@
         "Position": {
             "Left": 724,
             "Top": 304,
-            "Width": 54,
-            "Height": 54
-        }
-    },
-    {
-        "KeyName": "`",
-        "Show": "`",
-        "LogicCode": 58,
-        "LocationCode": 22,
-        "Position": {
-            "Left": 70,
-            "Top": 188,
             "Width": 54,
             "Height": 54
         }

@@ -101,6 +101,41 @@ namespace GK6X
                     case "clear":
                         Console.Clear();
                         break;
+                    case "update_data":
+                        if (splitted.Length > 1)
+                        {
+                            string path = line.TrimStart();
+                            int spaceChar = path.IndexOf(' ');
+                            if (spaceChar > 0)
+                            {
+                                path = path.Substring(spaceChar).Trim();
+                            }
+                            bool isValidPath = false;
+                            try
+                            {
+                                if (Directory.Exists(path))
+                                {
+                                    isValidPath = true;
+                                }
+                            }
+                            catch
+                            {
+                            }
+                            if (isValidPath)
+                            {
+                                UpdateDataFiles(path);
+                                Log("done");
+                            }
+                            else
+                            {
+                                Log("Couldn't find path '" + path + "'");
+                            }
+                        }
+                        else
+                        {
+                            Log("Bad input. Expected folder name.");
+                        }
+                        break;
                     case "map":
                     case "unmap":
                         {
@@ -325,6 +360,163 @@ namespace GK6X
             Log(str);
             Console.ReadLine();
             Environment.Exit(1);
+        }
+
+        private static void UpdateDataFiles(string srcDir)
+        {
+            string rootDir = Path.Combine(srcDir, "GK6XPlus Driver");
+            if (Directory.Exists(rootDir))
+            {
+                srcDir = rootDir;
+            }
+            string engineDir = Path.Combine(srcDir, "CMSEngine");
+            if (Directory.Exists(engineDir))
+            {
+                srcDir = engineDir;
+            }
+            string driverDir = Path.Combine(srcDir, "driver");
+            if (Directory.Exists(driverDir))
+            {
+                srcDir = driverDir;
+            }
+
+            string dstDir = Path.Combine(Program.BasePath, "Data");
+            string leDir = Path.Combine(srcDir, "res", "data", "le");
+            string deviceDir = Path.Combine(srcDir, "device");
+
+            // Format these files manually (https://beautifier.io/)
+            string indexJsFile = Path.Combine(srcDir, "index.formatted.js");
+            string zeroJsFile = Path.Combine(srcDir, "0.formatted.js");
+            if (!File.Exists(indexJsFile) || !File.Exists(zeroJsFile))
+            {
+                Log("Couldn't find formatted js files to process!");
+                return;
+            }
+
+            if (File.Exists(indexJsFile) && File.Exists(zeroJsFile) && Directory.Exists(leDir) && Directory.Exists(deviceDir))
+            {
+                CMFile.DumpLighting(leDir, Path.Combine(dstDir, "lighting"));
+                CopyFilesRecursively(new DirectoryInfo(deviceDir), new DirectoryInfo(Path.Combine(dstDir, "device")));
+
+                string langDir = Path.Combine(dstDir, "i18n", "langs");
+                Directory.CreateDirectory(langDir);
+
+                string indexJs = File.ReadAllText(indexJsFile);
+                int commonIndex = 0;
+                for (int i = 0; i < 2; i++)
+                {
+                    string langStr = FindContent(indexJs, "common: {", '{', '}', ref commonIndex);
+                    if (!string.IsNullOrEmpty(langStr))
+                    {
+                        File.WriteAllText(Path.Combine(langDir, (i == 0 ? "en" : "zh") + ".json"), langStr);
+                    }
+                }
+
+                string zeroJs = File.ReadAllText(zeroJsFile);
+                string keysStr = FindContent(zeroJs, "el-icon-kb-keyboard", '[', ']');
+                if (!string.IsNullOrEmpty(keysStr))
+                {
+                    File.WriteAllText(Path.Combine(dstDir, "keys.json"), keysStr);
+                }
+            }
+        }
+
+        static string FindContent(string str, string header, char openBraceChar, char closeBraceChar)
+        {
+            int index = 0;
+            return FindContent(str, header, openBraceChar, closeBraceChar, ref index);
+        }
+
+        static string FindContent(string str, string header, char openBraceChar, char closeBraceChar, ref int index)
+        {
+            int braceCount = 0;
+            index = str.IndexOf(header, index);
+            if (index > 0)
+            {
+                while (str[index] != openBraceChar)
+                {
+                    index--;
+                }
+                int commonEndIndex = -1;
+                for (int j = index; j < str.Length; j++)
+                {
+                    if (str[j] == openBraceChar)
+                    {
+                        braceCount++;
+                    }
+                    else if (str[j] == closeBraceChar)
+                    {
+                        braceCount--;
+                        if (braceCount == 0)
+                        {
+                            commonEndIndex = j + 1;
+                            break;
+                        }
+                    }
+                }
+                if (commonEndIndex > 0)
+                {
+                    string result = CleanJson(str.Substring(index, commonEndIndex - index));
+                    index = commonEndIndex;
+                    return result;
+                }
+            }
+            return null;
+        }
+
+        private static string CleanJson(string json)
+        {
+            string[] lines = json.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            StringBuilder result = new StringBuilder();
+            string indentString = "    ";
+            int indent = 0;
+            char[] braceChars = { '{', '}', '[', ']' };
+            for (int j = 0; j < lines.Length; j++)
+            {
+                string line = lines[j].TrimStart();
+                line = line.Replace("!0", "true");
+                if (line.Length > 0 && !braceChars.Contains(line[0]))
+                {
+                    line = "\"" + line;
+                    line = line.Insert(line.IndexOf(':'), "\"");
+                }
+                if (line.Contains("}"))
+                {
+                    indent--;
+                }
+                line = String.Concat(Enumerable.Repeat(indentString, indent)) + line;
+                if (line.Contains("{"))
+                {
+                    indent++;
+                }
+                result.AppendLine(line);
+            }
+            return result.ToString();
+        }
+
+        private static void CopyFilesRecursively(DirectoryInfo source, DirectoryInfo target)
+        {
+            string[] extensions = { "json", "js" };
+            foreach (DirectoryInfo dir in source.GetDirectories())
+            {
+                // "res" folder contains some data we don't want
+                if (dir.Name != "res")
+                {
+                    // Remove the special case folder (TODO: Make this more generic)
+                    CopyFilesRecursively(dir, target.CreateSubdirectory(dir.Name.Replace("(风控)", string.Empty)));
+                }
+            }
+            foreach (FileInfo file in source.GetFiles())
+            {
+                if (extensions.Contains(file.Extension.ToLower().TrimStart(new char[] { '.' })))
+                {
+                    file.CopyTo(Path.Combine(target.FullName, file.Name), true);
+                }
+            }
+            if (target.GetFiles().Length == 0)
+            {
+                target.Delete();
+            }
         }
     }
 }

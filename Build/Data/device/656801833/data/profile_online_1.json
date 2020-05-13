@@ -28,7 +28,8 @@
 	},
 	"DeviceLE": {
 		"Index": 0,
-		"LESet": [{
+		"LESet": [
+			{
 				"LEConfig": 0,
 				"LEModel": 7,
 				"LESubModel": 1,
@@ -37,7 +38,8 @@
 				"LEDir": 0,
 				"LEColor": 0,
 				"LEEnable": 15
-			}, {
+			},
+			{
 				"LEConfig": 0,
 				"LEModel": 8,
 				"LESubModel": 1,
@@ -46,7 +48,8 @@
 				"LEDir": 0,
 				"LEColor": 0,
 				"LEEnable": 15
-			}, {
+			},
+			{
 				"LEConfig": 0,
 				"LEModel": 5,
 				"LESubModel": 1,
@@ -55,7 +58,8 @@
 				"LEDir": 0,
 				"LEColor": 0,
 				"LEEnable": 15
-			}, {
+			},
+			{
 				"LEConfig": 0,
 				"LEModel": 14,
 				"LESubModel": 1,
@@ -64,7 +68,8 @@
 				"LEDir": 0,
 				"LEColor": 0,
 				"LEEnable": 15
-			}, {
+			},
+			{
 				"LEConfig": 0,
 				"LEModel": 9,
 				"LESubModel": 1,
@@ -76,24 +81,30 @@
 			}
 		]
 	},
-	"DriverLE": [{
+	"DriverLE": [
+		{
 			"GUID": "",
 			"Name": ""
-		}, {
+		},
+		{
 			"GUID": "",
 			"Name": ""
-		}, {
+		},
+		{
 			"GUID": "",
 			"Name": ""
-		}, {
+		},
+		{
 			"GUID": "",
 			"Name": ""
-		}, {
+		},
+		{
 			"GUID": "",
 			"Name": ""
 		}
 	],
-	"KeySet": [{
+	"KeySet": [
+		{
 			"Index": 1,
 			"MenuPID": "",
 			"MenuID": "",
@@ -103,7 +114,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		},{
+		},
+		{
 			"Index": 2,
 			"MenuPID": "",
 			"MenuID": "",
@@ -120,7 +132,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 3,
 			"MenuPID": "",
 			"MenuID": "",
@@ -130,7 +143,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 4,
 			"MenuPID": "",
 			"MenuID": "",
@@ -140,7 +154,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 5,
 			"MenuPID": "",
 			"MenuID": "",
@@ -150,7 +165,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		},  {
+		},
+		{
 			"Index": 7,
 			"MenuPID": "",
 			"MenuID": "",
@@ -160,7 +176,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 10,
 			"MenuPID": "",
 			"MenuID": "",
@@ -170,7 +187,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 11,
 			"MenuPID": "",
 			"MenuID": "",
@@ -180,7 +198,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 12,
 			"MenuPID": "",
 			"MenuID": "",
@@ -190,7 +209,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 13,
 			"MenuPID": "",
 			"MenuID": "",
@@ -200,7 +220,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 14,
 			"MenuPID": "",
 			"MenuID": "",
@@ -210,7 +231,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 15,
 			"MenuPID": "",
 			"MenuID": "",
@@ -220,7 +242,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 16,
 			"MenuPID": "",
 			"MenuID": "",
@@ -230,7 +253,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 17,
 			"MenuPID": "",
 			"MenuID": "",
@@ -240,7 +264,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 18,
 			"MenuPID": "",
 			"MenuID": "",
@@ -250,7 +275,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 19,
 			"MenuPID": "",
 			"MenuID": "",
@@ -260,7 +286,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 20,
 			"MenuPID": "",
 			"MenuID": "",
@@ -270,7 +297,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 21,
 			"MenuPID": "",
 			"MenuID": "",
@@ -280,7 +308,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 22,
 			"MenuPID": "",
 			"MenuID": "",
@@ -290,7 +319,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 23,
 			"MenuPID": "",
 			"MenuID": "",
@@ -300,7 +330,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 24,
 			"MenuPID": "",
 			"MenuID": "",
@@ -310,7 +341,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 25,
 			"MenuPID": "",
 			"MenuID": "",
@@ -320,7 +352,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 26,
 			"MenuPID": "",
 			"MenuID": "",
@@ -330,7 +363,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 27,
 			"MenuPID": "",
 			"MenuID": "",
@@ -340,7 +374,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 28,
 			"MenuPID": "",
 			"MenuID": "",
@@ -350,7 +385,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 29,
 			"MenuPID": "",
 			"MenuID": "",
@@ -360,7 +396,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 30,
 			"MenuPID": "",
 			"MenuID": "",
@@ -370,7 +407,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 31,
 			"MenuPID": "",
 			"MenuID": "",
@@ -380,7 +418,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 32,
 			"MenuPID": "",
 			"MenuID": "",
@@ -390,7 +429,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 33,
 			"MenuPID": "",
 			"MenuID": "",
@@ -400,7 +440,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 34,
 			"MenuPID": "",
 			"MenuID": "",
@@ -410,7 +451,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 35,
 			"MenuPID": "",
 			"MenuID": "",
@@ -420,7 +462,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 36,
 			"MenuPID": "",
 			"MenuID": "",
@@ -430,7 +473,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 37,
 			"MenuPID": "",
 			"MenuID": "",
@@ -440,7 +484,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 38,
 			"MenuPID": "",
 			"MenuID": "",
@@ -450,7 +495,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 39,
 			"MenuPID": "",
 			"MenuID": "",
@@ -460,7 +506,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 40,
 			"MenuPID": "",
 			"MenuID": "",
@@ -470,7 +517,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 41,
 			"MenuPID": "",
 			"MenuID": "",
@@ -480,7 +528,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 42,
 			"MenuPID": "",
 			"MenuID": "",
@@ -490,7 +539,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 43,
 			"MenuPID": "",
 			"MenuID": "",
@@ -500,7 +550,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 44,
 			"MenuPID": "",
 			"MenuID": "",
@@ -510,7 +561,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 45,
 			"MenuPID": "",
 			"MenuID": "",
@@ -520,7 +572,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 46,
 			"MenuPID": "",
 			"MenuID": "",
@@ -530,7 +583,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 47,
 			"MenuPID": "",
 			"MenuID": "",
@@ -540,7 +594,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 48,
 			"MenuPID": "",
 			"MenuID": "",
@@ -550,7 +605,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 49,
 			"MenuPID": "",
 			"MenuID": "",
@@ -560,7 +616,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 50,
 			"MenuPID": "",
 			"MenuID": "",
@@ -570,7 +627,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		},  {
+		},
+		{
 			"Index": 53,
 			"MenuPID": "",
 			"MenuID": "",
@@ -580,17 +638,9 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
-			"Index": 54,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003000",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
+		},
+		{
+		
 			"Index": 55,
 			"MenuPID": "",
 			"MenuID": "",
@@ -600,7 +650,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 56,
 			"MenuPID": "",
 			"MenuID": "",
@@ -610,27 +661,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
-			"Index": 57,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003400",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 58,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003500",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
+		},
+		{
 			"Index": 59,
 			"MenuPID": "",
 			"MenuID": "",
@@ -640,7 +672,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 60,
 			"MenuPID": "",
 			"MenuID": "",
@@ -650,17 +683,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
-			"Index": 61,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003800",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
+		},
+		{
 			"Index": 62,
 			"MenuPID": "",
 			"MenuID": "",
@@ -670,117 +694,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
-			"Index": 63,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003A00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 64,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003B00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 65,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003C00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 66,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003D00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 67,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003E00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 68,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003F00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 69,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004000",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 70,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004100",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 71,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004200",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 72,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004300",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		},{
-			"Index": 81,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004C00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
+		},
+		{
 			"Index": 84,
 			"MenuPID": "",
 			"MenuID": "",
@@ -790,7 +705,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 85,
 			"MenuPID": "",
 			"MenuID": "",
@@ -800,7 +716,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 86,
 			"MenuPID": "",
 			"MenuID": "",
@@ -810,7 +727,8 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 87,
 			"MenuPID": "",
 			"MenuID": "",
@@ -820,109 +738,112 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
+		},
+		{
 			"Index": 88,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005300"
-		}, 
+		},
 		{
 			"Index": 91,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005600"
-		}, {
+		},
+		{
 			"Index": 92,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005700"
-		}, { 
+		},
+		{
 			"Index": 94,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005900"
-		}, {
+		},
+		{
 			"Index": 95,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005A00"
-		}, {
+		},
+		{
 			"Index": 96,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005B00"
-		}, {
+		},
+		{
 			"Index": 97,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005C00"
-		}, {
+		},
+		{
 			"Index": 98,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005D00"
-		}, {
+		},
+		{
 			"Index": 99,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005E00"
-		}, {
+		},
+		{
 			"Index": 100,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02005F00"
-		},  {
+		},
+		{
 			"Index": 101,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02006000"
-		}, {
+		},
+		{
 			"Index": 102,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02006100"
-		},{
+		},
+		{
 			"Index": 103,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02006200"
-		},{
+		},
+		{
 			"Index": 104,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02006300"
-		},{
+		},
+		{
 			"Index": 109,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02002C00"
-		}, {
-			"Index": 110,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00"
-		}, {
-			"Index": 111,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00"
+	
 		}
 	]
 }
