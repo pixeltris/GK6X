@@ -24,7 +24,11 @@ namespace GK6X
                 server.Start();
                 Program.Log("Started web GUI server at " + url);
             }
-            Process.Start("chrome", "--incognito " + url);
+            if (server.IsRunning)
+            {
+                Process.Start(url);
+                //Process.Start("chrome", "--incognito " + url);
+            }
         }
 
         public static void UpdateDeviceList()
