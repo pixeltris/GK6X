@@ -18,6 +18,14 @@ You can reprogram the base layer and layers 1-3 (and the Fn keys). The 'driver' 
 
 ![Alt text](https://raw.githubusercontent.com/pixeltris/GK6X/master/Screenshot.png)
 
+## Usage (Web GUI)
+
+There's some very basic (and mostly untested) support for a web GUI by using the official software's web component. Use the 'gui' command to start the web server (it should automatically open the web page at http://127.0.0.1:6464).
+
+_Note: This repo doesn't contain the web files. Copy and paste the official software's folder into the "Build" folder, or use the pre-bundled version on the [releases](https://github.com/pixeltris/GK6X/releases) page._
+
+![Alt text](https://raw.githubusercontent.com/pixeltris/GK6X/master/ScreenshotWeb.png)
+
 ## Related projects
 
 https://github.com/wgwoods/gk64-python - thanks to [@wgwoods](https://github.com/wgwoods) for his work on annotating the dissasembly of the GK64 firmware.
