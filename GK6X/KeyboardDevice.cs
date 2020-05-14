@@ -220,10 +220,11 @@ namespace GK6X
         public void SetMacros(KeyboardLayer layer, UserDataFile userData)
         {
             WritePacketNoResponse(OpCodes.LayerResetDataType, (byte)layer, null, (byte)KeyboardLayerDataType.Macros);
-            if (userData.GetNumMacros(layer) == 0)
+            // The following check has been disabled so that the WebGUI can assign macros without having to setup the keys
+            /*if (userData.GetNumMacros(layer) == 0)
             {
                 return;
-            }
+            }*/
             using (Packet packet = new Packet())
             {
                 // TODO: This should be improved to only send the macros to the layers that require the macro

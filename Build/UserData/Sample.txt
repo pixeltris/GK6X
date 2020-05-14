@@ -64,6 +64,9 @@ Q:Macro(QuickCutSave)
 # This uses static lighting to set the 'ASD' keys to red and 'W' to green. See the "WASD static.le" file to see how this works.
 [Lighting(WASD static,Layer1)]
 
+# This clears previously assigned lighting effects (it doesn't clear any lighting effects set in this file)
+[NoLighting]
+
 # If you're confused about the codes/numbers in the lighting effect files, use the command "dumpkeys null ex" to see the codes for your keyboard keys.
 # When creating your own lighting effects you can use the names of the keys as seen in the link at the top of this file.
 

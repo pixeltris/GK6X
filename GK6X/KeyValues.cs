@@ -570,4 +570,187 @@ namespace GK6X
         Back = 0x08,
         Advance = 0x10
     }
+
+    internal static class MacroKeyNames
+    {
+        public struct Item
+        {
+            public string Name;
+            public uint DriverValue;
+            public string JsCode;// javascript code
+        }
+
+        public static Dictionary<string, Item> Names = new Dictionary<string, Item>();
+
+        static MacroKeyNames()
+        {
+            // CANT_MAP = no mapping in the official software (provide our own values)
+
+            // Ordered based on the order in DriverValue
+            Add("Esc", DriverValue.Esc, "Escape");
+            Add("F1", DriverValue.F1, "F1");
+            Add("F2", DriverValue.F2, "F2");
+            Add("F3", DriverValue.F3, "F3");
+            Add("F4", DriverValue.F4, "F4");
+            Add("F5", DriverValue.F5, "F5");
+            Add("F6", DriverValue.F6, "F6");
+            Add("F7", DriverValue.F7, "F7");
+            Add("F8", DriverValue.F8, "F8");
+            Add("F9", DriverValue.F9, "F9");
+            Add("F10", DriverValue.F10, "F10");
+            Add("F11", DriverValue.F11, "F11");
+            Add("F12", DriverValue.F12, "F12");
+            Add("Print Screen", DriverValue.PrintScreen, "PrintScreen");
+            Add("Scroll Lock", DriverValue.ScrollLock, "ScrollLock");
+            Add("Pause", DriverValue.Pause, "Pause");
+            Add("`", DriverValue.BackTick, "Backquote");
+            Add("1", DriverValue.D1, "Digit1");
+            Add("2", DriverValue.D2, "Digit2");
+            Add("3", DriverValue.D3, "Digit3");
+            Add("4", DriverValue.D4, "Digit4");
+            Add("5", DriverValue.D5, "Digit5");
+            Add("6", DriverValue.D6, "Digit6");
+            Add("7", DriverValue.D7, "Digit7");
+            Add("8", DriverValue.D8, "Digit8");
+            Add("9", DriverValue.D9, "Digit9");
+            Add("0", DriverValue.D0, "Digit0");
+            Add("-", DriverValue.Subtract, "Minus");
+            Add("=", DriverValue.Add, "Equal");
+            Add("Backspace", DriverValue.Backspace, "Backspace");
+            Add("Insert", DriverValue.Insert, "Insert");
+            Add("Home", DriverValue.Home, "Home");
+            Add("Page Up", DriverValue.PageUp, "PageUp");
+            Add("Tab", DriverValue.Tab, "Tab");
+            Add("Q", DriverValue.Q, "KeyQ");
+            Add("W", DriverValue.W, "KeyW");
+            Add("E", DriverValue.E, "KeyE");
+            Add("R", DriverValue.R, "KeyR");
+            Add("T", DriverValue.T, "KeyT");
+            Add("Y", DriverValue.Y, "KeyY");
+            Add("U", DriverValue.U, "KeyU");
+            Add("I", DriverValue.I, "KeyI");
+            Add("O", DriverValue.O, "KeyO");
+            Add("P", DriverValue.P, "KeyP");
+            Add("[", DriverValue.OpenSquareBrace, "BracketLeft");
+            Add("]", DriverValue.CloseSquareBrace, "BracketRight");
+            Add("\\", DriverValue.Backslash, "Backslash");
+            Add("Delete", DriverValue.Delete, "Delete");
+            Add("End", DriverValue.End, "End");
+            Add("Page Down", DriverValue.PageDown, "PageDown");
+            Add("Caps Lock", DriverValue.CapsLock, "CapsLock");
+            Add("A", DriverValue.A, "KeyA");
+            Add("S", DriverValue.S, "KeyS");
+            Add("D", DriverValue.D, "KeyD");
+            Add("F", DriverValue.F, "KeyF");
+            Add("G", DriverValue.G, "KeyG");
+            Add("H", DriverValue.H, "KeyH");
+            Add("J", DriverValue.J, "KeyJ");
+            Add("K", DriverValue.K, "KeyK");
+            Add("L", DriverValue.L, "KeyL");
+            Add(";", DriverValue.Semicolon, "Semicolon");
+            Add("'", DriverValue.Quotes, "Quote");
+            Add("Enter", DriverValue.Enter, "Enter");
+            Add("Left Shift", DriverValue.LShift, "ShiftLeft");
+            Add("AltBackslash", DriverValue.AltBackslash, "IntlBackslash");// CANT_MAP
+            Add("Z", DriverValue.Z, "KeyZ");
+            Add("X", DriverValue.X, "KeyX");
+            Add("C", DriverValue.C, "KeyC");
+            Add("V", DriverValue.V, "KeyV");
+            Add("B", DriverValue.B, "KeyB");
+            Add("N", DriverValue.N, "KeyN");
+            Add("M", DriverValue.M, "KeyM");
+            Add(",", DriverValue.Comma, "Comma");
+            Add(".", DriverValue.Period, "Period");
+            Add("/", DriverValue.Slash, "Slash");
+            Add("Right Shift", DriverValue.RShift, "ShiftRight");
+            Add("Up", DriverValue.Up, "ArrowUp");
+            Add("Left Ctrl", DriverValue.LCtrl, "ControlLeft");
+            Add("Left Win", DriverValue.LWin, "MetaLeft");
+            Add("Left Alt", DriverValue.LAlt, "AltLeft");
+            Add("Space", DriverValue.Space, "Space");
+            Add("Right Alt", DriverValue.RAlt, "AltRight");
+            Add("Right Win", DriverValue.RWin, "MetaRight");
+            Add("Menu", DriverValue.Menu, "ContextMenu");// CANT_MAP
+            Add("Right Ctrl", DriverValue.RCtrl, "ControlRight");
+            Add("Num Lock", DriverValue.NumLock, "NumLock");
+            Add("Num /", DriverValue.NumPadSlash, "NumpadDivide");
+            Add("Num *", DriverValue.NumPadAsterisk, "NumpadMultiply");
+            Add("Num -", DriverValue.NumPadSubtract, "NumpadSubtract");
+            Add("Num 7", DriverValue.NumPad7, "Numpad7");
+            Add("Num 8", DriverValue.NumPad8, "Numpad8");
+            Add("Num 9", DriverValue.NumPad9, "Numpad9");
+            Add("Num +", DriverValue.NumPadAdd, "NumpadAdd");
+            Add("Num 4", DriverValue.NumPad4, "Numpad4");
+            Add("Num 5", DriverValue.NumPad5, "Numpad5");
+            Add("Num 6", DriverValue.NumPad6, "Numpad6");
+            Add("Num 1", DriverValue.NumPad1, "Numpad1");
+            Add("Num 2", DriverValue.NumPad2, "Numpad2");
+            Add("Num 3", DriverValue.NumPad3, "Numpad3");
+            Add("Num 0", DriverValue.NumPad0, "Numpad0");
+            Add("Num .", DriverValue.NumPadPeriod, "NumpadDecimal");
+            Add("Num Enter", DriverValue.NumPadEnter, "NumpadEnter");// <--- The official software just maps to regular "Enter"
+            Add("OpenMediaPlayer", DriverValue.OpenMediaPlayer, "LaunchMediaPlayer");// event.key CANT_MAP
+            Add("MediaPlayPause", DriverValue.MediaPlayPause, "MediaPlayPause");// event.key CANT_MAP
+            Add("MediaStop", DriverValue.MediaStop, "MediaStop");// event.key CANT_MAP
+            Add("MediaPrevious", DriverValue.MediaPrevious, "MediaTrackPrevious");// event.key CANT_MAP
+            Add("MediaNext", DriverValue.MediaNext, "MediaTrackNext");// event.key CANT_MAP
+            Add("VolumeUp", DriverValue.VolumeUp, "AudioVolumeUp");// event.key CANT_MAP
+            Add("VolumeDown", DriverValue.VolumeDown, "AudioVolumeDown");// event.key CANT_MAP
+            Add("VolumeMute", DriverValue.VolumeMute, "AudioVolumeMute");// event.key CANT_MAP
+            //Add("BrowserSearch", DriverValue.BrowserSearch, "");// event.key CANT_MAP
+            Add("BrowserStop", DriverValue.BrowserStop, "BrowserStop");// event.key CANT_MAP
+            Add("BrowserBack", DriverValue.BrowserBack, "BrowserBack");// event.key CANT_MAP
+            Add("BrowserForward", DriverValue.BrowserForward, "BrowserForward");// event.key CANT_MAP
+            Add("BrowserRefresh", DriverValue.BrowserRefresh, "BrowserRefresh");// event.key CANT_MAP
+            Add("BrowserFavorites", DriverValue.BrowserFavorites, "BrowserFavorites");// event.key CANT_MAP
+            Add("BrowserHome", DriverValue.BrowserHome, "BrowserHome");// event.key CANT_MAP
+            Add("OpenEmail", DriverValue.OpenEmail, "LaunchMail");// event.key CANT_MAP
+            Add("OpenMyComputer", DriverValue.OpenMyComputer, "LaunchApplication1");// event.key CANT_MAP
+            Add("OpenCalculator", DriverValue.OpenCalculator, "LaunchApplication2");// event.key CANT_MAP
+            //Add("Copy", DriverValue.Copy, "");// N/A
+            //Add("Paste", DriverValue.Paste, "");// N/A
+            //Add("Screenshot", DriverValue.Screenshot, "");// N/A
+            Add("Clear", DriverValue.Clear, "NumpadEqual");
+            Add("F13", DriverValue.F13, "F13");
+            Add("F14", DriverValue.F14, "F14");
+            Add("F15", DriverValue.F15, "F15");
+            Add("F16", DriverValue.F16, "F16");
+            Add("F17", DriverValue.F17, "F17");
+            Add("F18", DriverValue.F18, "F18");
+            Add("F19", DriverValue.F19, "F19");
+            Add("F20", DriverValue.F20, "F20");
+            Add("F21", DriverValue.F21, "F21");
+            Add("F22", DriverValue.F22, "F22");
+            Add("F23", DriverValue.F23, "F23");
+            Add("F24", DriverValue.F24, "F24");
+            Add("NumpadComma", DriverValue.NumPadComma, "NumpadComma");// CANT_MAP
+            Add("IntlRo", DriverValue.IntlRo, "IntlRo");// CANT_MAP
+            Add("KanaMode", DriverValue.KanaMode, "KanaMode");// CANT_MAP
+            Add("IntlYen", DriverValue.IntlYen, "IntlYen");// CANT_MAP
+            Add("Convert", DriverValue.Convert, "Convert");// CANT_MAP
+            Add("NonConvert", DriverValue.NonConvert, "NonConvert");// CANT_MAP
+            Add("Lang3", DriverValue.Lang3, "Lang3");// CANT_MAP
+            Add("Lang4", DriverValue.Lang4, "Lang4");// CANT_MAP
+        }
+
+        static void Add(string name, DriverValue value, string jsCode)
+        {
+            Names[name] = new Item()
+            {
+                Name = name,
+                DriverValue = (uint)value,
+                JsCode = jsCode
+            };
+        }
+
+        public static void GenerateJs()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (Item item in Names.Values)
+            {
+                sb.AppendLine("keyNameMap[\"" + item.JsCode + "\"] = \"" + item.Name + "\";");
+            }
+            Debug.WriteLine(sb);
+        }
+    }
 }

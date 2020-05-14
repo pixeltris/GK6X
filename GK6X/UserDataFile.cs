@@ -43,6 +43,7 @@ namespace GK6X
         public class Macro
         {
             public string Name;
+            public string Guid;// Used only for .cmf macros
             public int Id;
             public MacroRepeatType RepeatType;
             public byte RepeatCount;
@@ -70,6 +71,163 @@ namespace GK6X
                 public byte KeyCode;// DriverValueMouseButton or short version of DriverValue
                 public DriverValueModifer Modifier;
                 public ushort Delay;
+
+                /// <summary>
+                /// Used for the web gui string name mappings <see cref="MacroKeyNames"/>
+                /// </summary>
+                public string ValueStr;
+            }
+
+            /// <summary>
+            /// Key names as defined in the "Macros" tab (this is seemingly not in the data files?)
+            /// </summary>
+            Dictionary<string, DriverValue> keyNames = new Dictionary<string, DriverValue>()
+            {
+            };
+
+            public bool LoadFile(string path)
+            {
+                if (File.Exists(path))
+                {
+                    byte[] buffer = CMFile.Load(path);
+                    if (buffer != null)
+                    {
+                        string str = Encoding.UTF8.GetString(buffer);
+                        string[] lines = str.Split(new char[]  { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                        string currentGroup = null;
+                        Action currentAction = null;
+                        for (int i = 0; i < lines.Length; i++)
+                        {
+                            string line = lines[i].Trim();
+                            if (line.StartsWith("["))
+                            {
+                                line = line.Replace("[", string.Empty).Replace("]", string.Empty).ToLower();
+                                switch (line.ToLower())
+                                {
+                                    case "general":
+                                    case "script":
+                                        currentGroup = line;
+                                        break;
+                                }
+                            }
+                            else if (currentGroup != null)
+                            {
+                                string key = null;
+                                string value = null;
+                                int keyIndex = line.IndexOf('=');
+                                if (keyIndex <= 0)
+                                {
+                                    keyIndex = line.IndexOf(' ');
+                                }
+                                if (keyIndex > 0)
+                                {
+                                    key = line.Substring(0, keyIndex).Trim().ToLower();
+                                    value = line.Substring(keyIndex + 1).Trim();
+                                }
+                                else
+                                {
+                                    key = line.ToLower();
+                                }
+                                switch (currentGroup)
+                                {
+                                    case "general":
+                                        {
+                                            switch (key)
+                                            {
+                                                case "name":
+                                                    {
+                                                        Name = value;
+                                                    }
+                                                    break;
+                                                case "scriptid":
+                                                    {
+                                                        Guid = value;
+                                                    }
+                                                    break;
+                                                case "repeats":
+                                                    {
+                                                        byte.TryParse(value, out RepeatCount);
+                                                    }
+                                                    break;
+                                                case "stopmode":
+                                                    {
+                                                        byte stopmode;
+                                                        if (byte.TryParse(value, out stopmode))
+                                                        {
+                                                            RepeatType = (MacroRepeatType)stopmode;
+                                                        }
+                                                    }
+                                                    break;
+                                            }
+                                        }
+                                        break;
+                                    case "script":
+                                        {
+                                            switch (key)
+                                            {
+                                                case "keydown":
+                                                case "keyup":
+                                                    {
+                                                        value = value.Trim('\"');
+                                                        MacroKeyNames.Item macroKeyName;
+                                                        if (MacroKeyNames.Names.TryGetValue(value, out macroKeyName))
+                                                        {
+                                                            currentAction = null;
+                                                            currentAction = new Action();
+                                                            currentAction.ValueStr = value;
+                                                            if (KeyValues.IsKeyModifier(macroKeyName.DriverValue))
+                                                            {
+                                                                currentAction.Modifier = KeyValues.GetKeyModifier(macroKeyName.DriverValue);
+                                                            }
+                                                            else
+                                                            {
+                                                                currentAction.KeyCode = KeyValues.GetShortDriverValue(macroKeyName.DriverValue);
+                                                            }
+                                                            currentAction.State = key.Contains("up") ? MacroKeyState.Up : MacroKeyState.Down;
+                                                            currentAction.Type = MacroKeyType.Key;
+                                                            Actions.Add(currentAction);
+                                                        }
+                                                    }
+                                                    break;
+                                                case "leftdown":
+                                                case "leftup":
+                                                case "rightdown":
+                                                case "rightup":
+                                                    currentAction = null;
+                                                    currentAction = new Action();
+                                                    currentAction.State = key.Contains("up") ? MacroKeyState.Up : MacroKeyState.Down;
+                                                    switch(key)
+                                                    {
+                                                        case "leftdown":
+                                                        case "leftup":
+                                                            currentAction.KeyCode = (byte)DriverValueMouseButton.LButton;
+                                                            break;
+                                                        case "rightdown":
+                                                        case "rightup":
+                                                            currentAction.KeyCode = (byte)DriverValueMouseButton.RButton;
+                                                            break;
+                                                    }
+                                                    currentAction.Type = MacroKeyType.Mouse;
+                                                    Actions.Add(currentAction);
+                                                    break;
+                                                case "delay":
+                                                    {
+                                                        if (currentAction != null)
+                                                        {
+                                                            ushort.TryParse(value, out currentAction.Delay);
+                                                        }
+                                                    }
+                                                    break;
+                                            }
+                                        }
+                                        break;
+                                }
+                            }
+                        }
+                        return true;
+                    }
+                }
+                return false;
             }
         }
 
@@ -148,13 +306,28 @@ namespace GK6X
             {
                 try
                 {
-                    string fileName = Path.Combine(Program.DataBasePath, "lighting", Name + ".le");
-                    if (string.IsNullOrEmpty(Name) || !File.Exists(fileName))
+                    if (string.IsNullOrEmpty(Name))
                     {
                         return false;
                     }
+                    string path = Path.Combine(Program.DataBasePath, "lighting", Name + ".le");
+                    if (!File.Exists(path))
+                    {
+                        return false;
+                    }
+                    return Load(keyboard, File.ReadAllText(path));
+                }
+                catch
+                {
+                    return false;
+                }
+            }
 
-                    Dictionary<string, object> json = Json.Deserialize(File.ReadAllText(fileName)) as Dictionary<string, object>;
+            public bool Load(KeyboardState keyboard, string str)
+            {
+                try
+                {
+                    Dictionary<string, object> json = Json.Deserialize(str) as Dictionary<string, object>;
                     if (json == null)
                     {
                         return false;
@@ -187,7 +360,7 @@ namespace GK6X
                             LoadDynamic(keyboard, json);
                             break;
                     }
-                    
+
                     return true;
                 }
                 catch

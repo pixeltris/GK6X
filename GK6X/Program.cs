@@ -44,6 +44,7 @@ namespace GK6X
             {
                 Log("Connected to device '" + device.State.ModelName + "' model:" + device.State.ModelId +
                     " fw:" + device.State.FirmwareVersion);
+                WebGUI.UpdateDeviceList();
                 
                 string file = GetUserDataFile(device);
                 if (!string.IsNullOrEmpty(file))
@@ -69,6 +70,7 @@ namespace GK6X
             KeyboardDeviceManager.Disconnected += (KeyboardDevice device) =>
             {
                 Log("Disconnected from device '" + device.State.ModelName + "'");
+                WebGUI.UpdateDeviceList();
             };
             KeyboardDeviceManager.StartListener();
 
@@ -135,6 +137,9 @@ namespace GK6X
                         {
                             Log("Bad input. Expected folder name.");
                         }
+                        break;
+                    case "gui":
+                        WebGUI.Run();
                         break;
                     case "map":
                     case "unmap":

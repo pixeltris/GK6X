@@ -50,6 +50,19 @@ namespace GK6X
 
         const uint fileSignature = 0x434D4631;// Magic / signature "1FMC"
 
+        // This is a hack... these values are wack, no idea what's going on with them
+        static Dictionary<uint, ushort> unknownMaps = new Dictionary<uint, ushort>()
+        {
+            { GetUnknownMapStr("ihds"), 25869 },
+            { GetUnknownMapStr("IHDS"), 3155 },
+            { 0xA7D0DECE, 36218 },// "Unknown"
+        };
+
+        private static uint GetUnknownMapStr(string header)
+        {
+            return BitConverter.ToUInt32(Encoding.ASCII.GetBytes(header), 0);
+        }
+
         public static byte[] Load(string path)
         {
             if (File.Exists(path))
@@ -99,9 +112,24 @@ namespace GK6X
                 // File type (string) is at offset 24, written as 8 bytes, padded with 00
                 stream.Position = 24;
                 byte[] fileTypeStrBuffer = reader.ReadBytes(8);
+                uint intFileType = BitConverter.ToUInt32(fileTypeStrBuffer, 0);
+                if (unknownMaps.ContainsKey(intFileType))
+                {
+                    byte[] newType = BitConverter.GetBytes(unknownMaps[intFileType]);
+                    fileTypeStrBuffer = new byte[8];
+                    Buffer.BlockCopy(newType, 0, fileTypeStrBuffer, 0, newType.Length);
+                }
+                List<byte> blob = new List<byte>();
+                for (int i = 0; i < fileTypeStrBuffer.Length; i++)
+                {
+                    if (fileTypeStrBuffer[i] == 0)
+                    {
+                        break;
+                    }
+                    blob.Add(fileTypeStrBuffer[i]);
+                }
                 // First crc the file type name, then get crc the file type name (including zeroed bytes)
-                string fileTypeStr = Encoding.ASCII.GetString(fileTypeStrBuffer).TrimEnd('\0');
-                ushort encryptionKey = Crc16.GetCrc(Encoding.ASCII.GetBytes(fileTypeStr));
+                ushort encryptionKey = Crc16.GetCrc(blob.ToArray());
                 encryptionKey = Crc16.GetCrc(fileTypeStrBuffer, 0, encryptionKey);
 
                 // Data is at offset 32
@@ -140,7 +168,8 @@ namespace GK6X
             using (MemoryStream stream = new MemoryStream())
             using (BinaryWriter writer = new BinaryWriter(stream))
             {
-                byte[] fileTypeStrBuffer = fileTypes[fileType];
+                byte[] fileTypeStrBuffer = new byte[8];
+                Buffer.BlockCopy(fileTypes[fileType], 0, fileTypeStrBuffer, 0, fileTypes[fileType].Length);
                 string fileTypeStr = Encoding.ASCII.GetString(fileTypeStrBuffer).TrimEnd('\0');
                 ushort encryptionKey = Crc16.GetCrc(Encoding.ASCII.GetBytes(fileTypeStr));
                 encryptionKey = Crc16.GetCrc(fileTypeStrBuffer, 0, encryptionKey);
