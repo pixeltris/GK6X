@@ -338,7 +338,7 @@ namespace GK6X
             {
                 for (byte i = 0; i < byte.MaxValue; i++)
                 {
-                    packet.WriteByte(i);
+                    packet.WriteByte(0);
                 }
                 packet.WriteByte(0);
                 WritePacketNoResponse(OpCodes.DriverMacro, (byte)OpCodes_DriverMacro.KeyboardState, packet);
