@@ -22,7 +22,10 @@ namespace GK6X
             if (!server.IsRunning)
             {
                 server.Start();
-                Program.Log("Started web GUI server at " + url);
+                if (server.IsRunning)
+                {
+                    Program.Log("Started web GUI server at " + url);
+                }
             }
             if (server.IsRunning)
             {

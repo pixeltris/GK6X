@@ -1,4 +1,5 @@
-﻿// Based on https://github.com/pixeltris/SonyAlphaUSB/blob/master/SonyAlphaUSB/WIALogger.cs
+﻿#if COMMAND_LOGGER_ENABLED
+// Based on https://github.com/pixeltris/SonyAlphaUSB/blob/master/SonyAlphaUSB/WIALogger.cs
 // Taken 30th June 2019
 using System;
 using System.Collections.Generic;
@@ -2477,3 +2478,4 @@ namespace GK6X
         }
     }
 }
+#endif

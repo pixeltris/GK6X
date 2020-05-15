@@ -487,11 +487,12 @@ namespace GK6X
                         State.KeysByLogicCode.TryGetValue(callbackId, out key);
                         Program.Log("Index:" + callbackId + " " +
                             (key == null ? "(null)" :
-                                "Name:" + key.KeyName + " " +
-                                "Indx:" + key.LogicCode + " " +
-                                "Loc:" + key.LocationCode + " " +
-                                "D:0x" + key.DriverValue.ToString("X8") + " " +
-                                "E:" + (DriverValue)key.DriverValue));
+                                "Name:" + key.KeyName + " " +// Name of the key
+                                "Indx:" + key.LogicCode + " " +// 'Indx' for logic code / key index
+                                "Loc:" + key.LocationCode + " " +// 'Loc' for location code
+                                "D:0x" + key.DriverValue.ToString("X8") + " " +// 'D' for DriverValue
+                                //"E:" + (DriverValue)key.DriverValue + " " +// 'E' for the Enum variant of the DriverValue
+                                "S:" + key.DriverValueName));// <--- 'S' for string representation (use this for mapping keys in your UserData file)
                     }
                 }
                 else if (!Crc16.ValidateCrc(resultBufferWithReportId, reportHeaderLen, reportHeaderLen + 6))

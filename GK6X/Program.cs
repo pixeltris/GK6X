@@ -34,11 +34,13 @@ namespace GK6X
                 return;
             }
 
+#if COMMAND_LOGGER_ENABLED
             if (args.Length > 0 && args[0].ToLower() == "clog")
             {
                 CommandLogger.Run();
                 return;
             }
+#endif
 
             KeyboardDeviceManager.Connected += (KeyboardDevice device) =>
             {
@@ -145,6 +147,7 @@ namespace GK6X
                         {
                             Log(string.Empty);
                             Log("This is used to identify keys. Press keys to see their values. Missing keys will generally show up as '(null)' and they need to be mapped in the data files Data/devuces/YOUR_MODEL_ID/");
+                            Log("The 'S' values are what you want to use to map keys in your UserData file.");
                             Log(string.Empty);
                             Log("Entering 'driver' mode and mapping all keys to callbacks.");
                             Log(string.Empty);
