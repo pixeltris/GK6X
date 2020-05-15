@@ -319,6 +319,37 @@ namespace GK6X
             }
         }
 
+        public void SetIdentifyDriverMacros()
+        {
+            using (Packet packet = new Packet())
+            {
+                for (byte i = 0; i < byte.MaxValue; i++)
+                {
+                    packet.WriteUInt32((uint)(0x0A010000 | i));
+                }
+                WritePacketNoResponse(OpCodes.DriverLayerSetKeyValues, (byte)OpCodes_SetDriverLayerKeyValues.KeySet, packet);
+            }
+            using (Packet packet = new Packet())
+            {
+                packet.WriteByte(1);
+                WritePacketNoResponse(OpCodes.DriverMacro, (byte)OpCodes_DriverMacro.BeginEnd, packet);
+            }
+            using (Packet packet = new Packet())
+            {
+                for (byte i = 0; i < byte.MaxValue; i++)
+                {
+                    packet.WriteByte(i);
+                }
+                packet.WriteByte(0);
+                WritePacketNoResponse(OpCodes.DriverMacro, (byte)OpCodes_DriverMacro.KeyboardState, packet);
+            }
+            using (Packet packet = new Packet())
+            {
+                packet.WriteByte(0);
+                WritePacketNoResponse(OpCodes.DriverMacro, (byte)OpCodes_DriverMacro.BeginEnd, packet);
+            }
+        }
+
         public void WritePacketNoResponse(OpCodes op1, byte op2, Packet packet, byte op3 = 0)
         {
             using (Packet response = new Packet())
@@ -345,9 +376,9 @@ namespace GK6X
                 int lengthOffset = 4;
                 switch (op1)
                 {
+                    case OpCodes.DriverLayerSetKeyValues:
                     case OpCodes.DriverLayerUpdateRealtimeLighting:
                     case OpCodes.LayerSetLightValues:
-                    case OpCodes.DriverLayerSetKeyValues:
                         offsetOffset = 2;
                         lengthOffset = 5;
                         allowsLongOffset = true;
@@ -445,6 +476,22 @@ namespace GK6X
                     byte[] resultBuffer = new byte[64];
                     Buffer.BlockCopy(resultBufferWithReportId, 1, resultBuffer, 0, resultBuffer.Length);
                     return resultBuffer;
+                }
+                else if (resultBufferWithReportId[1] == (byte)OpCodes.DriverKeyCallback)
+                {
+                    byte callbackId = resultBufferWithReportId[3];
+                    bool callbackKeyDown = resultBufferWithReportId[4] != 0;
+                    if (callbackKeyDown)
+                    {
+                        KeyboardState.Key key;
+                        State.KeysByLogicCode.TryGetValue(callbackId, out key);
+                        Program.Log("index:" + callbackId + " key " +
+                            (key == null ? "(null)" :
+                                "name: " + key.KeyName + " " +
+                                "logicCode: " + key.LogicCode + " " +
+                                "locationCode: " + key.LocationCode + " " +
+                                "driverValue: " + key.DriverValue));
+                    }
                 }
                 else if (!Crc16.ValidateCrc(resultBufferWithReportId, reportHeaderLen, reportHeaderLen + 6))
                 {

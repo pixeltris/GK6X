@@ -141,6 +141,41 @@ namespace GK6X
                     case "gui":
                         WebGUI.Run();
                         break;
+                    case "findkeys":
+                        {
+                            Log(string.Empty);
+                            Log("This is used to identify keys. Press keys to see their values. Missing keys will generally show up as '(null)' and they need to be mapped in the data files Data/devuces/YOUR_MODEL_ID/");
+                            Log(string.Empty);
+                            Log("This will enter the 'driver' layer and map all keys to callbacks. This results in modifer keys becoming stuck (LCtrl, RAlt, RShift, etc). While it may be  " +
+                                "possible to de-press some of these keys manually, some may become stuck and require a system reboot to clear. It might be best to run this inside a VM. " + 
+                                "Do you want to continue? (y/n)");
+                            Log(string.Empty);
+                            string confirm = Console.ReadLine();
+                            if (!string.IsNullOrEmpty(confirm))
+                            {
+                                switch (confirm.ToLower())
+                                {
+                                    case "y":
+                                    case "ye":
+                                    case "yes":
+                                        Log("Entering driver mode...");
+                                        KeyboardDevice[] devices;
+                                        if (TryGetDevices(out devices))
+                                        {
+                                            foreach (KeyboardDevice device in devices)
+                                            {
+                                                device.SetLayer(KeyboardLayer.Driver);
+                                                device.SetIdentifyDriverMacros();
+                                            }
+                                        }
+                                        break;
+                                    default:
+                                        Log("Cancelled");
+                                        break;
+                                }
+                            }
+                        }
+                        break;
                     case "map":
                     case "unmap":
                         {
