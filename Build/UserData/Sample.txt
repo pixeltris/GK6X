@@ -14,7 +14,7 @@ W:LCtrl+LAlt+Delete
 
 # This will map Backspace to LAlt+Tab on layer1 and layer2
 [Layer1,Layer2]
-Backslash:LAlt+Tab
+Backspace:LAlt+Tab
 
 ##################################################################
 # Creating / mapping macros
@@ -46,7 +46,7 @@ Press:LCtrl+X
 Press:LCtrl+S
 
 # Assign the macro to Fn+Q on layer3
-[Layer3]
+[FnLayer3]
 Q:Macro(QuickCutSave)
 
 ##################################################################
