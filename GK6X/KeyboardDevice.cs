@@ -485,12 +485,13 @@ namespace GK6X
                     {
                         KeyboardState.Key key;
                         State.KeysByLogicCode.TryGetValue(callbackId, out key);
-                        Program.Log("index:" + callbackId + " key " +
+                        Program.Log("Index:" + callbackId + " " +
                             (key == null ? "(null)" :
-                                "name: " + key.KeyName + " " +
-                                "logicCode: " + key.LogicCode + " " +
-                                "locationCode: " + key.LocationCode + " " +
-                                "driverValue: " + key.DriverValue));
+                                "Name:" + key.KeyName + " " +
+                                "Indx:" + key.LogicCode + " " +
+                                "Loc:" + key.LocationCode + " " +
+                                "D:0x" + key.DriverValue.ToString("X8") + " " +
+                                "E:" + (DriverValue)key.DriverValue));
                     }
                 }
                 else if (!Crc16.ValidateCrc(resultBufferWithReportId, reportHeaderLen, reportHeaderLen + 6))

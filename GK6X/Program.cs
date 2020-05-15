@@ -146,30 +146,15 @@ namespace GK6X
                             Log(string.Empty);
                             Log("This is used to identify keys. Press keys to see their values. Missing keys will generally show up as '(null)' and they need to be mapped in the data files Data/devuces/YOUR_MODEL_ID/");
                             Log(string.Empty);
-                            Log("This will enter the 'driver' layer and map all keys to callbacks. Continue? (y/n)");
+                            Log("Entering 'driver' mode and mapping all keys to callbacks.");
                             Log(string.Empty);
-                            string confirm = Console.ReadLine();
-                            if (!string.IsNullOrEmpty(confirm))
+                            KeyboardDevice[] devices;
+                            if (TryGetDevices(out devices))
                             {
-                                switch (confirm.ToLower())
+                                foreach (KeyboardDevice device in devices)
                                 {
-                                    case "y":
-                                    case "ye":
-                                    case "yes":
-                                        Log("Entering driver mode...");
-                                        KeyboardDevice[] devices;
-                                        if (TryGetDevices(out devices))
-                                        {
-                                            foreach (KeyboardDevice device in devices)
-                                            {
-                                                device.SetLayer(KeyboardLayer.Driver);
-                                                device.SetIdentifyDriverMacros();
-                                            }
-                                        }
-                                        break;
-                                    default:
-                                        Log("Cancelled");
-                                        break;
+                                    device.SetLayer(KeyboardLayer.Driver);
+                                    device.SetIdentifyDriverMacros();
                                 }
                             }
                         }
