@@ -49,7 +49,7 @@ namespace GK6X
             public int Port { get; set; }
             public bool IsRunning
             {
-                get { return listener != null; }
+                get { return thread != null; }
             }
 
             Dictionary<string, Session> sessions = new Dictionary<string, Session>();
@@ -509,9 +509,12 @@ namespace GK6X
                                                                                 driverValue = KeyValues.UnusedKeyValue;
                                                                             }
                                                                         }
-                                                                        if (keyIndex >= 0)
+                                                                        if (keyIndex >= 0 && keyIndex < driverValues.Length)
                                                                         {
-                                                                            Debug.WriteLine(device.State.KeysByLogicCode[keyIndex].KeyName + " = " + (DriverValue)driverValue);
+                                                                            if (device.State.KeysByLogicCode.ContainsKey(keyIndex))
+                                                                            {
+                                                                                Debug.WriteLine(device.State.KeysByLogicCode[keyIndex].KeyName + " = " + (DriverValue)driverValue);
+                                                                            }
                                                                             driverValues[keyIndex] = driverValue;
                                                                         }
                                                                     }
@@ -629,7 +632,7 @@ namespace GK6X
                                                 if (!string.IsNullOrEmpty(basePath))
                                                 {
                                                     string fullPath = Path.Combine(basePath, path);
-                                                    Program.Log("WriteFile: " + fullPath);
+                                                    //Program.Log("WriteFile: " + fullPath);
                                                     if (IsFileInDirectoryOrSubDirectory(fullPath, dataPath))
                                                     {
                                                         string dir = Path.GetDirectoryName(fullPath);
@@ -863,9 +866,10 @@ namespace GK6X
                     context.Response.OutputStream.Flush();
                     context.Response.StatusCode = (int)HttpStatusCode.OK;
                 }
-                catch
+                catch (Exception e)
                 {
                     context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                    Program.Log("WebGUI exception: " + e);
                 }
 
                 context.Response.OutputStream.Close();
