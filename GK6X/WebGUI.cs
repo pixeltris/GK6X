@@ -15,6 +15,10 @@ namespace GK6X
     {
         public const int Port = 6464;
         static WebServer server = new WebServer(Port);
+        public static string UserDataPath
+        {
+            get { return server.UserDataPath; }
+        }
 
         public static void Run()
         {
@@ -50,6 +54,10 @@ namespace GK6X
             public bool IsRunning
             {
                 get { return thread != null; }
+            }
+            public string UserDataPath
+            {
+                get { return userDataPath; }
             }
 
             Dictionary<string, Session> sessions = new Dictionary<string, Session>();

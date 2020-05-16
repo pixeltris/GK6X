@@ -143,6 +143,69 @@ namespace GK6X
                     case "gui":
                         WebGUI.Run();
                         break;
+                    case "gui_le":
+                        {
+                            string userDataPath = WebGUI.UserDataPath;
+                            string leName = line.Trim();
+                            int spaceIndex = leName.IndexOf(' ');
+                            if (spaceIndex > 0)
+                            {
+                                leName = leName.Substring(spaceIndex).Trim();
+                            }
+                            else
+                            {
+                                leName = null;
+                            }
+                            if (!string.IsNullOrEmpty(leName))
+                            {
+                                if (!string.IsNullOrEmpty(userDataPath) && Directory.Exists(userDataPath))
+                                {
+                                    string leDir = Path.Combine(userDataPath, "Account", "0", "LE");
+                                    string leListFile = Path.Combine(leDir, "lelist.json");
+                                    if (File.Exists(leListFile))
+                                    {
+                                        bool foundFile = false;
+                                        List<object> leList = MiniJSON.Json.Deserialize(File.ReadAllText(leListFile)) as List<object>;
+                                        if (leList != null)
+                                        {
+                                            foreach (object item in leList)
+                                            {
+                                                Dictionary<string, object> guidName = item as Dictionary<string, object>;
+                                                if (guidName["Name"].ToString() == leName)
+                                                {
+                                                    string leFileName = Path.Combine(leDir, guidName["GUID"].ToString() + ".le");
+                                                    if (File.Exists(leFileName))
+                                                    {
+                                                        foreach (char c in System.IO.Path.GetInvalidFileNameChars())
+                                                        {
+                                                            leName = leName.Replace(c, '_');
+                                                        }
+                                                        string effectString = Encoding.UTF8.GetString(CMFile.Load(leFileName));
+                                                        effectString = CMFile.FormatJson(effectString);
+                                                        File.WriteAllText(Path.Combine(DataBasePath, "lighting", leName + ".le"), effectString);
+                                                        Program.Log("Copied '" + leName + "'");
+                                                        foundFile = true;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        if (!foundFile)
+                                        {
+                                            Program.Log("Failed to find lighting effect '" + leName + "' (it's case sensitive)");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Program.Log("Failed to find file '" + leListFile + "'");
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Program.Log("Invalid input. Expected lighting effect name.");
+                            }
+                        }
+                        break;
                     case "findkeys":
                         {
                             Log(string.Empty);

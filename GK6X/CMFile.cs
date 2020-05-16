@@ -307,7 +307,7 @@ namespace GK6X
             }
         }
 
-        private static string FormatJson(string json)
+        internal static string FormatJson(string json)
         {
             // https://stackoverflow.com/questions/4580397/json-formatter-in-c/24782322#24782322
             const string INDENT_STRING = "    ";
