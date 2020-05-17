@@ -24,6 +24,8 @@ There's some very basic (and mostly untested) support for a web GUI by using the
 
 _Note: This repo doesn't contain the web files. Copy and paste the official software's folder into the "Build" folder, or use the pre-bundled version on the [releases](https://github.com/pixeltris/GK6X/releases) page._
 
+_Note: The GUI isn't capable of remapping keys on the base layer. Changes to the JavaScript would be required to get this working_
+
 ![Alt text](https://raw.githubusercontent.com/pixeltris/GK6X/master/ScreenshotWeb.png)
 
 ## Related projects
