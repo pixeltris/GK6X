@@ -298,5 +298,11 @@
 		"FWID": "0x02103901",
 		"Name": "GK64 RGB",
 		"LEType": "0"
+	},
+ 	{
+		"ModelID": 655491211,
+		"FWID": "0x90201110",
+		"Name": "Tronsmart TK09R",
+		"LEType": "0"
 	}
 ]
