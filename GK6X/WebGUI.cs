@@ -870,12 +870,14 @@ namespace GK6X
                     context.Response.ContentType = contentType;
                     context.Response.ContentEncoding = Encoding.UTF8;
                     context.Response.ContentLength64 = responseBuffer.Length;
+                    context.Response.KeepAlive = false;
                     context.Response.OutputStream.Write(responseBuffer, 0, responseBuffer.Length);
                     context.Response.OutputStream.Flush();
                     context.Response.StatusCode = (int)HttpStatusCode.OK;
                 }
                 catch (Exception e)
                 {
+                    context.Response.KeepAlive = false;
                     context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                     Program.Log("WebGUI exception: " + e);
                 }
