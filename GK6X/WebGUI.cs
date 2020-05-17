@@ -33,8 +33,14 @@ namespace GK6X
             }
             if (server.IsRunning)
             {
-                Process.Start(url);
-                //Process.Start("chrome", "--incognito " + url);
+                try
+                {
+                    Process.Start(url);
+                    //Process.Start("chrome", "--incognito " + url);
+                }
+                catch
+                {
+                }
             }
         }
 

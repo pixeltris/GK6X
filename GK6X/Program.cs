@@ -512,10 +512,18 @@ namespace GK6X
                 }
             }
 
+            // Create a merged 'driver' directory containing all the data from all distributors (for the WebGUI)
+            string combinedDriverDir = Path.Combine(srcDir, "driver_combined");
+
             srcDir = GetDriverDir(srcDir);
             if (string.IsNullOrEmpty(srcDir))
             {
                 return;
+            }
+
+            if (!Directory.Exists(combinedDriverDir))
+            {
+                Directory.CreateDirectory(combinedDriverDir);
             }
 
             string dstDir = Path.Combine(Program.BasePath, "Data");
@@ -547,16 +555,20 @@ namespace GK6X
                     string additionalDeviceDir = Path.Combine(additionalDir, "device");
                     if (Directory.Exists(additionalDeviceDir))
                     {
-                        CopyFilesRecursively(new DirectoryInfo(additionalDeviceDir), new DirectoryInfo(Path.Combine(dstDir, "device")));
+                        CopyFilesRecursively(new DirectoryInfo(additionalDeviceDir), new DirectoryInfo(Path.Combine(dstDir, "device")), false);
                         string additionalModelListFile = Path.Combine(additionalDeviceDir, "modellist.json");
                         if (File.Exists(additionalModelListFile))
                         {
                             ReadModelList(additionalModelListFile, models);
                         }
                     }
+
+                    CopyFilesRecursively(new DirectoryInfo(additionalDir), new DirectoryInfo(combinedDriverDir), true);
                 }
                 CMFile.DumpLighting(leDir, Path.Combine(dstDir, "lighting"));
-                CopyFilesRecursively(new DirectoryInfo(deviceDir), new DirectoryInfo(Path.Combine(dstDir, "device")));
+                CopyFilesRecursively(new DirectoryInfo(deviceDir), new DirectoryInfo(Path.Combine(dstDir, "device")), false);
+
+                CopyFilesRecursively(new DirectoryInfo(srcDir), new DirectoryInfo(combinedDriverDir), true);
 
                 // Combine modellist.json files
                 ReadModelList(modelListFile, models);
@@ -662,26 +674,29 @@ namespace GK6X
             return result.ToString();
         }
 
-        private static void CopyFilesRecursively(DirectoryInfo source, DirectoryInfo target)
+        private static void CopyFilesRecursively(DirectoryInfo source, DirectoryInfo target, bool all)
         {
             string[] extensions = { "json", "js" };
             foreach (DirectoryInfo dir in source.GetDirectories())
             {
                 // "res" folder contains some data we don't want
-                if (dir.Name != "res")
+                if (all || dir.Name != "res")
                 {
                     // Remove the special case folder (TODO: Make this more generic)
-                    CopyFilesRecursively(dir, target.CreateSubdirectory(dir.Name.Replace("(风控)", string.Empty)));
+                    CopyFilesRecursively(dir, target.CreateSubdirectory(dir.Name.Replace("(风控)", string.Empty)), all);
                 }
             }
             foreach (FileInfo file in source.GetFiles())
             {
-                if (extensions.Contains(file.Extension.ToLower().TrimStart(new char[] { '.' })))
+                if (all || extensions.Contains(file.Extension.ToLower().TrimStart(new char[] { '.' })))
                 {
-                    file.CopyTo(Path.Combine(target.FullName, file.Name), true);
+                    if (!file.Name.Contains("剑灵") && !file.Name.Contains("逆战"))
+                    {
+                        file.CopyTo(Path.Combine(target.FullName, file.Name), true);
+                    }
                 }
             }
-            if (target.GetFiles().Length == 0)
+            if (!all && target.GetFiles().Length == 0)
             {
                 target.Delete();
             }
