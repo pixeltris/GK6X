@@ -1,0 +1,31 @@
+{
+	"GUID": "",
+	"ModeIndex": 0,
+	"Name": "",
+	"Active": 0,
+	"ModelID": 655491218,
+	"Application": {
+		"AppName": "",
+		"AppPath": ""
+	},
+	"DriverLE": [{
+		"GUID": "2416D981-B369-4796-B2FB-E429963C88C3",
+		"Name": "All breath"
+	},
+	{
+		"GUID": "7EB8A4D2-8D0B-464f-8135-A12219E72285",
+		"Name": "RGB Spectral cycle"
+	},
+	{
+		"GUID": "5C5597F8-5355-4abd-8080-3A7949A4D3E4",
+		"Name": "RGB Horse racing"
+	},
+	{
+		"GUID": "8A907B5B-DAF4-4b01-B226-29C17EC5B8FA",
+		"Name": "TT Spectral cycle 1"
+	},
+	{
+		"GUID": "9C40B2E4-717D-43de-A33E-65A76C33F885",
+		"Name": "Comet 2"
+	}]
+}

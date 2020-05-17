@@ -1,0 +1,65 @@
+{
+	"AspectRatio": "62.5%",
+	"STDMode": false,
+	"DeviceCate": 2,
+	"LeCate": 80,
+	"ScrollUpKey": 14,
+	"ScrollDownKey": 15,
+	"DPILED": true,
+	"DPIParam": {
+		"From": 50,
+		"To": 7200,
+		"Step": 50,
+		"Scale": [50,
+		800,
+		1600,
+		2400,
+		3200,
+		4000,
+		4800,
+		5600,
+		6400,
+		7200],
+		"SensorCheck": false
+	},
+	"FuncTable": [{
+		"Func": "mouse_online",
+		"Name": "title_online_mode",
+		"Type": 0,
+		"Icon": true,
+		"Compact": 1,
+		"Disabe": 0
+	},
+	{
+		"Func": "mouse_offline",
+		"Name": "title_offline_mode",
+		"Type": 0,
+		"Icon": 0,
+		"Compact": 1,
+		"Disabe": 0
+	},
+	{
+		"Func": "le",
+		"Name": "title_diy_lamp",
+		"Type": 0,
+		"Icon": true,
+		"Compact": 0,
+		"Disabe": 1
+	},
+	{
+		"Func": "macro",
+		"Name": "title_macro",
+		"Type": 0,
+		"Icon": true,
+		"Compact": 0,
+		"Disabe": 0
+	},
+	{
+		"Func": "sys_le",
+		"Name": "title_sys_le",
+		"Type": 0,
+		"Icon": true,
+		"Compact": 0,
+		"Disabe": 0
+	}]
+}

@@ -1,0 +1,37 @@
+{
+    "GUID":"56F81D4E-9C2E-4cdd-ADCE-6B2242A44013",
+    "Name":"鼠标霓虹变幻",
+    "Frames":[
+        {
+            "Count":100,
+            "Name":"frame0",
+            "Data":{
+                "0":"0xffffff",
+                "1":"0xffffff",
+                "2":"0xffffff",
+                "3":"0xffffff",
+                "4":"0xffffff",
+                "5":"0xffffff",
+                "6":"0xffffff",
+                "7":"0xffffff"
+            }
+        }
+    ],
+    "LEConfigs":[
+        {
+            "Keys":[
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                7
+            ],
+            "Color":"0xff0000",
+            "Type":1,
+            "Count":100
+        }
+    ]
+}

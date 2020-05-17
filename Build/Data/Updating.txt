@@ -6,6 +6,11 @@ index.js <---- contains lang data ("macro_cate_already_exist")
 manifest.js
 vendor.js
 
-- Navigate to "C:\Program Files (x86)\GK6XPlus Driver\CMSEngine\driver\" and create a copy of 0.js / index.js renamed to 0.formatted.js / index.formatted.js
+http://www.jikedingzhi.com/downloadlist?driverID=41latest
+https://www.tronsmart.com/tronsmart-radiant.htm (http://tronsmart.mediafire.com/file/wswa74ecivlq7t0/Tronsmart_Driver5.0.0.6.exe/file)
+
+- Download the latest files
+- Copy "GK6XPlus Driver", "Tronsmart Radiant", etc into a folder
+- Navigate to "GK6XPlus Driver/CMSEngine/driver/" and create a copy of 0.js / index.js renamed to 0.formatted.js / index.formatted.js
 - Format both files using https://beautifier.io/
-- Use the command "update_data C:\Program Files (x86)\GK6XPlus Driver"
+- Use the command "update_data YOUR_FOLDER_PATH" (where 'YOUR_FOLDER_PATH' is the path to the folder you created in step 1)

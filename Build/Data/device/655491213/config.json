@@ -1,0 +1,43 @@
+{
+	"DriverLEKey": 67,
+	"FuncTable": [{
+		"Func": "kb_online",
+		"Name": "title_online_mode",
+		"Type": 0,
+		"Icon": true,
+		"Compact": 1,
+		"Disabe": 0
+	},
+	{
+		"Func": "kb_offline",
+		"Name": "title_offline_mode",
+		"Type": 0,
+		"Icon": 0,
+		"Compact": 1,
+		"Disabe": 0
+	},
+	{
+		"Func": "le",
+		"Name": "title_diy_lamp",
+		"Type": 0,
+		"Icon": true,
+		"Compact": 0,
+		"Disabe": 1
+	},
+	{
+		"Func": "macro",
+		"Name": "title_macro",
+		"Type": 0,
+		"Icon": true,
+		"Compact": 0,
+		"Disabe": 0
+	},
+	{
+		"Func": "sys_le",
+		"Name": "title_sys_le",
+		"Type": 0,
+		"Icon": true,
+		"Compact": 0,
+		"Disabe": 0
+	}]
+}

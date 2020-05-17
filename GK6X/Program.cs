@@ -451,27 +451,77 @@ namespace GK6X
             Environment.Exit(1);
         }
 
-        private static void UpdateDataFiles(string srcDir)
+        internal static string GetDriverDir(string dir)
         {
-            string rootDir = Path.Combine(srcDir, "GK6XPlus Driver");
+            string rootDir = Path.Combine(dir, "GK6XPlus Driver");
             if (Directory.Exists(rootDir))
             {
-                srcDir = rootDir;
+                dir = rootDir;
             }
-            string engineDir = Path.Combine(srcDir, "CMSEngine");
+            string engineDir = Path.Combine(dir, "CMSEngine");
             if (Directory.Exists(engineDir))
             {
-                srcDir = engineDir;
+                dir = engineDir;
             }
-            string driverDir = Path.Combine(srcDir, "driver");
+            string driverDir = Path.Combine(dir, "driver");
             if (Directory.Exists(driverDir))
             {
-                srcDir = driverDir;
+                dir = driverDir;
+            }
+            string deviceDir = Path.Combine(dir, "device");
+            if (Directory.Exists(deviceDir) && File.Exists(Path.Combine(deviceDir, "modellist.json")))
+            {
+                return dir;
+            }
+            return null;
+        }
+
+        private static void ReadModelList(string file, Dictionary<string, object> models)
+        {
+            if (File.Exists(file))
+            {
+                List<object> objs = MiniJSON.Json.Deserialize(File.ReadAllText(file)) as List<object>;
+                if (objs != null)
+                {
+                    foreach (object obj in objs)
+                    {
+                        Dictionary<string, object> dict = obj as Dictionary<string, object>;
+                        if (dict != null && dict.ContainsKey("ModelID"))
+                        {
+                            models[dict["ModelID"].ToString()] = dict;
+                        }
+                    }
+                }
+            }
+        }
+
+        private static void UpdateDataFiles(string srcDir)
+        {
+            List<string> additionalDirs = new List<string>();
+            additionalDirs.Add("Tronsmart Radiant");
+            for (int i = 0; i < additionalDirs.Count; )
+            {
+                string fullPath = Path.Combine(srcDir, additionalDirs[i]);
+                if (Directory.Exists(fullPath))
+                {
+                    additionalDirs[i++] = GetDriverDir(fullPath);
+                }
+                else
+                {
+                    additionalDirs.RemoveAt(i);
+                }
+            }
+
+            srcDir = GetDriverDir(srcDir);
+            if (string.IsNullOrEmpty(srcDir))
+            {
+                return;
             }
 
             string dstDir = Path.Combine(Program.BasePath, "Data");
             string leDir = Path.Combine(srcDir, "res", "data", "le");
             string deviceDir = Path.Combine(srcDir, "device");
+            string modelListFile = Path.Combine(deviceDir, "modellist.json");
 
             // Format these files manually (https://beautifier.io/)
             string indexJsFile = Path.Combine(srcDir, "index.formatted.js");
@@ -482,10 +532,35 @@ namespace GK6X
                 return;
             }
 
-            if (File.Exists(indexJsFile) && File.Exists(zeroJsFile) && Directory.Exists(leDir) && Directory.Exists(deviceDir))
+            if (File.Exists(indexJsFile) && File.Exists(zeroJsFile) && Directory.Exists(leDir) && Directory.Exists(deviceDir) && File.Exists(modelListFile))
             {
+                Dictionary<string, object> models = new Dictionary<string, object>();
+
+                foreach (string additionalDir in additionalDirs)
+                {
+                    string additionalLeDir = Path.Combine(additionalDir, "res", "data", "le");
+                    if (Directory.Exists(additionalLeDir))
+                    {
+                        CMFile.DumpLighting(additionalLeDir, Path.Combine(dstDir, "lighting"));
+                    }
+
+                    string additionalDeviceDir = Path.Combine(additionalDir, "device");
+                    if (Directory.Exists(additionalDeviceDir))
+                    {
+                        CopyFilesRecursively(new DirectoryInfo(additionalDeviceDir), new DirectoryInfo(Path.Combine(dstDir, "device")));
+                        string additionalModelListFile = Path.Combine(additionalDeviceDir, "modellist.json");
+                        if (File.Exists(additionalModelListFile))
+                        {
+                            ReadModelList(additionalModelListFile, models);
+                        }
+                    }
+                }
                 CMFile.DumpLighting(leDir, Path.Combine(dstDir, "lighting"));
                 CopyFilesRecursively(new DirectoryInfo(deviceDir), new DirectoryInfo(Path.Combine(dstDir, "device")));
+
+                // Combine modellist.json files
+                ReadModelList(modelListFile, models);
+                File.WriteAllText(Path.Combine(dstDir, "device", "modellist.json"), CMFile.FormatJson(MiniJSON.Json.Serialize(models.Values.ToList())));
 
                 string langDir = Path.Combine(dstDir, "i18n", "langs");
                 Directory.CreateDirectory(langDir);
@@ -507,6 +582,10 @@ namespace GK6X
                 {
                     File.WriteAllText(Path.Combine(dstDir, "keys.json"), keysStr);
                 }
+            }
+            else
+            {
+                Log("Missing directory / file!");
             }
         }
 

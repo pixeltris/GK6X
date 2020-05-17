@@ -197,31 +197,10 @@ namespace GK6X
 
             public void Start()
             {
-                dataPath = Program.BasePath;
-                string rootDir = Path.Combine(dataPath, "GK6XPlus Driver");
-                if (Directory.Exists(rootDir))
-                {
-                    dataPath = rootDir;
-                }
-                string engineDir = Path.Combine(dataPath, "CMSEngine");
-                if (Directory.Exists(engineDir))
-                {
-                    dataPath = engineDir;
-                }
-                string driverDir = Path.Combine(dataPath, "driver");
-                if (Directory.Exists(driverDir))
-                {
-                    dataPath = driverDir;
-                }
-
-                if (dataPath == Program.BasePath)
+                dataPath = Program.GetDriverDir(Program.BasePath);
+                if (string.IsNullOrEmpty(dataPath))
                 {
                     Program.Log("Couldn't find data path");
-                    return;
-                }
-                else if (!Directory.Exists(dataPath))
-                {
-                    Program.Log("Couldn't find data path '" + dataPath + "'");
                     return;
                 }
                 userDataPath = Path.Combine(dataPath, "UserData");

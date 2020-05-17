@@ -1,0 +1,44 @@
+{
+    "GUID":"B9CEB525-1475-412d-BB1A-297C32438423",
+    "Name":"鼠标闪烁",
+    "Frames":[
+        {
+            "Count":3,
+            "Name":"frame0",
+            "Data":{
+                
+            }
+        },
+        {
+            "Count":3,
+            "Name":"frame1",
+            "Data":{
+                "0":"#ffffff",
+                "1":"#ffffff",
+                "2":"#ffffff",
+                "3":"#ffffff",
+                "4":"#ffffff",
+                "5":"#ffffff",
+                "6":"#ffffff",
+                "7":"#ffffff"
+            }
+        }
+    ],
+    "LEConfigs":[
+        {
+            "Keys":[
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                7
+            ],
+            "Color":"0xff0000",
+            "Type":1,
+            "Count":30
+        }
+    ]
+}
