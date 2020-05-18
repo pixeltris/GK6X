@@ -576,6 +576,12 @@ namespace GK6X
                                                 switch (type)
                                                 {
                                                     case 0:// Data
+                                                        switch (path)
+                                                        {
+                                                            case "Env.json":
+                                                                path = path.ToLower();
+                                                                break;
+                                                        }
                                                         basePath = dataPath;
                                                         break;
                                                     case 1:// User data

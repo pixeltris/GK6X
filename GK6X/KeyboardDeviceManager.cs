@@ -26,6 +26,7 @@ namespace GK6X
         /// Device path (string) -> KeyboardDevice
         /// </summary>
         private static Dictionary<string, KeyboardDevice> connectedDevices = new Dictionary<string, KeyboardDevice>();
+        private static HashSet<string> ignoredDevices = new HashSet<string>();
         public static event KeyboardDeviceConnected Connected;
         public static event KeyboardDeviceConnected Disconnected;
 
@@ -80,7 +81,7 @@ namespace GK6X
             {
                 foreach (HidDevice device in DeviceList.Local.GetHidDevices())
                 {
-                    if (connectedDevices.ContainsKey(device.DevicePath))
+                    if (connectedDevices.ContainsKey(device.DevicePath) || ignoredDevices.Contains(device.DevicePath))
                     {
                         continue;
                     }
@@ -88,10 +89,23 @@ namespace GK6X
                     // I *think* 65 is used by all GK6X keyboards
                     const int reportLength = 65;
                     ushort[] productIds;
-                    if (device.GetMaxInputReportLength() == reportLength &&
-                        device.GetMaxOutputReportLength() == reportLength &&
-                        knownProducts.TryGetValue((ushort)device.VendorID, out productIds) &&
-                        productIds.Contains((ushort)device.ProductID))
+                    bool validDevice = false;
+                    try
+                    {
+                        if (device.GetMaxInputReportLength() == reportLength &&
+                            device.GetMaxOutputReportLength() == reportLength &&
+                            knownProducts.TryGetValue((ushort)device.VendorID, out productIds) &&
+                            productIds.Contains((ushort)device.ProductID))
+                        {
+                            validDevice = true;
+                        }
+                    }
+                    catch
+                    {
+                        ignoredDevices.Add(device.DevicePath);
+                    }
+
+                    if (validDevice)
                     {
                         HidStream stream;
                         if (device.TryOpen(out stream))

@@ -568,6 +568,7 @@ namespace GK6X
                 CMFile.DumpLighting(leDir, Path.Combine(dstDir, "lighting"));
                 CopyFilesRecursively(new DirectoryInfo(deviceDir), new DirectoryInfo(Path.Combine(dstDir, "device")), false);
 
+                // TODO: Merge json files in /res/data/le/ and /res/data/macro/
                 CopyFilesRecursively(new DirectoryInfo(srcDir), new DirectoryInfo(combinedDriverDir), true);
 
                 // Combine modellist.json files
