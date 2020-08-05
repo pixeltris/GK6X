@@ -102,8 +102,8 @@
 			"Index": 1,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02006500",
+			"MenuName": "RAlt",
+			"DriverValue": "0x02000040",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -170,8 +170,8 @@
 			"Index": 8,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000040",
+			"MenuName": "RWin",
+			"DriverValue": "0x02000080",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -560,8 +560,8 @@
 			"Index": 48,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002A00",
+			"MenuName": "DEL",
+			"DriverValue": "0x02004C00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -660,8 +660,8 @@
 			"Index": 58,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003500",
+			"MenuName": "DEL",
+			"DriverValue": "0x02004C00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -720,8 +720,8 @@
 			"Index": 81,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004C00",
+			"MenuName": "`",
+			"DriverValue": "0x02003500",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -796,8 +796,8 @@
 			"Index": 111,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00"
+			"MenuName": "板载3层",
+			"DriverValue": "0x0a070004"
 		}
 	],
 	"FnKeySet": [

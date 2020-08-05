@@ -175,8 +175,8 @@
 			"Index": 7,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000020",
+			"MenuName": "板载3层",
+			"DriverValue": "0x0a070004",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

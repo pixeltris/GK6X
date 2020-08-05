@@ -1,0 +1,28 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [
+		{
+			"GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
+			"Name": "SK87S-2"
+		},
+		{
+			"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+			"Name": "RGB渐变"
+		},
+		{
+			"GUID": "28AA6B77-DDE5-4bba-B3E6-F8DD27C7BCF2",
+			"Name": "SK61S-PTIR-A"
+		},
+		{
+			"GUID": "849A6BA8-7C6F-4cab-BB62-7CEABCFC9E5E",
+			"Name": "SK61S-PTIR-B"
+		},
+		{
+			"GUID": "4ED93DAC-2475-40b2-A77A-AF29A33384EF",
+			"Name": "SK61S-PTIR-C"
+		}
+	]
+}

@@ -6,10 +6,11 @@
   "ShowOffsetLeft": "0",
   "ShowOffsetTop": "0",
   "IsFnKeySet": true,
+  "hasModeLe": false,
   "IsFnx": false,
   "FuncTable":[{
 	  "id": 0,
-	  "name": "ÉèÖÃ",
+	  "name": "ï¿½ï¿½ï¿½ï¿½",
 	  "lang": "menu_config_kb",
 	  "icon": "el-icon-kb-keyboard",
 	  "component": "/ConfigKB",
@@ -17,7 +18,7 @@
 	  "disable": false
 	},{
 	  "id": 1,
-	  "name": "µÆÐ§¿â",
+	  "name": "ï¿½ï¿½Ð§ï¿½ï¿½",
 	  "lang": "menu_le_lib",
 	  "icon": "el-icon-kb-light",
 	  "component": "/Le",
@@ -25,7 +26,7 @@
 	  "disable": false
 	},{
 	  "id": 2,
-	  "name": "ºê¹ÜÀí",
+	  "name": "ï¿½ï¿½ï¿½ï¿½ï¿½",
 	  "icon": "el-icon-document",
 	  "lang": "menu_macro_lib",
 	  "component": "/Macro",
@@ -33,27 +34,27 @@
 	  "disable": false
 	}],
 	"QuickSelect":[{
-	  "title": "µÚÒ»ÐÐ",
+	  "title": "ï¿½ï¿½Ò»ï¿½ï¿½",
 	  "lang": "line_first",
 	  "lcodes": [23,24,25,26,27,28,29,30,31,32,22,37,33,34,36]
 	},{
-	  "title": "µÚ¶þÐÐ",
+	  "title": "ï¿½Ú¶ï¿½ï¿½ï¿½",
 	  "lang": "line_second",
 	  "lcodes": [47,52,53,54,45,48,49,51,46,50,44,55,56,58,59]
 	},{
-	  "title": "µÚÈýÐÐ",
+	  "title": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
 	  "lang": "line_third",
 	  "lcodes": [67,69,70,71,72,73,74,75,68,79,76,77,66,81]
 	},{
-	  "title": "µÚËÄÐÐ",
+	  "title": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
 	  "lang": "line_fourth",
 	  "lcodes": [88,101,94,92,96,95,93,91,90,97,98,99,102,103]
 	},{
-	  "title": "µÚÎåÐÐ",
+	  "title": "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
 	  "lang": "line_fifth",
 	  "lcodes": [121,110,112,111,122,116,125,123,124,120]
 	},{
-	  "title": "µ×µÆ",
+	  "title": "ï¿½×µï¿½",
 	  "lang": "line_bottom",
 	  "lcodes": [61,83,105,127,60,82,104,126]
 	}],

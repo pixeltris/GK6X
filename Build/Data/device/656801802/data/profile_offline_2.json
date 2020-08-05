@@ -139,8 +139,8 @@
 			"Index": 6,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000010",
+			"MenuName": "RWin",
+			"DriverValue": "0x02000080",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -539,8 +539,8 @@
 			"Index": 48,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002A00",
+			"MenuName": "DEL",
+			"DriverValue": "0x02004C00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -559,8 +559,8 @@
 			"Index": 50,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "离线3",
-			"DriverValue": "0x0a070004",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

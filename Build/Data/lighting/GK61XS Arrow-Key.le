@@ -1,0 +1,398 @@
+{
+    
+   "Frames" : [
+        
+      {
+            
+         "Count" : 1,
+            
+         "Data" : {
+                
+            "0" : "0xffffff",
+                
+            "10" : "0xffffff",
+                
+            "101" : "0xffffff",
+                
+            "102" : "0xffffff",
+                
+            "11" : "0xffffff",
+                
+            "110" : "0xffffff",
+                
+            "111" : "0xffffff",
+                
+            "112" : "0xffffff",
+                
+            "113" : "0xffffff",
+                
+            "114" : "0xffffff",
+                
+            "115" : "0xffffff",
+                
+            "116" : "0xffffff",
+                
+            "117" : "0xffffff",
+                
+            "118" : "0xffffff",
+                
+            "119" : "0xffffff",
+                
+            "12" : "0xffffff",
+                
+            "120" : "0xffffff",
+                
+            "121" : "0xffffff",
+                
+            "122" : "0xffffff",
+                
+            "123" : "0xffffff",
+                
+            "124" : "0xffffff",
+                
+            "125" : "0xffffff",
+                
+            "13" : "0xffffff",
+                
+            "14" : "0xffffff",
+                
+            "15" : "0xffffff",
+                
+            "16" : "0xffffff",
+                
+            "2" : "0xffffff",
+                
+            "22" : "0xffffff",
+                
+            "24" : "0xffffff",
+                
+            "25" : "0xffffff",
+                
+            "26" : "0xffffff",
+                
+            "27" : "0xffffff",
+                
+            "28" : "0xffffff",
+                
+            "29" : "0xffffff",
+                
+            "3" : "0xffffff",
+                
+            "30" : "0xffffff",
+                
+            "31" : "0xffffff",
+                
+            "32" : "0xffffff",
+                
+            "33" : "0xffffff",
+                
+            "34" : "0xffffff",
+                
+            "35" : "0xffffff",
+                
+            "36" : "0xffffff",
+                
+            "37" : "0xffffff",
+                
+            "38" : "0xffffff",
+                
+            "4" : "0xffffff",
+                
+            "44" : "0xffffff",
+                
+            "46" : "0xffffff",
+                
+            "47" : "0xffffff",
+                
+            "48" : "0xffffff",
+                
+            "49" : "0xffffff",
+                
+            "5" : "0xffffff",
+                
+            "50" : "0xffffff",
+                
+            "51" : "0xffffff",
+                
+            "52" : "0xffffff",
+                
+            "53" : "0xffffff",
+                
+            "54" : "0xffffff",
+                
+            "55" : "0xffffff",
+                
+            "56" : "0xffffff",
+                
+            "58" : "0xffffff",
+                
+            "59" : "0xffffff",
+                
+            "6" : "0xffffff",
+                
+            "60" : "0xffffff",
+                
+            "66" : "0xffffff",
+                
+            "68" : "0xffffff",
+                
+            "69" : "0xffffff",
+                
+            "7" : "0xffffff",
+                
+            "70" : "0xffffff",
+                
+            "71" : "0xffffff",
+                
+            "72" : "0xffffff",
+                
+            "73" : "0xffffff",
+                
+            "74" : "0xffffff",
+                
+            "75" : "0xffffff",
+                
+            "76" : "0xffffff",
+                
+            "77" : "0xffffff",
+                
+            "8" : "0xffffff",
+                
+            "80" : "0xffffff",
+                
+            "88" : "0xffffff",
+                
+            "89" : "0xffffff",
+                
+            "9" : "0xffffff",
+                
+            "90" : "0xffffff",
+                
+            "92" : "0xffffff",
+                
+            "94" : "0xffffff",
+                
+            "95" : "0xffffff",
+                
+            "97" : "0xffffff",
+                
+            "98" : "0xffffff",
+                
+            "99" : "0xffffff"
+         
+            },
+            
+         "Name" : "frame0"
+      
+        }
+   
+    ],
+    
+   "GUID" : "5AF46B12-DE42-4b00-BE66-B2F07626C0BC",
+    
+   "LEConfigs" : [
+        
+      {
+            
+         "Color" : "0xff0000",
+            
+         "Count" : 1,
+            
+         "Keys" : [
+                 77,
+                 98,
+                 99,
+                 101 
+            ],
+            
+         "Type" : 0
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ff00",
+            
+         "Count" : 1,
+            
+         "Keys" : [
+                
+            88,
+                
+            66,
+                
+            90,
+                
+            89,
+                
+            46,
+                
+            72,
+                
+            70,
+                
+            48,
+                
+            26,
+                
+            49,
+                
+            50,
+                
+            51,
+                
+            31,
+                
+            52,
+                
+            53,
+                
+            54,
+                
+            74,
+                
+            73,
+                
+            32,
+                
+            33,
+                
+            24,
+                
+            27,
+                
+            47,
+                
+            28,
+                
+            30,
+                
+            71,
+                
+            25,
+                
+            69,
+                
+            29,
+                
+            68,
+                
+            2,
+                
+            3,
+                
+            4,
+                
+            5,
+                
+            6,
+                
+            7,
+                
+            8,
+                
+            9,
+                
+            10,
+                
+            11,
+                
+            58,
+                
+            0,
+                
+            14,
+                
+            22,
+                
+            92,
+                
+            12,
+                
+            13,
+                
+            34,
+                
+            35,
+                
+            36,
+                
+            55,
+                
+            56,
+                
+            75,
+                
+            76,
+                
+            44,
+                
+            102,
+                
+            80,
+                
+            94,
+                
+            95,
+                
+            97,
+                
+            15,
+                
+            37,
+                
+            59,
+                
+            16,
+                
+            38,
+                
+            60,
+                
+            118,
+                
+            119,
+                
+            120,
+                
+            121,
+                
+            122,
+                
+            123,
+                
+            124,
+                
+            125,
+                
+            110,
+                
+            111,
+                
+            112,
+                
+            113,
+                
+            114,
+                
+            115,
+                
+            116,
+                
+            117
+         
+            ],
+            
+         "Type" : 0
+      
+        }
+   
+    ],
+    
+   "LeCate" : 67,
+    
+   "LeType" : "simple",
+    
+   "Name" : "GK61XS 方向键"
+
+}

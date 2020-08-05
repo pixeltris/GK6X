@@ -660,8 +660,8 @@
 			"Index": 58,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003500",
+			"MenuName": "DEL",
+			"DriverValue": "0x02004C00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -720,8 +720,8 @@
 			"Index": 81,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004C00",
+			"MenuName": "`",
+			"DriverValue": "0x02003500",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -1071,8 +1071,8 @@
 			"Index": 47,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002900"
+			"MenuName": "`",
+			"DriverValue": "0x02003500"
 		},
 		{
 			"Index": 49,

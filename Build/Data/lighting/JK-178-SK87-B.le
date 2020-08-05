@@ -1,0 +1,477 @@
+{
+    
+   "Frames" : [
+        
+      {
+            
+         "Count" : 1,
+            
+         "Data" : {
+                
+            "0" : "0xffffff",
+                
+            "1" : "0xffffff",
+                
+            "10" : "0xffffff",
+                
+            "11" : "0xffffff",
+                
+            "12" : "0xffffff",
+                
+            "13" : "0xffffff",
+                
+            "14" : "0xffffff",
+                
+            "15" : "0xffffff",
+                
+            "16" : "0xffffff",
+                
+            "17" : "0xffffff",
+                
+            "18" : "0xffffff",
+                
+            "19" : "0xffffff",
+                
+            "2" : "0xffffff",
+                
+            "20" : "0xffffff",
+                
+            "21" : "0xffffff",
+                
+            "22" : "0xffffff",
+                
+            "23" : "0xffffff",
+                
+            "24" : "0xffffff",
+                
+            "25" : "0xffffff",
+                
+            "26" : "0xffffff",
+                
+            "27" : "0xffffff",
+                
+            "28" : "0xffffff",
+                
+            "29" : "0xffffff",
+                
+            "3" : "0xffffff",
+                
+            "30" : "0xffffff",
+                
+            "31" : "0xffffff",
+                
+            "32" : "0xffffff",
+                
+            "33" : "0xffffff",
+                
+            "34" : "0xffffff",
+                
+            "35" : "0xffffff",
+                
+            "36" : "0xffffff",
+                
+            "37" : "0xffffff",
+                
+            "38" : "0xffffff",
+                
+            "39" : "0xffffff",
+                
+            "4" : "0xffffff",
+                
+            "40" : "0xffffff",
+                
+            "41" : "0xffffff",
+                
+            "42" : "0xffffff",
+                
+            "43" : "0xffffff",
+                
+            "44" : "0xffffff",
+                
+            "45" : "0xffffff",
+                
+            "46" : "0xffffff",
+                
+            "47" : "0xffffff",
+                
+            "48" : "0xffffff",
+                
+            "49" : "0xffffff",
+                
+            "5" : "0xffffff",
+                
+            "50" : "0xffffff",
+                
+            "51" : "0xffffff",
+                
+            "52" : "0xffffff",
+                
+            "53" : "0xffffff",
+                
+            "54" : "0xffffff",
+                
+            "55" : "0xffffff",
+                
+            "56" : "0xffffff",
+                
+            "57" : "0xffffff",
+                
+            "58" : "0xffffff",
+                
+            "59" : "0xffffff",
+                
+            "6" : "0xffffff",
+                
+            "60" : "0xffffff",
+                
+            "61" : "0xffffff",
+                
+            "62" : "0xffffff",
+                
+            "63" : "0xffffff",
+                
+            "64" : "0xffffff",
+                
+            "65" : "0xffffff",
+                
+            "66" : "0xffffff",
+                
+            "67" : "0xffffff",
+                
+            "68" : "0xffffff",
+                
+            "69" : "0xffffff",
+                
+            "7" : "0xffffff",
+                
+            "70" : "0xffffff",
+                
+            "71" : "0xffffff",
+                
+            "72" : "0xffffff",
+                
+            "73" : "0xffffff",
+                
+            "74" : "0xffffff",
+                
+            "75" : "0xffffff",
+                
+            "76" : "0xffffff",
+                
+            "77" : "0xffffff",
+                
+            "78" : "0xffffff",
+                
+            "79" : "0xffffff",
+                
+            "8" : "0xffffff",
+                
+            "80" : "0xffffff",
+                
+            "81" : "0xffffff",
+                
+            "82" : "0xffffff",
+                
+            "83" : "0xffffff",
+                
+            "84" : "0xffffff",
+                
+            "85" : "0xffffff",
+                
+            "86" : "0xffffff",
+                
+            "87" : "0xffffff",
+                
+            "88" : "0xffffff",
+                
+            "89" : "0xffffff",
+                
+            "9" : "0xffffff",
+                
+            "90" : "0xffffff",
+                
+            "91" : "0xffffff"
+         
+            },
+            
+         "Name" : "frame0"
+      
+        }
+   
+    ],
+    
+   "GUID" : "2DAF69B8-FEFC-456a-B006-8F57C82EA421",
+    
+   "LEConfigs" : [
+        
+      {
+            
+         "Color" : "0xff7700",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 55,
+                 56,
+                 69,
+                 70,
+                 81,
+                 82,
+                 83 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xff3300",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 53,
+                 54,
+                 67,
+                 68,
+                 66 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xff004d",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 33,
+                 34,
+                 35,
+                 36,
+                 37,
+                 38,
+                 50,
+                 51,
+                 52 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xff0099",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 16,
+                 17,
+                 18,
+                 19,
+                 20,
+                 0,
+                 1,
+                 2 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xff00e6",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 39,
+                 21,
+                 22,
+                 3,
+                 4,
+                 5,
+                 6,
+                 23 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xcc00ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 40,
+                 24,
+                 25,
+                 26,
+                 7,
+                 8,
+                 9,
+                 41 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x8000ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 10,
+                 11,
+                 12,
+                 27,
+                 28,
+                 42,
+                 43 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x3300ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 13,
+                 14,
+                 15,
+                 29,
+                 30,
+                 44 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x0019ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 31,
+                 32,
+                 45,
+                 46,
+                 47,
+                 48,
+                 49 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x0066ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 60,
+                 61,
+                 62,
+                 63,
+                 64,
+                 65,
+                 79,
+                 80,
+                 91 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x00b2ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 58,
+                 59,
+                 76,
+                 77,
+                 78,
+                 88,
+                 89,
+                 90 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ffff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 57,
+                 73,
+                 74,
+                 75,
+                 84,
+                 85,
+                 86,
+                 87 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ffb3",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 56,
+                 71,
+                 72 
+            ],
+            
+         "Type" : 1
+      
+        }
+   
+    ],
+    
+   "LeCate" : 870,
+    
+   "LeType" : "simple",
+    
+   "Name" : "JK-178-SK87-B"
+
+}

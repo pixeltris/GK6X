@@ -5,6 +5,7 @@
     "ShowOffsetLeft": 0,
     "ShowOffsetTop": 0,
     "IsFnKeySet": true,
+	"hasModeLe":true,
     "FuncTable": [{
         "id": 0,
         "name": "设置",

@@ -559,8 +559,8 @@
 			"Index": 50,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "离线3",
-			"DriverValue": "0x0a070004",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

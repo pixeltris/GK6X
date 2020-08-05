@@ -1,0 +1,26 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [{
+		"GUID": "A0BB7A61-60C5-4FBE-A568-F245D826CFC6",
+		"Name": "SK71S-A"
+	},
+	{
+		"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+		"Name": "RGB渐变"
+	},
+	{
+		"GUID": "6758C491-9BBC-4F57-B870-E76CC21A8109",
+		"Name": "SK71S-B"
+	},
+	{
+		"GUID": "142030C6-F69C-4474-9444-AACC51FE4496",
+		"Name": "SK71S-C"
+	},
+	{
+		"GUID": "A4697BA0-A8A6-489a-AEA8-DF6AFE9469E4",
+		"Name": "SK71S-D"
+	}]
+}

@@ -3,9 +3,10 @@
 	"ModeIndex": 1,
 	"Name": "标准配置",
 	"Active": 0,
-	"DriverLE": [{
-		"GUID": "26C232E5-B89B-4b17-BF1D-75DC61351A93",
-		"Name": "全亮绿光"
+	"DriverLE": [
+	{
+		 "GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+		 "Name": "Macice Blue"
 	},
 	{
 		"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",

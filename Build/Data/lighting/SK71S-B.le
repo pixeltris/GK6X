@@ -1,0 +1,481 @@
+{
+    
+   "Frames" : [
+        
+      {
+            
+         "Count" : 1,
+            
+         "Data" : {
+                
+            "0" : "0xffffff",
+                
+            "1" : "0xffffff",
+                
+            "10" : "0xffffff",
+                
+            "11" : "0xffffff",
+                
+            "12" : "0xffffff",
+                
+            "13" : "0xffffff",
+                
+            "14" : "0xffffff",
+                
+            "15" : "0xffffff",
+                
+            "16" : "0xffffff",
+                
+            "17" : "0xffffff",
+                
+            "18" : "0xffffff",
+                
+            "19" : "0xffffff",
+                
+            "2" : "0xffffff",
+                
+            "20" : "0xffffff",
+                
+            "21" : "0xffffff",
+                
+            "22" : "0xffffff",
+                
+            "23" : "0xffffff",
+                
+            "24" : "0xffffff",
+                
+            "25" : "0xffffff",
+                
+            "26" : "0xffffff",
+                
+            "27" : "0xffffff",
+                
+            "28" : "0xffffff",
+                
+            "29" : "0xffffff",
+                
+            "3" : "0xffffff",
+                
+            "30" : "0xffffff",
+                
+            "31" : "0xffffff",
+                
+            "32" : "0xffffff",
+                
+            "33" : "0xffffff",
+                
+            "34" : "0xffffff",
+                
+            "35" : "0xffffff",
+                
+            "36" : "0xffffff",
+                
+            "37" : "0xffffff",
+                
+            "38" : "0xffffff",
+                
+            "39" : "0xffffff",
+                
+            "4" : "0xffffff",
+                
+            "40" : "0xffffff",
+                
+            "41" : "0xffffff",
+                
+            "42" : "0xffffff",
+                
+            "43" : "0xffffff",
+                
+            "44" : "0xffffff",
+                
+            "45" : "0xffffff",
+                
+            "46" : "0xffffff",
+                
+            "47" : "0xffffff",
+                
+            "48" : "0xffffff",
+                
+            "49" : "0xffffff",
+                
+            "5" : "0xffffff",
+                
+            "50" : "0xffffff",
+                
+            "51" : "0xffffff",
+                
+            "52" : "0xffffff",
+                
+            "53" : "0xffffff",
+                
+            "54" : "0xffffff",
+                
+            "55" : "0xffffff",
+                
+            "56" : "0xffffff",
+                
+            "57" : "0xffffff",
+                
+            "58" : "0xffffff",
+                
+            "59" : "0xffffff",
+                
+            "6" : "0xffffff",
+                
+            "60" : "0xffffff",
+                
+            "61" : "0xffffff",
+                
+            "62" : "0xffffff",
+                
+            "63" : "0xffffff",
+                
+            "64" : "0xffffff",
+                
+            "65" : "0xffffff",
+                
+            "66" : "0xffffff",
+                
+            "67" : "0xffffff",
+                
+            "68" : "0xffffff",
+                
+            "69" : "0xffffff",
+                
+            "7" : "0xffffff",
+                
+            "70" : "0xffffff",
+                
+            "71" : "0xffffff",
+                
+            "72" : "0xffffff",
+                
+            "73" : "0xffffff",
+                
+            "8" : "0xffffff",
+                
+            "9" : "0xffffff"
+         
+            },
+            
+         "Name" : "frame0",
+            
+         "index" : 0
+      
+        }
+   
+    ],
+    
+   "GUID" : "EDB0237B-E183-4281-9D82-0D56B005C01D",
+    
+   "LEConfigs" : [
+        
+      {
+            
+         "Color" : "0xff0000",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 0,
+                 15,
+                 31,
+                 46,
+                 61 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 0
+      
+        },
+        
+      {
+            
+         "Color" : "0xff4000",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 1,
+                 16,
+                 32,
+                 47,
+                 62 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xff9900",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 2,
+                 17,
+                 33,
+                 48,
+                 63 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 2
+      
+        },
+        
+      {
+            
+         "Color" : "0xffe500",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 3,
+                 18,
+                 34,
+                 49,
+                 64 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 3
+      
+        },
+        
+      {
+            
+         "Color" : "0xccff00",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 4,
+                 19,
+                 35,
+                 50 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 4
+      
+        },
+        
+      {
+            
+         "Color" : "0x80ff00",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 5,
+                 20,
+                 36,
+                 51,
+                 66 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 5
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ff19",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 6,
+                 21,
+                 37,
+                 52,
+                 66,
+                 65 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 6
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ffb3",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 7,
+                 22,
+                 38,
+                 53 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 7
+      
+        },
+        
+      {
+            
+         "Color" : "0x00FFFF",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 8,
+                 23,
+                 39,
+                 54,
+                 67 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 8
+      
+        },
+        
+      {
+            
+         "Color" : "0x00b2ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 9,
+                 24,
+                 40,
+                 55,
+                 68 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 9
+      
+        },
+        
+      {
+            
+         "Color" : "0x0066ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 10,
+                 25,
+                 41,
+                 56,
+                 69 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 10
+      
+        },
+        
+      {
+            
+         "Color" : "0x0000FF",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 11,
+                 26,
+                 42,
+                 57,
+                 70 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 11
+      
+        },
+        
+      {
+            
+         "Color" : "0x8000ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 27,
+                 12,
+                 28,
+                 43,
+                 58,
+                 71 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 12
+      
+        },
+        
+      {
+            
+         "Color" : "0xcc00ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 13,
+                 29,
+                 44,
+                 59,
+                 72 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 13
+      
+        },
+        
+      {
+            
+         "Color" : "0xff0099",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 14,
+                 30,
+                 45,
+                 60,
+                 73 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 14
+      
+        }
+   
+    ],
+    
+   "LeCate" : 71,
+    
+   "LeType" : "simple",
+    
+   "Name" : "71S灯效彩虹普"
+
+}

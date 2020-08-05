@@ -4,9 +4,13 @@
 	"Name": "标准配置",
 	"Active": 0,
 	"DriverLE": [
+			{
+			"GUID": "1E0EB05E-DE43-4143-8E41-A3EE9C486B03",
+			"Name": "SK61S-PTIR-1"
+		},
 		{
-			"GUID": "26C232E5-B89B-4b17-BF1D-75DC61351A93",
-			"Name": "全亮绿光"
+			"GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+			"Name": "Macice Blue"
 		},
 		{
 			"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
@@ -19,10 +23,6 @@
 		{
 			"GUID": "849A6BA8-7C6F-4cab-BB62-7CEABCFC9E5E",
 			"Name": "SK61S-PTIR-B"
-		},
-		{
-			"GUID": "4ED93DAC-2475-40b2-A77A-AF29A33384EF",
-			"Name": "SK61S-PTIR-C"
 		}
 	]
 }

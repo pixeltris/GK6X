@@ -102,8 +102,8 @@
 			"Index": 1,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02006500",
+			"MenuName": "RWin",
+			"DriverValue": "0x02000080",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -575,8 +575,8 @@
 			"Index": 48,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002A00",
+			"MenuName": "DEL",
+			"DriverValue": "0x02004C00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

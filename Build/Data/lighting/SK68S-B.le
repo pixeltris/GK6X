@@ -1,0 +1,413 @@
+{
+    
+   "Frames" : [
+        
+      {
+            
+         "Count" : 1,
+            
+         "Data" : {
+                
+            "0" : "0xffffff",
+                
+            "1" : "0xffffff",
+                
+            "10" : "0xffffff",
+                
+            "11" : "0xffffff",
+                
+            "12" : "0xffffff",
+                
+            "13" : "0xffffff",
+                
+            "14" : "0xffffff",
+                
+            "15" : "0xffffff",
+                
+            "16" : "0xffffff",
+                
+            "17" : "0xffffff",
+                
+            "18" : "0xffffff",
+                
+            "19" : "0xffffff",
+                
+            "2" : "0xffffff",
+                
+            "20" : "0xffffff",
+                
+            "21" : "0xffffff",
+                
+            "22" : "0xffffff",
+                
+            "23" : "0xffffff",
+                
+            "24" : "0xffffff",
+                
+            "25" : "0xffffff",
+                
+            "26" : "0xffffff",
+                
+            "27" : "0xffffff",
+                
+            "28" : "0xffffff",
+                
+            "29" : "0xffffff",
+                
+            "3" : "0xffffff",
+                
+            "30" : "0xffffff",
+                
+            "31" : "0xffffff",
+                
+            "32" : "0xffffff",
+                
+            "33" : "0xffffff",
+                
+            "34" : "0xffffff",
+                
+            "35" : "0xffffff",
+                
+            "36" : "0xffffff",
+                
+            "37" : "0xffffff",
+                
+            "38" : "0xffffff",
+                
+            "39" : "0xffffff",
+                
+            "4" : "0xffffff",
+                
+            "40" : "0xffffff",
+                
+            "41" : "0xffffff",
+                
+            "42" : "0xffffff",
+                
+            "43" : "0xffffff",
+                
+            "44" : "0xffffff",
+                
+            "45" : "0xffffff",
+                
+            "46" : "0xffffff",
+                
+            "47" : "0xffffff",
+                
+            "48" : "0xffffff",
+                
+            "49" : "0xffffff",
+                
+            "5" : "0xffffff",
+                
+            "50" : "0xffffff",
+                
+            "51" : "0xffffff",
+                
+            "52" : "0xffffff",
+                
+            "53" : "0xffffff",
+                
+            "54" : "0xffffff",
+                
+            "55" : "0xffffff",
+                
+            "56" : "0xffffff",
+                
+            "57" : "0xffffff",
+                
+            "58" : "0xffffff",
+                
+            "59" : "0xffffff",
+                
+            "6" : "0xffffff",
+                
+            "60" : "0xffffff",
+                
+            "61" : "0xffffff",
+                
+            "62" : "0xffffff",
+                
+            "63" : "0xffffff",
+                
+            "64" : "0xffffff",
+                
+            "65" : "0xffffff",
+                
+            "66" : "0xffffff",
+                
+            "67" : "0xffffff",
+                
+            "68" : "0xffffff",
+                
+            "69" : "0xffffff",
+                
+            "7" : "0xffffff",
+                
+            "70" : "0xffffff",
+                
+            "8" : "0xffffff",
+                
+            "9" : "0xffffff"
+         
+            },
+            
+         "Name" : "frame0"
+      
+        }
+   
+    ],
+    
+   "GUID" : "86F9A695-FD6F-4991-ADDE-D18DE8E982D9",
+    
+   "LEConfigs" : [
+        
+      {
+            
+         "Color" : "0xff0000",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 0,
+                 15,
+                 30,
+                 44,
+                 58 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xff4000",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 1,
+                 16,
+                 31,
+                 45,
+                 59 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xff9900",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 2,
+                 17,
+                 32,
+                 46,
+                 60 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xffe500",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 3,
+                 18,
+                 33,
+                 47,
+                 61 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xccff00",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 4,
+                 19,
+                 34,
+                 48 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x80ff00",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 5,
+                 20,
+                 35,
+                 49,
+                 62 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x33ff00",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 6,
+                 21,
+                 36,
+                 50,
+                 63 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ff19",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 7,
+                 22,
+                 37,
+                 51,
+                 64 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ff66",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 8,
+                 23,
+                 38,
+                 52,
+                 65 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ffb3",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 9,
+                 24,
+                 39,
+                 53 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ffff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 10,
+                 25,
+                 40,
+                 54 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x00b2ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 11,
+                 12,
+                 26,
+                 27,
+                 41,
+                 66,
+                 55,
+                 67 
+            ],
+            
+         "Type" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0x0019ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 13,
+                 14,
+                 28,
+                 29,
+                 42,
+                 43,
+                 56,
+                 57,
+                 68,
+                 69,
+                 70 
+            ],
+            
+         "Type" : 1
+      
+        }
+   
+    ],
+    
+   "LeCate" : 68,
+    
+   "LeType" : "simple",
+    
+   "Name" : "BBBB"
+
+}

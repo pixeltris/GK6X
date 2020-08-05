@@ -1,0 +1,26 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [{
+		"GUID": "5B5E3111-051C-4c66-A669-94FDFDEAEC99",
+		"Name": "全亮绿光"
+	},
+	{
+		"GUID": "FAE0BFF4-3AF1-4153-AFC6-67739BF584E6",
+		"Name": "渐变"
+	},
+	{
+		"GUID": "8D1D899F-4FE1-495a-95E5-0CC00B8614AF",
+		"Name": "彩虹波"
+	},
+	{
+		"GUID": "8C807763-E010-49ed-9FFB-501F7CFF5F97",
+		"Name": "风车"
+	},
+	{
+		"GUID": "280A8618-920F-4e7f-B8B8-C5A8C586E575",
+		"Name": "光谱循环"
+	}]
+}

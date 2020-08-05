@@ -86,12 +86,12 @@ namespace GK6X
                         continue;
                     }
 
-                    // I *think* 65 is used by all GK6X keyboards
-                    const int reportLength = 65;
-                    ushort[] productIds;
                     bool validDevice = false;
                     try
                     {
+                        // I *think* 65 is used by all GK6X keyboards
+                        const int reportLength = 65;
+                        ushort[] productIds;
                         if (device.GetMaxInputReportLength() == reportLength &&
                             device.GetMaxOutputReportLength() == reportLength &&
                             knownProducts.TryGetValue((ushort)device.VendorID, out productIds) &&

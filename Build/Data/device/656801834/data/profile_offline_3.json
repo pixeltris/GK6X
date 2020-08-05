@@ -350,8 +350,8 @@
 			"Index": 27,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "LCtrl+R",
-			"DriverValue": "0x02001501",
+			"MenuName": "",
+			"DriverValue": "0x02001500",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -360,8 +360,8 @@
 			"Index": 28,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "LCtrl+S",
-			"DriverValue": "0x02001601",
+			"MenuName": "",
+			"DriverValue": "0x02001600",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -370,8 +370,8 @@
 			"Index": 29,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "LCtrl+T",
-			"DriverValue": "0x02001701",
+			"MenuName": "",
+			"DriverValue": "0x02001700",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -440,8 +440,8 @@
 			"Index": 36,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F1",
-			"DriverValue": "0x02003A00",
+			"MenuName": "F14",
+			"DriverValue": "0x02006900",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -450,8 +450,8 @@
 			"Index": 37,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F2",
-			"DriverValue": "0x02003B00",
+			"MenuName": "F15",
+			"DriverValue": "0x02006A00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -460,8 +460,8 @@
 			"Index": 38,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F3",
-			"DriverValue": "0x02003C00",
+			"MenuName": "LCtrl+↑",
+			"DriverValue": "0x0200520",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -470,8 +470,8 @@
 			"Index": 39,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F4",
-			"DriverValue": "0x02003D00",
+			"MenuName": "",
+			"DriverValue": "0x02002100",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -480,8 +480,8 @@
 			"Index": 40,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F5",
-			"DriverValue": "0x02003E00",
+			"MenuName": "LWin+Space",
+			"DriverValue": "0x02002C08",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -490,8 +490,8 @@
 			"Index": 41,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F6",
-			"DriverValue": "0x02003F00",
+			"MenuName": "LCtrl+LShift+Space",
+			"DriverValue": "0x02002C03",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -500,8 +500,8 @@
 			"Index": 42,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F7",
-			"DriverValue": "0x02004000",
+			"MenuName": "上一曲",
+			"DriverValue": "0x030000B6",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -510,8 +510,8 @@
 			"Index": 43,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F8",
-			"DriverValue": "0x02004100",
+			"MenuName": "播放/暂停",
+			"DriverValue": "0x030000CD",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -520,8 +520,8 @@
 			"Index": 44,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F9",
-			"DriverValue": "0x02004200",
+			"MenuName": "下一曲",
+			"DriverValue": "0x030000B5",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -530,8 +530,8 @@
 			"Index": 45,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F10",
-			"DriverValue": "0x02004300",
+			"MenuName": "静音",
+			"DriverValue": "0x030000E2",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -550,8 +550,8 @@
 			"Index": 47,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "LShift+`",
-			"DriverValue": "0x02003502",
+			"MenuName": "",
+			"DriverValue": "0x02002900",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -590,8 +590,8 @@
 			"Index": 51,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F11",
-			"DriverValue": "0x02004400",
+			"MenuName": "音量减",
+			"DriverValue": "0x030000EA",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -600,8 +600,8 @@
 			"Index": 52,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F12",
-			"DriverValue": "0x02004500",
+			"MenuName": "音量加",
+			"DriverValue": "0x030000E9",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -660,8 +660,8 @@
 			"Index": 58,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "⊘",
-			"DriverValue": "0x02000000",
+			"MenuName": "DEL",
+			"DriverValue": "0x02004C00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -720,8 +720,8 @@
 			"Index": 81,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004C00",
+			"MenuName": "`",
+			"DriverValue": "0x02003500",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

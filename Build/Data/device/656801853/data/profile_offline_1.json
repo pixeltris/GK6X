@@ -1284,31 +1284,14 @@
             "MenuPID": "",
             "MenuID": "",
             "MenuName": "",
-            "DriverValue": "0x02006500",
-            "Task": {
-                "Type": "",
-                "Data": {
-                    "Type": "Macro",
-                    "GUID": "",
-                    "Repeats": 1,
-                    "StopMode": 1
-                }
-            },
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
+            "DriverValue": "0x02006500"
         },
         {
             "Index": 3,
             "MenuPID": "",
             "MenuID": "",
             "MenuName": "",
-            "DriverValue": "0x02000002",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
+            "DriverValue": "0x02000002"
         },
         {
             "Index": 7,
