@@ -15,9 +15,20 @@ namespace GK6X
     {
         public const int Port = 6464;
         static WebServer server = new WebServer(Port);
+        public static DateTime LastPing
+        {
+            get { return server.LastPing; }
+        }
+        public static readonly TimeSpan PingTimeout = TimeSpan.FromSeconds(30);
         public static string UserDataPath
         {
             get { return server.UserDataPath; }
+        }
+
+        private static bool IsUnix()
+        {
+            int p = (int)Environment.OSVersion.Platform;
+            return (p == 4) || (p == 6) || (p == 128);
         }
 
         public static void Run()
@@ -33,15 +44,34 @@ namespace GK6X
             }
             if (server.IsRunning)
             {
-                try
+                if (IsUnix())
                 {
-                    Process.Start(url);
-                    //Process.Start("chrome", "--incognito " + url);
+                    try
+                    {
+                        Process.Start("open " + url);
+                    }
+                    catch
+                    {
+
+                    }
                 }
-                catch
+                else
                 {
+                    try
+                    {
+                        Process.Start(url);
+                        //Process.Start("chrome", "--incognito " + url);
+                    }
+                    catch
+                    {
+                    }
                 }
             }
+        }
+
+        public static void Stop()
+        {
+            server.Stop();
         }
 
         public static void UpdateDeviceList()
@@ -65,6 +95,7 @@ namespace GK6X
             {
                 get { return userDataPath; }
             }
+            public DateTime LastPing { get; private set; }
 
             Dictionary<string, Session> sessions = new Dictionary<string, Session>();
             DateTime lastSessionCleanup;
@@ -203,6 +234,7 @@ namespace GK6X
 
             public void Start()
             {
+                LastPing = DateTime.Now;
                 dataPath = Program.GetDriverDir(Program.BasePath);
                 if (string.IsNullOrEmpty(dataPath))
                 {
@@ -235,7 +267,7 @@ namespace GK6X
 
                     }
                 });
-                thread.SetApartmentState(ApartmentState.STA);
+                //thread.SetApartmentState(ApartmentState.STA);
                 thread.Start();
             }
 
@@ -268,6 +300,8 @@ namespace GK6X
 
             private void Process(HttpListenerContext context)
             {
+                LastPing = DateTime.Now;
+
                 if (DateTime.Now - sessionCleanupDelay > lastSessionCleanup)
                 {
                     lastSessionCleanup = DateTime.Now;

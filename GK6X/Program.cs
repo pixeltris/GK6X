@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace GK6X
 {
@@ -11,8 +12,28 @@ namespace GK6X
         public static string BasePath;
         public static string DataBasePath = "Data";
         public static string UserDataPath = "UserData";
-        
+
         static void Main(string[] args)
+        {
+            Run(asGUI: false);
+            Stop();
+        }
+
+        public static int DllMain(string arg)
+        {
+            Run(asGUI: true);
+            Stop();
+            return 0;
+        }
+
+        static void Stop()
+        {
+            KeyboardDeviceManager.StopListener();
+            WebGUI.Stop();
+            Environment.Exit(0);// Ensure any loose threads die...
+        }
+
+        static void Run(bool asGUI)
         {
             BasePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             DataBasePath = Path.Combine(BasePath, DataBasePath);
@@ -47,7 +68,7 @@ namespace GK6X
                 Log("Connected to device '" + device.State.ModelName + "' model:" + device.State.ModelId +
                     " fw:" + device.State.FirmwareVersion);
                 WebGUI.UpdateDeviceList();
-                
+
                 string file = GetUserDataFile(device);
                 if (!string.IsNullOrEmpty(file))
                 {
@@ -55,7 +76,6 @@ namespace GK6X
                     {
                         string dir = Path.GetDirectoryName(file);
                         if (!Directory.Exists(dir))
-
                         {
                             Directory.CreateDirectory(dir);
                         }
@@ -75,6 +95,16 @@ namespace GK6X
                 WebGUI.UpdateDeviceList();
             };
             KeyboardDeviceManager.StartListener();
+            
+            if (asGUI)
+            {
+                WebGUI.Run();
+                while (WebGUI.LastPing > DateTime.Now - WebGUI.PingTimeout)
+                {
+                    Thread.Sleep(1000);
+                }
+                return;
+            }
 
             bool running = true;
             bool hasNullInput = false;
@@ -375,8 +405,6 @@ namespace GK6X
                         break;
                 }
             }
-
-            KeyboardDeviceManager.StopListener();
         }
 
         private static string GetUserDataFile(KeyboardDevice device)
@@ -683,6 +711,10 @@ namespace GK6X
                 // "res" folder contains some data we don't want
                 if (all || dir.Name != "res")
                 {
+                    if (dir.Name.Contains("新建文件夹"))// "New Folder" (img\新建文件夹\)
+                    {
+                        continue;
+                    }
                     // Remove the special case folder (TODO: Make this more generic)
                     CopyFilesRecursively(dir, target.CreateSubdirectory(dir.Name.Replace("(风控)", string.Empty)), all);
                 }
@@ -691,7 +723,9 @@ namespace GK6X
             {
                 if (all || extensions.Contains(file.Extension.ToLower().TrimStart(new char[] { '.' })))
                 {
-                    if (!file.Name.Contains("剑灵") && !file.Name.Contains("逆战"))
+                    if (!file.Name.Contains("剑灵") && !file.Name.Contains("逆战") &&
+                        !file.Name.Contains("下灯序") &&// Data\device\656801861\data\keymap下灯序.js
+                        !file.Name.Contains("新建文件夹"))// driver\res\img\新建文件夹.rar
                     {
                         file.CopyTo(Path.Combine(target.FullName, file.Name), true);
                     }
