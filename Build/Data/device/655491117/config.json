@@ -6,7 +6,7 @@
   "ShowOffsetLeft": "0",
   "ShowOffsetTop": "0",
   "IsFnKeySet": true,
-  "hasModeLe": false,
+  "hasModeLe": true,
   "IsFnx": false,
   "FuncTable":[{
 	  "id": 0,

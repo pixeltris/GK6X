@@ -9,13 +9,27 @@
 #define ASSEMBLY_ENTRY_POINT_CLASS "GK6X.Program"
 #define ASSEMBLY_ENTRY_POINT_METHOD "DllMain"
 
+#if defined(WIN32) || defined(_WIN32) || defined(__WIN32)
+#define PLATFORM_WINDOWS 1
+#else
+#define PLATFORM_WINDOWS 0
+#endif
+
 #include <stdio.h>
 #include <stdint.h>
-#include <dlfcn.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/stat.h>
 #include <limits.h>
+#include <sys/stat.h>
+#if PLATFORM_WINDOWS
+#include <windows.h>
+#else
+#include <dlfcn.h>
+#endif
+
+#if PLATFORM_WINDOWS
+#define PATH_MAX MAX_PATH
+#endif
 
 #ifndef HRESULT
 #define HRESULT int
@@ -52,18 +66,46 @@ typedef int(*ManagedEntryPointSig)(const char* arg);
 
 void* LoadDll(char* path)
 {
+#if PLATFORM_WINDOWS
+    return LoadLibrary(path);
+#else
     return dlopen(path, RTLD_NOW | RTLD_LOCAL);
+#endif
 }
 
 void* GetDllExport(void* handle, const char* path)
 {
+#if PLATFORM_WINDOWS
+    return GetProcAddress(handle, path);
+#else
     return dlsym(handle, path);
+#endif
 }
 
 int FileExists(char* path)
 {
+#if PLATFORM_WINDOWS
+    WIN32_FIND_DATA findFileData;
+    HANDLE handle = FindFirstFile(path, &findFileData);
+    int found = handle != INVALID_HANDLE_VALUE;
+    if (found)
+    {
+        FindClose(handle);
+    }
+    return found;
+#else
     struct stat sb;
     return stat(path, &sb) != -1;
+#endif
+}
+
+char* GetFullPath(const char* path, char* resolvedPath)
+{
+#if PLATFORM_WINDOWS
+    return _fullpath(resolvedPath, path, PATH_MAX);
+#else
+    return realpath(path, resolvedPath);
+#endif
 }
 
 int main(int argv, const char** argc)
@@ -79,7 +121,7 @@ int main(int argv, const char** argc)
     char coreCrlDllPath[PATH_MAX+1];
     char assemblyDir[PATH_MAX+1];
     char assemblyPath[PATH_MAX+1];
-    if (realpath(argc[0], currentBinaryPath) == NULL)
+    if (GetFullPath(argc[0], currentBinaryPath) == NULL)
     {
         printf("Failed to find path of the binary '%s'.\n", argc[0]);
         return 0;

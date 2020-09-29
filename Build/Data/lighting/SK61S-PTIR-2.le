@@ -1,53 +1,123 @@
 {
-    "Name":"JK061-PTIR-2",
-    "GUID":"2A3DC44E-10DA-4f30-B510-C498E51BFBD9",
-    "LeType":"simple",
-    "LeCate":67,
-    "Frames":[
-        {
-            "Count":1,
-            "Name":"frame0",
-            "Data":{
-                "1":"0xffffff",
-                "2":"0xffffff",
-                "3":"0xffffff",
-                "4":"0xffffff",
-                "5":"0xffffff",
-                "6":"0xffffff",
-                "7":"0xffffff",
-                "8":"0xffffff",
-                "9":"0xffffff",
-                "10":"0xffffff",
-                "11":"0xffffff",
-                "12":"0xffffff",
-                "51":"0xffffff",
-                "57":"0xffffff",
-                "58":"0xffffff"
-            }
+    
+   "Frames" : [
+        
+      {
+            
+         "Count" : 1,
+            
+         "Data" : {
+                
+            "1" : "0xffffff",
+                
+            "10" : "0xffffff",
+                
+            "11" : "0xffffff",
+                
+            "12" : "0xffffff",
+                
+            "2" : "0xffffff",
+                
+            "25" : "0xffffff",
+                
+            "26" : "0xffffff",
+                
+            "27" : "0xffffff",
+                
+            "3" : "0xffffff",
+                
+            "38" : "0xffffff",
+                
+            "39" : "0xffffff",
+                
+            "4" : "0xffffff",
+                
+            "49" : "0xffffff",
+                
+            "5" : "0xffffff",
+                
+            "50" : "0xffffff",
+                
+            "51" : "0xffffff",
+                
+            "59" : "0xffffff",
+                
+            "6" : "0xffffff",
+                
+            "60" : "0xffffff",
+                
+            "7" : "0xffffff",
+                
+            "8" : "0xffffff",
+                
+            "9" : "0xffffff"
+         
+            },
+            
+         "Name" : "frame0"
+      
         }
+   
     ],
-    "LEConfigs":[
-        {
-            "Type":0,
-            "Count":1,
-            "Color":"0x0000ff",
-            "Keys":[
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10,
-                11,
-                12,
-                51,
-                57,
-                58
-            ]
+    
+   "GUID" : "4B8FE201-4B61-4cf7-BBEB-D7B3EDC37326",
+    
+   "LEConfigs" : [
+        
+      {
+            
+         "Color" : "0x0F00FF",
+            
+         "Count" : 1,
+            
+         "Keys" : [
+                 1,
+                 2,
+                 3,
+                 4,
+                 5,
+                 6,
+                 7,
+                 8,
+                 9,
+                 10,
+                 11,
+                 12,
+                 59,
+                 60 
+            ],
+            
+         "Type" : 0
+      
+        },
+        
+      {
+            
+         "Color" : "0xff0000",
+            
+         "Count" : 1,
+            
+         "Keys" : [
+                 49,
+                 50,
+                 51,
+                 38,
+                 39,
+                 25,
+                 26,
+                 27 
+            ],
+            
+         "Type" : 0
+      
         }
-    ]
+   
+    ],
+    
+   "LeCate" : 67,
+    
+   "LeType" : "simple",
+    
+   "Name" : "F1-F12"
+
 }

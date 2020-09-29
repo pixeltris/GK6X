@@ -61,22 +61,22 @@
     "UserManual":[{
 		"title_lang": "layer_oper",
 		"items":[{
-		  "key": "Fn+F10",
+		  "key": "Fn+6",
 		  "desc_lang": "change_onboard_layer_1"
 		},{
-		  "key": "Fn+F11",
+		  "key": "Fn+7",
 		  "desc_lang": "change_onboard_layer_2"
 		},{
-		  "key": "Fn+F12",
+		  "key": "Fn+8",
 		  "desc_lang": "change_onboard_layer_3"
 		},{
-		  "key": "Fn+F9",
+		  "key": "Fn+5",
 		  "desc_lang": "change_driver_layer_1"
 		}]
 	},{
 		"title_lang": "le_oper",
 		"items":[{
-		  "key": "Fn+F5/F6",
+		  "key": "Fn+-/+",
 		  "desc_lang": "change_std_le"
 		},{
 		  "key": "Fn+↑",
@@ -94,7 +94,7 @@
 	},{
 		"title_lang": "system_oper",
 		"items":[{
-		  "key": "Fn+ESC+Del",
+		  "key": "Fn+ESC+Q",
 		  "desc_lang": "clear_all_config"
 		}]
 	}]

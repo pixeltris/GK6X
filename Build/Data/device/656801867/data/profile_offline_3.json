@@ -3,7 +3,7 @@
   "ModeIndex": 4,
   "Name": "",
   "Active": 0,
-  "ModelID": 656801840,
+  "ModelID": 656801867,
   "Application": {
     "AppName": "",
     "AppPath": ""
@@ -1306,28 +1306,6 @@
                 "GUID": "",
                 "Name": ""
             }
-        },
-		 {
-            "Index": 112,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002A00",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
-        },
-		 {
-            "Index": 113,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002800",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
         }
     ],
   "FnKeySet": [{
@@ -1909,44 +1887,28 @@
             "MenuPID": "",
             "MenuID": "",
             "MenuName": "",
-            "DriverValue": "0x02002A00",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
+            "DriverValue": "0x02002A00"     
         },
         {
             "Index": 106,
             "MenuPID": "",
             "MenuID": "",
             "MenuName": "",
-            "DriverValue": "0x02002800",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
+            "DriverValue": "0x02002800"
         },
         {
             "Index": 107,
             "MenuPID": "",
             "MenuID": "",
             "MenuName": "",
-            "DriverValue": "0x02002C00",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
+            "DriverValue": "0x02002C00"
         },
         {
             "Index": 108,
             "MenuPID": "",
             "MenuID": "",
             "MenuName": "",
-            "DriverValue": "0x02006300",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
+            "DriverValue": "0x02006300"
         },
         {
             "Index": 110,
@@ -1954,20 +1916,6 @@
             "MenuID": "",
             "MenuName": "",
             "DriverValue": "0x02002C00"
-        },
-		{
-            "Index": 112,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002A00"
-        },
-		 {
-            "Index": 113,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002800"
         }
     ]
 }

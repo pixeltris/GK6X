@@ -946,16 +946,22 @@
         }]
     }, {
         "linekeys": [{
+            "LocationCode": -1,
+            "LogicCode": -1,
             "Name": "Email",
             "LangTitle": "key_email",
             "DriverValue": "0x0300018A",
             "Class": "l225"
         }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
             "Name": "我的电脑",
             "LangTitle": "key_my_computer",
             "DriverValue": "0x03000194",
             "Class": "l225"
         }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
             "Name": "计算器",
             "LangTitle": "key_calculator",
             "DriverValue": "0x03000192",

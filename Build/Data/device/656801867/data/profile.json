@@ -3,7 +3,7 @@
     "ModeIndex": 0,
     "Name": "",
     "Active": 0,
-    "ModelID": 655491248,
+    "ModelID": 656801867,
     "Application": {
         "AppName": "",
         "AppPath": ""
@@ -1309,76 +1309,6 @@
             "MenuID": "",
             "MenuName": "",
             "DriverValue": "0x02002C00",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
-        },
-		 {
-            "Index": 112,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002A00",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
-        },
-		 {
-            "Index": 113,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002800",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
-        },
-        {
-            "Index": 114,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002A00",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
-        },
-		 {
-            "Index": 115,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002800",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
-        },
-        {
-            "Index": 116,
-            "MenuPID": 1,
-			"MenuID": "",
-			"MenuName": "00",
-			"DriverValue": "0x0A010001",
-			"Task": {
-				"Type": "Macro",
-				"Data": {
-					"GUID": "9A3793A9-013E-4b34-A63A-7DA572985CB4",
-					"StopMode": 1,
-					"Repeats": 1
-				}
-			}
-        },
-		 {
-            "Index": 117,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "1",
-            "DriverValue": "0x0A010001",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""

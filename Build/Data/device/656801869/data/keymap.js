@@ -966,42 +966,40 @@
             "Width": 46,
             "Height": 36
         }
-    }, 
-    
-    {
-        "KeyName": "Fn",
-        "Show": "Fn",
-        "LogicCode": 0,
-        "LocationCode": 86,
-        "Position": {
-            "Left": 686,
-            "Top": 382,
-            "Width": 46,
-            "Height": 36
-        }
-    },
+    },   
     {
         "KeyName": "App",
         "Show": "App",
         "LogicCode": 1,
-        "LocationCode": 87,
+		"LocationCode": 86,
         "Position": {
-            "Left": 735,
+			"Left": 686,
             "Top": 382,
             "Width": 46,
-            "Height": 36
+            "Height": 36           
         }
     }, 
     {
         "KeyName": "Right Control",
         "Show": "Ctrl",
         "LogicCode": 6,
-        "LocationCode": 88,
+		"LocationCode": 87,
         "Position": {
-            "Left": 784,
+          "Left": 735,
             "Top": 382,
             "Width": 46,
             "Height": 36
+        }
+    },{
+        "KeyName": "Fn",
+        "Show": "Fn",
+        "LogicCode": 0,
+        "LocationCode": 88,
+        "Position": {
+			"Left": 784,
+            "Top": 382,
+            "Width": 46,
+            "Height": 36          
         }
     },{
         "KeyName": "Left Arrow",

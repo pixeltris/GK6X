@@ -647,6 +647,12 @@
 			"MenuName": "",
 			"DriverValue": "0x02006500"
 		}, {
+			"Index": 2,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02000001"
+		},{
 			"Index": 3,
 			"MenuPID": "",
 			"MenuID": "",
