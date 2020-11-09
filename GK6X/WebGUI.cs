@@ -64,6 +64,15 @@ namespace GK6X
                     }
                     catch
                     {
+                        try
+                        {
+                            using (var proc = Process.Start(new ProcessStartInfo("cmd", "/c start " + url) { CreateNoWindow = true }))
+                            {
+                            }
+                        }
+                        catch
+                        {
+                        }
                     }
                 }
             }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -35,6 +36,17 @@ namespace GK6X
 
         static void Run(bool asGUI)
         {
+            try
+            {
+                if (Process.GetCurrentProcess().MainWindowHandle == IntPtr.Zero)
+                {
+                    asGUI = true;
+                }
+            }
+            catch
+            {
+            }
+
             BasePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             DataBasePath = Path.Combine(BasePath, DataBasePath);
             UserDataPath = Path.Combine(BasePath, UserDataPath);
@@ -98,6 +110,33 @@ namespace GK6X
             
             if (asGUI)
             {
+                Process currentProc = Process.GetCurrentProcess();
+                Process[] procs = Process.GetProcessesByName(currentProc.ProcessName);
+                try
+                {
+                    foreach (Process proc in procs)
+                    {
+                        try
+                        {
+                            if (proc != currentProc && proc.Id != currentProc.Id)
+                            {
+                                proc.Kill();
+                            }
+                        }
+                        catch
+                        {
+                        }
+                    }
+                }
+                finally
+                {
+                    foreach (Process proc in procs)
+                    {
+                        proc.Close();
+                    }
+                }
+                currentProc.Close();
+
                 WebGUI.Run();
                 while (WebGUI.LastPing > DateTime.Now - WebGUI.PingTimeout)
                 {

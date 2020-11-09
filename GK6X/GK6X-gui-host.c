@@ -1,11 +1,17 @@
-// On Mac / Linux this can be compiled with "gcc gui.c"
-// On Windows this can be compiled with "cl gui.c" (via Visual Studio dev tools cmd)
-// NOTE: Currently only targets Mac
+// On Mac / Linux this can be compiled with "gcc GK6X-gui-host.c"
+// On Windows this can be compiled with "cl GK6X-gui-host.c /link /SUBSYSTEM:WINDOWS /ENTRY:"mainCRTStartup" /out:../Build/GK6X-gui-host.exe" (via Visual Studio dev tools cmd)
+// - Download .NET Core https://github.com/dotnet/core#download-the-latest-net-core-sdk
+// - Copy "/shared/Microsoft.NETCore.App/X.X.X/" to "/Build/CoreCLR"
+// - Run the GK6X-gui-host binary
+
+// GK6X-gui.bat builds GK6X in GUI mode (no console). GK6X-gui-host.c is used to host that GUI within a native application under .NET Core (portability)
+
+// TODO: Add support for Linux
 
 // This is basically a copy of the coreclr hosts but in C rather than C++
 // https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts
 
-#define ASSEMBLY_NAME "GK6X"
+#define ASSEMBLY_NAME "GK6X-gui"
 #define ASSEMBLY_ENTRY_POINT_CLASS "GK6X.Program"
 #define ASSEMBLY_ENTRY_POINT_METHOD "DllMain"
 
@@ -27,10 +33,6 @@
 #include <dlfcn.h>
 #endif
 
-#if PLATFORM_WINDOWS
-#define PATH_MAX MAX_PATH
-#endif
-
 #ifndef HRESULT
 #define HRESULT int
 #endif
@@ -41,19 +43,26 @@
 #define FAILED(hr) ((hr) < 0)
 #endif
 
-#define CORE_CLR_DLL "libcoreclr.dylib"
-
 #if PLATFORM_WINDOWS
+#define PATH_MAX MAX_PATH
+#define CORE_CLR_DLL "coreclr.dll"
+#define CORE_CLR_DLL_CALLCONV WINAPI
 #define CORE_CLR_FILE_SPLIT ";"
+#define SLASH_CHAR '\\'
+#define SLASH_CHAR_STR "\\"
 #else
+#define CORE_CLR_DLL "libcoreclr.dylib"
+#define CORE_CLR_DLL_CALLCONV
 #define CORE_CLR_FILE_SPLIT ":"
+#define SLASH_CHAR '/'
+#define SLASH_CHAR_STR "/"
 #endif
 
-typedef int(*import__coreclr_initialize)(const char* exePath, const char* appDomainFriendlyName, int propertyCount, const char** propertyKeys, const char** propertyValues, void** hostHandle, unsigned int* domainId);
-typedef int(*import__coreclr_shutdown)(void* hostHandle, unsigned int domainId);
-typedef int(*import__coreclr_shutdown_2)(void* hostHandle, unsigned int domainId, int* latchedExitCode);
-typedef int(*import__coreclr_create_delegate)(void* hostHandle, unsigned int domainId, const char* entryPointAssemblyName, const char* entryPointTypeName, const char* entryPointMethodName, void** delegate);
-typedef int(*import__coreclr_execute_assembly)(void* hostHandle, unsigned int domainId, int argc, const char** argv, const char* managedAssemblyPath, unsigned int* exitCode);
+typedef int(CORE_CLR_DLL_CALLCONV *import__coreclr_initialize)(const char* exePath, const char* appDomainFriendlyName, int propertyCount, const char** propertyKeys, const char** propertyValues, void** hostHandle, unsigned int* domainId);
+typedef int(CORE_CLR_DLL_CALLCONV *import__coreclr_shutdown)(void* hostHandle, unsigned int domainId);
+typedef int(CORE_CLR_DLL_CALLCONV *import__coreclr_shutdown_2)(void* hostHandle, unsigned int domainId, int* latchedExitCode);
+typedef int(CORE_CLR_DLL_CALLCONV *import__coreclr_create_delegate)(void* hostHandle, unsigned int domainId, const char* entryPointAssemblyName, const char* entryPointTypeName, const char* entryPointMethodName, void** delegate);
+typedef int(CORE_CLR_DLL_CALLCONV *import__coreclr_execute_assembly)(void* hostHandle, unsigned int domainId, int argc, const char** argv, const char* managedAssemblyPath, unsigned int* exitCode);
 
 import__coreclr_initialize coreclr_initialize;
 import__coreclr_shutdown coreclr_shutdown;
@@ -129,7 +138,7 @@ int main(int argv, const char** argc)
     
     strcpy(dirPath, currentBinaryPath);
     size_t len = strlen(dirPath);
-    char* dirPathEnd = strrchr(dirPath, '/');
+    char* dirPathEnd = strrchr(dirPath, SLASH_CHAR);
     if (dirPathEnd == NULL)
     {
         printf("Invalid binary path '%s'.\n", dirPath);
@@ -139,10 +148,11 @@ int main(int argv, const char** argc)
     
     // Need the assembly directory for APP_PATHS
     strcpy(assemblyDir, dirPath);
-    strcat(assemblyDir, "/Build");
     
     strcpy(assemblyPath, assemblyDir);
-    strcat(assemblyPath, "/GK6X.exe");
+    strcat(assemblyPath, SLASH_CHAR_STR);
+    strcat(assemblyPath, ASSEMBLY_NAME);
+    strcat(assemblyPath, ".exe");
     if (!FileExists(assemblyPath))
     {
         printf("Failed to find managed assembly '%s'.\n", assemblyPath);
@@ -151,10 +161,11 @@ int main(int argv, const char** argc)
     
     // Need the .NET Core directory for APP_PATHS
     strcpy(coreCrlDir, dirPath);
-    strcat(coreCrlDir, "/Build/CoreCLR");
+    strcat(coreCrlDir, SLASH_CHAR_STR);
+    strcat(coreCrlDir, "CoreCLR");
     
     strcpy(coreCrlDllPath, coreCrlDir);
-    strcat(coreCrlDllPath, "/");
+    strcat(coreCrlDllPath, SLASH_CHAR_STR);
     strcat(coreCrlDllPath, CORE_CLR_DLL);
     if (!FileExists(coreCrlDllPath))
     {
@@ -186,13 +197,13 @@ int main(int argv, const char** argc)
     
     // Use both the CoreCLR directory and the target assembly directory for APP_PATHS so that
     // it can resolve CoreCLR system assemblies
-    char appPaths[0x100000] = {0};
+    char appPaths[0x10000] = {0};
     strcat(appPaths, coreCrlDir);
     strcat(appPaths, CORE_CLR_FILE_SPLIT);
     strcat(appPaths, assemblyDir);
     
     // We may need to trust more assemblies, for now just add our target assembly
-    char trustedAssemblies[0x100000] = {0};
+    char trustedAssemblies[0x10000] = {0};
     strcat(trustedAssemblies, assemblyPath);
     
     const char* propertyKeys[] =
@@ -209,7 +220,7 @@ int main(int argv, const char** argc)
     };
     
     void* coreCLRHandle;
-    unsigned int domainId;
+    unsigned int domainId = 0;
     
     int hr = coreclr_initialize(
             currentBinaryPath,
