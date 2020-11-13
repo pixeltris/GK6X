@@ -16,7 +16,11 @@ namespace GK6X
 
         static void Main(string[] args)
         {
+#if AS_GUI
+            Run(asGUI: true);
+#else
             Run(asGUI: false);
+#endif
             Stop();
         }
 
@@ -36,17 +40,6 @@ namespace GK6X
 
         static void Run(bool asGUI)
         {
-            try
-            {
-                if (Process.GetCurrentProcess().MainWindowHandle == IntPtr.Zero)
-                {
-                    asGUI = true;
-                }
-            }
-            catch
-            {
-            }
-
             BasePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             DataBasePath = Path.Combine(BasePath, DataBasePath);
             UserDataPath = Path.Combine(BasePath, UserDataPath);
