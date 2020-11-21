@@ -903,8 +903,8 @@
             "Index": 75,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02004600",
+            "MenuName": "MYCM",
+            "DriverValue": "0x03000194",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -914,8 +914,8 @@
             "Index": 76,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02004700",
+            "MenuName": "CALC",
+            "DriverValue": "0x03000192",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -925,8 +925,8 @@
             "Index": 77,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02004800",
+            "MenuName": "WHOM",
+            "DriverValue": "0x03000223",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -936,8 +936,8 @@
             "Index": 78,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02004900",
+            "MenuName": "WFAV",
+            "DriverValue": "0x0300022A",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -947,8 +947,8 @@
             "Index": 79,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02004A00",
+            "MenuName": "SLEEP",
+            "DriverValue": "0x0c000002",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""

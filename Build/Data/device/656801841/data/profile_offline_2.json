@@ -560,8 +560,8 @@
 			"Index": 48,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "DEL",
-			"DriverValue": "0x02004C00",
+			"MenuName": "",
+			"DriverValue": "0x02002A00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

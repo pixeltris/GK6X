@@ -533,8 +533,8 @@
       "Index": 48,
       "MenuPID": "",
       "MenuID": "",
-      "MenuName": "DEL",
-      "DriverValue": "0x02004C00",
+      "MenuName": "",
+      "DriverValue": "0x02002A00",
       "KeyLE": {
         "GUID": "",
         "Name": ""
@@ -911,8 +911,8 @@
       "Index": 39,
       "MenuPID": "",
       "MenuID": "",
-      "MenuName": "",
-      "DriverValue": "0x02003D00"
+      "MenuName": "LWin+D",
+      "DriverValue": "0x02000708"
     }, {
       "Index": 40,
       "MenuPID": "",

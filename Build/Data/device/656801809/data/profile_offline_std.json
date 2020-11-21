@@ -4,8 +4,8 @@
     "Name": "标准配置",
     "Active": 0,
     "DriverLE": [{
-            "GUID": "26C232E5-B89B-4b17-BF1D-75DC61351A93",
-            "Name": "全亮绿光"
+            "GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+			"Name": "Macice Blue"
         },
         {
             "GUID": "C90481D7-B35E-4a4a-83CA-B65798964DDB",

@@ -461,7 +461,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "LCtrl+↑",
-			"DriverValue": "0x0200520",
+			"DriverValue": "0x02005201",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -470,8 +470,8 @@
 			"Index": 39,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002100",
+			"MenuName": "LWin+D",
+			"DriverValue": "0x02000708",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -560,8 +560,8 @@
 			"Index": 48,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "DEL",
-			"DriverValue": "0x02004C00",
+			"MenuName": "",
+			"DriverValue": "0x02002A00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

@@ -804,8 +804,8 @@
             "Index": 66,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02003D00",
+            "MenuName": "LWin+D",
+            "DriverValue": "0x02000708",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""

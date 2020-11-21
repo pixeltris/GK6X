@@ -620,8 +620,8 @@
 		"Index": 48,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "DEL",
-		"DriverValue": "0x02004C00",
+		"MenuName": "",
+		"DriverValue": "0x02002A00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -807,7 +807,7 @@
 		"Index": 65,
 		"MenuPID": "",
 		"MenuID": "",
-            "MenuName": "LCtrl+��",
+            "MenuName": "LCtrl+↑",
             "DriverValue": "0x02005201",
 		"KeyLE": {
 			"GUID": "",
@@ -818,8 +818,8 @@
 		"Index": 66,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02003D00",
+		"MenuName": "LWin+D",
+		"DriverValue": "0x02000708",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -851,7 +851,7 @@
 		"Index": 69,
 		"MenuPID": "",
 		"MenuID": "",
-           	"MenuName": "��һ��",
+           	"MenuName": "PREV",
           	"DriverValue": "0x030000B6",
 		"KeyLE": {
 			"GUID": "",
@@ -862,7 +862,7 @@
 		"Index": 70,
 		"MenuPID": "",
 		"MenuID": "",
-            	"MenuName": "����/��ͣ",
+            	"MenuName": "Play/Pause",
             	"DriverValue": "0x030000CD",
 		"KeyLE": {
 			"GUID": "",
@@ -873,7 +873,7 @@
 		"Index": 71,
 		"MenuPID": "",
 		"MenuID": "",
-           	 "MenuName": "��һ��",
+           	 "MenuName": " NEXT",
            	 "DriverValue": "0x030000B5",
 		"KeyLE": {
 			"GUID": "",
@@ -884,7 +884,7 @@
 		"Index": 72,
 		"MenuPID": "",
 		"MenuID": "",
-            	"MenuName": "����",
+            	"MenuName": "MUTE",
             	"DriverValue": "0x030000E2",
 		"KeyLE": {
 			"GUID": "",
@@ -895,7 +895,7 @@
 		"Index": 73,
 		"MenuPID": "",
 		"MenuID": "",
-           	 "MenuName": "����-",
+           	 "MenuName": "VOlD",
            	 "DriverValue": "0x030000EA",
 		"KeyLE": {
 			"GUID": "",
@@ -906,7 +906,7 @@
 		"Index": 74,
 		"MenuPID": "",
 		"MenuID": "",
-           	"MenuName": "����+",
+           	"MenuName": "VOlU",
            	"DriverValue": "0x030000E9",
 		"KeyLE": {
 			"GUID": "",
