@@ -499,7 +499,7 @@
             "Width": 55,
             "Height": 55
         }
-    },  
+    },
     {
         "KeyName": "Return",
         "Show": "Enter",
@@ -678,7 +678,7 @@
             "Width": 55,
             "Height": 55
         }
-    },{
+    }, {
         "KeyName": "Left Control",
         "Show": "Ctrl",
         "LogicCode": 2,
@@ -750,16 +750,16 @@
             "Height": 55
         }
     },
-	{
-	"KeyName": "Space",
-	"Show": "Space",
-	"LogicCode": 109,
-	"LocationCode": -1,
-	"Position": {
-		"Left": 395,
-		"Top": 481,
-		"Width": 338,
-		"Height": 50
+    {
+        "KeyName": "Space",
+        "Show": "Space",
+        "LogicCode": 109,
+        "LocationCode": -1,
+        "Position": {
+            "Left": 395,
+            "Top": 481,
+            "Width": 338,
+            "Height": 50
         }
     },
     {
@@ -774,7 +774,7 @@
             "Height": 55
         }
     },
-       
+
     {
         "KeyName": "App",
         "Show": "App",

@@ -372,6 +372,17 @@
     "diyidset": {
         "diyvidpid": "Custom VID/PID:",
         "vendor_id": "VendorID",
-        "product_id": "ProductID"
+        "product_id": "ProductID",
+        "reset": "reset"
+    },
+    "validaterules": {
+        "vid_empty": "Vid can not be empty",
+        "pid_empty": "Pid can not be empty",
+        "length": "Length in 4 characters",
+        "input_empty": "Input can not be empty",
+        "vid_correct": "Please enter the correct VID",
+        "pid_correct": "Please enter the correct PID",
+        "success": "Success submit!",
+        "setsuccess": "Setup Successful!Vid:05AC/Pid:024F"
     }
 }

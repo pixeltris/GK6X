@@ -1,4 +1,4 @@
-﻿{
+{
   "DeviceType": 0,
   "DriverLEKey": 55,
   "LeCate": 66,
@@ -31,6 +31,14 @@
 	  "lang": "menu_macro_lib",
 	  "component": "/Macro",
 	  "visible": true,
+	  "disable": false
+	},{
+	  "id": 3,
+	  "name": "板载模式",
+	  "lang": "menu_download_mode",
+	  "icon": "el-icon-download",
+	  "component": "/DownloadMode",
+	  "visible": false,
 	  "disable": false
 	}],
 	"QuickSelect":[{

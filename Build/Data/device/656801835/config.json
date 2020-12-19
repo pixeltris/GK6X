@@ -1,4 +1,4 @@
-﻿{
+{
   "DeviceType": 0,
   "DriverLEKey": 54,
   "LeCate": 67,
@@ -66,9 +66,9 @@
 	  "lang": "line_bottom",
 	  "lcodes": [15,37,59,16,38,60]
 	},{
-      	   "title": "上灯条",
-      	   "lang": "line_top_bar",
-      	   "lcodes": [110,111,112,113,114,115,116,117]
+	      "title": "上灯条",
+	      "lang": "line_top_bar",
+	      "lcodes": [110,111,112,113,114,115,116,117]
     }],
     "UserManual":[{
 		"title_lang": "layer_oper",

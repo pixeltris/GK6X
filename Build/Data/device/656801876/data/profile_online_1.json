@@ -1,19 +1,19 @@
 {
-	"GUID": "",
-	"ModeIndex": 0,
-	"Name": "默认配置",
-	"Active": 1,
-	"ModelID": 656801876,
-	"Application": {
-		"AppName": "",
-		"AppPath": ""
-	},
-	"Game": {
-		"GUID": "ECA1CE5C-597C-4047-9F78-AB638FDE7737",
-		"Name": "Idle"
-	},
-	"ModeLE": {
-		"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+    "GUID": "",
+    "ModeIndex": 0,
+    "Name": "默认配置",
+    "Active": 1,
+    "ModelID": 656801876,
+    "Application": {
+        "AppName": "",
+        "AppPath": ""
+    },
+    "Game": {
+        "GUID": "ECA1CE5C-597C-4047-9F78-AB638FDE7737",
+        "Name": "Idle"
+    },
+    "ModeLE": {
+        "GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
 		"Name": "RGB渐变",
 		"LESet": {
 			"LEModel": 241,
@@ -1296,6 +1296,18 @@
                 "GUID": "",
                 "Name": ""
             }
+        }, 
+        {
+            "Index": 111,
+            "MenuPID": "",
+            "MenuID": "",
+            "MenuName": "",
+            "DriverValue": "0x02002C00",
+            "KeyLE": {
+                "GUID": "",
+                "Name": ""
+            }
+
         }
     ]
 }

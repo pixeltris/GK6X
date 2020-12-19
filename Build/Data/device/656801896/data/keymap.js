@@ -647,10 +647,10 @@
 		}
 	},
 	{
-		"KeyName": "Left Alt",
-		"Show": "Alt",
-		"LogicCode": 4,
-		"LocationCode": 54, 
+		"KeyName": "Left GUI",
+		"Show": "Win",
+		"LogicCode": 5,
+		"LocationCode": 54,
 		"Position": {
 			"Left": 248,
 			"Top": 397,
@@ -659,9 +659,9 @@
 		}
 	},
 	{
-		"KeyName": "Left GUI",
-		"Show": "LWin",
-		"LogicCode": 5,
+		"KeyName": "Left Alt",
+		"Show": "Alt",
+		"LogicCode": 4,
 		"LocationCode": 55,
 		"Position": {
 			"Left": 318,
@@ -707,9 +707,9 @@
 		}
 	},
 	{
-		"KeyName": "RWin",
-		"Show": "RWin",
-		"LogicCode": 9,
+		"KeyName": "Right Alt",
+		"Show": "Alt",
+		"LogicCode": 8,
 		"LocationCode": 59,
 		"Position": {
 			"Left": 745,
@@ -719,9 +719,9 @@
 		}
 	},
 	{
-		"KeyName": "Right Alt",
-		"Show": "RAlt",
-		"LogicCode": 8,
+		"KeyName": "App",
+		"Show": "App",
+		"LogicCode": 1,
 		"LocationCode": 60,
 		"Position": {
 			"Left": 815,

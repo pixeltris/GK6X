@@ -772,8 +772,8 @@
 			"Index": 9,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "←",
-			"DriverValue": "0x02005000"
+			"MenuName": "",
+			"DriverValue": "0x02000080"
 		},
 		{
 			"Index": 10,

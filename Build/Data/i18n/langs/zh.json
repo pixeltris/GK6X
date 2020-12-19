@@ -372,6 +372,17 @@
     "diyidset": {
         "diyvidpid": "自定义VID/PID:",
         "vendor_id": "供应商",
-        "product_id": "产品"
+        "product_id": "产品",
+        "reset": "重置"
+    },
+    "validaterules": {
+        "vid_empty": "Vid 不能为空",
+        "pid_empty": "Pid 不能为空",
+        "length": "长度必须为4位字符",
+        "input_empty": "输入不能为空",
+        "vid_correct": "请输入正确的 VID",
+        "pid_correct": "请输入正确的 PID",
+        "success": "提交成功!",
+        "setsuccess": "设置成功Vid:05AC/Pid:024F"
     }
 }

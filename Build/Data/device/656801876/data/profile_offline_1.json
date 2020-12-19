@@ -1,94 +1,93 @@
 {
-  "GUID": "",
-  "ModeIndex": 2,
-  "Name": "",
-  "Active": 0,
-  "ModelID": 656801876,
-  "Application": {
-    "AppName": "",
-    "AppPath": ""
-  },
-  "ModeLE": {
-    "GUID": "6107B7F8-5C91-4ee1-8220-D80C15715710",
-    "Name": "彩云飞",
-    "LESet": {
-      "LEModel": 241,
-      "LESubModel": 1,
-      "LELight": 18,
-      "LESpeed": 3,
-      "LEDir": 0,
-      "LEColor": 0,
-      "LEEnable": 15
-    }
-  },
-  "DeviceLE": {
-    "Index": 0,
-    "LESet": [{
-        "LEConfig": 0,
-        "LEModel": 7,
-        "LESubModel": 1,
-        "LELight": 18,
-        "LESpeed": 3,
-        "LEDir": 0,
-        "LEColor": 0,
-        "LEEnable": 15
-      }, {
-        "LEConfig": 0,
-        "LEModel": 8,
-        "LESubModel": 1,
-        "LELight": 18,
-        "LESpeed": 3,
-        "LEDir": 0,
-        "LEColor": 0,
-        "LEEnable": 15
-      }, {
-        "LEConfig": 0,
-        "LEModel": 5,
-        "LESubModel": 1,
-        "LELight": 18,
-        "LESpeed": 3,
-        "LEDir": 0,
-        "LEColor": 0,
-        "LEEnable": 15
-      }, {
-        "LEConfig": 0,
-        "LEModel": 14,
-        "LESubModel": 1,
-        "LELight": 18,
-        "LESpeed": 3,
-        "LEDir": 0,
-        "LEColor": 0,
-        "LEEnable": 15
-      }, {
-        "LEConfig": 0,
-        "LEModel": 9,
-        "LESubModel": 1,
-        "LELight": 18,
-        "LESpeed": 3,
-        "LEDir": 0,
-        "LEColor": 0,
-        "LEEnable": 15
-      }
-    ]
-  },
-  "DriverLE": [{
-      "GUID": "",
-      "Name": ""
+    "GUID": "",
+    "ModeIndex": 2,
+    "Name": "layer_onboard_1",
+    "Active": 0,
+    "ModelID": 0,
+    "Application": {
+        "AppName": "",
+        "AppPath": ""
+    },
+    "ModeLE": {
+        "GUID": "6107B7F8-5C91-4ee1-8220-D80C15715710",
+        "Name": "彩云飞",
+        "LESet": {
+            "LEModel": 241,
+            "LESubModel": 1,
+            "LELight": 18,
+            "LESpeed": 3,
+            "LEDir": 0,
+            "LEColor": 0,
+            "LEEnable": 15
+        },
+        "LEData": {}
+    },
+    "DeviceLE": {
+        "Index": 0,
+        "LESet": [{
+            "LEConfig": 0,
+            "LEModel": 7,
+            "LESubModel": 1,
+            "LELight": 18,
+            "LESpeed": 3,
+            "LEDir": 0,
+            "LEColor": 0,
+            "LEEnable": 15
+        }, {
+            "LEConfig": 0,
+            "LEModel": 8,
+            "LESubModel": 1,
+            "LELight": 18,
+            "LESpeed": 3,
+            "LEDir": 0,
+            "LEColor": 0,
+            "LEEnable": 15
+        }, {
+            "LEConfig": 0,
+            "LEModel": 5,
+            "LESubModel": 1,
+            "LELight": 18,
+            "LESpeed": 3,
+            "LEDir": 0,
+            "LEColor": 0,
+            "LEEnable": 15
+        }, {
+            "LEConfig": 0,
+            "LEModel": 14,
+            "LESubModel": 1,
+            "LELight": 18,
+            "LESpeed": 3,
+            "LEDir": 0,
+            "LEColor": 0,
+            "LEEnable": 15
+        }, {
+            "LEConfig": 0,
+            "LEModel": 9,
+            "LESubModel": 1,
+            "LELight": 18,
+            "LESpeed": 3,
+            "LEDir": 0,
+            "LEColor": 0,
+            "LEEnable": 15
+        }]
+    },
+    "DriverLE": [{
+        "GUID": "",
+        "Name": ""
     }, {
-      "GUID": "",
-      "Name": ""
+        "GUID": "",
+        "Name": ""
     }, {
-      "GUID": "",
-      "Name": ""
+        "GUID": "",
+        "Name": ""
     }, {
-      "GUID": "",
-      "Name": ""
+        "GUID": "",
+        "Name": ""
     }, {
-      "GUID": "",
-      "Name": ""
-    }
-  ],
-   "KeySet": [{
+        "GUID": "",
+        "Name": ""
+    }],
+    "KeySet": [{
             "Index": 1,
             "MenuPID": "",
             "MenuID": "",
@@ -1302,31 +1301,9 @@
                 "GUID": "",
                 "Name": ""
             }
-        },
-		 {
-            "Index": 112,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002A00",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
-        },
-		 {
-            "Index": 113,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02002800",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
         }
     ],
-  "FnKeySet": [{
+    "FnKeySet": [{
             "Index": 1,
             "MenuPID": "",
             "MenuID": "",
@@ -1571,7 +1548,7 @@
             "MenuName": "`",
             "DriverValue": "0x02003500"
         },
-		{
+        {
             "Index": 49,
             "MenuPID": "",
             "MenuID": "",
@@ -1912,7 +1889,7 @@
             "MenuPID": "",
             "MenuID": "",
             "MenuName": "",
-            "DriverValue": "0x02002A00"     
+            "DriverValue": "0x02002A00"
         },
         {
             "Index": 106,
@@ -1942,6 +1919,5 @@
             "MenuName": "",
             "DriverValue": "0x02002C00"
         }
-
     ]
 }
