@@ -302,6 +302,32 @@ namespace GK6X
                 public bool UseRawValues;
             }
 
+            public static Dictionary<string, string> Discover()
+            {
+                Dictionary<string, string> names = new Dictionary<string, string>();
+                string path = Path.Combine(Program.DataBasePath, "lighting");
+                if (Directory.Exists(path))
+                {
+                    foreach (string file in Directory.GetFiles(path, "*.le"))
+                    {
+                        try
+                        {
+                            string str = File.ReadAllText(file);
+                            Dictionary<string, object> json = Json.Deserialize(str) as Dictionary<string, object>;
+                            string guid;
+                            if (json != null && Json.TryGetValue(json, "GUID", out guid))
+                            {
+                                names[guid.ToLower()] = Path.GetFileNameWithoutExtension(file);
+                            }
+                        }
+                        catch
+                        {
+                        }
+                    }
+                }
+                return names;
+            }
+
             public bool Load(KeyboardState keyboard)
             {
                 try
@@ -655,7 +681,7 @@ namespace GK6X
             return false;
         }
 
-        private Layer FindOrAddLayer(KeyboardLayer layer, bool fn)
+        public Layer FindOrAddLayer(KeyboardLayer layer, bool fn)
         {
             Dictionary<KeyboardLayer, Layer> layers = fn ? FnLayers : Layers;
             Layer result;
@@ -1216,6 +1242,84 @@ namespace GK6X
                     }
                 }
             }
+        }
+
+        public void SaveFromGUI(KeyboardState keyboard, string path)
+        {
+            StringBuilder sb = new StringBuilder();
+            if (Macros.Count > 0)
+            {
+                foreach (Macro macro in Macros.Values)
+                {
+                    sb.AppendLine("[Macro(" + macro.Name + "," + macro.DefaultDelay + "," + macro.RepeatType + "," + macro.RepeatCount + ")]");
+                    foreach (Macro.Action action in macro.Actions)
+                    {
+                        string delayStr = action.Delay > 0 ? ":" + action.Delay : string.Empty;
+                        string modifierStr = action.Modifier != DriverValueModifer.None ? action.Modifier.ToString() : string.Empty;
+                        string keyStr = (!string.IsNullOrEmpty(modifierStr) ? "+" : string.Empty) + (action.KeyCode > 0 ? ((DriverValue)KeyValues.GetLongDriverValue(action.KeyCode)).ToString() : string.Empty);
+                        if (!string.IsNullOrEmpty(modifierStr) || !string.IsNullOrEmpty(keyStr))
+                        {
+                            sb.AppendLine(action.Type + ":" + modifierStr + keyStr + delayStr);
+                        }
+                    }
+                    sb.AppendLine();
+                }
+                sb.AppendLine();
+            }
+
+            if (LightingEffects.Count > 0)
+            {
+                // TODO: Copy lighting effect file over from data file
+                Dictionary<string, string> names = LightingEffect.Discover();
+                foreach (KeyValuePair<string, LightingEffect> le in LightingEffects)
+                {
+                    string name;
+                    if (le.Value.Layers.Count > 0 && names.TryGetValue(le.Key.ToLower(), out name))
+                    {
+                        sb.AppendLine("Lighting[(" + name + ")," + string.Join(",", le.Value.Layers) + "]");
+                    }
+                }
+                sb.AppendLine();
+            }
+
+
+            for (int i = 0; i < 2; i++)
+            {
+                foreach (KeyValuePair<KeyboardLayer, Layer> layer in i == 0 ? Layers : FnLayers)
+                {
+                    sb.AppendLine("[" + (i > 0 ? "Fn" : string.Empty) + layer.Key + "]");
+                    uint[] defaultDriverValues = i > 0 ? keyboard.GetLayer(layer.Key).FnKeySet : keyboard.GetLayer(layer.Key).KeySet;
+                    for (int j = 0; j < keyboard.MaxLogicCode; j++)
+                    {
+                        KeyboardState.Key key = keyboard.GetKeyByLogicCode(j);
+                        if (key != null && j < defaultDriverValues.Length)
+                        {
+                            uint driverValue = layer.Value.GetKey(key);
+                            if (driverValue != KeyValues.UnusedKeyValue && driverValue != defaultDriverValues[j])
+                            {
+                                switch (KeyValues.GetKeyType(driverValue))
+                                {
+                                    case DriverValueType.Macro:
+                                        {
+                                            byte macroId = KeyValues.GetKeyData2(driverValue);
+                                            Macro macro = Macros.Values.FirstOrDefault(x => x.Id == macroId);
+                                            if (macro != null)
+                                            {
+                                                sb.AppendLine((DriverValue)defaultDriverValues[j] + ":Macro(" + macro.Name + ")");
+                                            }
+                                        }
+                                        break;
+                                    default:
+                                        sb.AppendLine((DriverValue)defaultDriverValues[j] + ":" + (DriverValue)driverValue);
+                                        break;
+                                }
+                            }
+                        }
+                    }
+                    sb.AppendLine();
+                }
+            }
+            File.WriteAllText(path, sb.ToString());
         }
     }
 }
