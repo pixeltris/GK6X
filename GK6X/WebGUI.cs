@@ -579,14 +579,33 @@ namespace GK6X
                                                                     {
                                                                         Dictionary<string, object> modeLE = entry as Dictionary<string, object>;
                                                                         string leGuid = (string)modeLE["GUID"];
-                                                                        string filePath = Path.Combine(userDataPath, "Account", accountId.ToString(), "LE", leGuid + ".le");
-                                                                        if (!effects.ContainsKey(leGuid) && File.Exists(filePath))
+                                                                        if (!string.IsNullOrEmpty(leGuid))
                                                                         {
-                                                                            UserDataFile.LightingEffect le = new UserDataFile.LightingEffect(userDataFile, null);
-                                                                            le.Load(device.State, Encoding.UTF8.GetString(CMFile.Load(filePath)));
-                                                                            le.Layers.Add(layer);
-                                                                            userDataFile.LightingEffects[leGuid] = le;
-                                                                            effects[leGuid] = le;
+                                                                            string filePath = Path.Combine(userDataPath, "Account", accountId.ToString(), "LE", leGuid + ".le");
+                                                                            if (!effects.ContainsKey(leGuid) && File.Exists(filePath))
+                                                                            {
+                                                                                UserDataFile.LightingEffect le = new UserDataFile.LightingEffect(userDataFile, null);
+                                                                                le.Load(device.State, Encoding.UTF8.GetString(CMFile.Load(filePath)));
+                                                                                le.Layers.Add(layer);
+                                                                                userDataFile.LightingEffects[leGuid] = le;
+                                                                                effects[leGuid] = le;
+                                                                            }
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            object leDataObj;
+                                                                            if (modeLE.TryGetValue("LEData", out leDataObj))
+                                                                            {
+                                                                                Dictionary<string, object> leData = leDataObj as Dictionary<string, object>;
+                                                                                if (leData != null)
+                                                                                {
+                                                                                    // This should be static lighting data only
+                                                                                    UserDataFile.LightingEffect le = new UserDataFile.LightingEffect(userDataFile, null);
+                                                                                    le.LoadStatic(device.State, leData);
+                                                                                    le.Layers.Add(layer);
+                                                                                    userDataFile.LightingEffects[Guid.NewGuid().ToString()] = le;
+                                                                                }
+                                                                            }
                                                                         }
                                                                     }
                                                                 }

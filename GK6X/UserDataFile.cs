@@ -354,7 +354,13 @@ namespace GK6X
                     switch (Type)
                     {
                         case LightingEffectType.Static:
-                            LoadStatic(keyboard, json);
+                            {
+                                Dictionary<string, object> data;
+                                if (Json.TryGetValue(json, "Data", out data))
+                                {
+                                    LoadStatic(keyboard, data);
+                                }
+                            }
                             break;
                         case LightingEffectType.Dynamic:
                             LoadDynamic(keyboard, json);
@@ -450,20 +456,16 @@ namespace GK6X
                 return false;
             }
 
-            private void LoadStatic(KeyboardState keyboard, Dictionary<string, object> json)
+            public void LoadStatic(KeyboardState keyboard, Dictionary<string, object> data)
             {
-                Dictionary<string, object> data;
-                if (Json.TryGetValue(json, "Data", out data))
+                foreach (KeyValuePair<string, object> item in data)
                 {
-                    foreach (KeyValuePair<string, object> item in data)
+                    int key;
+                    string colorStr = item.Value as string;
+                    uint color;
+                    if (TryGetKeyLocationCode(keyboard, item.Key, out key) && TryParseColor(colorStr, true, out color))
                     {
-                        int key;
-                        string colorStr = item.Value as string;
-                        uint color;
-                        if (TryGetKeyLocationCode(keyboard, item.Key, out key) && TryParseColor(colorStr, true, out color))
-                        {
-                            KeyColors[key] = color;
-                        }
+                        KeyColors[key] = color;
                     }
                 }
             }
