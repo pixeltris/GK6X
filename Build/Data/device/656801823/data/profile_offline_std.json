@@ -1,0 +1,28 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [
+		{
+			"GUID": "26C232E5-B89B-4b17-BF1D-75DC61351A93",
+			"Name": "全亮绿光"
+		},
+		{
+			"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+			"Name": "RGB渐变"
+		},
+		{
+			"GUID": "28AA6B77-DDE5-4bba-B3E6-F8DD27C7BCF2",
+			"Name": "JK061-PTIR-A"
+		},
+		{
+			"GUID": "849A6BA8-7C6F-4cab-BB62-7CEABCFC9E5E",
+			"Name": "JK061-PTIR-B"
+		},
+		{
+			"GUID": "4ED93DAC-2475-40b2-A77A-AF29A33384EF",
+			"Name": "JK061-PTIR-C"
+		}
+	]
+}

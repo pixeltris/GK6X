@@ -1,0 +1,116 @@
+{
+  "DeviceType": 0,
+  "DriverLEKey": 54,
+  "LeCate": 1320,
+  "ShowScalePlus": 0,
+  "ShowOffsetLeft": "0px",
+  "ShowOffsetTop": "0px",
+  "IsFnKeySet": true,
+  "IsFnx": false,
+  "FuncTable":[{
+	  "id": 0,
+	  "name": "设置",
+	  "lang": "menu_config_kb",
+	  "icon": "el-icon-kb-keyboard",
+	  "component": "/ConfigKB",
+	  "visible": true,
+	  "disable": false
+	},{
+	  "id": 1,
+	  "name": "灯效库",
+	  "lang": "menu_le_lib",
+	  "icon": "el-icon-kb-light",
+	  "component": "/Le",
+	  "visible": true,
+	  "disable": false
+	},{
+	  "id": 2,
+	  "name": "宏管理",
+	  "icon": "el-icon-kb-macroinfo",
+	  "lang": "menu_macro_lib",
+	  "component": "/Macro",
+	  "visible": true,
+	  "disable": false
+	},{
+	  "id": 3,
+	  "name": "板载模式",
+	  "lang": "menu_download_mode",
+	  "icon": "el-icon-download",
+	  "component": "/DownloadMode",
+	  "visible": false,
+	  "disable": false
+	}],
+	"QuickSelect":[{
+	  "title": "第一行",
+	  "lang": "line_first",
+	  "lcodes": [1,2,3,4,5,6,7,8,9,10,0,13,11,12,67,68,69,70,71,72,73,74,75,76,66,79,77,78]
+	},{
+	  "title": "第二行",
+	  "lang": "line_second",
+	  "lcodes": [17,22,23,24,15,18,19,21,16,20,14,25,26,27,83,88,89,90,81,84,85,87,82,86,80,91,92,93]
+	},{
+	  "title": "第三行",
+	  "lang": "line_third",
+	  "lcodes": [29,31,32,33,34,35,36,37,30,40,38,39,28,95,97,98,99,100,101,102,103,96,106,104,105,94]
+	},{
+	  "title": "第四行",
+	  "lang": "line_fourth",
+	  "lcodes": [41,52,46,44,48,47,45,43,42,49,50,51,54,53,107,118,112,110,114,113,111,109,108,115,116,117,120,119]
+	},{
+	  "title": "第五行",
+	  "lang": "line_fifth",
+	  "lcodes": [59,55,57,56,62,58,65,63,64,61,60,125,121,123,122,128,124,131,129,130,127,126]
+	},{
+	  "title": "上灯位",
+	  "lang": "line_above",
+	  "lcodes": [1,2,3,4,5,6,7,8,9,10,0,13,11,12,17,22,23,24,15,18,19,21,16,20,14,25,26,27,29,31,32,33,34,35,36,37,30,40,38,39,28,41,52,46,44,48,47,45,43,42,49,50,51,54,53,59,55,57,56,62,58,65,63,64,61,60]
+	},{
+	  "title": "下灯位",
+	  "lang": "line_below",
+	  "lcodes": [67,68,69,70,71,72,73,74,75,76,66,79,77,78,83,88,89,90,81,84,85,87,82,86,80,91,92,93,95,97,98,99,100,101,102,103,96,106,104,105,94,107,118,112,110,114,113,111,109,108,115,116,117,120,119,125,121,123,122,128,124,131,129,130,127,126]
+	},{
+	  "title": "LOGO",
+	  "lang": "line_logo",
+	  "lcodes": [132,133,134,135,136,137]
+	}],
+    "UserManual":[{
+		"title_lang": "layer_oper",
+		"items":[{
+		  "key": "Fn+W",
+		  "desc_lang": "change_onboard_layer_1"
+		},{
+		  "key": "Fn+E",
+		  "desc_lang": "change_onboard_layer_2"
+		},{
+		  "key": "Fn+R",
+		  "desc_lang": "change_onboard_layer_3"
+		},{
+		  "key": "Fn+Q",
+		  "desc_lang": "change_driver_layer_1"
+		}]
+	},{
+		"title_lang": "le_oper",
+		"items":[{
+		  "key": "Fn+【/】",
+		  "desc_lang": "change_std_le"
+		},{
+		  "key": "Fn+↑",
+		  "desc_lang": "change_le_brightness_inc"
+		},{
+		  "key": "Fn+↓",
+		  "desc_lang": "change_le_brightness_dec"
+		},{
+		  "key": "Fn+→",
+		  "desc_lang": "change_le_speed_inc"
+		},{
+		  "key": "Fn+←",
+		  "desc_lang": "change_le_speed_dec"
+		}]
+	},{
+		"title_lang": "system_oper",
+		"items":[{
+		  "key": "Fn+ESC+Q",
+		  "desc_lang": "clear_all_config"
+		}]
+	}]
+}

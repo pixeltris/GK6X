@@ -717,6 +717,7 @@ namespace GK6X
         {
             List<string> additionalDirs = new List<string>();
             additionalDirs.Add("Tronsmart Radiant");
+            additionalDirs.Add("Kemove Driver");
             for (int i = 0; i < additionalDirs.Count; )
             {
                 string fullPath = Path.Combine(srcDir, additionalDirs[i]);
@@ -781,7 +782,11 @@ namespace GK6X
                         }
                     }
 
-                    CopyFilesRecursively(new DirectoryInfo(additionalDir), new DirectoryInfo(combinedDriverDir), true);
+                    //CopyFilesRecursively(new DirectoryInfo(additionalDir), new DirectoryInfo(combinedDriverDir), true);
+                    if (Directory.Exists(additionalDeviceDir))
+                    {
+                        CopyFilesRecursively(new DirectoryInfo(additionalDeviceDir), new DirectoryInfo(Path.Combine(combinedDriverDir, "device")), true);
+                    }
                 }
                 CMFile.DumpLighting(leDir, Path.Combine(dstDir, "lighting"));
                 CopyFilesRecursively(new DirectoryInfo(deviceDir), new DirectoryInfo(Path.Combine(dstDir, "device")), false);
@@ -913,7 +918,7 @@ namespace GK6X
             {
                 if (all || extensions.Contains(file.Extension.ToLower().TrimStart(new char[] { '.' })))
                 {
-                    if (!file.Name.Contains("剑灵") && !file.Name.Contains("逆战") &&
+                    if (!file.Name.Contains("剑灵") && !file.Name.Contains("逆战") && !file.Name.Contains("问号") &&
                         !file.Name.Contains("下灯序") &&// Data\device\656801861\data\keymap下灯序.js
                         !file.Name.Contains("新建文件夹"))// driver\res\img\新建文件夹.rar
                     {

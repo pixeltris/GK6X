@@ -1,6 +1,6 @@
 {
-    "GUID":"85C11B7F-84C4-428b-8163-D9432B6CADFB",
-    "Name":"全亮紫光",
+    "GUID":"7D765D1C-64FD-4033-90EA-1556502AA9B5",
+    "Name":"全局紫光",
     "Frames":[
         {
             "Count":1,
@@ -277,7 +277,7 @@
                 130,
                 131
             ],
-            "Color":"0xff00ff",
+            "Color":"0x8c00ff",
             "Type":0,
             "Count":1
         }

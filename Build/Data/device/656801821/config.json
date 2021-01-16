@@ -1,0 +1,104 @@
+{
+  "DeviceType": 0,
+  "DriverLEKey": 54,
+  "LeCate": 67,
+  "ShowScalePlus": 0.16,
+  "ShowOffsetLeft": "0px",
+  "ShowOffsetTop": "0px",
+  "IsFnKeySet": true,
+  "IsFnx": false,
+  "FuncTable":[{
+	  "id": 0,
+	  "name": "设置",
+	  "lang": "menu_config_kb",
+	  "icon": "el-icon-kb-keyboard",
+	  "component": "/ConfigKB",
+	  "visible": true,
+	  "disable": false
+	},{
+	  "id": 1,
+	  "name": "灯效库",
+	  "lang": "menu_le_lib",
+	  "icon": "el-icon-kb-light",
+	  "component": "/Le",
+	  "visible": true,
+	  "disable": false
+	},{
+	  "id": 2,
+	  "name": "宏管理",
+	  "icon": "el-icon-kb-macroinfo",
+	  "lang": "menu_macro_lib",
+	  "component": "/Macro",
+	  "visible": true,
+	  "disable": false
+	},{
+	  "id": 3,
+	  "name": "板载模式",
+	  "lang": "menu_download_mode",
+	  "icon": "el-icon-download",
+	  "component": "/DownloadMode",
+	  "visible": false,
+	  "disable": false
+	}],
+	"QuickSelect":[{
+	  "title": "第一行",
+	  "lang": "line_first",
+	  "lcodes": [23,24,25,26,27,28,29,30,31,32,22,36,33,34]
+	},{
+	  "title": "第二行",
+	  "lang": "line_second",
+	  "lcodes": [47,52,53,54,45,48,49,51,46,50,44,55,56,58]
+	},{
+	  "title": "第三行",
+	  "lang": "line_third",
+	  "lcodes": [67,69,70,71,72,73,74,75,68,79,76,77,66]
+	},{
+	  "title": "第四行",
+	  "lang": "line_fourth",
+	  "lcodes": [88,102,94,92,96,95,93,91,90,97,98,99]
+	},{
+	  "title": "第五行",
+	  "lang": "line_fifth",
+	  "lcodes": [124,121,110,112,111,122,120,116]
+	}],
+    "UserManual":[{
+		"title_lang": "layer_oper",
+		"items":[{
+		  "key": "Fn+W",
+		  "desc_lang": "change_onboard_layer_1"
+		},{
+		  "key": "Fn+E",
+		  "desc_lang": "change_onboard_layer_2"
+		},{
+		  "key": "Fn+R",
+		  "desc_lang": "change_onboard_layer_3"
+		},{
+		  "key": "Fn+Q",
+		  "desc_lang": "change_driver_layer_1"
+		}]
+	},{
+		"title_lang": "le_oper",
+		"items":[{
+		  "key": "Fn+]/|",
+		  "desc_lang": "change_std_le"
+		},{
+		  "key": "Fn+[",
+		  "desc_lang": "change_le_brightness_inc"
+		},{
+		  "key": "Fn+P",
+		  "desc_lang": "change_le_brightness_dec"
+		},{
+		  "key": "Fn+'",
+		  "desc_lang": "change_le_speed_inc"
+		},{
+		  "key": "Fn+;",
+		  "desc_lang": "change_le_speed_dec"
+		}]
+	},{
+		"title_lang": "system_oper",
+		"items":[{
+		  "key": "Fn+ESC+Q",
+		  "desc_lang": "clear_all_config"
+		}]
+	}]
+}

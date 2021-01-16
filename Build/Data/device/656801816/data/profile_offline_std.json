@@ -1,0 +1,28 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [
+		{
+			"GUID": "4EC23E13-4653-49d9-A247-17BC309866BC",
+			"Name": "JK164-PTIR-A"
+		},
+		{
+			"GUID": "6C635C54-846F-4539-8AAC-765851E87A10",
+			"Name": "JK164-PTIR-B"
+		},
+		{
+			"GUID": "9EE4CB48-71F1-4346-A677-56D8A4A2A45D",
+			"Name": "JK164-PTIR-C"
+		},
+		{
+			"GUID": "F9E972A1-9DB3-4b84-8C07-AF714C56F20E",
+			"Name": "JK164-PTIR-D"
+		},
+		{
+			"GUID": "11AA1E47-6F0F-4f67-8DEA-BC6A85C41103",
+			"Name": "JK164-PTIR-E"
+		}
+	]
+}

@@ -78,6 +78,36 @@
         "LEType":"0"
     },
     {
+        "ModelID":656801810,
+        "FWID":"0x93215020",
+        "Name":"Dierya DK66",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801811,
+        "FWID":"0x02104601",
+        "Name":"Dierya DK61",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801816,
+        "FWID":"0x90217120",
+        "Name":"DK66pro(Bluetooth5.1)",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801821,
+        "FWID":"0x90206120",
+        "Name":"DK61(wired)",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801823,
+        "FWID":"0x90406121",
+        "Name":"DK61(Bluetooth5.1)",
+        "LEType":"0"
+    },
+    {
         "ModelID":656801895,
         "FWID":"0x94219720",
         "Name":"AC61M",
@@ -627,18 +657,6 @@
         "ModelID":656801817,
         "FWID":"0x90217210",
         "Name":"GK21S-RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801811,
-        "FWID":"0x02104601",
-        "Name":"Dierya DK61",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801810,
-        "FWID":"0x93215020",
-        "Name":"Dierya DK66",
         "LEType":"0"
     },
     {
