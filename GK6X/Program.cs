@@ -13,13 +13,47 @@ namespace GK6X
         public static string BasePath;
         public static string DataBasePath = "Data";
         public static string UserDataPath = "UserData";
+        public static string UserFileNamePrefix;
+        public static string UserFileName;
 
         static void Main(string[] args)
         {
+            bool isRunAsGUI = false;
+            if (args.Length > 0) {
+                string flag = args[0].ToLower();
+                
+                switch(flag)
+                {
+                    case "/gui":
+                        isRunAsGUI = true;
+                        break;
+                    case "/p":  //filename prefix
+                        if (args.Length>1)
+                        {
+                            UserFileNamePrefix = args[1];
+                            Console.WriteLine("Filename Prefix: " + UserFileNamePrefix);
+                        }
+                        break;
+                    case "/f":
+                        if (args.Length > 1)
+                        {
+                            UserFileName = args[1];
+                            Console.WriteLine("Filename" + UserFileNamePrefix);
+                        }
+                        break;
+                    default:
+                        isRunAsGUI = false;
+                        break;
+                }
+
+            }
 #if AS_GUI
             Run(asGUI: true);
 #else
-            Run(asGUI: false);
+
+            // Run(asGUI: false);
+            Run(asGUI: isRunAsGUI);
+
 #endif
             Stop();
         }
@@ -75,6 +109,7 @@ namespace GK6X
                 WebGUI.UpdateDeviceList();
 
                 string file = GetUserDataFile(device);
+
                 if (!string.IsNullOrEmpty(file))
                 {
                     try
@@ -599,7 +634,12 @@ namespace GK6X
 
         private static string GetUserDataFile(KeyboardDevice device)
         {
-            return Path.Combine(UserDataPath, device.State.ModelId + ".txt");
+            if (!string.IsNullOrEmpty(UserFileName))
+                return Path.Combine(UserDataPath, UserFileName.Trim() + ".txt");
+            else if (!string.IsNullOrEmpty(UserFileNamePrefix))
+              return Path.Combine(UserDataPath, UserFileNamePrefix.Trim() + " - " + device.State.ModelId + ".txt");
+            else
+              return Path.Combine(UserDataPath, device.State.ModelId + ".txt");
         }
 
         private static bool TryGetDevices(out KeyboardDevice[] devices)
