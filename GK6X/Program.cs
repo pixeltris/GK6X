@@ -43,14 +43,14 @@ namespace GK6X
                         if (args.Length > 1)
                         {
                             UserFileName = args[1];
-                            Console.WriteLine("Filename" + UserFileName);
+                            Console.WriteLine("Filename: " + UserFileName);
                         }
                         break;
                     case "/f":
                         if (args.Length > 1)
                         {
                             UserFileName = args[1];
-                            Console.WriteLine("Filename" + UserFileName);
+                            Console.WriteLine("Filename: " + UserFileName);
                         }
                         break;
                     default:
