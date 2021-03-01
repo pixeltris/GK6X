@@ -708,16 +708,6 @@
                 "Name": ""
             }
         }, {
-            "Index": 1,
-            "MenuPID": "",
-            "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02006500",
-            "KeyLE": {
-                "GUID": "",
-                "Name": ""
-            }
-        }, {
             "Index": 109,
             "MenuPID": "",
             "MenuID": "",

@@ -1,11 +1,14 @@
 {
     "DeviceType": 0,
     "DriverLEKey": 67,
+    "LeCate": 840,
     "ShowScalePlus": 0.05,
     "ShowOffsetLeft": 0,
     "ShowOffsetTop": 0,
     "IsFnKeySet": true,
-	"hasModeLe":false,
+    "IsFnx": false,
+    "hasPid": false,
+    "hasModeLe":false,
     "FuncTable": [{
         "id": 0,
         "name": "设置",

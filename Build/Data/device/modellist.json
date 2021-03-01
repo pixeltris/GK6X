@@ -108,81 +108,87 @@
         "LEType":"0"
     },
     {
-        "ModelID":656801895,
-        "FWID":"0x94219720",
-        "Name":"AC61M",
+        "ModelID":656801922,
+        "FWID":"0x95217410",
+        "Name":"GK61X RGB",
         "LEType":"0"
     },
     {
-        "ModelID":656801896,
-        "FWID":"0x90219720",
-        "Name":"AC61M",
+        "ModelID":656801921,
+        "FWID":"0x97217410",
+        "Name":"GK61XS RGB",
         "LEType":"0"
     },
     {
-        "ModelID":656801855,
-        "FWID":"0x94218310",
-        "Name":"GK96L-XS RGB",
+        "ModelID":656801920,
+        "FWID":"0x92217622",
+        "Name":"AK96 RGB ",
         "LEType":"0"
     },
     {
-        "ModelID":656801856,
-        "FWID":"0x92218310",
-        "Name":"GK96L-X RGB",
+        "ModelID":656801919,
+        "FWID":"0x94217622",
+        "Name":"AK96S RGB",
         "LEType":"0"
     },
     {
-        "ModelID":655491232,
-        "FWID":"0x02106101",
-        "Name":"XK-86 RGB-NE",
+        "ModelID":656801918,
+        "FWID":"0x92217611",
+        "Name":"AK96X RGB",
         "LEType":"0"
     },
     {
-        "ModelID":655491233,
-        "FWID":"0x02106101",
-        "Name":"XK-86 RGB-DE",
+        "ModelID":656801917,
+        "FWID":"0x94217611",
+        "Name":"AK96XS RGB",
         "LEType":"0"
     },
     {
-        "ModelID":655491237,
-        "FWID":"0x02106101",
-        "Name":"XK-86 RGB-EN",
+        "ModelID":656801916,
+        "FWID":"0x90218012",
+        "Name":"AK68X RGB",
         "LEType":"0"
     },
     {
-        "ModelID":655491244,
-        "FWID":"0x02106103",
-        "Name":"XK-86 NOLED-US",
+        "ModelID":656801915,
+        "FWID":"0x94218012",
+        "Name":"AK68XS RGB",
         "LEType":"0"
     },
     {
-        "ModelID":655491231,
-        "FWID":"0x02106101",
-        "Name":"XK-86 RGB-MAC",
+        "ModelID":656801914,
+        "FWID":"0x90216412",
+        "Name":"AK64X RGB",
         "LEType":"0"
     },
     {
-        "ModelID":655491229,
-        "FWID":"0x90210020",
-        "Name":"XK-86 RGBS",
+        "ModelID":656801913,
+        "FWID":"0x94216411",
+        "Name":"AK64XS RGB",
         "LEType":"0"
     },
     {
-        "ModelID":655491190,
-        "FWID":"0x02106102",
-        "Name":"XK-22 RGB",
+        "ModelID":656801912,
+        "FWID":"0x90217411",
+        "Name":"AK61X RGB",
         "LEType":"0"
     },
     {
-        "ModelID":655491180,
-        "FWID":"0x02106101",
-        "Name":"XK-86 RGB-US",
+        "ModelID":656801911,
+        "FWID":"0x94217411",
+        "Name":"AK61XS RGB",
         "LEType":"0"
     },
     {
-        "ModelID":656801907,
-        "FWID":"0x94218025",
-        "Name":"AK68S",
+        "ModelID":656801910,
+        "FWID":"0x90219110",
+        "Name":"GK84 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801909,
+        "FWID":"0x94219110",
+        "Name":"GK84S RGB",
         "LEType":"0"
     },
     {
@@ -192,14 +198,20 @@
         "LEType":"0"
     },
     {
-        "ModelID":656801905,
-        "FWID":"0x90219223",
-        "Name":"KB64",
+        "ModelID":656801907,
+        "FWID":"0x94218025",
+        "Name":"AK68S",
         "LEType":"0"
     },
     {
         "ModelID":656801906,
         "FWID":"0x94219223 ",
+        "Name":"KB64",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801905,
+        "FWID":"0x90219223",
         "Name":"KB64",
         "LEType":"0"
     },
@@ -216,57 +228,9 @@
         "LEType":"0"
     },
     {
-        "ModelID":656801845,
-        "FWID":"0x90216820",
-        "Name":"Nature 86Key RGB-EN",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801847,
-        "FWID":"0x90216820",
-        "Name":"Nature 86Key RGB-NE",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801849,
-        "FWID":"0x90216820",
-        "Name":"Nature 86Key RGB-DE",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801851,
-        "FWID":"0x90216820",
-        "Name":"Nature 86Key RGB-Mac",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801844,
-        "FWID":"0x90216820",
-        "Name":"Knight 86Key RGB-EN",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801846,
-        "FWID":"0x90216820",
-        "Name":"Knight 86Key RGB-NE",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801848,
-        "FWID":"0x90216820",
-        "Name":"Knight 86Key RGB-DE",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801850,
-        "FWID":"0x90216820",
-        "Name":"Knight 86Key RGB-Mac",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801900,
-        "FWID":"0x94219222",
-        "Name":"AK64S RGB",
+        "ModelID":656801902,
+        "FWID":"0x90218024",
+        "Name":"AK68 RGB",
         "LEType":"0"
     },
     {
@@ -276,9 +240,9 @@
         "LEType":"0"
     },
     {
-        "ModelID":656801902,
-        "FWID":"0x90218024",
-        "Name":"AK68 RGB",
+        "ModelID":656801900,
+        "FWID":"0x94219222",
+        "Name":"AK64S RGB",
         "LEType":"0"
     },
     {
@@ -288,15 +252,27 @@
         "LEType":"0"
     },
     {
+        "ModelID":656801898,
+        "FWID":"0x94219022",
+        "Name":"AK61S RGB",
+        "LEType":"0"
+    },
+    {
         "ModelID":656801897,
         "FWID":"0x90219023",
         "Name":"AK61 RGB",
         "LEType":"0"
     },
     {
-        "ModelID":656801898,
-        "FWID":"0x94219022",
-        "Name":"AK61S RGB",
+        "ModelID":656801896,
+        "FWID":"0x90219720",
+        "Name":"AC61M",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801895,
+        "FWID":"0x94219720",
+        "Name":"AC61M",
         "LEType":"0"
     },
     {
@@ -326,13 +302,13 @@
     {
         "ModelID":656801890,
         "FWID":"0x90219510",
-        "Name":"GK84X RGB",
+        "Name":"AK84 RGB",
         "LEType":"0"
     },
     {
         "ModelID":656801889,
         "FWID":"0x94219510",
-        "Name":"GK84XS RGB",
+        "Name":"AK84S RGB",
         "LEType":"0"
     },
     {
@@ -522,6 +498,18 @@
         "LEType":"0"
     },
     {
+        "ModelID":656801856,
+        "FWID":"0x92218310",
+        "Name":"GK96L-X RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801855,
+        "FWID":"0x94218310",
+        "Name":"GK96L-XS RGB",
+        "LEType":"0"
+    },
+    {
         "ModelID":656801854,
         "FWID":"0x92217610",
         "Name":"GK96X-RGB",
@@ -531,6 +519,54 @@
         "ModelID":656801853,
         "FWID":"0x94217610",
         "Name":"GK96XS-RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801851,
+        "FWID":"0x90216820",
+        "Name":"Nature 86Key RGB-Mac",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801850,
+        "FWID":"0x90216820",
+        "Name":"Knight 86Key RGB-Mac",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801849,
+        "FWID":"0x90216820",
+        "Name":"Nature 86Key RGB-DE",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801848,
+        "FWID":"0x90216820",
+        "Name":"Knight 86Key RGB-DE",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801847,
+        "FWID":"0x90216820",
+        "Name":"Nature 86Key RGB-NE",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801846,
+        "FWID":"0x90216820",
+        "Name":"Knight 86Key RGB-NE",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801845,
+        "FWID":"0x90216820",
+        "Name":"Nature 86Key RGB-EN",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801844,
+        "FWID":"0x90216820",
+        "Name":"Knight 86Key RGB-EN",
         "LEType":"0"
     },
     {
@@ -774,6 +810,12 @@
         "LEType":"0"
     },
     {
+        "ModelID":655491244,
+        "FWID":"0x02106103",
+        "Name":"XK-86 NOLED-US",
+        "LEType":"0"
+    },
+    {
         "ModelID":655491239,
         "FWID":"0x90206411",
         "Name":"GK64S",
@@ -786,9 +828,51 @@
         "LEType":"0"
     },
     {
+        "ModelID":655491237,
+        "FWID":"0x02106101",
+        "Name":"XK-86 RGB-EN",
+        "LEType":"0"
+    },
+    {
+        "ModelID":655491233,
+        "FWID":"0x02106101",
+        "Name":"XK-86 RGB-DE",
+        "LEType":"0"
+    },
+    {
+        "ModelID":655491232,
+        "FWID":"0x02106101",
+        "Name":"XK-86 RGB-NE",
+        "LEType":"0"
+    },
+    {
+        "ModelID":655491231,
+        "FWID":"0x02106101",
+        "Name":"XK-86 RGB-MAC",
+        "LEType":"0"
+    },
+    {
+        "ModelID":655491229,
+        "FWID":"0x90210020",
+        "Name":"XK-86 RGBS",
+        "LEType":"0"
+    },
+    {
         "ModelID":655491200,
         "FWID":"0x90211410",
         "Name":"GK84S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":655491190,
+        "FWID":"0x02106102",
+        "Name":"XK-22 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":655491180,
+        "FWID":"0x02106101",
+        "Name":"XK-86 RGB-US",
         "LEType":"0"
     },
     {

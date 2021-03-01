@@ -2,11 +2,12 @@
   "DeviceType": 0,
   "DriverLEKey": 67,
   "LeCate": 840,
-  "ShowScalePlus": 0.16,
+  "ShowScalePlus": 0.12,
   "ShowOffsetLeft": "0",
   "ShowOffsetTop": "0",
   "IsFnKeySet": true,
   "IsFnx": false,
+  "hasPid": false,
   "hasModeLe": false,
   "FuncTable":[{
 	  "id": 0,
@@ -56,11 +57,7 @@
 	},{
 	  "title": "第六行",
 	  "lang": "line_sixth",
-	  "lcodes": [110,111,112,116,120,121,122,124,125,126,114,117,119]
-	},{
-	  "title": "底灯",
-	  "lang": "line_bottom",
-	  "lcodes": [17,18,19,20,39,40,41,42]
+	  "lcodes": [110,111,112,116,120,121,122,124,125,126]
 	}],
     "UserManual":[{
 		"title_lang": "layer_oper",
@@ -80,7 +77,7 @@
 	},{
 		"title_lang": "le_oper",
 		"items":[{
-		  "key": "Fn+]-/+",
+		  "key": "Fn+-/+",
 		  "desc_lang": "change_std_le"
 		},{
 		  "key": "Fn+↑",

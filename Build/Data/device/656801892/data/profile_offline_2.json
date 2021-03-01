@@ -10,14 +10,101 @@
 	},
 	"ModeLE": {
 		"GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
-		"Name": "Macice Blue"
+		"Name": "Macice Blue",
+		"LESet": {
+			"LEModel": 241,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		},
+		"LEData": {
+
+		}
 	},
+	"DeviceLE": {
+		"Index": 0,
+		"LESet": [{
+				"LEConfig": 0,
+				"LEModel": 7,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			},
+			{
+				"LEConfig": 0,
+				"LEModel": 8,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			},
+			{
+				"LEConfig": 0,
+				"LEModel": 5,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			},
+			{
+				"LEConfig": 0,
+				"LEModel": 14,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			},
+			{
+				"LEConfig": 0,
+				"LEModel": 9,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			}
+		]
+	},
+	"DriverLE": [{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		}
+	],
 	"KeySet": [{
 			"Index": 1,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "Ralt",
-			"DriverValue": "0x02000040",
+			"MenuName": "",
+			"DriverValue": "0x02006500",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -48,8 +135,8 @@
 			"Index": 4,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "LWin",
-			"DriverValue": "0x02000008",
+			"MenuName": "",
+			"DriverValue": "0x02000004",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -59,8 +146,8 @@
 			"Index": 5,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "LAlt",
-			"DriverValue": "0x02000004",
+			"MenuName": "",
+			"DriverValue": "0x02000008",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -92,7 +179,18 @@
 			"Index": 8,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "Rwin",
+			"MenuName": "",
+			"DriverValue": "0x02000040",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		},
+		{
+			"Index": 9,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
 			"DriverValue": "0x02000080",
 			"KeyLE": {
 				"GUID": "",
@@ -423,7 +521,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02000708",
+			"DriverValue": "0x02002100",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -731,7 +829,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02002C08",
+			"DriverValue": "0x09020002",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -742,7 +840,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02002C03",
+			"DriverValue": "0x09020001",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -819,7 +917,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02004600",
+			"DriverValue": "0x02002c08",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -830,7 +928,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02004700",
+			"DriverValue": "0x02002c03",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -841,7 +939,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02004800",
+			"DriverValue": "0x0200210b",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -956,36 +1054,6 @@
 				"GUID": "",
 				"Name": ""
 			}
-		}, {
-			"Index": 109,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 110,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
-		}, {
-			"Index": 111,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00",
-			"KeyLE": {
-				"GUID": "",
-				"Name": ""
-			}
 		}
 	],
 	"FnKeySet": [{
@@ -996,13 +1064,6 @@
 			"DriverValue": "0x02006500"
 		},
 		{
-			"Index": 2,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000001"
-		},
-		{
 			"Index": 3,
 			"MenuPID": "",
 			"MenuID": "",
@@ -1010,11 +1071,11 @@
 			"DriverValue": "0x02000002"
 		},
 		{
-			"Index": 4,
+			"Index": 5,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02000004"
+			"DriverValue": "0x02000008"
 		},
 		{
 			"Index": 6,
@@ -1036,6 +1097,13 @@
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02000040"
+		},
+		{
+			"Index": 9,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02000080"
 		},
 		{
 			"Index": 10,
@@ -1220,31 +1288,6 @@
 			"DriverValue": "0x02001D00"
 		},
 		{
-			"Index": 36,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02001E00"
-		}, {
-			"Index": 37,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02001F00"
-		}, {
-			"Index": 38,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002000"
-		}, {
-			"Index": 39,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002100"
-		},
-		{
 			"Index": 46,
 			"MenuPID": "",
 			"MenuID": "",
@@ -1271,13 +1314,6 @@
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02002B00"
-		},
-		{
-			"Index": 50,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00"
 		},
 		{
 			"Index": 53,
@@ -1431,11 +1467,23 @@
 			"DriverValue": "0x02004500"
 		},
 		{
+			"Index": 75,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "F13",
+			"DriverValue": "0x02006800"
+		}, {
 			"Index": 76,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004700"
+			"MenuName": "F14",
+			"DriverValue": "0x02006900"
+		}, {
+			"Index": 77,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "F15",
+			"DriverValue": "0x02006A00"
 		},
 		{
 			"Index": 78,
@@ -1455,8 +1503,8 @@
 			"Index": 80,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004B00"
+			"MenuName": "Home",
+			"DriverValue": "0x02004A00"
 		},
 		{
 			"Index": 81,
@@ -1469,27 +1517,8 @@
 			"Index": 83,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004E00"
-		},
-		{
-			"Index": 109,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00"
-		}, {
-			"Index": 110,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00"
-		}, {
-			"Index": 111,
-			"MenuPID": "",
-			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02002C00"
+			"MenuName": "End",
+			"DriverValue": "0x02004D00"
 		}
 	]
 }
