@@ -1,3 +1,14 @@
+# Forked Notes
+
+Added commandline options for specifying custom prefix and filename and also to autorun
+
+/gui             --> runs GUI mode
+/p [prefix]      --> specifies the prefix. UserData filename will be "[prefix] - modelid.txt"
+/f [filename]    --> specifies the prefix. UserData filename will be "[filename].txt"
+/map [filename]  --> autorun map of "[filename].txt" and exit
+/unmap           --> autorun unmap and exit
+/dumpkeys        --> autorun dumpkeys and exit
+
 # GK6X
 
 This tool allows you to set keys, macros, and lighting for GK6X keyboards (GK64, GK84, GK61, etc). This can be used as an alternative to the official software http://www.jikedingzhi.com/downloadlist?driverID=41latest
