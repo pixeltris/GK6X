@@ -1,0 +1,573 @@
+﻿# To see a list of the available keys see https://github.com/pixeltris/GK6X/blob/81761765f020962ed04ad68f8f0837facda7a1fa/GK6X/KeyValues.cs#L269
+
+### MAPPING FOR GK68XS
+
+##################################################################
+# Alternative key names for duplicate keys
+##################################################################
+
+# Some keyboard have duplicate keys (multiple Space keys, multiple Backspace keys, etc). This causes issues with
+# mapping keys by name. You need to use the "dumpkeys" command to see the unique name for those duplicate keys.
+# Duplicate keys will be given a name such as "Space_2". You can create alternative names for such keys to clarify
+# which key is which.
+#
+# The following creates a key alias (alternative name) for "Space_2" called "RightSpace", allowing you to use "RightSpace" in mappings
+[KeyAlias]
+LeftSpace:Space_2
+MiddleSpace:Space_3
+RightSpace:Space_4
+
+##################################################################
+# Mapping keys
+##################################################################
+
+# On GK68 ` BackTick is default for key beside Backspace. Remap it to INSERT
+[Base,Layer1,Layer2]
+BackTick:Insert 
+
+# Map Menu as RCtrl on all layers
+[Base,Layer1,Layer3,FnLayer1,FnLayer2,FnLayer3]
+Menu:RCtrl
+
+#Make Capslock TempLayer2 for Greek letters, Use Fn Capslock to Capslock
+[Base,Layer1,Layer3]
+CapsLock:TempSwitchLayer2
+
+
+###################
+## Special Mac / Greek Layer2 mappings;  RWin == Command; Alt == Option; 
+###################
+[Layer2]
+LCtrl:LCtrl
+LWin:LWin
+LAlt:LAlt
+RAlt:RAlt
+Menu:RWin
+
+
+# Split Spacebar Mappings
+[Base,Layer1]
+RightSpace:TempSwitchLayer3
+
+[Layer2]
+MiddleSpace:TempSwitchLayer3
+RightSpace:RWin
+
+
+####################
+## Fn LayerMappings
+####################
+[FnLayer1,FnLayer2]
+P:PrintScreen
+PageUp:Home
+PageDown:End
+Quotes:NumPadAsterisk
+BackTick:OpenCalculator
+Esc:BackTick
+[FnLayer1]
+D1:F1
+D2:F2
+D3:F3
+D4:F4
+D5:F5
+D6:F6
+D7:F7
+D8:F8
+D9:F9
+D0:F10
+Subtract:F11
+Add:F12
+### P:PrintScreen
+L:ScrollLock
+B:Pause
+A:MediaPrevious
+S:MediaNext
+D:MediaPlayPause
+F:VolumeMute
+G:VolumeDown
+H:VolumeUp
+
+####################
+## Layer 3 Mappings
+####################
+[Layer3]
+Esc:LAlt+F4
+D1:F13
+D2:F14
+D3:F15
+D4:F16
+D5:F17
+D6:F18
+Q:F19
+W:F20
+E:F21
+R:F22
+T:F23
+Y:F24
+A:MediaPrevious
+S:MediaNext
+D:MediaPlayPause
+F:VolumeMute
+G:VolumeDown
+H:VolumeUp
+Z:Screenshot
+X:Disabled
+C:Copy
+V:Paste
+B:Disabled
+
+D7:NumPad7
+D8:NumPad8
+D9:NumPad9
+D0:NumPad0
+Subtract:NumPadSubtract
+Add:NumPadAdd
+BackTick:OpenCalculator
+U:NumPad4
+I:NumPad5
+O:NumPad6
+P:PrintScreen
+OpenSquareBrace:ScrollLock
+CloseSquareBrace:Pause
+Backslash:NumPadSlash
+J:NumPad1
+K:NumPad2
+L:NumPad3
+Semicolon:Disabled
+Quotes:NumPadAsterisk
+N:NumLock
+M:NumPad0
+#Comma:00 --- See macros
+Period:NumPadPeriod
+Enter:NumPadEnter
+
+RightSpace:Disabled
+RAlt:Menu
+Up:RCtrl+PageUp
+Down:RCtrl+PageDown
+Left:Home
+Right:End
+PageUp:Home
+PageDown:End
+
+##################################################################
+# Creating / mapping macros
+##################################################################
+
+# MyMacro = the name of the macro
+# 0 = milliseconds between each key action
+# RepeatXTimes = repeat the macro 'X' number of times (ReleaseKeyToStop / PressKeyAgainToStop are other options which can be used here - see https://github.com/pixeltris/GK6X/blob/81761765f020962ed04ad68f8f0837facda7a1fa/GK6X/Enums.cs#L41)
+# 2 = Number of times to repeat the macro (only used with RepeatXTimes)
+# - "Press" is a single action, any delay betwen the keys will occur after action has completed. The "Press"
+#   action presses the key down, then releases without any delay. The delay only occurs at the end of the action.
+# - "Down" / "Up" should be used if you want more control over the delays. Here are some example:
+#   Down:A:1000 <--- this holds down the A key for 1 second
+#   Up:A:1000 <--- this releases the A key and then waits 1 second
+#   Press:B:500 <--- this presses the B key (down/up) and then waits half a second
+#   Press:A+B+C:100 <--- this presses A+B+C then waits 100 milliseconds
+#   Press:A+B+C <--- this presses A+B+C then waits the duration defined in the macro header (in this case 0)
+[Macro(ZeroZero,0,RepeatXTimes,2)]
+Press:D0
+
+# Assign the macro to Comma on layer3
+[Layer3]
+Comma:Macro(ZeroZero)
+
+
+#############
+### GREEK and MATH
+#############
+#  α
+[Macro(GreekAlpha,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad2
+Press:NumPad4
+
+#  ß
+[Macro(GreekBeta,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad2
+Press:NumPad5
+
+#  Γ
+[Macro(GreekGamma,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad2
+Press:NumPad6
+
+# δ 
+[Macro(GreekDelta,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad5
+
+# ε
+[Macro(GreekEpsilon,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad8
+
+# Θ
+[Macro(GreekTheta,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad3
+
+# π
+[Macro(GreekPi,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad2
+Press:NumPad7
+
+# µ
+[Macro(GreekMu,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad0
+
+
+# Σ
+[Macro(GreekSigma,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad2
+Press:NumPad8
+
+# σ
+[Macro(GreekSigmaLower,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad2
+Press:NumPad9
+
+# τ
+[Macro(GreekTau,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad1
+
+# Φ
+[Macro(GreekPhi,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad2
+
+# φ
+[Macro(GreekPhiLower,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad7
+
+# Ω
+[Macro(GreekOmega,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad4
+
+# Ñ
+#[Macro(SpanishNtildaUpper,0,RepeatXTimes,1)]
+#Down:LAlt
+#Press:NumPad0
+#Press:NumPad2
+#Press:NumPad0
+#Press:NumPad9
+
+# ñ
+[Macro(SpanishNtilda,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad2
+Press:NumPad4
+Press:NumPad1
+
+# √ 
+[Macro(MathSQRT,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad5
+Press:NumPad1
+
+# ¹
+[Macro(MathPow1,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad8
+Press:NumPad5
+
+# ²
+[Macro(MathSquare,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad7
+Press:NumPad8
+
+# ³
+[Macro(MathCube,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad7
+Press:NumPad9
+
+# ⁿ
+[Macro(MathPowN,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad5
+Press:NumPad2
+
+# ∞
+[Macro(MathInfinity,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad6
+
+# °
+[Macro(MathDegree,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad4
+Press:NumPad8
+
+# ƒ 
+[Macro(MathFunction,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad1
+Press:NumPad5
+Press:NumPad9
+
+# ∩
+[Macro(MathIntersection,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad3
+Press:NumPad9
+
+# ±
+[Macro(MathPlusMinus,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad4
+Press:NumPad1
+
+# ≥ 
+[Macro(MathGreaterEqual,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad4
+Press:NumPad2
+
+# ≤
+[Macro(MathLesserEqual,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad4
+Press:NumPad3
+
+# ≈
+[Macro(MathApproximate,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad4
+Press:NumPad7
+
+# ≡
+[Macro(MathExact,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad4
+Press:NumPad0
+
+# ×
+[Macro(MathMultiply,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad2
+Press:NumPad1
+Press:NumPad5
+
+# ÷
+[Macro(MathDivide,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad2
+Press:NumPad4
+Press:NumPad7
+
+# ¼
+[Macro(Math1Quarter,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad8
+Press:NumPad8
+
+# ½
+[Macro(Math1Half,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad8
+Press:NumPad9
+
+# ¾
+[Macro(Math3Quarter,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad9
+Press:NumPad0
+
+# ↑
+[Macro(ArrowUp,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad4
+
+# ↓
+[Macro(ArrowDown,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad5
+
+# ←
+[Macro(ArrowLeft,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad7
+
+# →
+[Macro(ArrowRight,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad6
+
+# ↔
+[Macro(ArrowLandR,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad2
+Press:NumPad9
+
+# ©
+[Macro(MarkCopyright,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad6
+Press:NumPad9
+
+# ®
+[Macro(MarkRegister,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad7
+Press:NumPad4
+
+# ™
+[Macro(MarkTM,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad5
+Press:NumPad3
+
+# €
+[Macro(CurrencyEuro,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad0
+Press:NumPad1
+Press:NumPad2
+Press:NumPad8
+
+# £
+[Macro(CurrencyPound,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad1
+Press:NumPad5
+Press:NumPad6
+
+# ¢
+[Macro(CurrencyCent,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad1
+Press:NumPad5
+Press:NumPad5
+
+# ¥
+[Macro(CurrencyYen,0,RepeatXTimes,1)]
+Down:LAlt
+Press:NumPad1
+Press:NumPad5
+Press:NumPad7
+
+[Layer2]
+D1:Macro(MathPow1)
+D2:Macro(MathSquare)
+D3:Macro(MathCube)
+D4:Macro(Math1Quarter)
+D5:Macro(Math1Half)
+D6:Macro(Math3Quarter)
+D7:Macro(MathFunction)
+D8:Macro(MathInfinity)
+D9:Macro(MathPowN)
+D0:Macro(MathDegree)
+Subtract:Macro(MathPlusMinus)
+Add:Macro(MathExact)
+Semicolon:Macro(MathApproximate)
+
+OpenSquareBrace:Macro(CurrencyPound)
+CloseSquareBrace:Macro(CurrencyEuro)
+Backslash:Macro(MathSQRT)
+
+Down:Macro(ArrowDown)
+Up:Macro(ArrowUp)
+Left:Macro(ArrowLeft)
+Right:Macro(ArrowRight)
+RShift:Macro(ArrowLandR)
+Quotes:Macro(MathMultiply)
+Slash:Macro(MathDivide)
+Comma:Macro(MathLesserEqual)
+Period:Macro(MathGreaterEqual)
+
+A:Macro(GreekAlpha)
+B:Macro(GreekBeta)
+D:Macro(GreekDelta)
+E:Macro(GreekEpsilon)
+F:Macro(GreekPhi)
+G:Macro(GreekGamma)
+O:Macro(GreekOmega)
+P:Macro(GreekPi)
+M:Macro(GreekMu)
+S:Macro(GreekSigma)
+H:Macro(GreekTheta)
+T:Macro(GreekTau)
+V:Macro(GreekPhiLower)
+W:Macro(GreekSigmaLower)
+
+I:Macro(MathIntersection)
+X:Macro(MathMultiply)
+
+Y:Macro(CurrencyYen)
+C:Macro(CurrencyCent)
+Z:Macro(MarkTM)
+Q:Macro(MarkCopyright)
+R:Macro(MarkRegister)
+
+N:Macro(SpanishNtilda)
+
