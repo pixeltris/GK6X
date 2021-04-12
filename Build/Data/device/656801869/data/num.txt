@@ -1,0 +1,64 @@
+    {
+        "KeyName": "Keypad 1",
+        "Show": "Num 1",
+        "LogicCode": 94,
+        "LocationCode": 63,
+        "Position": {
+            "Left": 840,
+            "Top": 305,
+            "Width": 36,
+            "Height": 0
+        }
+    },
+    {
+        "KeyName": "Keypad 2",
+        "Show": "Num 2",
+        "LogicCode": 95,
+        "LocationCode": 64,
+        "Position": {
+            "Left": 878,
+            "Top": 305,
+            "Width": 36,
+            "Height": 0
+        }
+    },
+    {
+        "KeyName": "Keypad 3",
+        "Show": "Num 3",
+        "LogicCode": 96,
+        "LocationCode": 65,
+        "Position": {
+            "Left": 918,
+            "Top": 305,
+            "Width": 36,
+            "Height": 0
+ }。
+
+{
+        "KeyName": "Keypad 0",
+        "Show": "Num 0",
+        "LogicCode": 103,
+        "LocationCode": 78,
+        "Position": {
+            "Left": 839,
+            "Top": 343,
+            "Width": 36,
+            "Height": 0
+        }
+    },
+    {
+        "KeyName": "Keypad .",
+        "Show": "Num .",
+        "LogicCode": 104,
+        "LocationCode": 80,
+        "Position": {
+            "Left": 918,
+            "Top": 343,
+            "Width": 36,
+            "Height": 0
+        }
+    },
+
+
+
+

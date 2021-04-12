@@ -1,0 +1,71 @@
+		{
+		"KeyName": "Left Space",
+		"Show": "Left Space",
+		"LogicCode": 109,
+		"LocationCode": 114,
+		"Position": {
+			"Left": 405,
+			"Top": 463,
+			"Width": 130,
+			"Height": 0
+		}
+	},
+    {
+		"KeyName": "Mid Space",
+		"Show": "Middle Space",
+		"LogicCode": 110,
+		"LocationCode": 117,
+		"Position": {
+			"Left": 535,
+			"Top": 463,
+			"Width": 108,
+			"Height": 0
+		}
+	},
+	{
+		"KeyName": "Right Space",
+		"Show": "Right Space",
+		"LogicCode": 111,
+		"LocationCode": 119,
+		"Position": {
+			"Left": 645,
+			"Top": 463,
+			"Width": 56,
+			"Height": 0
+		}
+	},
+
+##################################
+{
+			"Index": 109,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		},
+		{
+			"Index": 110,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		},
+		{
+			"Index": 111,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		}
