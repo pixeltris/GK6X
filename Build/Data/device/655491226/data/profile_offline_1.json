@@ -1,0 +1,47 @@
+{
+	"GUID": "",
+	"ModeIndex": 0,
+	"Name": "",
+	"Active": 0,
+	"ModelID": 655491226,
+	"Application": {
+		"AppName": "",
+		"AppPath": ""
+	},
+	"DriverLE": [{
+		"GUID": "27792B02-5B07-4403-9FFF-F91F85A7AA33",
+		"Name": "MousePad-RGB"
+	},
+	{
+		"GUID": "639CB064-16F5-4503-8B53-0F18EC783DC6",
+		"Name": "MousePad-Pink"
+	},
+	{
+		"GUID": "83F60B24-1551-4b68-BEC7-1F704E503715",
+		"Name": "MousePad-Cyan-Breath"
+	},
+	{
+		"GUID": "FA16331F-D014-4428-9D2A-62A3835F98B7",
+		"Name": "MousePad-Spectral"
+	},
+	{
+		"GUID": "773A57C9-F7E8-4f0e-86E1-6100F47B16B6",
+		"Name": "MousePad-Colorful-Breath"
+	},
+	{
+		"GUID": "5754D4C8-F04D-466b-9C8E-F939F278CE1E",
+		"Name": "Mousepad-Red"
+	},
+	{
+		"GUID": "3723FC18-6875-4759-9AEE-E0FA2442430D",
+		"Name": "Mousepad-Blue"
+	},
+	{
+		"GUID": "B0D7CE44-C0DF-4307-A03D-709ED8F04584",
+		"Name": "Mousepad-Green"
+	},
+	{
+		"GUID": "8FBE33A4-675D-427e-9C94-C1A108C15A12",
+		"Name": "Mousepad-LightOff"
+	}]
+}

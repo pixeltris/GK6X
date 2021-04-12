@@ -1,0 +1,38 @@
+{
+	"GUID": "",
+	"ModeIndex": 0,
+	"Name": "",
+	"Active": 0,
+	"ModelID": 655491218,
+	"Application": {
+		"AppName": "",
+		"AppPath": ""
+	},
+	"ModeLE": {
+		"GUID": "",
+		"Name": "",
+		"LEData": {
+			
+		}
+	},
+	"DriverLE": [{
+		"GUID": "",
+		"Name": ""
+	},
+	{
+		"GUID": "",
+		"Name": ""
+	},
+	{
+		"GUID": "",
+		"Name": ""
+	},
+	{
+		"GUID": "",
+		"Name": ""
+	},
+	{
+		"GUID": "",
+		"Name": ""
+	}]
+}

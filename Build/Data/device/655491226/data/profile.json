@@ -1,0 +1,101 @@
+{
+	"GUID": "",
+	"ModeIndex": 0,
+	"Name": "",
+	"Active": 0,
+	"ModelID": 655491226,
+	"Application": {
+		"AppName": "",
+		"AppPath": ""
+	},
+	"ModeLE": {
+		"GUID": "",
+		"Name": "",
+		"LESet": {
+			"LEModel": 241,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		},
+		"LEData": {			
+		}
+	},
+	"HotKeySet": [],
+	"DeviceLE": {
+		"Index": 0,
+		"LESet": [{
+			"LEConfig": 0,
+			"LEModel": 7,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		},
+		{
+			"LEConfig": 0,
+			"LEModel": 8,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		},
+		{
+			"LEConfig": 0,
+			"LEModel": 5,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		},
+		{
+			"LEConfig": 0,
+			"LEModel": 14,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		},
+		{
+			"LEConfig": 0,
+			"LEModel": 9,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		}]
+	},
+	"DriverLE": [{
+		"GUID": "",
+		"Name": ""
+	},
+	{
+		"GUID": "",
+		"Name": ""
+	},
+	{
+		"GUID": "",
+		"Name": ""
+	},
+	{
+		"GUID": "",
+		"Name": ""
+	},
+	{
+		"GUID": "",
+		"Name": ""
+	}],
+	"KeySet": []
+}

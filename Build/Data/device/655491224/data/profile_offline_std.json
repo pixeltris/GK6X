@@ -1,0 +1,26 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [{
+		"GUID": "07CBACA4-4F09-4d3f-B7B3-946D7CA1A1C9",
+		"Name": "Full green lighting"
+	},
+	{
+		"GUID": "C90481D7-B35E-4a4a-83CA-B65798964DDB",
+		"Name": "Gradual change RGB"
+	},
+	{
+		"GUID": "B09FC694-4B0E-4fcb-83E7-8EB4A77E566A",
+		"Name": "Rainbow waves"
+	},
+	{
+		"GUID": "7E8488C3-EB93-46a8-B505-F9E95FD67322",
+		"Name": "Windmill"
+	},
+	{
+		"GUID": "4307ADFD-5D19-4f27-8ABF-B89F6F41A1B5",
+		"Name": "Spectral cycle"
+	}]
+}

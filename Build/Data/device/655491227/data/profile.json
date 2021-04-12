@@ -1,0 +1,190 @@
+{
+  "GUID": "",
+  "ModeIndex": 0,
+  "Name": "",
+  "Active": 0,
+  "ModelID": 0,
+  "Application": {
+    "AppName": "",
+    "AppPath": ""
+  },
+  "ModeLE": {
+    "GUID": "",
+    "Name": "",
+    "LESet": {
+      "LEModel": 241,
+      "LESubModel": 1,
+      "LELight": 18,
+      "LESpeed": 3,
+      "LEDir": 0,
+      "LEColor": 0,
+      "LEEnable": 15
+    },
+    "LEData": {
+      
+    }
+  },
+  "LogoLE": {
+    "Enable": 0,
+    "Type": 0
+  },
+  "ReportRate": 2,
+  "CurrentDPI": 1,
+  "DPISet": [{
+    "SyncXY": 1,
+    "DPIX": 800,
+    "DPIY": 800,
+    "DPIColor":7
+  },
+  {
+    "SyncXY": 1,
+    "DPIX": 1200,
+    "DPIY": 1200,
+    "DPIColor":3
+  },
+  {
+    "SyncXY": 1,
+    "DPIX": 1600,
+    "DPIY": 1600,
+    "DPIColor":2
+  },
+  {
+    "SyncXY": 1,
+    "DPIX": 2000,
+    "DPIY": 2000,
+    "DPIColor":1
+  },
+  {
+    "SyncXY": 1,
+    "DPIX": 3500,
+    "DPIY": 3500,
+    "DPIColor":6
+  },
+  {
+    "SyncXY": 1,
+    "DPIX": 5000,
+    "DPIY": 5000,
+    "DPIColor":5
+  },
+  {
+    "SyncXY": 1,
+    "DPIX": 7200,
+    "DPIY": 7200,
+    "DPIColor":4
+  }],
+  "KeySet": [{
+    "Index": 0,
+    "MenuPID": "",
+    "MenuID": "",
+    "MenuName": "",
+    "DriverValue": "0xFFFFFFFF",
+    "Task": {
+      "Type": "",
+      "Data": {
+        "Type": "Macro",
+        "GUID": "",
+        "Repeats": 1,
+        "StopMode": 1
+      }
+    },
+    "KeyLE": {
+      "GUID": "",
+      "Name": ""
+    }
+  },
+  {
+    "Index": 1,
+    "MenuPID": "",
+    "MenuID": "",
+    "MenuName": "",
+    "DriverValue": "0xFFFFFFFF",
+    "Task": {
+      "Type": "",
+      "Data": {
+        "Type": "OpenURL",
+        "AppPath": ""
+      }
+    },
+    "KeyLE": {
+      "GUID": "",
+      "Name": ""
+    }
+  },
+  {
+    "Index": 2,
+    "MenuPID": "",
+    "MenuID": "",
+    "MenuName": "",
+    "DriverValue": "0xFFFFFFFF",
+    "KeyLE": {
+      "GUID": "",
+      "Name": ""
+    }
+  },
+  {
+    "Index": 3,
+    "MenuPID": "",
+    "MenuID": "",
+    "MenuName": "",
+    "DriverValue": "0xFFFFFFFF",
+    "KeyLE": {
+      "GUID": "",
+      "Name": ""
+    }
+  },
+  {
+    "Index": 4,
+    "MenuPID": "",
+    "MenuID": "",
+    "MenuName": "",
+    "DriverValue": "0xFFFFFFFF",
+    "KeyLE": {
+      "GUID": "",
+      "Name": ""
+    }
+  },
+  {
+    "Index": 5,
+    "MenuPID": "",
+    "MenuID": "",
+    "MenuName": "",
+    "DriverValue": "0xFFFFFFFF",
+    "KeyLE": {
+      "GUID": "",
+      "Name": ""
+    }
+  },
+  {
+    "Index": 6,
+    "MenuPID": "",
+    "MenuID": "",
+    "MenuName": "",
+    "DriverValue": "0xFFFFFFFF",
+    "KeyLE": {
+      "GUID": "",
+      "Name": ""
+    }
+  },
+  {
+    "Index": 14,
+    "MenuPID": "",
+    "MenuID": "",
+    "MenuName": "",
+    "DriverValue": "0xFFFFFFFF",
+    "KeyLE": {
+      "GUID": "",
+      "Name": ""
+    }
+  },
+  {
+    "Index": 15,
+    "MenuPID": "",
+    "MenuID": "",
+    "MenuName": "",
+    "DriverValue": "0xFFFFFFFF",
+    "KeyLE": {
+      "GUID": "",
+      "Name": ""
+    }
+  }]
+}

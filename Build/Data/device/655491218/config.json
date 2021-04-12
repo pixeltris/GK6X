@@ -1,0 +1,27 @@
+{
+  "LeCate": 1760,
+  "FuncTable":[{
+    "Func": "kb_offline",
+    "Name": "title_setting",
+    "Type": 1,
+    "Icon": true,
+    "Compact": 0,
+    "Disabe": 0
+  },
+  {
+    "Func": "le",
+    "Name": "title_diy_lamp",
+    "Type": 0,
+    "Icon": true,
+    "Compact": 0,
+    "Disabe": 0
+  },
+  {
+    "Func": "sys_le",
+    "Name": "title_sys_le",
+    "Type": 0,
+    "Icon": true,
+    "Compact": 0,
+    "Disabe": 0
+  }]
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../res/lib/minicolors/jquery.minicolors.css">
+
+    <link rel="stylesheet" href="../../res/lib/cmsui/css/cmsui.min.css">
+    <link rel="stylesheet" href="../../res/css/app.css">
+    <link rel="stylesheet" href="res/css/kb_offline.css">
+</head>
+  <body>
+    <div class="ol_content">
+      <div class="ol_left">
+        <ul class="tab-list ol_left_menu" id="menu_select">
+          <li class="active" cms-lang="kb_lamp_efficacy">灯效</li>
+        </ul>
+        <!-- 灯效 -->
+        <div class="ol_func" id="lamp_setting">
+          <div class="tools_1_le" id="tools_lamp_1">
+            <div class="ximagebutton">
+                <input class="ximagebutton-image" type="image" draggable="false" src="../../res/img/lampbase_1.png"></input>
+                <label class="ximagebutton-label" cms-lang="kb_lamp_efficacy">灯效</label>
+            </div>
+          </div>
+          <div class="tools_2" id="tools_lamp_2">
+            <div class="functions lamp" id="tool_lamp" data-menu-p-name="lamp" style="display:flex;">
+              <div class="func-setting" style="height: 520px;">
+                <p>
+                  <span class="title title-left" cms-lang="kb_light_list">灯光列表</span>
+                </p>
+                <div class="menu-list" style="height: 470px;">
+                <ul>
+                </ul>
+                </div>
+              </div>
+              <div class="confirm">
+                <div class="yes">
+                  <input class="imagebutton" type="image" draggable="false" src="../../res/img/confirm_1.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ol_right">
+        <div id="device" class="device" data-width="860px" style="margin-top: 70px;">
+        </div>
+        <div class="bottom-navs" id="bottom_nav" style="display:flex;">
+          <div class="color-picker">
+            <input type="text" id="picker" class="picker" data-inline="true" value="#4fc8db">
+            <div class="color-selected">
+              <p cms-lang="kb_current_color">当前颜色</p>
+              <div class="current-color" id="current_color"></div>
+            </div>
+          </div>
+          <div class="colors">
+            <p class="title" cms-lang="kb_classic">经典</p>
+            <div class="items" id="choose_color">
+              <div class="item red"></div>
+              <div class="item orange"></div>
+              <div class="item yellow"></div>
+              <div class="item green"></div>
+              <div class="item white"></div>
+              <div class="item cyan" ></div>
+              <div class="item blue"></div>
+              <div class="item purple"></div>
+              <div class="item pink"></div>
+              <div class="item black"></div>
+              <div class="item redo"></div>
+              <div class="item orangeo"></div>
+              <div class="item yellowo"></div>
+              <div class="item greeno"></div>
+              <div class="item whiteo"></div>
+              <div class="item cyano"></div>
+              <div class="item blueo"></div>
+              <div class="item purpleo"></div>
+              <div class="item pinko"></div>
+              <div class="item blacko"></div>
+              <div class="item redt"></div>
+              <div class="item oranget"></div>
+              <div class="item yellowt"></div>
+              <div class="item greent"></div>
+            </div>
+          </div>
+
+          <div class="le-configs" id="le_configs">
+            <div class="le-config">
+              <div class="le-config-color" id="le_config_color_select">
+                <p class="le-config-color-select">颜色参数设置</p>
+                <div class="le-config-color-dropdown" id="le_color_dropdown"></div>
+              </div>
+
+              <div class="le-config-type-items" id="le_config_colors">
+                <div class="item">颜色参数: 单色</div>
+                <div class="item">颜色参数: 呼吸</div>
+                <div class="item">颜色参数: RGB</div>
+              </div>
+            </div>
+            <div class="le-config-set" id="le_config_set">
+              <div class="le-config-set-color"><span id="le_config_set_color"></span></div>
+            </div>
+          </div>
+        </div>
+        <!-- <button id="apply" class="btn button btn-apply" cms-lang="kb_application" title="应用">应用</button> -->
+      </div>
+    </div>
+    <script type="text/javascript" src="../../res/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../res/lib/minicolors/jquery.minicolors.js"></script>
+    <script type="text/javascript" src="../../res/lib/jquery.color-2.1.2.js"></script>
+    <script type="text/javascript" src="../../res/lib/cmsui/js/cmsui.min.js"></script>
+    <script type="text/javascript" src="res/js/kb_offline.js"></script>
+  </body>
+</html>
