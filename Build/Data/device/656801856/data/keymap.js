@@ -1095,7 +1095,7 @@
     {
         "KeyName": "Space",
         "Show": "Long Space",
-        "LogicCode": 50,
+        "LogicCode": 109,
         "LocationCode": 120,
         "Position": {
             "Left": 519,
@@ -1155,7 +1155,7 @@
     {
         "KeyName": "fn1",
         "Show": "Left",
-        "LogicCode": 109,
+        "LogicCode": 50,
         "LocationCode": 118,
         "Position": {
             "Left": 519,

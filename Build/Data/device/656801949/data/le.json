@@ -1,0 +1,95 @@
+0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 38, 
+44, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 60, 
+66, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 80, 82,
+88, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 101, 103, 104, 110, 
+111, 112, 114, 116, 117, 119, 120, 121, 122, 124, 125, 126
+{
+    "KeyName": "LED-Top-1",
+    "Show": "",
+    "LogicCode": -1,
+    "LocationCode": 17,
+    "Position": {
+        "Left": 240,
+        "Top": 100,
+        "Width": 20,
+        "Height": 32
+    }
+}, {
+    "KeyName": "LED-Top-2",
+    "Show": "",
+    "LogicCode": -1,
+    "LocationCode": 40,
+    "Position": {
+        "Left": 336,
+        "Top": 100,
+        "Width": 20,
+        "Height": 32
+    }
+}, {
+    "KeyName": "LED-Top-3",
+    "Show": "",
+    "LogicCode": -1,
+    "LocationCode": 61,
+    "Position": {
+        "Left": 431,
+        "Top": 100,
+        "Width": 20,
+        "Height": 32
+    }
+}, {
+    "KeyName": "LED-Top-4",
+    "Show": "",
+    "LogicCode": -1,
+    "LocationCode": 83,
+    "Position": {
+        "Left": 530,
+        "Top": 100,
+        "Width": 20,
+        "Height": 32
+    }
+}, {
+    "KeyName": "LED-Top-5",
+    "Show": "",
+    "LogicCode": -1,
+    "LocationCode": 39,
+    "Position": {
+        "Left": 654,
+        "Top": 100,
+        "Width": 20,
+        "Height": 32
+    }
+}, {
+    "KeyName": "LED-Top-6",
+    "Show": "",
+    "LogicCode": -1,
+    "LocationCode": 18,
+    "Position": {
+        "Left": 745,
+        "Top": 100,
+        "Width": 20,
+        "Height": 32
+    }
+}, {
+    "KeyName": "LED-Top-7",
+    "Show": "",
+    "LogicCode": -1,
+    "LocationCode": 62,
+    "Position": {
+        "Left": 846,
+        "Top": 100,
+        "Width": 20,
+        "Height": 32
+    }
+}, {
+    "KeyName": "LED-Top-8",
+    "Show": "",
+    "LogicCode": -1,
+    "LocationCode": 124,
+    "Position": {
+        "Left": 945,
+        "Top": 100,
+        "Width": 20,
+        "Height": 32
+    }
+}

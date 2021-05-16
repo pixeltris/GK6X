@@ -18,7 +18,7 @@
          "MenuPID": "",
          "MenuID": "",
          "MenuName": "",
-         "DriverValue": "0x02006500 ",
+         "DriverValue": "0x02006500",
          "KeyLE": {
             "GUID": "",
             "Name": ""
@@ -744,17 +744,6 @@
          "MenuID": "",
          "MenuName": "",
          "DriverValue": "0x02005200",
-         "KeyLE": {
-            "GUID": "",
-            "Name": ""
-         }
-      },
-      {
-         "Index": 1,
-         "MenuPID": "",
-         "MenuID": "",
-         "MenuName": "",
-         "DriverValue": "0x02006500",
          "KeyLE": {
             "GUID": "",
             "Name": ""

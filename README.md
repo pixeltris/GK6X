@@ -1,12 +1,12 @@
 # GK6X
 
-This tool allows you to set keys, macros, and lighting for GK6X keyboards (GK64, GK84, GK61, etc). This can be used as an alternative to the official software http://www.jikedingzhi.com/downloadlist?driverID=41latest
+This tool allows you to set keys, macros, and lighting for GK6X keyboards (GK64, GK84, GK61, etc). This can be used as an alternative to the official software ([Windows](http://www.jikedingzhi.com/downloadlist?driverID=41) / [Mac](http://www.jikedingzhi.com/downloadlist?driverID=90))
 
 It runs on Windows, Mac, and Linux.
 
 ## Usage
 
-_Note: This is a CLI program, but see below for GUI. It's advisable to use the official software if you're on Windows._
+_Note: This is a CLI program, but see below for GUI. It's advisable to use the official software if you're on Windows / Mac._
 
 _Note: On Linux you will need to run it as super user [(issue with hidraw?)](https://github.com/pixeltris/GK6X/issues/3). It can be compiled / ran with mono on Linux / Mac ([see #4](https://github.com/pixeltris/GK6X/issues/4)). On Windows you compile it with Visual Studio._
 

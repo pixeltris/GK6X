@@ -807,7 +807,7 @@
     {
         "KeyName": "Return",
         "Show": "Enter",
-        "LogicCode": 93,
+        "LogicCode": 46,
         "LocationCode": 80,
         "Position": {
             "Left": 760,
@@ -1047,7 +1047,7 @@
     {
         "KeyName": "Keypad Enter",
         "Show": "Enter",
-        "LogicCode": 46,
+        "LogicCode": 93,
         "LocationCode": 107,
         "Position": {
             "Left": 1016,

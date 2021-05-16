@@ -8,6 +8,7 @@
   "IsFnKeySet": true,
   "hasModeLe": false,
   "IsFnx": false,
+  "hasPid": true,
   "FuncTable":[{
 	  "id": 0,
 	  "name": "设置",
