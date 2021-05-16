@@ -1,4 +1,4 @@
-# Forked Notes
+# Commnadline Parameters
 
 Added commandline options for specifying custom prefix and filename and also to autorun
 
