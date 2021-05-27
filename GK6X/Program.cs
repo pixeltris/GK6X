@@ -561,12 +561,24 @@ namespace GK6X
                                                 }
                                                 if (userDataLayer != null)
                                                 {
+                                                    uint allValue;
+                                                    if (userDataLayer.Keys.TryGetValue("all", out allValue))
+                                                    {
+                                                        for (int j = 0; j < driverValues.Length; j++)
+                                                        {
+                                                            driverValues[j] = allValue;
+                                                        }
+                                                    }
                                                     for (int j = 0; j < driverValues.Length; j++)
                                                     {
                                                         KeyboardState.Key key = device.State.GetKeyByLogicCode(j);
                                                         if (key != null)
                                                         {
-                                                            driverValues[j] = userDataLayer.GetKey(key);
+                                                            uint keyValue = userDataLayer.GetKey(key);
+                                                            if (keyValue != KeyValues.UnusedKeyValue)
+                                                            {
+                                                                driverValues[j] = keyValue;
+                                                            }
                                                         }
                                                     }
                                                 }
