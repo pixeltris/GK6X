@@ -13,13 +13,59 @@ namespace GK6X
         public static string BasePath;
         public static string DataBasePath = "Data";
         public static string UserDataPath = "UserData";
+        public static string UserFileNamePrefix;
+        public static string UserFileName;
+        public static string AutoRunCommand;
 
         static void Main(string[] args)
         {
+            bool isRunAsGUI = false;
+            if (args.Length > 0) {
+                string flag = args[0].ToLower();
+                
+                switch(flag)
+                {
+                    case "/gui":
+                        isRunAsGUI = true;
+                        break;
+                    case "/p":  //filename prefix
+                        if (args.Length>1)
+                        {
+                            UserFileNamePrefix = args[1];
+                            Console.WriteLine("Filename Prefix: " + UserFileNamePrefix);
+                        }
+                        break;
+                    case "/map":
+                    case "/unmap":
+                    case "/dumpkeys":
+                    case "/update_data":
+                        AutoRunCommand = flag.Substring(1);
+                        if (args.Length > 1)
+                        {
+                            UserFileName = args[1];
+                            Console.WriteLine("Filename: " + UserFileName);
+                        }
+                        break;
+                    case "/f":
+                        if (args.Length > 1)
+                        {
+                            UserFileName = args[1];
+                            Console.WriteLine("Filename: " + UserFileName);
+                        }
+                        break;
+                    default:
+                        isRunAsGUI = false;
+                        break;
+                }
+
+            }
 #if AS_GUI
             Run(asGUI: true);
 #else
-            Run(asGUI: false);
+
+            // Run(asGUI: false);
+            Run(asGUI: isRunAsGUI);
+
 #endif
             Stop();
         }
@@ -75,6 +121,7 @@ namespace GK6X
                 WebGUI.UpdateDeviceList();
 
                 string file = GetUserDataFile(device);
+
                 if (!string.IsNullOrEmpty(file))
                 {
                     try
@@ -140,9 +187,14 @@ namespace GK6X
 
             bool running = true;
             bool hasNullInput = false;
+
             while (running)
             {
-                string line = Console.ReadLine();
+                string line;
+                if (!string.IsNullOrEmpty(AutoRunCommand))
+                    line = AutoRunCommand;
+                else
+                    line = Console.ReadLine();
                 if (line == null)
                 {
                     // Handler for potential issue where ReadLine() returns null - see https://github.com/pixeltris/GK6X/issues/8
@@ -509,12 +561,24 @@ namespace GK6X
                                                 }
                                                 if (userDataLayer != null)
                                                 {
+                                                    uint allValue;
+                                                    if (userDataLayer.Keys.TryGetValue("all", out allValue))
+                                                    {
+                                                        for (int j = 0; j < driverValues.Length; j++)
+                                                        {
+                                                            driverValues[j] = allValue;
+                                                        }
+                                                    }
                                                     for (int j = 0; j < driverValues.Length; j++)
                                                     {
                                                         KeyboardState.Key key = device.State.GetKeyByLogicCode(j);
                                                         if (key != null)
                                                         {
-                                                            driverValues[j] = userDataLayer.GetKey(key);
+                                                            uint keyValue = userDataLayer.GetKey(key);
+                                                            if (keyValue != KeyValues.UnusedKeyValue)
+                                                            {
+                                                                driverValues[j] = keyValue;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -594,12 +658,19 @@ namespace GK6X
                         }
                         break;
                 }
+                if (!string.IsNullOrEmpty(AutoRunCommand))
+                    running = false;
             }
         }
 
         private static string GetUserDataFile(KeyboardDevice device)
         {
-            return Path.Combine(UserDataPath, device.State.ModelId + ".txt");
+            if (!string.IsNullOrEmpty(UserFileName))
+                return Path.Combine(UserDataPath, UserFileName.Trim() + ".txt");
+            else if (!string.IsNullOrEmpty(UserFileNamePrefix))
+              return Path.Combine(UserDataPath, UserFileNamePrefix.Trim() + " - " + device.State.ModelId + ".txt");
+            else
+              return Path.Combine(UserDataPath, device.State.ModelId + ".txt");
         }
 
         private static bool TryGetDevices(out KeyboardDevice[] devices)

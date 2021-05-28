@@ -528,6 +528,9 @@ namespace GK6X
         //0x09010005 - ?
         //0x0901000A - ?
 
+        // Use 0xFEXXXXXX for fake values
+        All = 0xFE000001,// Used to assign all keys to a given value
+
         // TODO: Find Bluetooth buttons 1-3
         // TODO: Find Fn value (if it even exists)
         // TODO: Find flash memory value (if it even exists)
