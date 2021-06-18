@@ -197,7 +197,7 @@ namespace GK6X
                     long index;
                     long driverValue;
                     string driverValueStr;
-                    if (Json.TryGetValue(keySet, "Index", out index) &&
+                    if (Json.TryGetValue(keySet, "Index", out index) && index < driverKeySetArray.Length &&
                         Json.TryGetValue(keySet, "DriverValue", out driverValueStr) &&
                         driverValueStr.StartsWith("0x") &&
                         long.TryParse(driverValueStr.Substring(2), NumberStyles.HexNumber, null, out driverValue))
