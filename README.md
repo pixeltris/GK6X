@@ -4,6 +4,20 @@ This tool allows you to set keys, macros, and lighting for GK6X keyboards (GK64,
 
 It runs on Windows, Mac, and Linux.
 
+## Run/Install
+
+[:tada: :tada: Download releases here :tada: :tada:](https://github.com/pixeltris/GK6X/releases)
+
+### Run with Mono
+
+- Install Mono Runtime
+- Download & Extract from releases & Run `mono GK6X.exe </gui | /f | /dumpkeys>`
+- Read [this](README-CommandlineParameters.md) for Command Line Parameters & [Usage](#usage) for detailed information
+
+### Install on Arch Linux
+
+GK6X is available in [AUR](https://wiki.archlinux.org/title/Arch_User_Repository) as package [gk6x-bin](https://aur.archlinux.org/packages/gk6x-bin/) maintained by [@aakashhemadri](https://github.com/aakashhemadri)
+
 ## Usage
 
 _Note: This is a CLI program, but see below for GUI. It's advisable to use the official software if you're on Windows / Mac._
