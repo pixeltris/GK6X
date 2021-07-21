@@ -100,8 +100,8 @@
             "Index": 1,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "Menu",
-	        "DriverValue": "0x02006500",
+            "MenuName": "",
+	    "DriverValue": "0x02006500",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -133,8 +133,8 @@
             "Index": 4,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "LWin",
-	    "DriverValue": "0x02000008",
+            "MenuName": "",
+	    "DriverValue": "0x02000004",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -144,8 +144,8 @@
             "Index": 5,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "LAlt",
-	    "DriverValue": "0x02000004",
+            "MenuName": "",
+	    "DriverValue": "0x02000008",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -177,8 +177,8 @@
             "Index": 8,
             "MenuPID": "",
             "MenuID": "",
-	    "MenuName": "Menu",
-	    "DriverValue": "0x02006500",
+	    "MenuName": "",
+	    "DriverValue": "0x02000040",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -848,8 +848,8 @@
             "Index": 69,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "PREV",
-            "DriverValue": "0x030000B6",
+            "MenuName": "F7",
+            "DriverValue": "0x02004000",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -859,8 +859,8 @@
             "Index": 70,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "PLAY/STOP",
-            "DriverValue": "0x030000CD",
+            "MenuName": "F8",
+            "DriverValue": "0x02004100",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -870,8 +870,8 @@
             "Index": 71,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "NEXT",
-            "DriverValue": "0x030000B5",
+            "MenuName": "F9",
+            "DriverValue": "0x02004200",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -881,8 +881,8 @@
             "Index": 72,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "MUTE",
-            "DriverValue": "0x030000E2",
+            "MenuName": "F10",
+            "DriverValue": "0x02004300",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -892,8 +892,8 @@
             "Index": 73,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "VOLD",
-            "DriverValue": "0x030000EA",
+            "MenuName": "F11",
+            "DriverValue": "0x02004400",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -903,8 +903,8 @@
             "Index": 74,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "VOLU",
-            "DriverValue": "0x030000E9",
+            "MenuName": "F12",
+            "DriverValue": "0x02004500",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -969,8 +969,8 @@
             "Index": 80,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02004B00",
+            "MenuName": "Home",
+            "DriverValue": "0x02004A00",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -980,8 +980,8 @@
             "Index": 81,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02004C00",
+            "MenuName": "INS",
+            "DriverValue": "0x02004900",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -1002,8 +1002,8 @@
             "Index": 83,
             "MenuPID": "",
             "MenuID": "",
-            "MenuName": "",
-            "DriverValue": "0x02004E00",
+            "MenuName": "End",
+            "DriverValue": "0x02004D00",
             "KeyLE": {
                 "GUID": "",
                 "Name": ""
@@ -1525,6 +1525,20 @@
             "MenuID": "",
             "MenuName": "",
             "DriverValue": "0x02002100"
+        },
+	{
+            "Index": 40,
+            "MenuPID": "",
+            "MenuID": "",
+            "MenuName": "",
+            "DriverValue": "0x02001400"
+        },
+	{
+            "Index": 43,
+            "MenuPID": "",
+            "MenuID": "",
+            "MenuName": "",
+            "DriverValue": "0x02002500"
         },
         {
             "Index": 46,

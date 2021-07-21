@@ -1,0 +1,26 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [{
+		"GUID": "7710161F-D779-4d9d-AE4E-8F6E5618C82A",
+		"Name": "SK68S-A"
+	},
+	{
+		"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+		"Name": "RGB渐变"
+	},
+	{
+		"GUID": "86F9A695-FD6F-4991-ADDE-D18DE8E982D9",
+		"Name": "SK68S-B"
+	},
+	{
+		"GUID": "037C2AFB-0D92-4941-B026-FC61E4024181",
+		"Name": "SK68S-C"
+	},
+	{
+		"GUID": "A3A23C09-8ACF-45a7-96FD-796EFCDE3FB6",
+		"Name": "SK68S-D"
+	}]
+}

@@ -95,7 +95,7 @@
 			"Height": 55
 		}
 	},
-  {
+	{
 		"KeyName": "Keypad 7",
 		"Show": "Num 7",
 		"LogicCode": 100,
@@ -143,7 +143,7 @@
 			"Height": 105
 		}
 	},
-  {
+	{
 		"KeyName": "Keypad 4",
 		"Show": "Num 4",
 		"LogicCode": 97,
@@ -179,8 +179,6 @@
 			"Height": 55
 		}
 	},
-	
-
 	{
 		"KeyName": "Keypad 1",
 		"Show": "Num 1",
@@ -217,7 +215,7 @@
 			"Height": 55
 		}
 	},
-		{
+	{
 		"KeyName": "Keypad Enter",
 		"Show": "Enter",
 		"LogicCode": 93,

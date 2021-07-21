@@ -1,395 +1,12 @@
-[{
-		"KeyName": "Fn",
-		"Show": "Fn",
-		"LogicCode": 0,
-		"LocationCode": 98,
-		"Position": {
-			"Left": 738,
-			"Top": 411,
-			"Width": 50,
-			"Height": 50
-		}
-	},
+[
 	{
-		"KeyName": "Left Control",
-		"Show": "Ctrl",
-		"LogicCode": 2,
-		"LocationCode": 88,
+		"KeyName": "Escape",
+		"Show": "Esc",
+		"LogicCode": 47,
+		"LocationCode": 0,
 		"Position": {
 			"Left": 188,
-			"Top": 411,
-			"Width": 64,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Left Shift",
-		"Show": "Shift",
-		"LogicCode": 3,
-		"LocationCode": 66,
-		"Position": {
-			"Left": 188,
-			"Top": 356,
-			"Width": 107,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Left Alt",
-		"Show": "Alt",
-		"LogicCode": 5,
-		"LocationCode": 90,
-		"Position": {
-			"Left": 325,
-			"Top": 411,
-			"Width": 64,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Left GUI",
-		"Show": "Win",
-		"LogicCode": 4,
-		"LocationCode": 89,
-		"Position": {
-			"Left": 256,
-			"Top": 411,
-			"Width": 64,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Right Menu Control",
-		"Show": "Ctrl Menu",
-		"LogicCode": 8,
-		"LocationCode": 99,
-		"Position": {
-			"Left": 793,
-			"Top": 411,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Right Shift",
-		"Show": "Shift",
-		"LogicCode": 7,
-		"LocationCode": 78,
-		"Position": {
-			"Left": 848,
-			"Top": 356,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "A",
-		"Show": "A",
-		"LogicCode": 10,
-		"LocationCode": 46,
-		"Position": {
-			"Left": 284,
-			"Top": 301,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "B",
-		"Show": "B",
-		"LogicCode": 11,
-		"LocationCode": 72,
-		"Position": {
-			"Left": 517,
-			"Top": 356,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "C",
-		"Show": "C",
-		"LogicCode": 12,
-		"LocationCode": 70,
-		"Position": {
-			"Left": 408,
-			"Top": 356,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "D",
-		"Show": "D",
-		"LogicCode": 13,
-		"LocationCode": 48,
-		"Position": {
-			"Left": 393,
-			"Top": 301,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "E",
-		"Show": "E",
-		"LogicCode": 14,
-		"LocationCode": 26,
-		"Position": {
-			"Left": 381,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "F",
-		"Show": "F",
-		"LogicCode": 15,
-		"LocationCode": 49,
-		"Position": {
-			"Left": 449,
-			"Top": 301,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "G",
-		"Show": "G",
-		"LogicCode": 16,
-		"LocationCode": 50,
-		"Position": {
-			"Left": 504,
-			"Top": 301,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "H",
-		"Show": "H",
-		"LogicCode": 17,
-		"LocationCode": 51,
-		"Position": {
-			"Left": 559,
-			"Top": 301,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "I",
-		"Show": "I",
-		"LogicCode": 18,
-		"LocationCode": 31,
-		"Position": {
-			"Left": 655,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "J",
-		"Show": "J",
-		"LogicCode": 19,
-		"LocationCode": 52,
-		"Position": {
-			"Left": 614,
-			"Top": 301,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "K",
-		"Show": "K",
-		"LogicCode": 20,
-		"LocationCode": 53,
-		"Position": {
-			"Left": 669,
-			"Top": 301,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "L",
-		"Show": "L",
-		"LogicCode": 21,
-		"LocationCode": 54,
-		"Position": {
-			"Left": 724,
-			"Top": 301,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "M",
-		"Show": "M",
-		"LogicCode": 22,
-		"LocationCode": 74,
-		"Position": {
-			"Left": 628,
-			"Top": 356,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "N",
-		"Show": "N",
-		"LogicCode": 23,
-		"LocationCode": 73,
-		"Position": {
-			"Left": 573,
-			"Top": 356,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "O",
-		"Show": "O",
-		"LogicCode": 24,
-		"LocationCode": 32,
-		"Position": {
-			"Left": 711,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "P",
-		"Show": "P",
-		"LogicCode": 25,
-		"LocationCode": 33,
-		"Position": {
-			"Left": 766,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Q",
-		"Show": "Q",
-		"LogicCode": 26,
-		"LocationCode": 24,
-		"Position": {
-			"Left": 271,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "R",
-		"Show": "R",
-		"LogicCode": 27,
-		"LocationCode": 27,
-		"Position": {
-			"Left": 436,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "S",
-		"Show": "S",
-		"LogicCode": 28,
-		"LocationCode": 47,
-		"Position": {
-			"Left": 339,
-			"Top": 301,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "T",
-		"Show": "T",
-		"LogicCode": 29,
-		"LocationCode": 28,
-		"Position": {
-			"Left": 491,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "U",
-		"Show": "U",
-		"LogicCode": 30,
-		"LocationCode": 30,
-		"Position": {
-			"Left": 601,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "V",
-		"Show": "V",
-		"LogicCode": 31,
-		"LocationCode": 71,
-		"Position": {
-			"Left": 462,
-			"Top": 356,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "W",
-		"Show": "W",
-		"LogicCode": 32,
-		"LocationCode": 25,
-		"Position": {
-			"Left": 325,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "X",
-		"Show": "X",
-		"LogicCode": 33,
-		"LocationCode": 69,
-		"Position": {
-			"Left": 353,
-			"Top": 356,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Y",
-		"Show": "Y",
-		"LogicCode": 34,
-		"LocationCode": 29,
-		"Position": {
-			"Left": 546,
-			"Top": 246,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Z",
-		"Show": "Z",
-		"LogicCode": 35,
-		"LocationCode": 68,
-		"Position": {
-			"Left": 298,
-			"Top": 356,
+			"Top": 191,
 			"Width": 50,
 			"Height": 50
 		}
@@ -515,66 +132,6 @@
 		}
 	},
 	{
-		"KeyName": "Return",
-		"Show": "Enter",
-		"LogicCode": 46,
-		"LocationCode": 58,
-		"Position": {
-			"Left": 889,
-			"Top": 301,
-			"Width": 121,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Escape",
-		"Show": "Esc",
-		"LogicCode": 47,
-		"LocationCode": 0,
-		"Position": {
-			"Left": 188,
-			"Top": 191,
-			"Width": 50,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Backspace",
-		"Show": "←",
-		"LogicCode": 48,
-		"LocationCode": 14,
-		"Position": {
-			"Left": 903,
-			"Top": 191,
-			"Width": 104,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Tab",
-		"Show": "Tab",
-		"LogicCode": 49,
-		"LocationCode": 22,
-		"Position": {
-			"Left": 188,
-			"Top": 246,
-			"Width": 80,
-			"Height": 50
-		}
-	},
-	{
-		"KeyName": "Space",
-		"Show": "Space",
-		"LogicCode": 50,
-		"LocationCode": 92,
-		"Position": {
-			"Left": 393,
-			"Top": 473,
-			"Width": 144,
-			"Height": 0
-		}
-	},
-	{
 		"KeyName": "-",
 		"Show": "-",
 		"LogicCode": 51,
@@ -594,6 +151,174 @@
 		"Position": {
 			"Left": 848,
 			"Top": 191,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "Backspace",
+		"Show": "←",
+		"LogicCode": 48,
+		"LocationCode": 14,
+		"Position": {
+			"Left": 903,
+			"Top": 191,
+			"Width": 104,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "LED-LEFT-1",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 15,
+		"Position": {
+			"Left": 175,
+			"Top": 224,
+			"Width": 10,
+			"Height": 10
+		}
+	},
+	{
+		"KeyName": "LED-RIGHT-1",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 16,
+		"Position": {
+			"Left": 1012,
+			"Top": 224,
+			"Width": 10,
+			"Height": 10
+		}
+	},
+	{
+		"KeyName": "Tab",
+		"Show": "Tab",
+		"LogicCode": 49,
+		"LocationCode": 22,
+		"Position": {
+			"Left": 188,
+			"Top": 246,
+			"Width": 80,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "Q",
+		"Show": "Q",
+		"LogicCode": 26,
+		"LocationCode": 24,
+		"Position": {
+			"Left": 271,
+			"Top": 246,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "W",
+		"Show": "W",
+		"LogicCode": 32,
+		"LocationCode": 25,
+		"Position": {
+			"Left": 325,
+			"Top": 246,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "E",
+		"Show": "E",
+		"LogicCode": 14,
+		"LocationCode": 26,
+		"Position": {
+			"Left": 381,
+			"Top": 246,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "R",
+		"Show": "R",
+		"LogicCode": 27,
+		"LocationCode": 27,
+		"Position": {
+			"Left": 436,
+			"Top": 246,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "T",
+		"Show": "T",
+		"LogicCode": 29,
+		"LocationCode": 28,
+		"Position": {
+			"Left": 491,
+			"Top": 246,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "Y",
+		"Show": "Y",
+		"LogicCode": 34,
+		"LocationCode": 29,
+		"Position": {
+			"Left": 546,
+			"Top": 246,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "U",
+		"Show": "U",
+		"LogicCode": 30,
+		"LocationCode": 30,
+		"Position": {
+			"Left": 601,
+			"Top": 246,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "I",
+		"Show": "I",
+		"LogicCode": 18,
+		"LocationCode": 31,
+		"Position": {
+			"Left": 655,
+			"Top": 246,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "O",
+		"Show": "O",
+		"LogicCode": 24,
+		"LocationCode": 32,
+		"Position": {
+			"Left": 711,
+			"Top": 246,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "P",
+		"Show": "P",
+		"LogicCode": 25,
+		"LocationCode": 33,
+		"Position": {
+			"Left": 766,
+			"Top": 246,
 			"Width": 50,
 			"Height": 50
 		}
@@ -635,6 +360,150 @@
 		}
 	},
 	{
+		"KeyName": "LED-LEFT-2",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 37,
+		"Position": {
+			"Left": 175,
+			"Top": 318,
+			"Width": 10,
+			"Height": 10
+		}
+	},
+	{
+		"KeyName": "LED-RIGHT-2",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 38,
+		"Position": {
+			"Left": 1012,
+			"Top": 318,
+			"Width": 10,
+			"Height": 10
+		}
+	},
+	{
+		"KeyName": "Caps Lock",
+		"Show": "Caps L",
+		"LogicCode": 62,
+		"LocationCode": 44,
+		"Position": {
+			"Left": 188,
+			"Top": 301,
+			"Width": 90,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "A",
+		"Show": "A",
+		"LogicCode": 10,
+		"LocationCode": 46,
+		"Position": {
+			"Left": 284,
+			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "S",
+		"Show": "S",
+		"LogicCode": 28,
+		"LocationCode": 47,
+		"Position": {
+			"Left": 339,
+			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "D",
+		"Show": "D",
+		"LogicCode": 13,
+		"LocationCode": 48,
+		"Position": {
+			"Left": 393,
+			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "F",
+		"Show": "F",
+		"LogicCode": 15,
+		"LocationCode": 49,
+		"Position": {
+			"Left": 449,
+			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "G",
+		"Show": "G",
+		"LogicCode": 16,
+		"LocationCode": 50,
+		"Position": {
+			"Left": 504,
+			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "H",
+		"Show": "H",
+		"LogicCode": 17,
+		"LocationCode": 51,
+		"Position": {
+			"Left": 559,
+			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "J",
+		"Show": "J",
+		"LogicCode": 19,
+		"LocationCode": 52,
+		"Position": {
+			"Left": 614,
+			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "K",
+		"Show": "K",
+		"LogicCode": 20,
+		"LocationCode": 53,
+		"Position": {
+			"Left": 669,
+			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "L",
+		"Show": "L",
+		"LogicCode": 21,
+		"LocationCode": 54,
+		"Position": {
+			"Left": 724,
+			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
 		"KeyName": ";",
 		"Show": ";",
 		"LogicCode": 56,
@@ -654,6 +523,138 @@
 		"Position": {
 			"Left": 835,
 			"Top": 301,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "Return",
+		"Show": "Enter",
+		"LogicCode": 46,
+		"LocationCode": 58,
+		"Position": {
+			"Left": 889,
+			"Top": 301,
+			"Width": 121,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "LED-LEFT-3",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 59,
+		"Position": {
+			"Left": 175,
+			"Top": 415,
+			"Width": 10,
+			"Height": 10
+		}
+	},
+	{
+		"KeyName": "LED-RIGHT-3",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 60,
+		"Position": {
+			"Left": 1012,
+			"Top": 415,
+			"Width": 10,
+			"Height": 10
+		}
+	},
+	{
+		"KeyName": "Left Shift",
+		"Show": "Shift",
+		"LogicCode": 3,
+		"LocationCode": 66,
+		"Position": {
+			"Left": 188,
+			"Top": 356,
+			"Width": 107,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "Z",
+		"Show": "Z",
+		"LogicCode": 35,
+		"LocationCode": 68,
+		"Position": {
+			"Left": 298,
+			"Top": 356,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "X",
+		"Show": "X",
+		"LogicCode": 33,
+		"LocationCode": 69,
+		"Position": {
+			"Left": 353,
+			"Top": 356,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "C",
+		"Show": "C",
+		"LogicCode": 12,
+		"LocationCode": 70,
+		"Position": {
+			"Left": 408,
+			"Top": 356,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "V",
+		"Show": "V",
+		"LogicCode": 31,
+		"LocationCode": 71,
+		"Position": {
+			"Left": 462,
+			"Top": 356,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "B",
+		"Show": "B",
+		"LogicCode": 11,
+		"LocationCode": 72,
+		"Position": {
+			"Left": 517,
+			"Top": 356,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "N",
+		"Show": "N",
+		"LogicCode": 23,
+		"LocationCode": 73,
+		"Position": {
+			"Left": 573,
+			"Top": 356,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "M",
+		"Show": "M",
+		"LogicCode": 22,
+		"LocationCode": 74,
+		"Position": {
+			"Left": 628,
+			"Top": 356,
 			"Width": 50,
 			"Height": 50
 		}
@@ -695,14 +696,26 @@
 		}
 	},
 	{
-		"KeyName": "Caps Lock",
-		"Show": "Caps L",
-		"LogicCode": 62,
-		"LocationCode": 44,
+		"KeyName": "Right Shift",
+		"Show": "Shift",
+		"LogicCode": 7,
+		"LocationCode": 78,
 		"Position": {
-			"Left": 188,
-			"Top": 301,
-			"Width": 90,
+			"Left": 848,
+			"Top": 356,
+			"Width": 50,
+			"Height": 50
+		}
+	},
+	{
+		"KeyName": "Up Arrow",
+		"Show": "↑",
+		"LogicCode": 87,
+		"LocationCode": 79,
+		"Position": {
+			"Left": 903,
+			"Top": 356,
+			"Width": 50,
 			"Height": 50
 		}
 	},
@@ -719,51 +732,51 @@
 		}
 	},
 	{
-		"KeyName": "Right Arrow",
-		"Show": "→",
-		"LogicCode": 84,
-		"LocationCode": 102,
+		"KeyName": "Left Control",
+		"Show": "Ctrl",
+		"LogicCode": 2,
+		"LocationCode": 88,
 		"Position": {
-			"Left": 958,
+			"Left": 188,
 			"Top": 411,
-			"Width": 50,
+			"Width": 64,
 			"Height": 50
 		}
 	},
 	{
-		"KeyName": "Left Arrow",
-		"Show": "←",
-		"LogicCode": 85,
-		"LocationCode": 100,
+		"KeyName": "Left GUI",
+		"Show": "Win",
+		"LogicCode": 4,
+		"LocationCode": 89,
 		"Position": {
-			"Left": 848,
+			"Left": 256,
 			"Top": 411,
-			"Width": 50,
+			"Width": 64,
 			"Height": 50
 		}
 	},
 	{
-		"KeyName": "Down Arrow",
-		"Show": "↓",
-		"LogicCode": 86,
-		"LocationCode": 101,
+		"KeyName": "Left Alt",
+		"Show": "Alt",
+		"LogicCode": 5,
+		"LocationCode": 90,
 		"Position": {
-			"Left": 903,
+			"Left": 325,
 			"Top": 411,
-			"Width": 50,
+			"Width": 64,
 			"Height": 50
 		}
 	},
 	{
-		"KeyName": "Up Arrow",
-		"Show": "↑",
-		"LogicCode": 87,
-		"LocationCode": 79,
+		"KeyName": "Space",
+		"Show": "Space",
+		"LogicCode": 50,
+		"LocationCode": 92,
 		"Position": {
-			"Left": 903,
-			"Top": 356,
-			"Width": 50,
-			"Height": 50
+			"Left": 393,
+			"Top": 473,
+			"Width": 144,
+			"Height": 0
 		}
 	},
 	{
@@ -803,75 +816,63 @@
 		}
 	},
 	{
-		"KeyName": "LED-LEFT-1",
-		"Show": "",
-		"LogicCode": -1,
-		"LocationCode": 15,
+		"KeyName": "Fn",
+		"Show": "Fn",
+		"LogicCode": 0,
+		"LocationCode": 98,
 		"Position": {
-			"Left": 175,
-			"Top": 224,
-			"Width": 10,
-			"Height": 10
+			"Left": 738,
+			"Top": 411,
+			"Width": 50,
+			"Height": 50
 		}
 	},
 	{
-		"KeyName": "LED-LEFT-2",
-		"Show": "",
-		"LogicCode": -1,
-		"LocationCode": 37,
+		"KeyName": "Right Menu Control",
+		"Show": "Ctrl Menu",
+		"LogicCode": 8,
+		"LocationCode": 99,
 		"Position": {
-			"Left": 175,
-			"Top": 318,
-			"Width": 10,
-			"Height": 10
+			"Left": 793,
+			"Top": 411,
+			"Width": 50,
+			"Height": 50
 		}
 	},
 	{
-		"KeyName": "LED-LEFT-3",
-		"Show": "",
-		"LogicCode": -1,
-		"LocationCode": 59,
+		"KeyName": "Left Arrow",
+		"Show": "←",
+		"LogicCode": 85,
+		"LocationCode": 100,
 		"Position": {
-			"Left": 175,
-			"Top": 415,
-			"Width": 10,
-			"Height": 10
+			"Left": 848,
+			"Top": 411,
+			"Width": 50,
+			"Height": 50
 		}
 	},
 	{
-		"KeyName": "LED-RIGHT-1",
-		"Show": "",
-		"LogicCode": -1,
-		"LocationCode": 16,
+		"KeyName": "Down Arrow",
+		"Show": "↓",
+		"LogicCode": 86,
+		"LocationCode": 101,
 		"Position": {
-			"Left": 1012,
-			"Top": 224,
-			"Width": 10,
-			"Height": 10
+			"Left": 903,
+			"Top": 411,
+			"Width": 50,
+			"Height": 50
 		}
 	},
 	{
-		"KeyName": "LED-RIGHT-2",
-		"Show": "",
-		"LogicCode": -1,
-		"LocationCode": 38,
+		"KeyName": "Right Arrow",
+		"Show": "→",
+		"LogicCode": 84,
+		"LocationCode": 102,
 		"Position": {
-			"Left": 1012,
-			"Top": 318,
-			"Width": 10,
-			"Height": 10
-		}
-	},
-	{
-		"KeyName": "LED-RIGHT-3",
-		"Show": "",
-		"LogicCode": -1,
-		"LocationCode": 60,
-		"Position": {
-			"Left": 1012,
-			"Top": 415,
-			"Width": 10,
-			"Height": 10
+			"Left": 958,
+			"Top": 411,
+			"Width": 50,
+			"Height": 50
 		}
 	},
 	{
@@ -886,7 +887,6 @@
 			"Height": 0
 		}
 	},
-
 	{
 		"KeyName": "LED-TOP-2",
 		"Show": "",
@@ -922,7 +922,8 @@
 			"Width": 20,
 			"Height": 0
 		}
-	}, {
+	},
+	{
 		"KeyName": "LED-TOP-5",
 		"Show": "",
 		"LogicCode": -1,

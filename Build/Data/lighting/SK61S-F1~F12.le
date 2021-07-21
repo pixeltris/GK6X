@@ -1,0 +1,123 @@
+{
+    
+   "Frames" : [
+        
+      {
+            
+         "Count" : 1,
+            
+         "Data" : {
+                
+            "1" : "0xffffff",
+                
+            "10" : "0xffffff",
+                
+            "11" : "0xffffff",
+                
+            "12" : "0xffffff",
+                
+            "2" : "0xffffff",
+                
+            "25" : "0xffffff",
+                
+            "26" : "0xffffff",
+                
+            "27" : "0xffffff",
+                
+            "3" : "0xffffff",
+                
+            "38" : "0xffffff",
+                
+            "39" : "0xffffff",
+                
+            "4" : "0xffffff",
+                
+            "49" : "0xffffff",
+                
+            "5" : "0xffffff",
+                
+            "50" : "0xffffff",
+                
+            "51" : "0xffffff",
+                
+            "57" : "0xffffff",
+                
+            "58" : "0xffffff",
+                
+            "6" : "0xffffff",
+                
+            "7" : "0xffffff",
+                
+            "8" : "0xffffff",
+                
+            "9" : "0xffffff"
+         
+            },
+            
+         "Name" : "frame0"
+      
+        }
+   
+    ],
+    
+   "GUID" : "4C42BDD5-DCFE-4d60-ABE8-7E573C3E1F46",
+    
+   "LEConfigs" : [
+        
+      {
+            
+         "Color" : "0xff0000",
+            
+         "Count" : 1,
+            
+         "Keys" : [
+                 25,
+                 26,
+                 27,
+                 38,
+                 39,
+                 49,
+                 50,
+                 51 
+            ],
+            
+         "Type" : 0
+      
+        },
+        
+      {
+            
+         "Color" : "0x0000FF",
+            
+         "Count" : 1,
+            
+         "Keys" : [
+                 1,
+                 2,
+                 3,
+                 4,
+                 5,
+                 6,
+                 7,
+                 8,
+                 9,
+                 10,
+                 11,
+                 12,
+                 57,
+                 58 
+            ],
+            
+         "Type" : 0
+      
+        }
+   
+    ],
+    
+   "LeCate" : 67,
+    
+   "LeType" : "simple",
+    
+   "Name" : "SK61S"
+
+}

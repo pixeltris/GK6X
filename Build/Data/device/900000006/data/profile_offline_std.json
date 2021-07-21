@@ -1,0 +1,24 @@
+{
+    "GUID": "",
+    "ModeIndex": 1,
+    "Name": "标准配置",
+    "Active": 0,
+    "DriverLE": [
+    	{
+            "GUID": "AA1A1B4F-2132-4B2A-875C-D07E4836F2EA",
+            "Name": "JK-178-SK87-A"
+        },{
+            "GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+            "Name": "Macice Blue"
+        }, {
+            "GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+            "Name": "RGB渐变"
+        },  {
+            "GUID": "E3C911F2-DA66-47B7-91F5-7548C58C62A6",
+			"Name": "JK-178-SK87-B"
+        }, {
+            "GUID": "E681B6D5-3F7B-4BBE-9F90-9C38E8D8BE55",
+            "Name": "JK-178-SK87-C"
+        }
+    ]
+}

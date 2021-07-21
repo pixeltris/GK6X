@@ -66,16 +66,16 @@
 	"UserManual": [{
 		"title_lang": "layer_oper",
 		"items": [{
-			"key": "Fn+W",
+			"key": "Fn+F12",
 			"desc_lang": "change_onboard_layer_1"
 		}, {
-			"key": "Fn+E",
+			"key": "Fn+F11",
 			"desc_lang": "change_onboard_layer_2"
 		}, {
-			"key": "Fn+R",
+			"key": "Fn+F10",
 			"desc_lang": "change_onboard_layer_3"
 		}, {
-			"key": "Fn+Q",
+			"key": "Fn+F9",
 			"desc_lang": "change_driver_layer_1"
 		}]
 	}, {
@@ -84,16 +84,16 @@
 			"key": "Fn+]/|",
 			"desc_lang": "change_std_le"
 		}, {
-			"key": "Fn+[",
+			"key": "Fn+↑",
 			"desc_lang": "change_le_brightness_inc"
 		}, {
-			"key": "Fn+]",
+			"key": "Fn+↓",
 			"desc_lang": "change_le_brightness_dec"
 		}, {
-			"key": "Fn+↑",
+			"key": "Fn+←",
 			"desc_lang": "change_le_speed_inc"
 		}, {
-			"key": "Fn+↓",
+			"key": "Fn+→",
 			"desc_lang": "change_le_speed_dec"
 		}]
 	}, {

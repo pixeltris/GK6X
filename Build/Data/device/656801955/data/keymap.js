@@ -226,7 +226,7 @@
 			"Width": 55,
 			"Height": 105
 		}
-	},	
+	},
 	{
 		"KeyName": "Keypad 0",
 		"Show": "Num 0",

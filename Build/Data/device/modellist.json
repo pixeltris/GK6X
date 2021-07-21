@@ -108,33 +108,177 @@
         "LEType":"0"
     },
     {
-        "ModelID":656801959,
-        "FWID":"0x97218013",
-        "Name":"GK68XS RGB",
+        "ModelID":900000010,
+        "FWID":"0x94220421",
+        "Name":"NT68M RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000009,
+        "FWID":"0x94220420",
+        "Name":"NT68W RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801951,
+        "FWID":"0x95219610",
+        "Name":"AK108 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801950,
+        "FWID":"0x97219610",
+        "Name":"AK108S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801904,
+        "FWID":"0x90219620",
+        "Name":"AK108 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801903,
+        "FWID":"0x94219620",
+        "Name":"AK108S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801920,
+        "FWID":"0x92217622",
+        "Name":"AK96 RGB ",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801919,
+        "FWID":"0x94217622",
+        "Name":"AK96S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801939,
+        "FWID":"0x95217611",
+        "Name":"AK96 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801938,
+        "FWID":"0x97217611",
+        "Name":"AK96S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801964,
+        "FWID":"0x90218026",
+        "Name":"AK68 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801963,
+        "FWID":"0x94218026",
+        "Name":"AK68S RGB",
         "LEType":"0"
     },
     {
         "ModelID":656801960,
         "FWID":"0x95218013",
-        "Name":"GK68X RGB",
+        "Name":"AK68 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801959,
+        "FWID":"0x97218013",
+        "Name":"AK68S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000002,
+        "FWID":"0x90219024",
+        "Name":"AK61 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000001,
+        "FWID":"0x94219023",
+        "Name":"AK61S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000004,
+        "FWID":"0x90219224",
+        "Name":"AK64 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000003,
+        "FWID":"0x94219224",
+        "Name":"AK64S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000008,
+        "FWID":"0x95217811",
+        "Name":"AK87 RGB",
+        "LEType":"old GK87"
+    },
+    {
+        "ModelID":900000007,
+        "FWID":"0x97217811",
+        "Name":"AK87S RGB",
+        "LEType":"old GK87"
+    },
+    {
+        "ModelID":900000006,
+        "FWID":"0x90217822",
+        "Name":"AK87 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000005,
+        "FWID":"0x94217822",
+        "Name":"AK87S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801968,
+        "FWID":"0x95219010",
+        "Name":"AK61 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801967,
+        "FWID":"0x97219010",
+        "Name":"AK61S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801966,
+        "FWID":"0x95221110",
+        "Name":"AK63 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801965,
+        "FWID":"0x97221110",
+        "Name":"AK63S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801962,
+        "FWID":"0x90219721",
+        "Name":"AC61M-UK RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801961,
+        "FWID":"0x94219721",
+        "Name":"AC61M-UK RGB",
         "LEType":"0"
     },
     {
         "ModelID":656801958,
         "FWID":"0x97220411",
-        "Name":"NT68 RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801940,
-        "FWID":"0x97220410",
-        "Name":"NT68 RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801884,
-        "FWID":"0x90219022",
-        "Name":"SK61 RGB",
+        "Name":"NT68M RGB",
         "LEType":"0"
     },
     {
@@ -150,9 +294,9 @@
         "LEType":"0"
     },
     {
-        "ModelID":656801874,
-        "FWID":"0x94219220",
-        "Name":"SK64XS RGB",
+        "ModelID":656801955,
+        "FWID":"0x94217221",
+        "Name":"SK21S RGB",
         "LEType":"0"
     },
     {
@@ -162,45 +306,15 @@
         "LEType":"0"
     },
     {
-        "ModelID":656801955,
-        "FWID":"0x94217221",
-        "Name":"SK21S RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801923,
-        "FWID":"0x95206110",
-        "Name":"GK61-RGB-V2",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801922,
-        "FWID":"0x95217410",
-        "Name":"GK61X RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801952,
-        "FWID":"0x97217210",
-        "Name":"GK21S",
-        "LEType":"0"
-    },
-    {
         "ModelID":656801953,
         "FWID":"0x97217211",
         "Name":"GK21S",
         "LEType":"0"
     },
     {
-        "ModelID":656801951,
-        "FWID":"0x95219610",
-        "Name":"GK108",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801950,
-        "FWID":"0x97219610",
-        "Name":"GK108S",
+        "ModelID":656801952,
+        "FWID":"0x97217210",
+        "Name":"GK21S",
         "LEType":"0"
     },
     {
@@ -252,15 +366,9 @@
         "LEType":"0"
     },
     {
-        "ModelID":656801939,
-        "FWID":"0x95217611",
-        "Name":"AK96X RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801938,
-        "FWID":"0x97217611",
-        "Name":"AK96XS RGB",
+        "ModelID":656801940,
+        "FWID":"0x97220410",
+        "Name":"NT68W RGB",
         "LEType":"0"
     },
     {
@@ -348,21 +456,21 @@
         "LEType":"0"
     },
     {
+        "ModelID":656801923,
+        "FWID":"0x95206110",
+        "Name":"GK61-RGB-V2",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801922,
+        "FWID":"0x95217410",
+        "Name":"GK61X RGB",
+        "LEType":"0"
+    },
+    {
         "ModelID":656801921,
         "FWID":"0x97217410",
         "Name":"GK61XS RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801920,
-        "FWID":"0x92217622",
-        "Name":"AK96 RGB ",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801919,
-        "FWID":"0x94217622",
-        "Name":"AK96S RGB",
         "LEType":"0"
     },
     {
@@ -447,18 +555,6 @@
         "ModelID":656801905,
         "FWID":"0x90219223",
         "Name":"KB64",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801904,
-        "FWID":"0x90219620",
-        "Name":"SK108 RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801903,
-        "FWID":"0x94219620",
-        "Name":"SK108S RGB",
         "LEType":"0"
     },
     {
@@ -570,6 +666,12 @@
         "LEType":"0"
     },
     {
+        "ModelID":656801884,
+        "FWID":"0x90219022",
+        "Name":"SK61 RGB",
+        "LEType":"0"
+    },
+    {
         "ModelID":656801883,
         "FWID":"0x92217621",
         "Name":"SK103 RGB",
@@ -621,6 +723,12 @@
         "ModelID":656801875,
         "FWID":"0x90219220",
         "Name":"SK64X RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801874,
+        "FWID":"0x94219220",
+        "Name":"SK64XS RGB",
         "LEType":"0"
     },
     {

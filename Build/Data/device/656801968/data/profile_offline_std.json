@@ -1,0 +1,27 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [{
+			"GUID": "GKF76583-8D61-4CCA-8EXS-3EAA0C45C3CC",
+			"Name": "GK61XS 方向键"
+		},
+		{
+			"GUID": "6A7D46FF-324B-4498-ADB4-3043D879EDD5",
+			"Name": "SK64/66-2"
+		},
+		{
+			"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+			"Name": "RGB渐变"
+		},
+		{
+			"GUID": "E0459B73-B6F9-D221-8D6E-A56388849263",
+			"Name": "光谱循环 61"
+		},
+		{
+			"GUID": "4914F13F-5E71-3CB6-B212-FBF9569918DA",
+			"Name": "风车 61"
+		}
+	]
+}

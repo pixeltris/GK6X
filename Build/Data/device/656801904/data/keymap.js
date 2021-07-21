@@ -176,8 +176,8 @@
 		"Height": 45
 	}
 }, {
-	"KeyName": "MultiMedia",
-	"Show": "MultiMedia",
+	"KeyName": "Calculator",
+	"Show": "Calculator",
 	"LogicCode": 105,
 	"LocationCode": 18,
 	"Position": {
@@ -763,7 +763,6 @@
 		"Height": 45
 	}
 },
-
 {
 	"KeyName": "J",
 	"Show": "J",
@@ -833,35 +832,35 @@
 }, {
 	"KeyName": "F15",
 	"Show": "F15",
-	"LogicCode": null,
+	"LogicCode": 114,
 	"LocationCode": 81,
 	"Position": {
 		"Left": 773,
 		"Top": 335,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 }, {
 	"KeyName": "F16",
 	"Show": "F16",
-	"LogicCode": null,
+	"LogicCode": 115,
 	"LocationCode": 82,
 	"Position": {
 		"Left": 820,
 		"Top": 335,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 }, {
 	"KeyName": "F17",
 	"Show": "F17",
-	"LogicCode": null,
+	"LogicCode": 116,
 	"LocationCode": 83,
 	"Position": {
 		"Left": 866,
 		"Top": 335,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 }, 
 {
@@ -1033,13 +1032,13 @@
 }, {
 	"KeyName": "F13",
 	"Show": "F13",
-	"LogicCode": null,
+	"LogicCode": 112,
 	"LocationCode": 103,
 	"Position": {
 		"Left": 773,
 		"Top": 380,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 }, {
 	"KeyName": "Up Arrow",
@@ -1055,13 +1054,13 @@
 }, {
 	"KeyName": "F14",
 	"Show": "F14",
-	"LogicCode": null,
+	"LogicCode": 113,
 	"LocationCode": 105,
 	"Position": {
 		"Left": 865,
 		"Top": 380,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 },
 {
@@ -1165,9 +1164,9 @@
 		"Height": 45
 	}
 }, {
-	"KeyName": "Fn",
-	"Show": "Fn",
-	"LogicCode": 0,
+	"KeyName": "App",
+	"Show": "App",
+	"LogicCode": 1,
 	"LocationCode": 121,
 	"Position": {
 		"Left": 603,
@@ -1177,9 +1176,9 @@
 	}
 },
 {
-	"KeyName": "App",
-	"Show": "App",
-	"LogicCode": 1,
+  "KeyName": "Right Control",
+	"Show": "Ctrl",
+	"LogicCode": 6,
 	"LocationCode": 122,
 	"Position": {
 		"Left": 659,
@@ -1189,9 +1188,9 @@
 	}
 },
 {
-	"KeyName": "Right Control",
-	"Show": "Ctrl",
-	"LogicCode": 6,
+  "KeyName": "Fn",
+	"Show": "Fn",
+	"LogicCode": 0,
 	"LocationCode": 124,
 	"Position": {
 		"Left": 714,

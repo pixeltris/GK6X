@@ -102,15 +102,6 @@
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02006500",
-			"Task": {
-				"Type": "",
-				"Data": {
-					"Type": "Macro",
-					"GUID": "",
-					"Repeats": 1,
-					"StopMode": 1
-				}
-			},
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -122,13 +113,6 @@
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02000001",
-			"Task": {
-				"Type": "",
-				"Data": {
-					"Type": "OpenURL",
-					"AppPath": ""
-				}
-			},
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -160,8 +144,8 @@
 			"Index": 5,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02000008",
+			"MenuName": "3floor",
+			"DriverValue": "0x0a070004",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -853,8 +837,8 @@
 			"Index": 69,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004000",
+			"MenuName": "PREV",
+			"DriverValue": "0x030000B6",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -864,8 +848,8 @@
 			"Index": 70,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004100",
+			"MenuName": "Play/Pause",
+			"DriverValue": "0x030000CD",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -875,8 +859,8 @@
 			"Index": 71,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004200",
+			"MenuName": "NEXT",
+			"DriverValue": "0x030000B5",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -886,8 +870,8 @@
 			"Index": 72,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004300",
+			"MenuName": "MUTE",
+			"DriverValue": "0x030000E2",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -897,8 +881,8 @@
 			"Index": 73,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004400",
+			"MenuName": "VOlDown",
+			"DriverValue": "0x030000EA",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -908,8 +892,8 @@
 			"Index": 74,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004500",
+			"MenuName": "VOlUp",
+			"DriverValue": "0x030000E9",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -1559,6 +1543,18 @@
 			"MenuName": "",
 			"DriverValue": "0x02002100"
 		}, {
+			"Index": 40,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002200"
+		},{
+			"Index": 43,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002500"
+		},{
 			"Index": 46,
 			"MenuPID": "",
 			"MenuID": "",
@@ -1875,7 +1871,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x03000183"
+			"DriverValue": "0x03000192"
 		}, {
 			"Index": 106,
 			"MenuPID": "",

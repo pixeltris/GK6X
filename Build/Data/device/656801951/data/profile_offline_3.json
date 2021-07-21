@@ -620,8 +620,8 @@
 		"Index": 48,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02002A00",
+		"MenuName": "Del",
+		"DriverValue": "0x02004C00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1556,6 +1556,18 @@
 		"MenuName": "",
 		"DriverValue": "0x02002100"
 	}, {
+		"Index": 40,
+		"MenuPID": "",
+		"MenuID": "",
+		"MenuName": "",
+		"DriverValue": "0x02002200"
+	},{
+		"Index": 43,
+		"MenuPID": "",
+		"MenuID": "",
+		"MenuName": "",
+		"DriverValue": "0x02002500"
+	},{
 		"Index": 46,
 		"MenuPID": "",
 		"MenuID": "",
@@ -1896,7 +1908,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "",
-		"DriverValue": "0x03000183"
+		"DriverValue": "0x03000192"
 	}, {
 		"Index": 106,
 		"MenuPID": "",

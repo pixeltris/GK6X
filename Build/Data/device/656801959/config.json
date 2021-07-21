@@ -2,7 +2,7 @@
 	"DeviceType": 0,
 	"DriverLEKey": 54,
 	"LeCate": 68,
-	"ShowScalePlus": 0.1,
+	"ShowScalePlus": 0.12,
 	"ShowOffsetLeft": "0",
 	"ShowOffsetTop": "0",
 	"IsFnKeySet": true,
@@ -37,19 +37,19 @@
 	"QuickSelect": [{
 		"title": "第一行",
 		"lang": "line_first",
-		"lcodes": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 16, 12, 14, 13]
+		"lcodes": [0,2,3,4,5,6,7,8,9,10,11,12,13,14,16]
 	}, {
 		"title": "第二行",
 		"lang": "line_second",
-		"lcodes": [26, 31, 32, 33, 24, 27, 28, 30, 25, 29, 22, 34, 35, 37, 38]
+		"lcodes": [22,24,25,26,27,28,29,30,31,32,33,34,35,37,38]
 	}, {
 		"title": "第三行",
 		"lang": "line_third",
-		"lcodes": [46, 48, 49, 50, 51, 52, 53, 54, 47, 58, 60, 55, 56, 44]
+		"lcodes": [44,46,47,48,49,50,51,52,53,54,55,56,58,60]
 	}, {
 		"title": "第四行",
 		"lang": "line_fourth",
-		"lcodes": [66, 79, 72, 70, 74, 73, 71, 69, 68, 82, 75, 76, 77, 81]
+		"lcodes": [66,68,69,70,71,72,73,74,75,76,77,79,81,82]
 	}, {
 		"title": "第五行",
 		"lang": "line_fifth",
