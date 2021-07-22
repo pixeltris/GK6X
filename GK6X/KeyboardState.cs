@@ -243,6 +243,11 @@ namespace GK6X
             if (File.Exists(keysPath))
             {
                 List<object> deviceKeys = Json.Deserialize(File.ReadAllText(keysPath)) as List<object>;
+                if (deviceKeys == null)
+                {
+                    Debug.WriteLine("[WARNING] Failed to parse json '" + keysPath + "'");
+                    return;
+                }
                 foreach (object deviceKeyObj in deviceKeys)
                 {
                     Dictionary<string, object> deviceKey = deviceKeyObj as Dictionary<string, object>;
