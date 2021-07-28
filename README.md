@@ -8,9 +8,13 @@ It runs on Windows, Mac, and Linux.
 
 _Note: This is a CLI program, but see below for GUI. It's advisable to use the official software if you're on Windows / Mac._
 
+### Compilation
+
+It can be compiled / ran with mono on Linux / Mac ([see #4](https://github.com/pixeltris/GK6X/issues/4)). On Windows you compile it with Visual Studio._
+
 ### Linux
 
-_Note: On Linux you will need to run it as super-user (with `sudo`) or udev can be used to give yourself permissions to the raw-hid device. See [(issue with hidraw?)](https://github.com/pixeltris/GK6X/issues/3). It can be compiled / ran with mono on Linux / Mac ([see #4](https://github.com/pixeltris/GK6X/issues/4)). On Windows you compile it with Visual Studio._
+_Note: On Linux you will need to run it as super-user (with `sudo`) or udev can be used to give yourself permissions to the raw-hid device. See [(issue with hidraw?)](https://github.com/pixeltris/GK6X/issues/3).
 
 I made a udev rule file that looks like this, in `/etc/udev/rules.d/gk6x.rule`:
 
