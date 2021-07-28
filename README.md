@@ -8,7 +8,27 @@ It runs on Windows, Mac, and Linux.
 
 _Note: This is a CLI program, but see below for GUI. It's advisable to use the official software if you're on Windows / Mac._
 
-_Note: On Linux you will need to run it as super user [(issue with hidraw?)](https://github.com/pixeltris/GK6X/issues/3). It can be compiled / ran with mono on Linux / Mac ([see #4](https://github.com/pixeltris/GK6X/issues/4)). On Windows you compile it with Visual Studio._
+### Linux
+
+_Note: On Linux you will need to run it as super-user (with `sudo`) or udev can be used to give yourself permissions to the raw-hid device. See [(issue with hidraw?)](https://github.com/pixeltris/GK6X/issues/3). It can be compiled / ran with mono on Linux / Mac ([see #4](https://github.com/pixeltris/GK6X/issues/4)). On Windows you compile it with Visual Studio._
+
+I made a udev rule file that looks like this, in `/etc/udev/rules.d/gk6x.rule`:
+
+```
+SUBSYSTEM=="input", GROUP="input", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1ea7", ATTRS{idProduct}=="0907", MODE:="666", GROUP="plugdev"
+KERNEL=="hidraw*", ATTRS{idVendor}=="1ea7", ATTRS{idProduct}=="0907", MODE="0666", GROUP="plugdev"
+```
+
+I added myself to `plugdev` (then rebooted):
+
+```sh
+sudo adduser $(whoami) plugdev
+```
+
+You will need to reboot to make the udev rules & group take effect.
+
+### General
 
 When you open the program it will connect to your keyboard (there's no console output until it finds something to connect to).
 
@@ -18,7 +38,7 @@ You can reprogram the base layer and layers 1-3 (and the Fn keys). The 'driver' 
 
 ![Alt text](https://raw.githubusercontent.com/pixeltris/GK6X/master/Screenshot.png)
 
-## Usage (Web GUI)
+### Web GUI
 
 There's some very basic (and mostly untested) support for a web GUI by using the official software's web component. Use the 'gui' command to start the web server (it should automatically open the web page at http://127.0.0.1:6464).
 
