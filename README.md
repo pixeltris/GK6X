@@ -16,7 +16,7 @@ It can be compiled / ran with mono on Linux / Mac ([see #4](https://github.com/p
 
 On Linux you will need to run it as super-user (with `sudo`) or udev can be used to give yourself permissions to the raw-hid device. See [(issue with hidraw?)](https://github.com/pixeltris/GK6X/issues/3).
 
-I made a udev rule file that looks like this, in `/etc/udev/rules.d/gk6x.rule`:
+I made a udev rule file that looks like this, in `/etc/udev/rules.d/gk6x.rules`:
 
 ```
 SUBSYSTEM=="input", GROUP="input", MODE="0666"
