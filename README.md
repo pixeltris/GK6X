@@ -15,7 +15,9 @@ See the [releases](https://github.com/pixeltris/GK6X/releases) page for prebuilt
 
 .NET Framework 4+ is required (should be pre-installed on Windows 7 and higher).
 
-Compile from source using Visual Studio (C# tools required).
+Compile from source using one of the following tools:
+1) `MSBuild.exe` (comes with .NET Framework), run command with actual version of .NET Framework to compile `C:\Windows\Microsoft.NET\Framework64\<NET_FRAMEWORK_VERSION>\MSBuild.exe GK6X.sln`;
+2) Visual Studio (C# tools required).
 
 ### Linux / Mac
 
@@ -70,7 +72,7 @@ Resets the keyboard to the default config. The dedicated reset keyboard key comb
 
 ### `gui`
 
-Starts the GUI web server on http://localhost:6464. To make GUI working, it's required to place content of GUI build from the [releases](https://github.com/pixeltris/GK6X/releases) page into `Build` directory.
+Starts the GUI web server on http://localhost:6464. To make GUI working, it's required to place content of GUI build from the [releases](https://github.com/pixeltris/GK6X/releases) page into `Build` directory so that `driver` directory is directly inside `Build` directory.
 
 ### `gui_le`
 
