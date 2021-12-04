@@ -70,7 +70,7 @@ Resets the keyboard to the default config. The dedicated reset keyboard key comb
 
 ### `gui`
 
-Starts the GUI web server on http://localhost:6464 (requires the GUI build from the [releases](https://github.com/pixeltris/GK6X/releases) page).
+Starts the GUI web server on http://localhost:6464. To make GUI working, it's required to place content of GUI build from the [releases](https://github.com/pixeltris/GK6X/releases) page into `Build` directory.
 
 ### `gui_le`
 
