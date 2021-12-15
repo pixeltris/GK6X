@@ -108,6 +108,72 @@
         "LEType":"0"
     },
     {
+        "ModelID":656801971,
+        "FWID":"0x97219010",
+        "Name":"GK61XS RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801972,
+        "FWID":"0x95219010",
+        "Name":"GK61X RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801969,
+        "FWID":"0x94219024",
+        "Name":"SK61S-UK RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801970,
+        "FWID":"0x90219025",
+        "Name":"SK61-UK RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000002,
+        "FWID":"0x90219024",
+        "Name":"AK61 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000001,
+        "FWID":"0x94219023",
+        "Name":"AK61S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000017,
+        "FWID":"0x95216412",
+        "Name":"AK64 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000016,
+        "FWID":"0x97216412",
+        "Name":"AK64S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801894,
+        "FWID":"0x90219610",
+        "Name":"GK108 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801893,
+        "FWID":"0x94219610",
+        "Name":"GK108S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":900000013,
+        "FWID":"0x97220310",
+        "Name":"DT80M RGB",
+        "LEType":"0"
+    },
+    {
         "ModelID":900000010,
         "FWID":"0x94220421",
         "Name":"NT68M RGB",
@@ -189,18 +255,6 @@
         "ModelID":656801959,
         "FWID":"0x97218013",
         "Name":"AK68S RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":900000002,
-        "FWID":"0x90219024",
-        "Name":"AK61 RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":900000001,
-        "FWID":"0x94219023",
-        "Name":"AK61S RGB",
         "LEType":"0"
     },
     {
@@ -603,18 +657,6 @@
         "ModelID":656801895,
         "FWID":"0x94219720",
         "Name":"AC61M",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801894,
-        "FWID":"0x90219610",
-        "Name":"GK108 RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801893,
-        "FWID":"0x94219610",
-        "Name":"GK108S RGB",
         "LEType":"0"
     },
     {

@@ -115,13 +115,6 @@
 			"MenuID": "",
 			"MenuName": "",
 			"DriverValue": "0x02000001",
-			"Task": {
-				"Type": "",
-				"Data": {
-					"Type": "OpenURL",
-					"AppPath": ""
-				}
-			},
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

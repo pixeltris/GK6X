@@ -1,0 +1,28 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [
+		{
+			"GUID": "160319dd-710a-4ed7-ab02-4d8f82f441a9",
+			"Name": "FIN61/S-方向键"
+		},
+		{
+			"GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+			"Name": "Macice Blue"
+		},
+		{
+			"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+			"Name": "RGB渐变"
+		},
+		{
+      			"GUID": "86220512-1b38-4c18-8239-34318f6b5dc5",
+      			"Name": "SK61SUK-PTIR-A"
+   		},
+   		{
+      			"GUID": "a8c02966-dd6d-4fab-8cdb-b4a7aba45bee",
+      			"Name": "SK61SUK-PTIR-B"
+   		}
+	]
+}

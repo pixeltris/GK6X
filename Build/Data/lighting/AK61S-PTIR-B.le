@@ -1,0 +1,403 @@
+{
+    
+   "Frames" : [
+        
+      {
+            
+         "Count" : 1,
+            
+         "Data" : {
+                
+            "0" : "0xffffff",
+                
+            "1" : "0xffffff",
+                
+            "10" : "0xffffff",
+                
+            "11" : "0xffffff",
+                
+            "12" : "0xffffff",
+                
+            "126" : "0xffffff",
+                
+            "127" : "0xffffff",
+                
+            "128" : "0xffffff",
+                
+            "129" : "0xffffff",
+                
+            "13" : "0xffffff",
+                
+            "130" : "0xffffff",
+                
+            "131" : "0xffffff",
+                
+            "14" : "0xffffff",
+                
+            "15" : "0xffffff",
+                
+            "16" : "0xffffff",
+                
+            "17" : "0xffffff",
+                
+            "18" : "0xffffff",
+                
+            "19" : "0xffffff",
+                
+            "2" : "0xffffff",
+                
+            "20" : "0xffffff",
+                
+            "21" : "0xffffff",
+                
+            "22" : "0xffffff",
+                
+            "23" : "0xffffff",
+                
+            "24" : "0xffffff",
+                
+            "25" : "0xffffff",
+                
+            "26" : "0xffffff",
+                
+            "27" : "0xffffff",
+                
+            "28" : "0xffffff",
+                
+            "29" : "0xffffff",
+                
+            "3" : "0xffffff",
+                
+            "30" : "0xffffff",
+                
+            "31" : "0xffffff",
+                
+            "32" : "0xffffff",
+                
+            "33" : "0xffffff",
+                
+            "34" : "0xffffff",
+                
+            "35" : "0xffffff",
+                
+            "36" : "0xffffff",
+                
+            "37" : "0xffffff",
+                
+            "38" : "0xffffff",
+                
+            "39" : "0xffffff",
+                
+            "4" : "0xffffff",
+                
+            "40" : "0xffffff",
+                
+            "41" : "0xffffff",
+                
+            "42" : "0xffffff",
+                
+            "43" : "0xffffff",
+                
+            "44" : "0xffffff",
+                
+            "45" : "0xffffff",
+                
+            "46" : "0xffffff",
+                
+            "47" : "0xffffff",
+                
+            "48" : "0xffffff",
+                
+            "49" : "0xffffff",
+                
+            "5" : "0xffffff",
+                
+            "50" : "0xffffff",
+                
+            "51" : "0xffffff",
+                
+            "52" : "0xffffff",
+                
+            "53" : "0xffffff",
+                
+            "54" : "0xffffff",
+                
+            "55" : "0xffffff",
+                
+            "56" : "0xffffff",
+                
+            "57" : "0xffffff",
+                
+            "58" : "0xffffff",
+                
+            "59" : "0xffffff",
+                
+            "6" : "0xffffff",
+                
+            "60" : "0xffffff",
+                
+            "61" : "0xffffff",
+                
+            "62" : "0xffffff",
+                
+            "7" : "0xffffff",
+                
+            "8" : "0xffffff",
+                
+            "82" : "0xffffff",
+                
+            "83" : "0xffffff",
+                
+            "84" : "0xffffff",
+                
+            "85" : "0xffffff",
+                
+            "86" : "0xffffff",
+                
+            "87" : "0xffffff",
+                
+            "88" : "0xffffff",
+                
+            "89" : "0xffffff",
+                
+            "9" : "0xffffff"
+         
+            },
+            
+         "Name" : "frame0",
+            
+         "index" : 0
+      
+        }
+   
+    ],
+    
+   "GUID" : "152F294E-E2F1-4e31-BF58-44B7F574A674",
+    
+   "LEConfigs" : [
+        
+      {
+            
+         "Color" : "0xff0000",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 128,
+                 33,
+                 43,
+                 42,
+                 53,
+                 54,
+                 55,
+                 44,
+                 32,
+                 41 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 0
+      
+        },
+        
+      {
+            
+         "Color" : "0xff0099",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 31,
+                 29,
+                 30,
+                 28,
+                 127,
+                 126,
+                 0,
+                 14,
+                 1,
+                 15,
+                 82 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 1
+      
+        },
+        
+      {
+            
+         "Color" : "0xcc00ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 83,
+                 2,
+                 3,
+                 17,
+                 16,
+                 4,
+                 18,
+                 84 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 2
+      
+        },
+        
+      {
+            
+         "Color" : "0x3300ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 5,
+                 6,
+                 7,
+                 8,
+                 19,
+                 20,
+                 21,
+                 85,
+                 86 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 3
+      
+        },
+        
+      {
+            
+         "Color" : "0x0066ff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 34,
+                 35,
+                 22,
+                 9,
+                 87,
+                 10,
+                 23,
+                 36,
+                 11,
+                 88 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 4
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ffff",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 13,
+                 26,
+                 27,
+                 38,
+                 39,
+                 40,
+                 89,
+                 25,
+                 12,
+                 24,
+                 129 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 5
+      
+        },
+        
+      {
+            
+         "Color" : "0x00ff66",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 38,
+                 39,
+                 40,
+                 51,
+                 52,
+                 130,
+                 37 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 6
+      
+        },
+        
+      {
+            
+         "Color" : "0x33ff00",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 51,
+                 52,
+                 59,
+                 60,
+                 61,
+                 62,
+                 131,
+                 50,
+                 49 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 7
+      
+        },
+        
+      {
+            
+         "Color" : "0xccff00",
+            
+         "Count" : 30,
+            
+         "Keys" : [
+                 44,
+                 45,
+                 46,
+                 47,
+                 48,
+                 57 
+            ],
+            
+         "Type" : 1,
+            
+         "index" : 8
+      
+        }
+   
+    ],
+    
+   "LeCate" : 67,
+    
+   "LeType" : "simple",
+    
+   "Name" : "AK61风车"
+
+}

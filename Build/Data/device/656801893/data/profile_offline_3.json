@@ -620,8 +620,8 @@
 		"Index": 48,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02002A00",
+		"MenuName": "Del",
+		"DriverValue": "0x02004C00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1247,7 +1247,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "",
-		"DriverValue": "0x03000183",
+		"DriverValue": "0x03000192",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1532,6 +1532,18 @@
 		"MenuName": "",
 		"DriverValue": "0x02001D00"
 	},{
+		"Index": 40,
+		"MenuPID": "",
+		"MenuID": "",
+		"MenuName": "",
+		"DriverValue": "0x02002200"
+	},{
+		"Index": 43,
+		"MenuPID": "",
+		"MenuID": "",
+		"MenuName": "",
+		"DriverValue": "0x02002500"
+	},{
 		"Index": 46,
 		"MenuPID": "",
 		"MenuID": "",
@@ -1730,30 +1742,6 @@
 		"MenuName": "",
 		"DriverValue": "0x02004E00"
 	}, {
-		"Index": 84,
-		"MenuPID": "",
-		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004F00"
-	}, {
-		"Index": 85,
-		"MenuPID": "",
-		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02005000"
-	}, {
-		"Index": 86,
-		"MenuPID": "",
-		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02005100"
-	}, {
-		"Index": 87,
-		"MenuPID": "",
-		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02005200"
-	}, {
 		"Index": 88,
 		"MenuPID": "",
 		"MenuID": "",
@@ -1859,25 +1847,25 @@
 		"Index": 105,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x03000183"
+		"MenuName": "Mediaplayer",
+		"DriverValue": "0x03000192"
 	}, {
 		"Index": 106,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
+		"MenuName": "Prev",
 		"DriverValue": "0x030000EA"
 	}, {
 		"Index": 107,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
+		"MenuName": "Next",
 		"DriverValue": "0x030000E9"
 	}, {
 		"Index": 108,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
+		"MenuName": "Play/Pause",
 		"DriverValue": "0x030000E2"
 	}, {
 		"Index": 112,

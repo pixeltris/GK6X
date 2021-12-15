@@ -1,6 +1,6 @@
 # GK6X
 
-This is a command-line tool for mapping keys, macros, and lighting for GK6X keyboards (GK64, GK84, GK61, etc). This can be used as an alternative to the official software ([Windows / Mac](http://www.jikedingzhi.com)).
+This is a command-line tool for mapping keys, macros, and lighting for GK6X keyboards (GK64, GK84, GK61, etc). This can be used as an alternative to the official software ([Windows](http://www.jikedingzhi.com/downloadlist?driverID=41) / [Mac](http://www.jikedingzhi.com/downloadlist?driverID=90)).
 
 It runs on Windows, Mac, and Linux.
 
@@ -9,7 +9,7 @@ It runs on Windows, Mac, and Linux.
 See the [releases](https://github.com/pixeltris/GK6X/releases) page for prebuilt binaries.
 
 <details>
-<summary>.NET Framework 4+ / Visual Studio on Windows. mono on Mac / Linux. Expand for more info.</summary>
+<summary>.NET Framework 4+ on Windows. mono on Mac / Linux. Expand for more info.</summary>
 
 ### Windows
 

@@ -839,7 +839,7 @@
 		"Left": 773,
 		"Top": 335,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 }, {
 	"KeyName": "F16",
@@ -850,7 +850,7 @@
 		"Left": 820,
 		"Top": 335,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 }, {
 	"KeyName": "F17",
@@ -861,7 +861,7 @@
 		"Left": 866,
 		"Top": 335,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 }, 
 {
@@ -1039,7 +1039,7 @@
 		"Left": 773,
 		"Top": 380,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 }, {
 	"KeyName": "Up Arrow",
@@ -1061,7 +1061,7 @@
 		"Left": 865,
 		"Top": 380,
 		"Width": 45,
-		"Height": 45
+		"Height": 0
 	}
 },
 {
@@ -1165,9 +1165,9 @@
 		"Height": 45
 	}
 }, {
-	"KeyName": "Fn",
-	"Show": "Fn",
-	"LogicCode": 0,
+  "KeyName": "App",
+	"Show": "App",
+	"LogicCode": 1,
 	"LocationCode": 121,
 	"Position": {
 		"Left": 603,
@@ -1177,9 +1177,9 @@
 	}
 },
 {
-	"KeyName": "App",
-	"Show": "App",
-	"LogicCode": 1,
+	"KeyName": "Right Control",
+	"Show": "Ctrl",
+	"LogicCode": 6,
 	"LocationCode": 122,
 	"Position": {
 		"Left": 659,
@@ -1189,9 +1189,9 @@
 	}
 },
 {
-	"KeyName": "Right Control",
-	"Show": "Ctrl",
-	"LogicCode": 6,
+	"KeyName": "Fn",
+	"Show": "Fn",
+	"LogicCode": 0,
 	"LocationCode": 124,
 	"Position": {
 		"Left": 714,

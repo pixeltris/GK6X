@@ -62,6 +62,14 @@
 		"title": "第五行",
 		"lang": "line_fifth",
 		"lcodes": [53, 54, 55, 56, 57, 58, 59, 60, 61, 62]
+	},{
+	  "title": "底灯",
+	  "lang": "line_bottom",
+	  "lcodes": [131,130,129,128,127,126]
+	},{
+	  "title": "上灯条",
+	  "lang": "line_top_bar",
+	  "lcodes": [82,83,84,85,86,87,88,89]
 	}],
 	"UserManual": [{
 		"title_lang": "layer_oper",

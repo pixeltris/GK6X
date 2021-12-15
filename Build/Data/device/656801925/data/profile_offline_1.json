@@ -110,6 +110,17 @@
 			}
 		},
 		{
+			"Index": 2,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02000001",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		},
+		{
 			"Index": 3,
 			"MenuPID": "",
 			"MenuID": "",

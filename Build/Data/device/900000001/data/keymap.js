@@ -166,6 +166,30 @@
 			"Height": 50
 		}
 	},
+  	{
+		"KeyName": "LED-LEFT-1",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 126,
+		"Position": {
+			"Left": 161,
+			"Top": 204,
+			"Width": 10,
+			"Height": 10
+		}
+	},
+	{
+		"KeyName": "LED-RIGHT-1",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 129,
+		"Position": {
+			"Left": 1030,
+			"Top": 204,
+			"Width": 10,
+			"Height": 10
+		}
+	},
 	{
 		"KeyName": "Tab",
 		"Show": "Tab",
@@ -334,6 +358,30 @@
 			"Height": 50
 		}
 	},
+  {
+		"KeyName": "LED-LEFT-2",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 127,
+		"Position": {
+			"Left": 161,
+			"Top": 316,
+			"Width": 10,
+			"Height": 10
+		}
+	},
+	{
+		"KeyName": "LED-RIGHT-2",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 130,
+		"Position": {
+			"Left": 1030,
+			"Top": 316,
+			"Width": 10,
+			"Height": 10
+		}
+	},
 	{
 		"KeyName": "Caps Lock",
 		"Show": "Caps L",
@@ -488,6 +536,30 @@
 			"Top": 282,
 			"Width": 120,
 			"Height": 50
+		}
+	},
+  {
+		"KeyName": "LED-LEFT-3",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 128,
+		"Position": {
+			"Left": 161,
+			"Top": 431,
+			"Width": 10,
+			"Height": 10
+		}
+	},
+	{
+		"KeyName": "LED-RIGHT-3",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 131,
+		"Position": {
+			"Left": 1030,
+			"Top": 431,
+			"Width": 10,
+			"Height": 10
 		}
 	},
 	{
@@ -753,5 +825,103 @@
 			"Width": 66,
 			"Height": 50
 		}
+	},	
+
+    {
+		"KeyName": "LED-TOP-1",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 82,
+		"Position": {
+			"Left": 208,
+			"Top": 130,
+			"Width": 20,
+			"Height": 15
+		}
+	},
+	{
+		"KeyName": "LED-TOP-2",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 83,
+		"Position": {
+			"Left": 318,
+			"Top": 130,
+			"Width": 20,
+			"Height": 15
+		}
+	},
+	{
+		"KeyName": "LED-TOP-3",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 84,
+		"Position": {
+			"Left": 428,
+			"Top": 130,
+			"Width": 20,
+			"Height": 15
+		}
+	},
+	{
+		"KeyName": "LED-TOP-4",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 85,
+		"Position": {
+			"Left": 538,
+			"Top": 130,
+			"Width": 20,
+			"Height": 15
+		}
+	},
+	{
+		"KeyName": "LED-TOP-5",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 86,
+		"Position": {
+			"Left": 644,
+			"Top": 130,
+			"Width": 20,
+			"Height": 15
+		}
+	},
+	{
+		"KeyName": "LED-TOP-6",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 87,
+		"Position": {
+			"Left": 758,
+			"Top": 130,
+			"Width": 20,
+			"Height": 15
+		}
+	},
+	{
+		"KeyName": "LED-TOP-7",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 88,
+		"Position": {
+			"Left": 868,
+			"Top": 130,
+			"Width": 20,
+			"Height": 15
+		}
+	},
+	{
+		"KeyName": "LED-TOP-8",
+		"Show": "",
+		"LogicCode": -1,
+		"LocationCode": 89,
+		"Position": {
+			"Left": 974,
+			"Top": 130,
+			"Width": 20,
+			"Height": 15
+		}
 	}
+
 ]
