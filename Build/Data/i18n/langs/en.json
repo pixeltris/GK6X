@@ -262,6 +262,7 @@
         "stytem_key_power": "Power",
         "stytem_key_sleep": "Sleep",
         "stytem_key_wakeup": "Wake",
+        "stytem_key_eject": "Eject",
         "backlight_decrease": "Backlight Decrease",
         "backlight_increase": "Backlight Increase",
         "backlight_forward": "Backlight Forward",

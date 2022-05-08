@@ -1,0 +1,27 @@
+{
+	"GUID": "",
+	"ModeIndex": 1,
+	"Name": "标准配置",
+	"Active": 0,
+	"DriverLE": [{
+			"GUID": "406931D7-3D67-4d0d-AB2C-67DD6B4DFD58",
+			"Name": "GK68S-2"
+		},
+		{
+			"GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+			"Name": "RGB渐变"
+		},
+		{
+			"GUID": "11E25DD2-F161-7D1F-7622-388EE95416C4",
+			"Name": "光谱循环 68"
+		},
+		{
+			"GUID": "9CC28811-4F2B-B269-F35C-11DAF3145F97",
+			"Name": "风车 68"
+		},
+		{
+			"GUID": "B09FC694-4B0E-4fcb-83E7-8EB4A77E566A",
+			"Name": "彩虹波"
+		}
+	]
+}

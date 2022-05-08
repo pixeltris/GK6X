@@ -242,7 +242,13 @@ namespace GK6X
             string keysPath = Path.Combine(Program.DataBasePath, "device", ModelId.ToString(), "data", "keymap.js");
             if (File.Exists(keysPath))
             {
-                List<object> deviceKeys = Json.Deserialize(File.ReadAllText(keysPath)) as List<object>;
+                string text = File.ReadAllText(keysPath);
+                if (text.Replace(" ", string.Empty).Contains("KeyName:"))
+                {
+                    Debug.WriteLine("[TODO] Handle keymap which is declared as JS '" + keysPath + "'");
+                    return;
+                }
+                List<object> deviceKeys = Json.Deserialize(text) as List<object>;
                 if (deviceKeys == null)
                 {
                     Debug.WriteLine("[WARNING] Failed to parse json '" + keysPath + "'");

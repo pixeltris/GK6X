@@ -848,6 +848,18 @@
 			"Height": 50	
 		}
 	}, 
+  {
+		"KeyName": "Left Space",
+		"Show": "Left Space",
+		"LogicCode": 109,
+		"LocationCode": 114,
+		"Position": {
+			"Left": 370,
+			"Top": 472,
+			"Width": 138,
+			"Height": 45
+		}
+	},
 	{
 		"KeyName": "Space",
 		"Show": "Space",
@@ -858,6 +870,30 @@
 			"Top": 403,
 			"Width": 338,
 			"Height": 50
+		}
+	},
+    {
+		"KeyName": "Mid Space",
+		"Show": "Middle Space",
+		"LogicCode": 110,
+		"LocationCode": 117,
+		"Position": {
+			"Left": 511,
+			"Top": 472,
+			"Width": 113,
+			"Height": 45
+		}
+	},
+	{
+		"KeyName": "Right Space",
+		"Show": "Right Space",
+		"LogicCode": 111,
+		"LocationCode": 119,
+		"Position": {
+			"Left": 628,
+			"Top": 472,
+			"Width": 76,
+			"Height": 45
 		}
 	},
 	{

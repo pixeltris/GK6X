@@ -972,6 +972,19 @@
 			"DriverValue": "0x02001300"
 		},
 		{
+			"Index": 26,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02001400"
+		}, {
+			"Index": 27,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02001500"
+		}, 
+		{
 			"Index": 28,
 			"MenuPID": "",
 			"MenuID": "",

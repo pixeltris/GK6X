@@ -1054,6 +1054,39 @@
 				"GUID": "",
 				"Name": ""
 			}
+		},
+		{
+			"Index": 109,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		},
+		{
+			"Index": 110,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		},
+		{
+			"Index": 111,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
 		}
 	],
 	"FnKeySet": [{
@@ -1556,6 +1589,27 @@
 			"MenuID": "",
 			"MenuName": "End",
 			"DriverValue": "0x02004D00"
+		},
+		{
+			"Index": 109,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00"
+		},
+		{
+			"Index": 110,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00"
+		},
+		{
+			"Index": 111,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00"
 		}
 	]
 }

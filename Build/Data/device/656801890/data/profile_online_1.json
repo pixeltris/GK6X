@@ -1058,6 +1058,39 @@
 				"GUID": "",
 				"Name": ""
 			}
+		},
+		{
+			"Index": 109,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		},
+		{
+			"Index": 110,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
+		},
+		{
+			"Index": 111,
+			"MenuPID": "",
+			"MenuID": "",
+			"MenuName": "",
+			"DriverValue": "0x02002C00",
+			"KeyLE": {
+				"GUID": "",
+				"Name": ""
+			}
 		}
 	]
 }
