@@ -1,0 +1,76 @@
+{
+	"DeviceType": 0,
+	"DriverLEKey": 54,
+	"LeCate": 68,
+	"ShowScalePlus": 0.12,
+	"ShowOffsetLeft": "0",
+	"ShowOffsetTop": "0",
+	"IsFnKeySet": true,
+	"IsFnx": false,
+	"hasModeLe": false,
+	"hasOnlineMode": false,
+	"hasPid": false,
+	"FuncTable": [{
+		"id": 0,
+		"name": "设置",
+		"lang": "menu_config_kb",
+		"icon": "el-icon-kb-keyboard",
+		"component": "/ConfigKB",
+		"visible": true,
+		"disable": false
+	}, {
+		"id": 1,
+		"name": "灯效库",
+		"lang": "menu_le_lib",
+		"icon": "el-icon-kb-light",
+		"component": "/Le",
+		"visible": true,
+		"disable": false
+	}, {
+		"id": 2,
+		"name": "宏管理",
+		"icon": "el-icon-document",
+		"lang": "menu_macro_lib",
+		"component": "/Macro",
+		"visible": true,
+		"disable": false
+	}],
+	"QuickSelect": [{
+		"title": "第一行",
+		"lang": "line_first",
+		"lcodes": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+	}, {
+		"title": "第二行",
+		"lang": "line_second",
+		"lcodes": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+	}, {
+		"title": "第三行",
+		"lang": "line_third",
+		"lcodes": [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43]
+	}, {
+		"title": "第四行",
+		"lang": "line_fourth",
+		"lcodes": [44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57]
+	}, {
+		"title": "第五行",
+		"lang": "line_fifth",
+		"lcodes": [66, 58, 59, 60, 62, 65, 67, 68, 69, 70]
+	}],
+	"UserManual": [{
+		"title_lang": "layer_oper",
+		"items": [{
+			"key": "Fn+W",
+			"desc_lang": "change_onboard_layer_1"
+		}, {
+			"key": "Fn+E",
+			"desc_lang": "change_onboard_layer_2"
+		}]
+	}, 
+	{
+		"title_lang": "system_oper",
+		"items": [{
+			"key": "Fn+ESC+Q",
+			"desc_lang": "clear_all_config"
+		}]
+	}]
+}

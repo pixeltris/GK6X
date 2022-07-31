@@ -1,0 +1,100 @@
+{
+	"DeviceType": 0,
+	"DriverLEKey": 67,
+	"LeCate": 990,
+	"ShowScalePlus": 0.05,
+	"ShowOffsetLeft": "0px",
+	"ShowOffsetTop": "0px",
+	"IsFnKeySet": true,
+	"IsFnx": false,
+	"hasModeLe": false,
+	"hasOnlineMode": true,
+	"hasPid": false,
+	"FuncTable": [{
+		"id": 0,
+		"name": "设置",
+		"lang": "menu_config_kb",
+		"icon": "el-icon-kb-keyboard",
+		"component": "/ConfigKB",
+		"visible": true,
+		"disable": false
+	}, {
+		"id": 1,
+		"name": "灯效库",
+		"lang": "menu_le_lib",
+		"icon": "el-icon-kb-light",
+		"component": "/Le",
+		"visible": true,
+		"disable": false
+	}, {
+		"id": 2,
+		"name": "宏管理",
+		"icon": "el-icon-document",
+		"lang": "menu_macro_lib",
+		"component": "/Macro",
+		"visible": true,
+		"disable": false
+	}],
+	"QuickSelect": [{
+		"title": "第一行",
+		"lang": "line_first",
+		"lcodes": [0,0.1,0.2,0.3,15,15.1,15.2,15.3,16,16.1,16.2,16.3,17,17.1,17.2,17.3,18,18.1,18.2,18.3,19,19.1,19.2,19.3,3,4,5,6,7,8,9,10,11,12,13,14]
+	}, {
+		"title": "第二行",
+		"lang": "line_second",
+		"lcodes": [22,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41]
+	}, {
+		"title": "第三行",
+		"lang": "line_third",
+		"lcodes": [44,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63]
+	}, {
+		"title": "第四行",
+		"lang": "line_fourth",
+		"lcodes": [63,66,68,69,70,71,72,73,74,75,76,77,78,80,82,83,84]
+	}, {
+		"title": "第五行",
+		"lang": "line_fifth",
+		"lcodes": [88,90,91,92,93,94,95,96,97,98,99,101,103,104,105,106,107]
+	}, {
+		"title": "第六行",
+		"lang": "line_sixth",
+		"lcodes": [103,110,111,112,116,120,121,122,124,125,126,127,128,114,117,119]
+	}],
+	"UserManual": [{
+		"title_lang": "layer_oper",
+		"items": [{
+			"key": "1-ON",
+			"desc_lang": "switch_one_on"
+		}, {
+			"key": "2-ON",
+			"desc_lang": "switch_two_on"
+		}, {
+			"key": "3-ON",
+			"desc_lang": "switch_three_on"
+		}]
+	}, {
+		"title_lang": "le_oper",
+		"items": [{
+			"key": "Fn+ -/=",
+			"desc_lang": "change_std_le"
+		}, {
+			"key": "Fn+↑",
+			"desc_lang": "change_le_brightness_inc"
+		}, {
+			"key": "Fn+↓",
+			"desc_lang": "change_le_brightness_dec"
+		}, {
+			"key": "Fn+→",
+			"desc_lang": "change_le_speed_inc"
+		}, {
+			"key": "Fn+←",
+			"desc_lang": "change_le_speed_dec"
+		}]
+	}, {
+		"title_lang": "system_oper",
+		"items": [{
+			"key": "Fn+ESC+Q",
+			"desc_lang": "clear_all_config"
+		}]
+	}]
+}

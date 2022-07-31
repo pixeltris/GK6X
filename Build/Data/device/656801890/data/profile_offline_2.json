@@ -784,8 +784,8 @@
 			"Index": 63,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F1",
-			"DriverValue": "0x02003A00",
+			"MenuName": "F14",
+			"DriverValue": "0x02006900",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -795,8 +795,8 @@
 			"Index": 64,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F2",
-			"DriverValue": "0x02003B00",
+			"MenuName": "F15",
+			"DriverValue": "0x02006A00",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -806,8 +806,8 @@
 			"Index": 65,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F3",
-			"DriverValue": "0x02003C00",
+			"MenuName": "LCtrl+↑",
+			"DriverValue": "0x02005201",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -817,8 +817,8 @@
 			"Index": 66,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F4",
-			"DriverValue": "0x02003D00",
+			"MenuName": "LWin+D",
+			"DriverValue": "0x02000708",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -828,8 +828,8 @@
 			"Index": 67,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F5",
-			"DriverValue": "0x02003E00",
+			"MenuName": "",
+			"DriverValue": "0x09020002",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -839,8 +839,8 @@
 			"Index": 68,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F6",
-			"DriverValue": "0x02003F00",
+			"MenuName": "",
+			"DriverValue": "0x09020001",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -850,8 +850,8 @@
 			"Index": 69,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F7",
-			"DriverValue": "0x02004000",
+			"MenuName": "PREV",
+			"DriverValue": "0x030000B6",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -861,8 +861,8 @@
 			"Index": 70,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F8",
-			"DriverValue": "0x02004100",
+			"MenuName": "Play/Pause",
+			"DriverValue": "0x030000CD",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -872,8 +872,8 @@
 			"Index": 71,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F9",
-			"DriverValue": "0x02004200",
+			"MenuName": "NEXT",
+			"DriverValue": "0x030000B5",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -883,8 +883,8 @@
 			"Index": 72,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F10",
-			"DriverValue": "0x02004300",
+			"MenuName": "MUTE",
+			"DriverValue": "0x030000E2",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -894,8 +894,8 @@
 			"Index": 73,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F11",
-			"DriverValue": "0x02004400",
+			"MenuName": "VOlDown",
+			"DriverValue": "0x030000EA",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -905,8 +905,8 @@
 			"Index": 74,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F12",
-			"DriverValue": "0x02004500",
+			"MenuName": "VOlUp ",
+			"DriverValue": "0x030000E9",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -916,8 +916,8 @@
 			"Index": 75,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F13",
-			"DriverValue": "0x02006800",
+			"MenuName": "LWin+Space",
+			"DriverValue": "0x02002C08",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -927,8 +927,8 @@
 			"Index": 76,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F14",
-			"DriverValue": "0x02006900",
+			"MenuName": "LCtrl+LShift+Space",
+			"DriverValue": "0x02002C03",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""
@@ -938,8 +938,8 @@
 			"Index": 77,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "F15",
-			"DriverValue": "0x02006A00",
+			"MenuName": "LCtrl+LShift+LWin+4 ",
+			"DriverValue": "0x0200210b",
 			"KeyLE": {
 				"GUID": "",
 				"Name": ""

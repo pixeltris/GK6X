@@ -108,6 +108,78 @@
         "LEType":"0"
     },
     {
+        "ModelID":656801936,
+        "FWID":"0x97217610",
+        "Name":"96XS-RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801937,
+        "FWID":"0x95217610",
+        "Name":"96X-RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801939,
+        "FWID":"0x95217611",
+        "Name":"96 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801938,
+        "FWID":"0x97217611",
+        "Name":"96S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801997,
+        "FWID":"0x90218014",
+        "Name":"71 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801996,
+        "FWID":"0x94218014",
+        "Name":"71S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801994,
+        "FWID":"0x94222110",
+        "Name":"98 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801993,
+        "FWID":"0x90218028",
+        "Name":"68 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801985,
+        "FWID":"0x90217610",
+        "Name":"96 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801984,
+        "FWID":"0x94217612",
+        "Name":"96S RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801992,
+        "FWID":"0x90218027",
+        "Name":"GK68 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801976,
+        "FWID":"0x94221710",
+        "Name":"MT40S RGB",
+        "LEType":"0"
+    },
+    {
         "ModelID":656801990,
         "FWID":"0x94220310",
         "Name":"80M RGB",
@@ -135,18 +207,6 @@
         "ModelID":656801986,
         "FWID":"0x94221110",
         "Name":"63S RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801985,
-        "FWID":"0x90217610",
-        "Name":"96 RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801984,
-        "FWID":"0x94217612",
-        "Name":"96S RGB",
         "LEType":"0"
     },
     {
@@ -189,24 +249,6 @@
         "ModelID":656801974,
         "FWID":"0x97221710",
         "Name":"MT40S RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801939,
-        "FWID":"0x95217611",
-        "Name":"GK96 RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801938,
-        "FWID":"0x97217611",
-        "Name":"GK96S RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801936,
-        "FWID":"0x97217610",
-        "Name":"GK96XS-RGB",
         "LEType":"0"
     },
     {
@@ -531,12 +573,6 @@
         "ModelID":656801940,
         "FWID":"0x97220410",
         "Name":"NT68W RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801937,
-        "FWID":"0x95217610",
-        "Name":"GK96X-RGB",
         "LEType":"0"
     },
     {

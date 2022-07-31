@@ -7,6 +7,7 @@
     "IsFnKeySet": true,
     "hasPid": false,
     "hasModeLe": false,
+    "hasOnlineMode": true,
     "FuncTable": [{
         "id": 0,
         "name": "设置",

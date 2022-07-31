@@ -1111,15 +1111,15 @@
 			"Index": 56,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003300"
+			"MenuName": "/",
+			"DriverValue": "0x02003800"
 		},
 		{
 			"Index": 57,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02003400"
+			"MenuName": "?",
+			"DriverValue": "0x02003802"
 		},
 		{
 			"Index": 58,

@@ -9,6 +9,7 @@
   "IsFnx": false,
   "hasPid": false,
   "hasModeLe": true,
+  "hasOnlineMode": true,
   "FuncTable":[{
 	  "id": 0,
 	  "name": "设置",

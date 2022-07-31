@@ -1058,6 +1058,20 @@
             "LangTitle": "key_f24",
             "DriverValue": "0x02007300"
         }]
+    }, {
+        "linekeys": [{
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "KL",
+            "LangTitle": "key_kl",
+            "DriverValue": "0x02009100"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "KR",
+            "LangTitle": "key_kr",
+            "DriverValue": "0x02009000"
+        }]
     }]
 }, {
     "title": "鼠标",

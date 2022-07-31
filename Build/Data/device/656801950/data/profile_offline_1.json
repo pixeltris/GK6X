@@ -835,8 +835,8 @@
 		"Index": 69,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "PREV",
-		"DriverValue": "0x030000B6",
+		"MenuName": "",
+		"DriverValue": "0x02004000",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -846,8 +846,8 @@
 		"Index": 70,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "Play/Pause",
-		"DriverValue": "0x030000CD",
+		"MenuName": "",
+		"DriverValue": "0x02004100",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -857,8 +857,8 @@
 		"Index": 71,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "NEXT",
-		"DriverValue": "0x030000B5",
+		"MenuName": "",
+		"DriverValue": "0x02004200",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -868,8 +868,8 @@
 		"Index": 72,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "MUTE",
-		"DriverValue": "0x030000E2",
+		"MenuName": "",
+		"DriverValue": "0x02004300",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -879,8 +879,8 @@
 		"Index": 73,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "VOlDown",
-		"DriverValue": "0x030000EA",
+		"MenuName": "",
+		"DriverValue": "0x02004400",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -890,8 +890,8 @@
 		"Index": 74,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "VOlUp",
-		"DriverValue": "0x030000E9",
+		"MenuName": "",
+		"DriverValue": "0x02004500",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""

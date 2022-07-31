@@ -784,7 +784,7 @@
 			"Index": 63,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F1",
 			"DriverValue": "0x02003A00",
 			"KeyLE": {
 				"GUID": "",
@@ -795,7 +795,7 @@
 			"Index": 64,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F2",
 			"DriverValue": "0x02003B00",
 			"KeyLE": {
 				"GUID": "",
@@ -806,7 +806,7 @@
 			"Index": 65,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F3",
 			"DriverValue": "0x02003C00",
 			"KeyLE": {
 				"GUID": "",
@@ -817,7 +817,7 @@
 			"Index": 66,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F4",
 			"DriverValue": "0x02003D00",
 			"KeyLE": {
 				"GUID": "",
@@ -828,7 +828,7 @@
 			"Index": 67,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F5",
 			"DriverValue": "0x02003E00",
 			"KeyLE": {
 				"GUID": "",
@@ -839,7 +839,7 @@
 			"Index": 68,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F6",
 			"DriverValue": "0x02003F00",
 			"KeyLE": {
 				"GUID": "",
@@ -850,7 +850,7 @@
 			"Index": 69,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F7",
 			"DriverValue": "0x02004000",
 			"KeyLE": {
 				"GUID": "",
@@ -861,7 +861,7 @@
 			"Index": 70,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F8",
 			"DriverValue": "0x02004100",
 			"KeyLE": {
 				"GUID": "",
@@ -872,7 +872,7 @@
 			"Index": 71,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F9",
 			"DriverValue": "0x02004200",
 			"KeyLE": {
 				"GUID": "",
@@ -883,7 +883,7 @@
 			"Index": 72,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F10",
 			"DriverValue": "0x02004300",
 			"KeyLE": {
 				"GUID": "",
@@ -894,7 +894,7 @@
 			"Index": 73,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F11",
 			"DriverValue": "0x02004400",
 			"KeyLE": {
 				"GUID": "",
@@ -905,7 +905,7 @@
 			"Index": 74,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "F12",
 			"DriverValue": "0x02004500",
 			"KeyLE": {
 				"GUID": "",

@@ -8,6 +8,7 @@
     "IsFnKeySet": true,
     "IsFnx": false,
     "hasModeLe": true,
+    "hasOnlineMode": true,
     "hasPid": false,
     "FuncTable": [{
         "id": 0,
