@@ -1,0 +1,29 @@
+
+{
+   "GUID": "",
+   "ModeIndex": 1,
+   "Name": "标准配置",
+   "Active": 0,
+   "DriverLE": [
+      {
+         "GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+		 "Name": "Macice Blue"
+      },
+      {
+         "GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+         "Name": "RGB渐变"
+      },
+      {
+         "GUID": "1B6DB72C-6093-43ac-B4BC-59670CA31696",
+         "Name": "光谱循环"
+      },
+      {
+         "GUID": "7E8488C3-EB93-46a8-B505-F9E95FD67322",
+         "Name": "风车"
+      },
+      {
+         "GUID": "B09FC694-4B0E-4fcb-83E7-8EB4A77E566A",
+         "Name": "彩虹波"
+      }
+   ]
+}

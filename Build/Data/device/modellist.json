@@ -108,6 +108,66 @@
         "LEType":"0"
     },
     {
+        "ModelID":656802005,
+        "FWID":"0x90222121",
+        "Name":"980",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656802004,
+        "FWID":"0x90222120",
+        "Name":"980 ",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656802007,
+        "FWID":"0x90222321",
+        "Name":"75",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656802006,
+        "FWID":"0x90222320",
+        "Name":"75 ",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656802001,
+        "FWID":"0x90222310",
+        "Name":"75X RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801995,
+        "FWID":"0x90222110",
+        "Name":"980X RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656802000,
+        "FWID":"0x94222310",
+        "Name":"75 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656801994,
+        "FWID":"0x94222110",
+        "Name":"980 RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656802003,
+        "FWID":"0x90221111",
+        "Name":"63X RGB",
+        "LEType":"0"
+    },
+    {
+        "ModelID":656802002,
+        "FWID":"0x94221111",
+        "Name":"63XS RGB",
+        "LEType":"0"
+    },
+    {
         "ModelID":656801936,
         "FWID":"0x97217610",
         "Name":"96XS-RGB",
@@ -141,12 +201,6 @@
         "ModelID":656801996,
         "FWID":"0x94218014",
         "Name":"71S RGB",
-        "LEType":"0"
-    },
-    {
-        "ModelID":656801994,
-        "FWID":"0x94222110",
-        "Name":"98 RGB",
         "LEType":"0"
     },
     {

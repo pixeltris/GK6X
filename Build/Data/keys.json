@@ -909,6 +909,38 @@
             "DriverValue": "0x030000E2",
             "Class": "l225"
         }]
+    }, {
+        "linekeys": [{
+            "Name": "灯效加快",
+            "LangTitle": "backlight_effect_speed_fast",
+            "DriverValue": "0x09030001",
+            "Class": "l225"
+        }, {
+            "Name": "灯效变慢",
+            "LangTitle": "backlight_effect_speed_low",
+            "DriverValue": "0x09030002",
+            "Class": "l225"
+        }, {
+            "Name": "背光打开/关闭",
+            "LangTitle": "backlight_switch",
+            "DriverValue": "0x09060002",
+            "Class": "l225"
+        }, {
+            "Name": "背光暂停",
+            "LangTitle": "backlight_pause",
+            "DriverValue": "0x09060001",
+            "Class": "l225"
+        }, {
+            "Name": "背光减小",
+            "LangTitle": "backlight_brightness_down",
+            "DriverValue": "0x09020002",
+            "Class": "l225"
+        }, {
+            "Name": "背光增加",
+            "LangTitle": "backlight_brightness_up",
+            "DriverValue": "0x09020001",
+            "Class": "l225"
+        }]
     }]
 }, {
     "title": "系统",
@@ -1087,12 +1119,12 @@
             "DriverValue": "0x01010001",
             "Class": "l225"
         }, {
-            "Name": "单机右键",
+            "Name": "单击右键",
             "LangTitle": "key_mouse_right_click",
             "DriverValue": "0x01010002",
             "Class": "l225"
         }, {
-            "Name": "单机滚轮",
+            "Name": "单击滚轮",
             "LangTitle": "key_mouse_middle_click",
             "DriverValue": "0x01010004",
             "Class": "l225"

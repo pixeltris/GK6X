@@ -4,6 +4,7 @@
 	"Name": "",
 	"Active": 0,
 	"ModelID": 0,
+	"SystemOS": "Win",
 	"Application": {
 		"AppName": "",
 		"AppPath": ""
@@ -169,7 +170,7 @@
 		"Index": 6,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
+		"MenuName": "RCTRL",
 		"DriverValue": "0x02000010",
 		"KeyLE": {
 			"GUID": "",
@@ -939,8 +940,8 @@
 		"Index": 77,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004800",
+		"MenuName": "PBPageDown",
+		"DriverValue": "0x02004E00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -972,8 +973,8 @@
 		"Index": 80,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004B00",
+		"MenuName": "Page Up Del",
+		"DriverValue": "0x02004C00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1005,8 +1006,8 @@
 		"Index": 83,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004E00",
+		"MenuName": "Page Down Up",
+		"DriverValue": "0x02004B00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1325,7 +1326,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "ESCMUTE",
-		"DriverValue": "0x030000E2",
+		"DriverValue": "0x02002900",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1335,8 +1336,8 @@
 		"Index": 113,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "ESCVoldown",
-		"DriverValue": "0x030000EA",
+		"MenuName": "LCtrl+-",
+		"DriverValue": "0x02002D01",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1346,8 +1347,8 @@
 		"Index": 114,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "ESCVolup",
-		"DriverValue": "0x030000E9",
+		"MenuName": "LCtrl+=",
+		"DriverValue": "0x02002E01",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1401,8 +1402,8 @@
 		"Index": 119,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "PGUPVoldown",
-		"DriverValue": "0x030000EA",
+		"MenuName": "LCtrl+-",
+		"DriverValue": "0x02002D01",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1412,8 +1413,8 @@
 		"Index": 120,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "PGUPVolup",
-		"DriverValue": "0x030000E9",
+		"MenuName": "LCtrl+=",
+		"DriverValue": "0x02002E01",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1424,7 +1425,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "PGDNMute",
-		"DriverValue": "0x030000E2",
+		"DriverValue": "0x09060001",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1435,7 +1436,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "PGDNVoldown",
-		"DriverValue": "0x030000EA",
+		"DriverValue": "0x09030002",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1446,7 +1447,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "PGDNVolup",
-		"DriverValue": "0x030000E9",
+		"DriverValue": "0x09030001",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1457,7 +1458,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "PBMUTE",
-		"DriverValue": "0x030000E2",
+		"DriverValue": "0x09060002",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1468,7 +1469,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "PBVoldown",
-		"DriverValue": "0x030000EA",
+		"DriverValue": "0x09020002",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1479,7 +1480,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "PBVolup",
-		"DriverValue": "0x030000E9",
+		"DriverValue": "0x09020001",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -1943,8 +1944,8 @@
 		"Index": 77,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004800"
+		"MenuName": "END",
+		"DriverValue": "0x02004D00"
 	},
 	{
 		"Index": 78,
@@ -1964,15 +1965,15 @@
 		"Index": 80,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004B00"
+		"MenuName": "INS",
+		"DriverValue": "0x02004900"
 	},
 	{
 		"Index": 81,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004C00"
+		"MenuName": "INS",
+		"DriverValue": "0x02004900"
 	},
 	{
 		"Index": 82,
@@ -1985,8 +1986,8 @@
 		"Index": 83,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004E00"
+		"MenuName": "HOME",
+		"DriverValue": "0x02004A00"
 	},
 	{
 		"Index": 88,

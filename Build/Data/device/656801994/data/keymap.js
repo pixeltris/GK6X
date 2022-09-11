@@ -1302,7 +1302,7 @@
         "Position": {
             "Left": 320,
             "Top": 463,
-            "Width": 106,
+            "Width": 120,
             "Height": 41
         }
     },
@@ -1324,9 +1324,9 @@
         "LogicCode": 110,
         "LocationCode": 117,
         "Position": {
-            "Left": 431,
+            "Left": 445,
             "Top": 463,
-            "Width": 106,
+            "Width": 95,
             "Height": 41
         }
     },

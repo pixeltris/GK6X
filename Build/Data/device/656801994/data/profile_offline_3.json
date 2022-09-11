@@ -4,6 +4,7 @@
 	"Name": "",
 	"Active": 0,
 	"ModelID": 0,
+	"SystemOS": "",
 	"Application": {
 		"AppName": "",
 		"AppPath": ""
@@ -174,7 +175,7 @@
 			"Index": 6,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "RCTRL",
 			"DriverValue": "0x02000010",
 			"KeyLE": {
 				"GUID": "",
@@ -1507,8 +1508,8 @@
 			"Index": 1,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02006500"
+			"MenuName": "RCtrl",
+			"DriverValue": "0x02000010"
 		},
 		{
 			"Index": 3,

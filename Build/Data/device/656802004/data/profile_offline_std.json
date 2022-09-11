@@ -1,0 +1,29 @@
+
+{
+   "GUID": "",
+   "ModeIndex": 1,
+   "Name": "标准配置",
+   "Active": 0,
+   "DriverLE": [
+      {
+      "GUID": "A606CEF7-17C9-4849-BC2A-CFADD27AF02E",
+      "Name": "全亮白光"
+   },
+        {
+      "GUID": "96D9DB51-DC2A-4f26-B7F1-CC03C087D0EA",
+      "Name": "白光呼吸"
+   },
+     {
+      "GUID": "E6A12752-EAFF-420c-8616-276A38672373",
+      "Name": "白色两极"
+   },
+      {
+      "GUID": "5ECEAFEB-9B52-449f-95D3-D33509387C67",
+      "Name": "白色漂流碰撞"
+   },
+       {
+      "GUID": "C7DD3D9A-5531-4fc3-84E0-3CD06A534793",
+      "Name": "白色踏浪"
+   }
+   ]
+}
