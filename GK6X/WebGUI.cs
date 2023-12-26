@@ -908,6 +908,14 @@ namespace GK6X
                                     responseBuffer = File.ReadAllBytes(file);
                                     contentType = "text/css";
                                     break;
+                                case ".ttf":
+                                    responseBuffer = File.ReadAllBytes(file);
+                                    contentType = "font/ttf";
+                                    break;
+                                case ".woff":
+                                    responseBuffer = File.ReadAllBytes(file);
+                                    contentType = "font/woff";
+                                    break;
                                 default:
                                     Program.Log("Unhandled file type " + extension + " " + context.Request.Url.AbsolutePath);
                                     break;
