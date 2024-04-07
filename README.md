@@ -4,24 +4,25 @@ This is a command-line tool for mapping keys, macros, and lighting for GK6X keyb
 
 It runs on Windows, Mac, and Linux.
 
-## System requirements / compilation
-
-See the [releases](https://github.com/pixeltris/GK6X/releases) page for prebuilt binaries.
+## System Requirements, Compilation & Installation
 
 <details>
-<summary>.NET Framework 4+ on Windows. mono on Mac / Linux. Expand for more info.</summary>
-
-### Windows
+<summary>Windows</summary>
+  
+See the [releases](https://github.com/pixeltris/GK6X/releases) page for prebuilt binaries.
 
 .NET Framework 4+ is required (should be pre-installed on Windows 7 and higher).
 
 To compile from source you have two options:
 - Run `GK6X/GK6X.bat`
 - Compile using Visual Studio (C# tools required)
+</details>
+<details>
 
-### Linux / Mac
+<summary>Linux / Mac</summary>
+No generic binaries are available for Linux as of now. 
 
-[mono](https://www.mono-project.com/download/stable/) is required (most Linux package managers should list `mono-complete`).
+For compilation, [mono](https://www.mono-project.com/download/stable/) is required (most Linux package managers should list `mono-complete`).
 
 Compiling may take several attempts depending on the version of mono. Try `xbuild GK6X.sln`, or `msbuild GK6X.sln`, or `xbuild /p:TargetFrameworkVersion=v4.5 /p:TargetFrameworkProfile=""`, or ask for help in [#4](https://github.com/pixeltris/GK6X/issues/4).
 
@@ -29,7 +30,7 @@ Compiling may take several attempts depending on the version of mono. Try `xbuil
 
 ### Linux AUR package
 
-GK6X is available in [AUR](https://wiki.archlinux.org/title/Arch_User_Repository) as package [gk6x-bin](https://aur.archlinux.org/packages/gk6x-bin/) maintained by [@aakashhemadri](https://github.com/aakashhemadri).
+GK6X is available in [AUR](https://wiki.archlinux.org/title/Arch_User_Repository) as package [gk6x-bin](https://aur.archlinux.org/packages/gk6x-bin/) maintained by [@aakashhemadri](https://github.com/aakashhemadri). Installed this way, configuration files will be available at `/opt/gk6x/` (E.G. `/opt/gk6x/UserData/YOUR_MODEL_ID.txt` for `map` command)
 
 ### Linux `sudo` alternative (udev rule)
 
