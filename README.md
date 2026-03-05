@@ -1,3 +1,5 @@
+Project archived on 2026-03-05. I've made a release updating the data files to V6.0.0.76 on this date but no GUI build due to issues. This release provides compatibility with keyboards such as GK68 but hasn't been tested thoroughly. If you're having issues try the GK6X-v1.21 release instead. It's recommended to use the official software which is linked below. This project is no longer maintained as I no longer use any GK6X based keyboards.
+
 # GK6X
 
 This is a command-line tool for mapping keys, macros, and lighting for GK6X keyboards (GK64, GK84, GK61, etc). This can be used as an alternative to the official software ([Windows](http://www.jikedingzhi.com/downloadlist?driverID=41) / [Mac](http://www.jikedingzhi.com/downloadlist?driverID=90)).
