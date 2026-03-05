@@ -802,6 +802,14 @@
             "DriverValue": "0x02005E00",
             "Class": "l150",
             "IsCombFunc": true
+        }, {
+            "LocationCode": 130,
+            "LogicCode": 104,
+            "Name": "Num .",
+            "LangTitle": "key_num_brazil",
+            "DriverValue": "0x02008500",
+            "Class": "l150",
+            "IsCombFunc": true
         }]
     }, {
         "linekeys": [{
@@ -828,6 +836,14 @@
             "DriverValue": "0x02005B00",
             "Class": "l150",
             "IsCombFunc": true
+        }, {
+            "LocationCode": 130,
+            "LogicCode": 104,
+            "Name": "Num=",
+            "LangTitle": "key_num_equal",
+            "DriverValue": "0x02006700",
+            "Class": "l150",
+            "IsCombFunc": true
         }]
     }, {
         "linekeys": [{
@@ -836,7 +852,7 @@
             "Name": "Num0",
             "LangTitle": "key_num_0",
             "DriverValue": "0x02006200",
-            "Class": "l300",
+            "Class": "l225",
             "IsCombFunc": true
         }, {
             "LocationCode": 130,
@@ -891,6 +907,11 @@
             "LangTitle": "key_media_next",
             "DriverValue": "0x030000B5",
             "Class": "l225"
+        }, {
+            "Name": "eject",
+            "LangTitle": "key_media_eject",
+            "DriverValue": "0x030000CC",
+            "Class": "l225"
         }]
     }, {
         "linekeys": [{
@@ -940,6 +961,16 @@
             "LangTitle": "backlight_brightness_up",
             "DriverValue": "0x09020001",
             "Class": "l225"
+        }, {
+            "Name": "切换自定义灯光",
+            "LangTitle": "toggle_custom_light_effect",
+            "DriverValue": "0x09010010",
+            "Class": "l225"
+        }, {
+            "Name": "切换按键灯效",
+            "LangTitle": "toggle_key_light_effect",
+            "DriverValue": "0x09010011",
+            "Class": "l225"
         }]
     }]
 }, {
@@ -974,6 +1005,11 @@
             "Name": "浏览器主页",
             "LangTitle": "key_brower_home",
             "DriverValue": "0x03000223",
+            "Class": "l225"
+        }, {
+            "Name": "浏览器搜索",
+            "LangTitle": "key_brower_search",
+            "DriverValue": "0x03000221",
             "Class": "l225"
         }]
     }, {
@@ -1103,6 +1139,24 @@
             "Name": "KR",
             "LangTitle": "key_kr",
             "DriverValue": "0x02009000"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "カタカナひらがな",
+            "LangTitle": "jis_katakana_hiragana",
+            "DriverValue": "0x02008800"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "変換",
+            "LangTitle": "jis_henkan",
+            "DriverValue": "0x02008A00"
+        }, {
+            "LocationCode": -1,
+            "LogicCode": -1,
+            "Name": "無変換",
+            "LangTitle": "jis_muhenkan",
+            "DriverValue": "0x02008B00"
         }]
     }]
 }, {
@@ -1207,36 +1261,6 @@
             "LangTitle": "key_disable_direction",
             "DriverValue": "disable_direction",
             "Class": "l250"
-        }]
-    }]
-}, {
-    "title": "层瞬时开关",
-    "keytype": "mode-layer-temp-switch",
-    "lang": "mode_layer_temp_switch",
-    "icon": "el-icon-kb-copy1",
-    "pid": "7",
-    "pname": "Fnx",
-    "keys": [{
-        "linekeys": [{
-            "Name": "标准模式",
-            "LangTitle": "key_mode_std",
-            "DriverValue": "0x0a070001",
-            "Class": "l225"
-        }, {
-            "Name": "离线1",
-            "LangTitle": "key_mode_offline_1",
-            "DriverValue": "0x0a070002",
-            "Class": "l225"
-        }, {
-            "Name": "离线2",
-            "LangTitle": "key_mode_offline_2",
-            "DriverValue": "0x0a070003",
-            "Class": "l225"
-        }, {
-            "Name": "离线3",
-            "LangTitle": "key_mode_offline_3",
-            "DriverValue": "0x0a070004",
-            "Class": "l225"
         }]
     }]
 }]

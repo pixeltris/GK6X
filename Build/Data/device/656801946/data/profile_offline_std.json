@@ -5,11 +5,11 @@
 	"Active": 0,
 	"DriverLE": [
 	{
-        	"GUID": "7538C175-D52F-4D94-964C-DDA7BC78749A",
+        	"GUID": "41E19459-784C-4564-9C10-B6D9BA9C6E83",
         	"Name": "GK84/S 光谱循环"
     	},
 	{
-		"GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+		"GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
 		"Name": "Macice Blue"
 	},
 	{
@@ -18,7 +18,7 @@
 	},
 
 	{
-     	        "GUID": "96F1F8A0-9360-4344-87B7-25BF2779A634",
+     	        "GUID": "14BC0DEE-E7DA-4896-873D-38CA669D34C6",
       	        "Name": "GK84/S 风车"
    	},
 	{

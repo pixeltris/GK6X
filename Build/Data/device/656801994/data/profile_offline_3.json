@@ -4,7 +4,6 @@
 	"Name": "",
 	"Active": 0,
 	"ModelID": 0,
-	"SystemOS": "",
 	"Application": {
 		"AppName": "",
 		"AppPath": ""
@@ -1944,14 +1943,14 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02004600"
+		        "DriverValue": "0x02004800"
 		},
 		{
 			"Index": 77,
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02004800"
+			"DriverValue": "0x02004D00"
 		},
 		{
 			"Index": 78,
@@ -1972,7 +1971,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02004B00"
+			"DriverValue": "0x02004900"
 		},
 		{
 			"Index": 81,
@@ -1993,7 +1992,7 @@
 			"MenuPID": "",
 			"MenuID": "",
 			"MenuName": "",
-			"DriverValue": "0x02004E00"
+			"DriverValue": "0x02004A00"
 		},
 		{
 			"Index": 88,

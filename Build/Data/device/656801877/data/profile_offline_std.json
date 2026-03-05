@@ -4,7 +4,7 @@
 	"Name": "标准配置",
 	"Active": 0,
 	"DriverLE": [{
-		"GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+		"GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
 		"Name": "Macice Blue"
 	},
 	{
@@ -12,11 +12,11 @@
 		"Name": "RGB渐变"
 	},
 	{
-		"GUID": "9EE4CB48-71F1-4346-A677-56D8A4A2A45D",
+		"GUID": "D641AFF3-3BE1-4022-AB1C-0ABD7F55989D",
 		"Name": "SK64/66-PTIR-C"
 	},
 	{
-		"GUID": "F9E972A1-9DB3-4b84-8C07-AF714C56F20E",
+		"GUID": "46818228-57DF-4d10-86D3-6FBD94E98ECB",
 		"Name": "SK64/66-PTIR-D"
 	},
 	{

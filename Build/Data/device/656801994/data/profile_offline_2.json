@@ -4,13 +4,12 @@
 	"Name": "",
 	"Active": 0,
 	"ModelID": 0,
-	"SystemOS": "Mac",
 	"Application": {
 		"AppName": "",
 		"AppPath": ""
 	},
 	"ModeLE": {
-		"GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+		"GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
 		"Name": "Macice Blue",
 		"LESet": {
 			"LEModel": 241,
@@ -923,7 +922,7 @@
 			"Index": 75,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
+			"MenuName": "PS",
 			"DriverValue": "0x02004600",
 			"KeyLE": {
 				"GUID": "",
@@ -1943,8 +1942,8 @@
 			"Index": 75,
 			"MenuPID": "",
 			"MenuID": "",
-			"MenuName": "",
-			"DriverValue": "0x02004600"
+			"MenuName": "PB",
+			"DriverValue": "0x02004800"
 		},
 		{
 			"Index": 77,

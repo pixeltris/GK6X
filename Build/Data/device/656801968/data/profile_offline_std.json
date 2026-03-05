@@ -4,7 +4,7 @@
 	"Name": "标准配置",
 	"Active": 0,
 	"DriverLE": [{
-			"GUID": "GKF76583-8D61-4CCA-8EXS-3EAA0C45C3CC",
+			"GUID": "5AF46B12-DE42-4b00-BE66-B2F07626C0BC",
 			"Name": "GK61XS 方向键"
 		},
 		{
@@ -16,11 +16,11 @@
 			"Name": "RGB渐变"
 		},
 		{
-			"GUID": "E0459B73-B6F9-D221-8D6E-A56388849263",
+			"GUID": "B9074D2C-9995-4b07-AA7D-F9DBDFB3ABFE",
 			"Name": "光谱循环 61"
 		},
 		{
-			"GUID": "4914F13F-5E71-3CB6-B212-FBF9569918DA",
+			"GUID": "7DC1DC8D-E428-4da4-90D1-43F6E96B5A6A",
 			"Name": "风车 61"
 		}
 	]

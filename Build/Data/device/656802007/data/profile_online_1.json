@@ -9,6 +9,10 @@
 		"AppName": "",
 		"AppPath": ""
 	},
+	"Game": {
+		"GUID": "ECA1CE5C-597C-4047-9F78-AB638FDE7737",
+		"Name": "Idle"
+	},
 	"ModeLE": {
 		"GUID": "A606CEF7-17C9-4849-BC2A-CFADD27AF02E",
 		"Name": "全亮白光",

@@ -63,14 +63,11 @@
 	"UserManual": [{
 		"title_lang": "layer_oper",
 		"items": [{
-			"key": "1-ON",
-			"desc_lang": "switch_one_on"
+			"key": "USB-BT",
+			"desc_lang": "usb_bluetooth"
 		}, {
-			"key": "2-ON",
-			"desc_lang": "switch_two_on"
-		}, {
-			"key": "3-ON",
-			"desc_lang": "switch_three_on"
+			"key": "Win-Mac",
+			"desc_lang": "switch_win_mac"
 		}]
 	}, {
 		"title_lang": "le_oper",

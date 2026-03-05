@@ -2,7 +2,7 @@
 	"DeviceType": 0,
 	"DriverLEKey": 54,
 	"LeCate": 67,
-	"ShowScalePlus": 0.16,
+	"ShowScalePlus": 0,
 	"ShowOffsetLeft": "0px",
 	"ShowOffsetTop": "0px",
 	"IsFnKeySet": true,

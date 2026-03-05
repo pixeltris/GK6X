@@ -5,11 +5,11 @@
 	"Active": 0,
 	"DriverLE": [
 		{
-			"GUID": "089E85A9-94CB-4271-89F3-617ABD26D54E",
+			"GUID": "15AF7F87-B386-466c-9A8F-DD7CD55339D3",
 			"Name": "SK61S-PTIR-D"
 		},
 		{
-			"GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+			"GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
 			"Name": "Macice Blue"
 		},
 		{
@@ -17,11 +17,11 @@
 			"Name": "RGB渐变"
 		},
 		{
-			"GUID": "21daaeaa-fa77-4b8a-9442-fc9c162586d1",
+			"GUID": "B9021A9A-311D-4a9f-993A-D0E5B1469E27",
 			"Name": "AK61S-PTIR-A"
 		},
 		{
-			"GUID": "074d077e-6816-4650-af9f-fb24093bb444",
+			"GUID": "152F294E-E2F1-4e31-BF58-44B7F574A674",
 			"Name": "AK61S-PTIR-B"
 		}
 	]

@@ -4,7 +4,7 @@
 	"Name": "标准配置",
 	"Active": 0,
 	"DriverLE": [{
-		"GUID": "A0BB7A61-60C5-4FBE-A568-F245D826CFC6",
+		"GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
 		"Name": "SK71S-A"
 	},
 	{
@@ -12,7 +12,7 @@
 		"Name": "RGB渐变"
 	},
 	{
-		"GUID": "6758C491-9BBC-4F57-B870-E76CC21A8109",
+		"GUID": "EDB0237B-E183-4281-9D82-0D56B005C01D",
 		"Name": "SK71S-B"
 	},
 	{

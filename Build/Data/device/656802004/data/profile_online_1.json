@@ -4,7 +4,6 @@
 	"Name": "默认配置",
 	"Active": 1,
 	"ModelID": 656801865,
-	"SystemOS": "",
 	"Application": {
 		"AppName": "",
 		"AppPath": ""
@@ -932,7 +931,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "",
-		"DriverValue": "0x02004800",
+		"DriverValue": "0x02004E00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""

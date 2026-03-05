@@ -932,7 +932,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "",
-		"DriverValue": "0x02004800",
+		"DriverValue": "0x02004E00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -943,7 +943,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "",
-		"DriverValue": "0x02004B00",
+		"DriverValue": "0x02004C00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -976,7 +976,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "",
-		"DriverValue": "0x02004E00",
+		"DriverValue": "0x02004B00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""

@@ -5,7 +5,7 @@
     "Active": 0,
     "DriverLE": [
         {
-            "GUID": "5C821781-BCE5-56C7-70AB-C5555A8991A6",
+            "GUID": "5E597FE5-111D-4696-8295-D4B5F5DECEFE",
             "Name": "光谱循环 96"
         },
 	    {
@@ -17,7 +17,7 @@
             "Name": "RGB渐变"
         },
         {
-            "GUID": "7B8EE725-5CCC-A77A-BDBA-31E99088CB60",
+            "GUID": "286E5C34-7EC4-470f-9BDC-D2B456161B66",
             "Name": "风车 96"
         },
         {

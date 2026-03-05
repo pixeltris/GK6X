@@ -5,7 +5,7 @@
 	"Active": 0,
 	"DriverLE": [
 		{
-		"GUID": "77178342-da24-4874-802c-6bb0dea3ef59",
+		"GUID": "6D18CA10-284D-4266-8113-37794E437543",
 		"Name": "SK61XS 方向键"
 	},
 	{
@@ -17,11 +17,11 @@
 		"Name": "RGB渐变"
 	},
 	{
-		"GUID": "A5F9F3FB-E0C4-49c0-879A-2C4FFA221294",
+		"GUID": "83CD281F-78CD-4c9e-B14A-8AB2B05292CC",
 		"Name": "光谱循环 63"
 	}, 
 	{
-		"GUID": "5DA24A75-DC54-4fd1-8852-A323720FBBE8",
+		"GUID": "FBF49CC5-731C-4010-890D-6D82E75B18C8",
 		"Name": "风车 63"
 	} 
 	]

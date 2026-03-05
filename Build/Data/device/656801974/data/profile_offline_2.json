@@ -10,7 +10,16 @@
 	},
 	"ModeLE": {
 		"GUID": "9C61B688-2411-4c10-AD82-A45519C8C3E3",
-		"Name": "KB-4-B"
+		"Name": "KB-4-B",
+		"LESet": {
+			"LEModel": 241,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		}
 	},
 	"DeviceLE": {
 		"Index": 0,
@@ -67,6 +76,28 @@
 			}
 		]
 	},
+	"DriverLE": [
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		}
+	],
 	"KeySet": [
 		{
 			"Index": 1,

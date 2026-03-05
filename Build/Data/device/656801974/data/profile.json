@@ -19,8 +19,6 @@
 			"LEDir": 0,
 			"LEColor": 0,
 			"LEEnable": 15
-		},
-		"LEData": {
 		}
 	},
 	"DeviceLE": {
@@ -76,6 +74,23 @@
 			"LEEnable": 15
 		}]
 	},
+		"DriverLE": [{
+			"GUID": "",
+			"Name": ""
+		}, {
+			"GUID": "",
+			"Name": ""
+		}, {
+			"GUID": "",
+			"Name": ""
+		}, {
+			"GUID": "",
+			"Name": ""
+		}, {
+			"GUID": "",
+			"Name": ""
+		}
+	],
 	"KeySet": [
 		{
 			"Index": 1,

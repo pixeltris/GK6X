@@ -5,11 +5,11 @@
     "Active": 0,
     "DriverLE": [
     	{
-            "GUID": "AA1A1B4F-2132-4B2A-875C-D07E4836F2EA",
+            "GUID": "FA163A21-86B3-45ba-A705-427E1956FC46",
             "Name": "JK-178-SK87-A"
         },
 	{
-            "GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+            "GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
             "Name": "Macice Blue"
         }, 
 	{
@@ -17,11 +17,11 @@
             "Name": "RGB渐变"
         },  
 	{
-            "GUID": "E3C911F2-DA66-47B7-91F5-7548C58C62A6",
+            "GUID": "2DAF69B8-FEFC-456a-B006-8F57C82EA421",
 	    "Name": "JK-178-SK87-B"
         }, 
 	{
-            "GUID": "E681B6D5-3F7B-4BBE-9F90-9C38E8D8BE55",
+            "GUID": "FD73E2A2-1EAB-483e-AD9D-14C6BB21F05F",
             "Name": "JK-178-SK87-C"
         }
     ]

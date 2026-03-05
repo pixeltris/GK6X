@@ -9,9 +9,95 @@
 		"AppPath": ""
 	},
 	"ModeLE": {
-		"GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
-		"Name": "Macice Blue"
+		"GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
+		"Name": "Macice Blue",
+		"LESet": {
+			"LEModel": 241,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		}
 	},
+	"DeviceLE": {
+		"Index": 0,
+		"LESet": [
+			{
+				"LEConfig": 0,
+				"LEModel": 7,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			},
+			{
+				"LEConfig": 0,
+				"LEModel": 8,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			},
+			{
+				"LEConfig": 0,
+				"LEModel": 5,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			},
+			{
+				"LEConfig": 0,
+				"LEModel": 14,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			},
+			{
+				"LEConfig": 0,
+				"LEModel": 9,
+				"LESubModel": 1,
+				"LELight": 18,
+				"LESpeed": 3,
+				"LEDir": 0,
+				"LEColor": 0,
+				"LEEnable": 15
+			}
+		]
+	},
+	"DriverLE": [
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		},
+		{
+			"GUID": "",
+			"Name": ""
+		}
+	],
 	"KeySet": [
 		{
 			"Index": 1,

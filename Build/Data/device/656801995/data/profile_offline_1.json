@@ -4,7 +4,6 @@
 	"Name": "",
 	"Active": 0,
 	"ModelID": 0,
-	"SystemOS": "Win",
 	"Application": {
 		"AppName": "",
 		"AppPath": ""
@@ -852,8 +851,8 @@
 		"Index": 69,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004000",
+		"MenuName": "PREV",
+		"DriverValue": "0x030000B6",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -863,8 +862,8 @@
 		"Index": 70,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004100",
+		"MenuName": "Play/Pause",
+		"DriverValue": "0x030000CD",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -874,8 +873,8 @@
 		"Index": 71,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004200",
+		"MenuName": "NEXT ",
+		"DriverValue": "0x030000B5",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -885,8 +884,8 @@
 		"Index": 72,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004300",
+		"MenuName": "MUTE ",
+		"DriverValue": "0x030000E2",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -896,8 +895,8 @@
 		"Index": 73,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004400",
+		"MenuName": "VOlDown ",
+		"DriverValue": "0x030000EA",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -907,8 +906,8 @@
 		"Index": 74,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004500",
+		"MenuName": "VOlUp",
+		"DriverValue": "0x030000E9",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""
@@ -918,7 +917,7 @@
 		"Index": 75,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
+		"MenuName": "PS",
 		"DriverValue": "0x02004600",
 		"KeyLE": {
 			"GUID": "",
@@ -1949,8 +1948,8 @@
 		"Index": 75,
 		"MenuPID": "",
 		"MenuID": "",
-		"MenuName": "",
-		"DriverValue": "0x02004600"
+		"MenuName": "PB",
+		"DriverValue": "0x02004800"
 	},
 	{
 		"Index": 77,

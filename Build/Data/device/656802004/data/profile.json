@@ -927,7 +927,7 @@
 		"MenuPID": "",
 		"MenuID": "",
 		"MenuName": "",
-		"DriverValue": "0x02004800",
+		"DriverValue": "0x02004E00",
 		"KeyLE": {
 			"GUID": "",
 			"Name": ""

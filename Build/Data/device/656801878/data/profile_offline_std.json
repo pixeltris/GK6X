@@ -4,11 +4,11 @@
 	"Name": "标准配置",
 	"Active": 0,
 	"DriverLE": [{
-		"GUID": "GKF76583-8D61-4CCA-8EXS-3EAA0C45C3CC",
+		"GUID": "5AF46B12-DE42-4b00-BE66-B2F07626C0BC",
 		"Name": "GK61XS方向键"
 	},
 	{
-	    "GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+	    "GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
 	    "Name": "Macice Blue"
 	},
 	{

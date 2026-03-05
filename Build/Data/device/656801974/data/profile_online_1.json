@@ -14,7 +14,17 @@
 	},
 	"ModeLE": {
 		"GUID": "C90481D7-B35E-4a4a-83CA-B65798964DDB",
-		"Name": "渐变"
+		"Name": "渐变",
+		"LESet": {
+			"LEModel": 241,
+			"LESubModel": 1,
+			"LELight": 18,
+			"LESpeed": 3,
+			"LEDir": 0,
+			"LEColor": 0,
+			"LEEnable": 15
+		},
+		"LEData": {}
 	},
 	"DeviceLE": {
 		"Index": 0,
@@ -71,6 +81,23 @@
 			}
 		]
 	},
+		"DriverLE": [{
+			"GUID": "",
+			"Name": ""
+		}, {
+			"GUID": "",
+			"Name": ""
+		}, {
+			"GUID": "",
+			"Name": ""
+		}, {
+			"GUID": "",
+			"Name": ""
+		}, {
+			"GUID": "",
+			"Name": ""
+		}
+	],
 	"KeySet": [
 		{
 			"Index": 1,

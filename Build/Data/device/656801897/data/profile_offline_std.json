@@ -5,11 +5,11 @@
 	"Active": 0,
 	"DriverLE": [
 		{
-			"GUID": "089E85A9-94CB-4271-89F3-617ABD26D54E",
+			"GUID": "15AF7F87-B386-466c-9A8F-DD7CD55339D3",
 			"Name": "SK61S-PTIR-D"
 		},
 		{
-			"GUID": "MACICE01-BULE-4E04-BB6F-C72C7A650F85",
+			"GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
 			"Name": "Macice Blue"
 		},
 		{
@@ -17,12 +17,12 @@
 			"Name": "RGB渐变"
 		},
 		{
-			"GUID": "28AA6B77-DDE5-4bba-B3E6-F8DD27C7BCF2",
-			"Name": "SK61S-PTIR-A"
+			"GUID": "A494ACB6-6A5B-4b2c-9E74-D8ED3DB84C5F",
+			"Name": "AC61M-UK 光谱循环"
 		},
 		{
-			"GUID": "849A6BA8-7C6F-4cab-BB62-7CEABCFC9E5E",
-			"Name": "SK61S-PTIR-B"
+			"GUID": "DEF006E5-2F0E-4c5c-8A7C-6FB0C6F7F532",
+			"Name": "AC61M-UK 风车"
 		}
 	]
 }

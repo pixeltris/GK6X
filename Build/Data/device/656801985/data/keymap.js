@@ -1280,7 +1280,7 @@
 			"Left": 287,
 			"Top": 496,
 			"Width": 128,
-			"Height": 0
+			"Height": 50
 		}
 	},
 	{
@@ -1313,10 +1313,10 @@
 		"LogicCode": 110,
 		"LocationCode": 117,
 		"Position": {
-			"Left": 424,
+			"Left": 418,
 			"Top": 496,
-			"Width": 116,
-			"Height": 0
+			"Width": 127,
+			"Height": 50
 		}
 	},
 	{
@@ -1337,10 +1337,10 @@
 		"LogicCode": 111,
 		"LocationCode": 119,
 		"Position": {
-			"Left": 550,
+			"Left": 546,
 			"Top": 496,
-			"Width": 75,
-			"Height": 0
+			"Width": 80,
+			"Height": 50
 		}
 	},
 	{
